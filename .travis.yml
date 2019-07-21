@@ -7,7 +7,7 @@ script:
 - yarn install
 - yarn gatsby build
 - touch public/.nojekyll
-- echo "beta.pandala.org" >public/CNAME
+- echo "datakurre.pandala.org" >public/CNAME
 deploy:
   provider: pages
   github_token: "$GITHUB_TOKEN"
