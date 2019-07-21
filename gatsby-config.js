@@ -1,27 +1,65 @@
+const feed = function(filter) {
+  return {
+    serialize: ({ query: { site, allMarkdownRemark } }) => {
+      return allMarkdownRemark.edges.map(edge => {
+        return Object.assign({}, edge.node.frontmatter, {
+          description: edge.node.excerpt,
+          date: edge.node.frontmatter.date,
+          url: site.siteMetadata.siteUrl + edge.node.fields.slug,
+          guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
+          custom_elements: [{ 'content:encoded': edge.node.html }]
+        });
+      });
+    },
+    query: `                                                                      
+  {
+    allMarkdownRemark(limit: 10, filter: {${filter ? filter : ''}}) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+          frontmatter {
+            date
+            title
+            tags
+          }
+          excerpt
+          html
+        }
+      }
+    }
+  }
+  `,
+    output: '/rss.xml',
+    title: 'datakurre'
+  };
+};
+
 module.exports = {
   siteMetadata: {
-    title: 'datakurre.pandala.org',
+    title: 'datakurre',
     author: 'Asko Soukka',
     description: 'Plone, Python, Robot Framework',
     siteUrl: 'https://datakurre.pandala.org',
     social: {
-      twitter: 'datakurre',
-    },
+      twitter: 'datakurre'
+    }
   },
   plugins: [
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/content/blog`,
-        name: 'blog',
-      },
+        name: 'blog'
+      }
     },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/content/assets`,
-        name: 'assets',
-      },
+        name: 'assets'
+      }
     },
     {
       resolve: 'gatsby-transformer-remark',
@@ -30,14 +68,14 @@ module.exports = {
           {
             resolve: 'gatsby-remark-images',
             options: {
-              maxWidth: 590,
-            },
+              maxWidth: 590
+            }
           },
           {
             resolve: 'gatsby-remark-responsive-iframe',
             options: {
-              wrapperStyle: 'margin-bottom: 1.0725rem',
-            },
+              wrapperStyle: 'margin-bottom: 1.0725rem'
+            }
           },
           {
             resolve: 'gatsby-remark-codemirror',
@@ -47,13 +85,24 @@ module.exports = {
           },
           'gatsby-remark-codemirror',
           'gatsby-remark-copy-linked-files',
-          'gatsby-remark-smartypants',
-        ],
-      },
+          'gatsby-remark-smartypants'
+        ]
+      }
+    },
+    {
+      resolve: 'gatsby-plugin-feed',
+      options: {
+        feeds: [
+          Object.assign({}, feed(), {}),
+          Object.assign({}, feed('frontmatter: {tags: {in: ["python"]}}'), {
+            title: 'datakurre on "plone"',
+            output: '/feeds/posts/default/-/plone'
+          })
+        ]
+      }
     },
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
-    'gatsby-plugin-feed',
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
@@ -63,16 +112,16 @@ module.exports = {
         background_color: '#ffffff',
         theme_color: '#663399',
         display: 'minimal-ui',
-        icon: 'content/assets/icon.png',
-      },
+        icon: 'content/assets/icon.png'
+      }
     },
-//    'gatsby-plugin-offline',
+    //  'gatsby-plugin-offline',
     'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-plugin-typography',
       options: {
-        pathToConfigModule: 'src/utils/typography',
-      },
-    },
-  ],
+        pathToConfigModule: 'src/utils/typography'
+      }
+    }
+  ]
 };
