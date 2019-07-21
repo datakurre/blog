@@ -46,7 +46,7 @@ const feed = function(filter) {
 
 module.exports = {
   siteMetadata: {
-    title: 'datakurre',
+    title: 'Asko Soukka',
     author: 'Asko Soukka',
     description: 'Plone, Python, Robot Framework',
     siteUrl: 'https://datakurre.pandala.org',
