@@ -32,7 +32,8 @@
     "typography-theme-wordpress-2016": "^0.16.19"
   },
   "resolutions": {
-    "codemirror": "https://github.com/datakurre/CodeMirror"
+    "codemirror": "https://github.com/datakurre/CodeMirror",
+    "gatsby-remark-codemirror": "https://github.com/datakurre/gatsby-remark-codemirror"
   },
   "devDependencies": {
     "prettier": "^1.18.2"
