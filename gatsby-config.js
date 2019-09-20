@@ -91,7 +91,13 @@ module.exports = {
               theme: 'solarized'
             }
           },
-          'gatsby-remark-codemirror',
+          {
+            resolve: "gatsby-remark-embed-youtube",
+            options: {
+              width: 640,
+              height: 360
+            }
+          },
           'gatsby-remark-copy-linked-files',
           'gatsby-remark-smartypants'
         ]
