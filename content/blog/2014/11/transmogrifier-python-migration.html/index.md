@@ -334,6 +334,7 @@ site-id = Plone
 instance = instance
 
 [versions]
+future =
 setuptools =
 zc.buildout =
 ```
@@ -379,10 +380,9 @@ blueprint = collective.transmogrifier.sections.constructor
 blueprint = plone.app.transmogrifier.atschemaupdater
 
 [commit]
-blueprint = transmogrifier.to_expression
+blueprint = transmogrifier.transform
 modules = transaction
-expression = python:modules['transaction'].commit()
-mode = items
+commit = modules['transaction'].commit()
 ```
 
 Now, the new CLI-script can be used together with
