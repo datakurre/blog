@@ -32,7 +32,6 @@ transmogrifier = git https://github.com/collective/transmogrifier
 recipe = plone.recipe.zope2instance
 eggs =
     Plone
-    plone.restapi
     transmogrifier
 user = admin:admin
 
