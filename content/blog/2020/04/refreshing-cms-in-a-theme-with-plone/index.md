@@ -6,7 +6,7 @@ tags: ["plone", "theming", "mosaic"]
 
 “How hard can it be? It is just a theme…”
 
-Of course, it was. Unless it was a collection of configurable interactive components. With features like tabbed carousels, photo filters, hyphenation, and syndication of news or calendar feeds from various sources. All responsive. All accessible. All with multilingual user interface elements, when required.
+Of course, it was. Unless it was a collection of configurable interactive components. With features like tabbed carousels, photo filters, hyphenation, and syndication of news or calendar feeds from various sources. All responsive. All accessible. All reusable around the site. All with multilingual user interface elements, when required.
 
 ![](layout.jpg)
 
@@ -30,7 +30,7 @@ Eventually, the CMS content gets pulled into Plone Mosaic site layouts with “t
 Configurable blocks with Theme Fragments
 ----------------------------------------
 
-the days when it was enough to theme the existing features of a CMS are long gone. On the contrary, nowadays it seems that themes redefine the required features. Lucky us, not only was Plone there from the very beginning, Plone itself started as a themed user interface for Zope Content Management Framework. While the details have changed, in my opinion, Plone could still market itself as a low-code platform for web content management.
+The days when it was enough to theme the existing features of a CMS are long gone. On the contrary, nowadays it seems that themes redefine the required features. Lucky us, not only was Plone there from the very beginning, Plone itself started as a themed user interface for Zope Content Management Framework. While the details have changed, in my opinion, Plone could still market itself as a low-code platform for web content management.
 
 ![](configurable-tile.png)
 
