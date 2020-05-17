@@ -18,13 +18,13 @@ Forms, documents, tasks, people, decisions, notifications, work, results, custom
 
 ![](vasara-flow.png)
 
-The main Vasara user story starts outside system itself: the expert on the current process drafts the process flow with a BPM modeling tool. With the help of an experienced process modeler, the process model is developed into an executable process model. Now the process model is given for technical review. Technical details are completed and possible automation needs implemented. Only now Vasara is really needed.
+The main Vasara user story starts outside system itself: the expert on the current process drafts the process flow with a BPM modeling tool. With the help of an experienced process modeler, the process model is developed into an executable process model. Then the process model is given for technical review. Technical details are completed and possible automation needs implemented. Only now Vasara is really needed.
 
 ![](camunda-modeler.png)
 
 ![](hasura-admin.png)
 
-Vasara provides tools for building the end-user experience for the process. Vasara extracts user controlled tasks from the process model and provides tools for building user interfaces for those tasks. Vasara allows to connect process and its tasks with their related database documents. Finally, Vasara could be used to start the processes manually, complete their user tasks when required and, of course, browse and and manage the related database documents.
+Vasara provides tools for building the end-user experience for the process. Vasara extracts user controlled tasks from the process model and provides tools for building user interfaces for those tasks. Vasara allows to connect process and its tasks with their related database records (or documents). Finally, Vasara could be used to start the processes manually, complete their user tasks when required and, of course, browse and and manage the records related to those tasks.
 
 ![](vasara-form-builder.png)
 
