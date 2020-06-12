@@ -50,7 +50,7 @@ All this required successful teamwork, not only with a few developers to do the 
 
 What you see, edit and connect in Volto.
 
-![](volto-image.png)
+![](study-guide-edit.png)
 
 Is what you get in our GatsbyJS built study guide web site.
 
