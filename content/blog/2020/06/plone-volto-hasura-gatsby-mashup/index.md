@@ -46,14 +46,16 @@ The last piece in our puzzle was to connect Volto authored Plone CMS content wit
 
 ![](volto-sisu-connector.png)
 
-All this required successful teamwork, not only with a few developers to do the technical implemenation, but also with the dozens of our content editors to create and connect the actual content.
+All this required successful teamwork, not only with a few developers to do the technical implemenation, but also with the dozens of our content editors to create and connect the actual content. That said, we successfully reached our goal:
 
-That said, we successfully reached our goal, where what you see, edit and connect in Volto:
+What you see, edit and connect in Volto.
 
 ![](volto-image.png)
 
-Is what you get in our GatsbyJS built study guide web site:
+Is what you get in our GatsbyJS built study guide web site.
 
 ![](study-guide-image.png)
 
-As they say: something old, something new and something blue. The perfect match.
+As they say: something old, something new and something blue.
+
+The perfect match.
