@@ -48,11 +48,11 @@ The last piece in our puzzle was to connect Volto authored Plone CMS content wit
 
 All this required successful teamwork, not only with a few developers doing the technical implemenation, but also with the dozens of our content editors creating and connecting the actual content. That said, we successfully reached our goal:
 
-What you see, edit and connect in Volto.
+What you see, edit and connect in Volto…
 
 ![](study-guide-edit.png)
 
-Is what you get in our GatsbyJS built study guide web site, knitted together with the original study guide data.
+…is what you get in our GatsbyJS built study guide web site, knitted together with the original study guide data.
 
 ![](study-guide-image.png)
 
