@@ -8,7 +8,7 @@ An another iteration of [our university's new study guide web site](https://stud
 
 ![](study-guide-tabs.png)
 
-In the beginning there was data. A lot of it. A great amount of granular JSON chunks, to be turned into fast and well connected study guide web site. Regularly updated, of course. For years we had solved similar use cases by building and synchronizing CMS content out of more or less structured data. This time we had not enough resources for a such “sophisticated” CMS integration, but we had to look for more agile alternatives. As they say: think out of the box. We chose to go JAMstack, with GatsbyJS.
+In the beginning there was data. A lot of it. A great amount of granular JSON chunks, to be turned into fast and well connected study guide web site. Regularly updated, of course. For years we had solved similar use cases by building and synchronizing CMS content out of more or less structured data. This time we had not enough resources for a such “sophisticated” CMS integration, but we had to look for more agile alternatives – think out of the box. We chose to go JAMstack, with GatsbyJS.
 
 
 Hasura – the magical GraphQL gateway
@@ -36,13 +36,13 @@ Lucky us, we had just right CMS product and experience available. [Plone CMS](ht
 
 And when it comes to [Plone as a data source for GatsbyJS](https://collective.github.io/gatsby-source-plone/): I personally mentored Google Summer of Code students both in [2018](https://summerofcode.withgoogle.com/archive/2018/projects/5034509258981376/) and [2019](https://summerofcode.withgoogle.com/archive/2019/projects/5770661249679360/), and then continued the work, to make sure that Plone integrates perfectly with any GatsbyJS project.
 
-The last piece in our puzzle was to connect Volto authored Plone CMS content with our structured data from the Hasura powered GraphQL API. The flexibility of Plone CMS with fresh customization possibilities provided by Volto enabled the solution:
+The last piece in our puzzle was to connect Volto authored Plone CMS content with our structured data from the Hasura powered GraphQL API. The flexibility of Plone CMS, with fresh customization possibilities provided by Volto, enabled our solution:
 
-1) Plone ships with out-of-the-box customizable structured content types. Without any custom code, we were able to enhance our Volto-editable pages with metadata fields to store the connecting information – making it also available in Plone REST API for GatsbyJS data source integration.
+1) Plone ships with out-of-the-box customizable structured content types. Without any custom code, we were able to enhance our Volto-editable pages with metadata fields to store the connecting information. This also made the data available in Plone REST API for GatsbyJS data source integration.
 
 ![](plone-dexterity-editor.png)
 
-2) Thanks to Volto user interface being customizable with our own ReactJS code. It was possible to customize the select widget of our primary connecting field to search the Hasura GraphQL API for all the possible value options to be saved with the content page.
+2) Thanks to Volto user interface being customizable with our own ReactJS code, it was possible to customize the select widget of our primary connecting field to search our Hasura GraphQL API for all the possible value options to be saved with the content page.
 
 ![](volto-sisu-connector.png)
 
@@ -56,6 +56,6 @@ Is what you get in our GatsbyJS built study guide web site.
 
 ![](study-guide-image.png)
 
-As they say: something old, something new and something blue.
+Something old, something new and something blue.
 
 The perfect match.
