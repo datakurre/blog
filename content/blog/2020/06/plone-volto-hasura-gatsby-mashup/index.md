@@ -36,7 +36,7 @@ Lucky us, we had just right CMS product and experience available. [Plone CMS](ht
 
 And when it comes to [Plone as a data source for GatsbyJS](https://collective.github.io/gatsby-source-plone/): I personally mentored Google Summer of Code students both in [2018](https://summerofcode.withgoogle.com/archive/2018/projects/5034509258981376/) and [2019](https://summerofcode.withgoogle.com/archive/2019/projects/5770661249679360/), and then continued the work, to make sure that Plone integrates perfectly with any GatsbyJS project.
 
-The last piece in our puzzle was to connect Volto authored Plone CMS content with the our structured data from the Hasura powered GraphQL API. The flexibility of Plone CMS with fresh customization possibilities provided by Volto enabled the solution:
+The last piece in our puzzle was to connect Volto authored Plone CMS content with our structured data from the Hasura powered GraphQL API. The flexibility of Plone CMS with fresh customization possibilities provided by Volto enabled the solution:
 
 1) Plone ships with out-of-the-box customizable structured content types. Without any custom code, we were able to enhance our Volto-editable pages with metadata fields to store the connecting information – making it also available in Plone REST API for GatsbyJS data source integration.
 
