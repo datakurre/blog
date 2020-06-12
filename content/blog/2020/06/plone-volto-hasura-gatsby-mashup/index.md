@@ -1,6 +1,6 @@
 ---
 title: Static is fast, but CMS still required – a JAMstack story
-date: "2020-06-10T12:00:00Z"
+date: "2020-06-12T12:00:00Z"
 tags: ["open source", "plone", "volto", "hasura", "gatsbyjs", "postgres", "graphql"]
 ---
 
