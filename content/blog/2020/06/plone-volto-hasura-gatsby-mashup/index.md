@@ -41,12 +41,12 @@ The last piece in our puzzle was to connect Volto authored Plone CMS content wit
 1) Plone ships with out-of-the-box customizable structured content types. Without any custom code, we were able to enhance our Volto-editable pages with metadata fields to store the connecting information. This also made the data available in Plone REST API for GatsbyJS data source integration.
 
 ![](plone-dexterity-editor.png)
-
-2) Thanks to Volto user interface being customizable with our own ReactJS code, it was possible to customize the select widget of our primary connecting field to search our Hasura GraphQL API for all the possible value options to be saved with the content page.
+,
+2) Thanks to Volto user interface being customizable with our own ReactJS code, it was possible to customize the select widget of our primary connecting field, to search our Hasura GraphQL API for all the possible value options, to be saved with the content page.
 
 ![](volto-sisu-connector.png)
 
-All this required successful teamwork, not only with a few developers to do the technical implemenation, but also with the dozens of our content editors to create and connect the actual content. That said, we successfully reached our goal:
+All this required successful teamwork, not only with a few developers doing the technical implemenation, but also with the dozens of our content editors creating and connecting the actual content. That said, we successfully reached our goal:
 
 What you see, edit and connect in Volto.
 
