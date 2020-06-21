@@ -58,7 +58,7 @@ The most obvious place for the required integration scripts was our existing Jen
 In addition, our RPA Jenkins workers were already powered by [Nix package manager](https://nixos.org/) to provide all run-time dependencies for the automation scripts. I was told that just using Nix saved up to day in development time, because it provided complete and up-to-date ffmpeg installation for the integration scripts without any additional effort.
 
 
-Let there there be subtitles!
+Let there be subtitles!
 -----------------------------
 
 Welcome our full subtitle automation story:
