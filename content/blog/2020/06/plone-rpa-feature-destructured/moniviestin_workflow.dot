@@ -1,0 +1,12 @@
+digraph "Moniviestin Workflow" {
+rankdir="LR";
+private [shape=box,label="Private",style="filled",fillcolor="#ffcc99"];
+published [shape=box,label="Published",style="filled",fillcolor="#ffcc99"];
+subtitles_pending [shape=box,label="Subtitles pending",style="filled",fillcolor="#ffcc99"];
+published_with_subtitles [shape=box,label="Published with subtitles",style="filled",fillcolor="#ffcc99"];
+private -> published [label="Publish"];
+private -> subtitles_pending [label="Publish with subtitles"];
+published -> subtitles_pending [label="Publish with subtitles"];
+subtitles_pending -> published_with_subtitles [label="Finish"];
+}
+
