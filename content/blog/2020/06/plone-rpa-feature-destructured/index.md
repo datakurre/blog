@@ -18,7 +18,7 @@ From “Publish” to “Publish with subtitles”
 
 To make the end user experience as convenient as possible, the team decided to connect the automated subtitle generation into the current video publication workflow.
 
-In Plone, every content object may be supported with one or more state managing workflows. For example, our video content pages, called “Media pages”, have one workflow for managing the publication process and another one for managing the video encoding process. Because Plone is designed to work as a web publishing platform out-of-the-box, onlyt the publication workflow is exposed for end-users by default.
+In Plone, every content object may be supported with one or more state managing workflows. For example, our video content pages, called “Media pages”, have one workflow for managing the publication process and another one for managing the video encoding process. Because Plone is designed to work as a web publishing platform out-of-the-box, only the publication workflow is exposed for end-users by default.
 
 ![](moniviestin-workflow-menu.png)
 
