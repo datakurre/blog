@@ -6,7 +6,7 @@ tags: ["open source", "rpa", "robocloud", "camunda"]
 
 <!-- ![](tweet-approval-process.png) -->
 
-[Robocorp's RPA suite is now open for everyone](https://robocorp.com/news/start-building-software-robots). Why does it matter? Because their “Robotic Process Automation” solution is based on [Robot Framework](https://robotframework.org). This does not only make Robocorp's solution great from the start, but it should also benefit the whole open-source Robot Framework ecosystem with better [tools](https://github.com/robocorp/robotframework-lsp/), [resources](https://hub.robocorp.com/) and [automation libraries](https://rpaframework.org/).
+[Robocorp's RPA suite is now open for everyone](https://robocorp.com/news/start-building-software-robots). Why does it matter? Because their “Robotic Process Automation” solution is based on [Robot Framework](https://robotframework.org). This does not only make Robocorp's solution great from the start, but it should also benefit the whole open source Robot Framework ecosystem with better [tools](https://github.com/robocorp/robotframework-lsp/), [resources](https://hub.robocorp.com/) and [automation libraries](https://rpaframework.org/).
 
 To try out and learn these new tools, I played with a simple fictional business process...
 
@@ -20,7 +20,7 @@ The simplified story short: “As a community manager, I want to automate tweets
 
 More technically: A robot should regularly fetch new posts from selected blogs and prepare tweets for them. Then a human should be able to select and approve the tweets to be published. Finally, a robot should publish the approved tweets.
 
-Because the process involves a human, Robocorp's tools as such are not enough. But that is not a bad thing. It allowed me to choose the best open-source workflow platform I knew for managing processes with both humans and robots: [Camunda BPM](https://camunda.com/).
+Because the process involves a human, Robocorp's tools as such are not enough. But that is not a bad thing. It allowed me to choose the best open source workflow platform I knew for managing processes with both humans and robots: [Camunda BPM](https://camunda.com/).
 
 Here's the eventual process as designed with [Camunda Modeler](https://camunda.com/download/modeler/):
 
@@ -46,7 +46,7 @@ For my example process, I created three activity packages, with one activity in 
 
 ![](robocloud-activities.png)
 
-I created and deployed my activity packages by using Robocorp's own downloadable IDE, [Robocode Lab](https://hub.robocorp.com/knowledge-base/articles/running-robots-in-robocode-lab/). A fun fact about Robocode Lab: Its main user interface is based on open-source [JupyterLab](https://jupyter.org/), and its Robot Framework integration is [a maintained fork](https://github.com/robocorp/robocode-kernel) of my hobby [Robotkernel](https://github.com/robots-from-jupyter/robotkernel).
+I created and deployed my activity packages by using Robocorp's own downloadable IDE, [Robocode Lab](https://hub.robocorp.com/knowledge-base/articles/running-robots-in-robocode-lab/). A fun fact about Robocode Lab: Its main user interface is based on open source [JupyterLab](https://jupyter.org/), and its Robot Framework integration is [a maintained fork](https://github.com/robocorp/robocode-kernel) of my hobby [Robotkernel](https://github.com/robots-from-jupyter/robotkernel).
 
 ![](robocode-lab.png)
 
@@ -82,7 +82,7 @@ After executions of the second Robocloud process, approved tweets are published:
 
 ![](robot-twitter.png)
 
-Meanwhile, Camunda Cockpit, which is also part of open-source Camunda BPM, gives an overview of all the on-going process instances. A single glance can tell, how many tasks are still pending a human approval, or are already approved and waiting for the acknowledge of success from Robocloud.
+Meanwhile, Camunda Cockpit, which is also part of open source Camunda BPM, gives an overview of all the on-going process instances. A single glance can tell, how many tasks are still pending a human approval, or are already approved and waiting for the acknowledge of success from Robocloud.
 
 ![](camunda-cockpit.png)
 
