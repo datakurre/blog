@@ -12,7 +12,7 @@ Lucky us, thanks to the [new plugin plugin system introduced in Camunda BPM 7.14
 
 ![Minimal Camunda Cockpit History Plugin](camunda-cockpit-history-plugin.gif)
 
-I am sure that [my plugins](https://camunda.com/blog/2020/08/all-new-frontend-plugin-system-for-cockpit-starting-with-camunda-bpm-7-14/) are far cry from the official commercial offerings (which I have never seen or used myself). Yet, I believe that, even in their initial state, they should smooth the experience of getting started with BPMN based ["hyperautomation"](https://en.wikipedia.org/wiki/Robotic_process_automation#Hyperautomation) and Camunda BPM.
+I am sure that [my plugins](https://github.com/datakurre/camunda-cockpit-plugins/) are far cry from the official commercial offerings (which I have never seen or used myself). Yet, I believe that, even in their initial state, they should smooth the experience of getting started with BPMN based ["hyperautomation"](https://en.wikipedia.org/wiki/Robotic_process_automation#Hyperautomation) and Camunda BPM.
 
 
 Try out the plugins
