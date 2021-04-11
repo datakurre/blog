@@ -18,7 +18,7 @@ At the last [Robocon.io](https://robocon.io/), annual Robot Framework community 
 
 Currently, we are still using [Jenkins](https://www.jenkins.io/) for executing Robot Framework and Python automation tasks, most of them being part of [Plone CMS](https://plone.com/) based document workflows. But in the future, I'd fancy to have something more close to our other infrastructure. And that'd mean using [Nomad](https://www.nomadproject.io/):
 
-![With a Python bridge, Camunda could orchestrate Robot Framework bots through Nomad workflow scheduler](concept.png)
+![With a Python bridge, Camunda could orchestrate Robot Framework bots through Nomad workload scheduler](concept.png)
 
 Nomad is a generic workload scheduler, which can deploy and manage both containers and non-containerized code across various environments. Thanks to its first party integration with [Consul](https://www.consul.io/), which we use for service discovery, and [Vault](https://www.vaultproject.io/), which we use for secrets management, Nomad could give our Robot Framework bots access to everything they need for fluent automation.
 
