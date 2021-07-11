@@ -6,13 +6,13 @@ pkgs.stdenv.mkDerivation rec {
     jq
     lcms2
     libpng
-    nodejs-12_x
+    nodejs-14_x
     pkgconfig
     python3
     travis
     zlib
     (yarn.override {
-      nodejs = nodejs-12_x;
+      nodejs = nodejs-14_x;
     })
   ];
   shellHook = ''
