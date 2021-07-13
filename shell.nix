@@ -1,21 +1,19 @@
-{ pkgs ? import <nixpkgs> {} }:
+{ pkgs ? import ./nix {}
+}:
 
-pkgs.stdenv.mkDerivation rec {
-  name = "gatsby-env";
+pkgs.mkShell {
   buildInputs = with pkgs; [
-    jq
-    lcms2
-    libpng
+    bindfs
+    chromium
+    nix
+    gnumake
     nodejs-14_x
-    pkgconfig
-    python3
-    travis
-    zlib
-    (yarn.override {
-      nodejs = nodejs-14_x;
-    })
+    node2nix
+    entr
+    fd
   ];
   shellHook = ''
     export SSL_CERT_FILE=${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt
+    export PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=1
   '';
 }
