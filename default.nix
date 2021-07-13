@@ -53,6 +53,8 @@ pkgs.stdenv.mkDerivation {
     node_modules
     chromium
   ];
+  FONTCONFIG_FILE = "${pkgs.fontconfig.out}/etc/fonts/fonts.conf";
+  FONTCONFIG_PATH = "${pkgs.fontconfig.out}/etc/fonts";
   passthru = {
     inherit node_modules;
   };
