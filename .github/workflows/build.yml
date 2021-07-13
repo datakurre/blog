@@ -13,7 +13,11 @@ jobs:
     - uses: cachix/cachix-action@v8
       with:
         name: datakurre
-    - run: nix-build
+    - run: >
+        nix-build
+        cp -a result build
+        chmod a+w -R build
+        rm result
     - uses: JamesIves/github-pages-deploy-action@4.1.4
       with:
         branch: gh-pages
