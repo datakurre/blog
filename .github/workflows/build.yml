@@ -14,9 +14,9 @@ jobs:
       with:
         name: datakurre
     - run: >
-        nix-build
-        cp -a result build
-        chmod a+w -R build
+        nix-build;
+        cp -a result build;
+        chmod a+w -R build;
         rm result
     - uses: JamesIves/github-pages-deploy-action@4.1.4
       with:
