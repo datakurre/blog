@@ -1,0 +1,56 @@
+diff -Nru a/node_modules/gatsby/dist/services/initialize.js b/node_modules/gatsby/dist/services/initialize.js
+--- a/node_modules/gatsby/dist/services/initialize.js	2020-12-20 10:45:37.504432901 +0200
++++ b/node_modules/gatsby/dist/services/initialize.js	2020-12-20 10:45:37.504432901 +0200
+@@ -13,6 +13,8 @@
+ 
+ var _fsExtra = _interopRequireDefault(require("fs-extra"));
+ 
++var _fs = require("fs");
++
+ var _md5File = _interopRequireDefault(require("md5-file"));
+ 
+ var _crypto = _interopRequireDefault(require("crypto"));
+@@ -483,10 +485,29 @@
+   const srcDir = `${__dirname}/../../cache-dir`;
+   const siteDir = cacheDirectory;
+   const tryRequire = `${__dirname}/../utils/test-require-error.js`;
++  const cacheDirectoryPaths = [];
++  const collectCacheDirectoryPaths = (src, dest) => {
++    cacheDirectoryPaths.push(dest);
++    return true;
++  }
+ 
+   try {
+-    await _fsExtra.default.copy(srcDir, siteDir);
+-    await _fsExtra.default.copy(tryRequire, `${siteDir}/test-require-error.js`);
++    await _fsExtra.default.copy(srcDir, siteDir, {
++      filter: collectCacheDirectoryPaths
++    });
++    await _fsExtra.default.copy(tryRequire, `${siteDir}/test-require-error.js`, {
++      filter: collectCacheDirectoryPaths
++    });
++    // Ensure cacheDirectory to be writable even when srcDir is not
++    for (const cacheDirectoryPath of cacheDirectoryPaths) {
++      try {
++        fs.accessSync(cacheDirectoryPath, _fs.constants.W_OK);
++      } catch (err) {
++        const stat = _fs.statSync(cacheDirectoryPath);
++        const mode = stat.mode | _fs.constants.S_IWUSR;
++        _fs.chmodSync(cacheDirectoryPath, mode);
++      }
++    }
+     await _fsExtra.default.ensureDirSync(`${cacheDirectory}/json`); // Ensure .cache/fragments exists and is empty. We want fragments to be
+     // added on every run in response to data as fragments can only be added if
+     // the data used to create the schema they're dependent on is available.
+diff -Nru a/node_modules/bin-build/index.js b/node_modules/bin-build/index.js
+--- a/node_modules/bin-build/index.js	2020-05-01 06:56:43.704643717 +0300
++++ b/node_modules/bin-build/index.js	2020-05-01 08:44:46.341032141 +0300
+@@ -5,7 +5,7 @@
+ const pMapSeries = require('p-map-series');
+ const tempfile = require('tempfile');
+ 
+-const exec = (cmd, cwd) => pMapSeries(cmd, x => execa.shell(x, {cwd}));
++const exec = (cmd, cwd) => pMapSeries(['source $stdenv/setup && patchShebangs --build $(find . -name "configure")'].concat(cmd), x => execa.shell(x, {cwd, shell: "bash"}));
+ 
+ exports.directory = (dir, cmd) => {
+ 	if (typeof dir !== 'string') {

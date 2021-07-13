@@ -1,0 +1,43 @@
+---
+title: Using Camunda with Robocorp Cloud for orchestrating automation
+date: "2021-07-12T12:00:00Z"
+tags: ["camunda", "robocorp", "robot framework", "python", "rpa", "open source"]
+---
+
+![](./robocloud-queue.png)
+
+[Robocorp Cloud](https://robocorp.com/docs/robocorp-cloud/overview) is a commercial automation bot orchestration service by [Robocorp](https://robocorp.com/). It differentiates itself from the others by promoting license free open source automation solutions based on [Robot Framework](https://robotframework.org/). I am mostly excited by their effort for even better open source Robot Framework ecosystem (e.g. [RPA Framework](https://rpaframework.org/), [Xeus-Robot](https://github.com/jupyter-xeus/xeus-robot) and their [training material](https://robocorp.com/docs/courses). Yet, [every now](https://datakurre.pandala.org/2020/07/camunda-robocloud/) [and then](https://datakurre.pandala.org/2020/07/camunda-run-robocloud-setup/), I try to update my knowledge on how how their main product works.
+
+Right now, most of the [Robocorp products](https://robocorp.com/docs/robocorp-cloud/overview) and [training material](https://robocorp.com/docs/courses) seem focus on building and running software robots. But those robots rarely run in isolation. Instead, they have their own activites to complete in more or less digitized business processes. And that's why I've been working hard to learn [BPMN 2.0](https://en.wikipedia.org/wiki/Business_Process_Model_and_Notation) and [Camunda Platform](https://camunda.com/products/camunda-platform/): I want to be able to smoothly and transparently integrate automation bots with digitized business processes.
+
+While Robocorp Cloud does enforce composition of robots into series of steps in higher level processes, those processes are still only series of steps. And that's a far cry from a process that is possible to model with BPMN.
+
+
+Meet the example process
+------------------------
+
+To showcase Camunda with Robocloud, we need to have an example process showcasing many of the features available when digitizing process with BPMN. Even better if the example is easy enough to understand and fun to try out.
+
+Say hello to my automated **XKCD Comic Search** process:
+
+![](./example-annotated.png)
+
+The process is about searching popular [XKCD comic](https://xkcd.com/) strips matching a given search term, download the results and let a person review, which results to pass forward. It involves a fair amount of BPMN modeling features, including:
+
+* conditions in business process for conditional flow
+* service tasks for delegating tasks to be automated with bots
+* multi-instance activity for triggering 1:N parallel subprocesses
+* BPMN messaging within process tree
+* process level exception handling
+* alternative process specific end states
+* manual user tasks where automation is not possible or done yet
+
+It should be obvious that implementing a custom process model and notation to support features like would be reinventing the wheel when BPMN 2.0 already does all this and more.
+
+And when there is an available open source platform being able to execute models like this, and provide API to delegate external task to bot, why not to try it.
+
+
+Mapping to Robocorp Cloud
+-------------------------
+
+
