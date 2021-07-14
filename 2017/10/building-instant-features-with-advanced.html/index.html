@@ -1,0 +1,574 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.75 'Merriweather','Georgia',serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.9);font-family:'Merriweather','Georgia',serif;font-weight:400;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:Montserrat,sans-serif;font-weight:900;text-rendering:optimizeLegibility;font-size:2.5rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.73286rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.4427rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;letter-spacing:0.140625em;text-transform:uppercase;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.83255rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.75966rem;line-height:1.1;font-style:italic;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}ul{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;list-style:disc;}ol{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:0.85rem;line-height:1.75rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1rem;line-height:1.75rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}blockquote{margin-left:-1.75rem;margin-right:1.75rem;margin-top:0;padding-bottom:0;padding-left:1.42188rem;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1.20112rem;line-height:1.75rem;color:hsla(0,0%,0%,0.59);font-style:italic;border-left:0.32813rem solid hsla(0,0%,0%,0.9);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.75rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.75rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}li > ul{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.75rem / 2);}code{font-size:0.85rem;line-height:1.75rem;}kbd{font-size:0.85rem;line-height:1.75rem;}samp{font-size:0.85rem;line-height:1.75rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.16667rem;padding-right:1.16667rem;padding-top:0.875rem;padding-bottom:calc(0.875rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}blockquote > :last-child{margin-bottom:0;}blockquote cite{font-size:1rem;line-height:1.75rem;color:hsla(0,0%,0%,0.9);font-weight:400;}blockquote cite:before{content:"— ";}ul,ol{margin-left:0;}@media only screen and (max-width:480px){ul,ol{margin-left:1.75rem;}blockquote{margin-left:-1.3125rem;margin-right:0;padding-left:0.98438rem;}}h1,h2,h3,h4,h5,h6{margin-top:3.5rem;}a{box-shadow:0 1px 0 0 currentColor;color:#007acc;text-decoration:none;}a:hover,a:active{box-shadow:none;}mark,ins{background:#007acc;color:white;padding:0.10938rem 0.21875rem;text-decoration:none;}a.gatsby-resp-image-link{box-shadow:none;}div.mermaid svg{height:auto !important;}</style><style data-href="/styles.354f277622799d9c6183.css" data-identity="gatsby-global-css">@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/static/montserrat-latin-100-8d7d79679b70dbe27172b6460e7a7910.woff2) format("woff2"),url(/static/montserrat-latin-100-ec38980a9e0119a379e2a9b3dbb1901a.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/static/montserrat-latin-100italic-e279051046ba1286706adc886cf1c96b.woff2) format("woff2"),url(/static/montserrat-latin-100italic-3b325a3173c8207435cd1b76e19bf501.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/static/montserrat-latin-200-9d266fbbfa6cab7009bd56003b1eeb67.woff2) format("woff2"),url(/static/montserrat-latin-200-2d8ba08717110d27122e54c34b8a5798.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/static/montserrat-latin-200italic-6e5b3756583bb2263eb062eae992735e.woff2) format("woff2"),url(/static/montserrat-latin-200italic-a0d6f343e4b536c582926255367a57da.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/static/montserrat-latin-300-00b3e893aab5a8fd632d6342eb72551a.woff2) format("woff2"),url(/static/montserrat-latin-300-ea303695ceab35f17e7d062f30e0173b.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/static/montserrat-latin-300italic-56f34ea368f6aedf89583d444bbcb227.woff2) format("woff2"),url(/static/montserrat-latin-300italic-54b0bf2c8c4c12ffafd803be2466a790.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/static/montserrat-latin-400-b71748ae4f80ec8c014def4c5fa8688b.woff2) format("woff2"),url(/static/montserrat-latin-400-0659a9f4e90db5cf51b50d005bff1e41.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/static/montserrat-latin-400italic-6eed6b4cbb809c6efc7aa7ddad6dbe3e.woff2) format("woff2"),url(/static/montserrat-latin-400italic-7583622cfde30ae49086d18447ab28e7.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/static/montserrat-latin-500-091b209546e16313fd4f4fc36090c757.woff2) format("woff2"),url(/static/montserrat-latin-500-edd311588712a96bbf435fad264fff62.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/static/montserrat-latin-500italic-c90ced68b46050061d1a41842d6dfb43.woff2) format("woff2"),url(/static/montserrat-latin-500italic-5146cbfe02b1deea5dffea27a5f2f998.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/static/montserrat-latin-600-0480d2f8a71f38db8633b84d8722e0c2.woff2) format("woff2"),url(/static/montserrat-latin-600-b77863a375260a05dd13f86a1cee598f.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/static/montserrat-latin-600italic-cf46ffb11f3a60d7df0567f8851a1d00.woff2) format("woff2"),url(/static/montserrat-latin-600italic-c4fcfeeb057724724097167e57bd7801.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/static/montserrat-latin-700-7dbcc8a5ea2289d83f657c25b4be6193.woff2) format("woff2"),url(/static/montserrat-latin-700-99271a835e1cae8c76ef8bba99a8cc4e.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/static/montserrat-latin-700italic-c41ad6bdb4bd504a843d546d0a47958d.woff2) format("woff2"),url(/static/montserrat-latin-700italic-6779372f04095051c62ed36bc1dcc142.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/static/montserrat-latin-800-db9a3e0ba7eaea32e5f55328ace6cf23.woff2) format("woff2"),url(/static/montserrat-latin-800-4e3c615967a2360f5db87d2f0fd2456f.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/static/montserrat-latin-800italic-bf45bfa14805969eda318973947bc42b.woff2) format("woff2"),url(/static/montserrat-latin-800italic-fe82abb0bcede51bf724254878e0c374.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/static/montserrat-latin-900-e66c7edc609e24bacbb705175669d814.woff2) format("woff2"),url(/static/montserrat-latin-900-8211f418baeb8ec880b80ba3c682f957.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/static/montserrat-latin-900italic-4454c775e48152c1a72510ceed3603e2.woff2) format("woff2"),url(/static/montserrat-latin-900italic-efcaa0f6a82ee0640b83a0916e6e8d68.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:normal;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/static/merriweather-latin-300-fc117160c69a8ea0851b26dd14748ee4.woff2) format("woff2"),url(/static/merriweather-latin-300-58b18067ebbd21fda77b67e73c241d3b.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:italic;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/static/merriweather-latin-300italic-fe29961474f8dbf77c0aa7b9a629e4bc.woff2) format("woff2"),url(/static/merriweather-latin-300italic-23c3f1f88683618a4fb8d265d33d383a.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:normal;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/static/merriweather-latin-400-d9479e8023bef9cbd9bf8d6eabd6bf36.woff2) format("woff2"),url(/static/merriweather-latin-400-040426f99ff6e00b86506452e0d1f10b.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:italic;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/static/merriweather-latin-400italic-2de7bfeaf08fb03d4315d49947f062f7.woff2) format("woff2"),url(/static/merriweather-latin-400italic-79db67aca65f5285964ab332bd65f451.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:normal;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/static/merriweather-latin-700-4b08e01d805fa35d7bf777f1b24314ae.woff2) format("woff2"),url(/static/merriweather-latin-700-22fb8afba4ab1f093b6ef9e28a9b6e92.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:italic;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/static/merriweather-latin-700italic-cd92541b177652fffb6e3b952f1c33f1.woff2) format("woff2"),url(/static/merriweather-latin-700italic-f87f3d87cea0dd0979bfc8ac9ea90243.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:normal;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/static/merriweather-latin-900-f813fc6a4bee46eda5224ac7ebf1b7be.woff2) format("woff2"),url(/static/merriweather-latin-900-5d4e42cb44410674acd99153d57df032.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:italic;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/static/merriweather-latin-900italic-b7901d85486871c1779c0e93ddd85656.woff2) format("woff2"),url(/static/merriweather-latin-900italic-9647f9fdab98756989a8a5550eb205c3.woff) format("woff")}.solarized.base03{color:#002b36}.solarized.base02{color:#073642}.solarized.base01{color:#586e75}.solarized.base00{color:#657b83}.solarized.base0{color:#839496}.solarized.base1{color:#93a1a1}.solarized.base2{color:#eee8d5}.solarized.base3{color:#fdf6e3}.solarized.solar-yellow{color:#b58900}.solarized.solar-orange{color:#cb4b16}.solarized.solar-red{color:#dc322f}.solarized.solar-magenta{color:#d33682}.solarized.solar-violet{color:#6c71c4}.solarized.solar-blue{color:#268bd2}.solarized.solar-cyan{color:#2aa198}.solarized.solar-green{color:#859900}.cm-s-solarized{color-profile:sRGB;rendering-intent:auto;line-height:1.45em}.cm-s-solarized.cm-s-dark{background-color:#002b36;color:#839496;text-shadow:#002b36 0 1px}.cm-s-solarized.cm-s-light{background-color:#fdf6e3;color:#657b83;text-shadow:#eee8d5 0 1px}.cm-s-solarized .CodeMirror-widget{text-shadow:none}.cm-s-solarized .cm-header{color:#586e75}.cm-s-solarized .cm-quote{color:#93a1a1}.cm-s-solarized .cm-keyword{color:#cb4b16}.cm-s-solarized .cm-atom,.cm-s-solarized .cm-number{color:#d33682}.cm-s-solarized .cm-def{color:#2aa198}.cm-s-solarized .cm-variable{color:#839496}.cm-s-solarized .cm-variable-2{color:#b58900}.cm-s-solarized .cm-type,.cm-s-solarized .cm-variable-3{color:#6c71c4}.cm-s-solarized .cm-property{color:#2aa198}.cm-s-solarized .cm-operator{color:#6c71c4}.cm-s-solarized .cm-comment{color:#586e75;font-style:italic}.cm-s-solarized .cm-string{color:#859900}.cm-s-solarized .cm-string-2{color:#b58900}.cm-s-solarized .cm-meta{color:#859900}.cm-s-solarized .cm-qualifier{color:#b58900}.cm-s-solarized .cm-builtin{color:#d33682}.cm-s-solarized .cm-bracket{color:#cb4b16}.cm-s-solarized .CodeMirror-matchingbracket{color:#859900}.cm-s-solarized .CodeMirror-nonmatchingbracket{color:#dc322f}.cm-s-solarized .cm-tag{color:#93a1a1}.cm-s-solarized .cm-attribute{color:#2aa198}.cm-s-solarized .cm-hr{border-top:1px solid #586e75;color:transparent;display:block}.cm-s-solarized .cm-link{color:#93a1a1;cursor:pointer}.cm-s-solarized .cm-special{color:#6c71c4}.cm-s-solarized .cm-em{color:#999;text-decoration:underline;-webkit-text-decoration-style:dotted;text-decoration-style:dotted}.cm-s-solarized .cm-error,.cm-s-solarized .cm-invalidchar{border-bottom:1px dotted #dc322f;color:#586e75}.cm-s-solarized.cm-s-dark div.CodeMirror-selected{background:#073642}.cm-s-solarized.cm-s-dark.CodeMirror ::selection{background:rgba(7,54,66,.99)}.cm-s-dark .CodeMirror-line>span::-moz-selection,.cm-s-dark .CodeMirror-line>span>span::-moz-selection,.cm-s-solarized.cm-s-dark .CodeMirror-line::-moz-selection{background:rgba(7,54,66,.99)}.cm-s-solarized.cm-s-light div.CodeMirror-selected{background:#eee8d5}.cm-s-light .CodeMirror-line>span::selection,.cm-s-light .CodeMirror-line>span>span::selection,.cm-s-solarized.cm-s-light .CodeMirror-line::selection{background:#eee8d5}.cm-s-ligh .CodeMirror-line>span::-moz-selection,.cm-s-ligh .CodeMirror-line>span>span::-moz-selection,.cm-s-solarized.cm-s-light .CodeMirror-line::-moz-selection{background:#eee8d5}.cm-s-solarized.CodeMirror{box-shadow:inset 7px 0 12px -6px #000}.cm-s-solarized .CodeMirror-gutters{border-right:0}.cm-s-solarized.cm-s-dark .CodeMirror-gutters{background-color:#073642}.cm-s-solarized.cm-s-dark .CodeMirror-linenumber{color:#586e75;text-shadow:#021014 0 -1px}.cm-s-solarized.cm-s-light .CodeMirror-gutters{background-color:#eee8d5}.cm-s-solarized.cm-s-light .CodeMirror-linenumber{color:#839496}.cm-s-solarized .CodeMirror-linenumber{padding:0 5px}.cm-s-solarized .CodeMirror-guttermarker-subtle{color:#586e75}.cm-s-solarized.cm-s-dark .CodeMirror-guttermarker{color:#ddd}.cm-s-solarized.cm-s-light .CodeMirror-guttermarker{color:#cb4b16}.cm-s-solarized .CodeMirror-gutter .CodeMirror-gutter-text{color:#586e75}.cm-s-solarized .CodeMirror-cursor{border-left:1px solid #819090}.cm-s-solarized.cm-s-light.cm-fat-cursor .CodeMirror-cursor{background:#7e7}.cm-s-solarized.cm-s-light .cm-animate-fat-cursor{background-color:#7e7}.cm-s-solarized.cm-s-dark.cm-fat-cursor .CodeMirror-cursor{background:#586e75}.cm-s-solarized.cm-s-dark .cm-animate-fat-cursor{background-color:#586e75}.cm-s-solarized.cm-s-dark .CodeMirror-activeline-background{background:hsla(0,0%,100%,.06)}.cm-s-solarized.cm-s-light .CodeMirror-activeline-background{background:rgba(0,0,0,.06)}ol,ul{margin-left:1em}.gatsby-highlight{background:#fdfaf6;border-bottom:1px solid #eee;border-top:1px solid #eee;margin-bottom:1.75rem;overflow-x:auto;padding:1ex 1em}.gatsby-highlight pre{margin-bottom:0}</style><meta name="generator" content="Gatsby 3.9.1"/><link rel="alternate" type="application/rss+xml" title="datakurre" href="/rss.xml"/><link rel="alternate" type="application/rss+xml" title="datakurre on &quot;plone&quot;" href="/feeds/posts/default/-/plone"/><link rel="icon" href="/favicon-32x32.png?v=b12376b9b88c2b74e77175e369294c9a" type="image/png"/><link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous"/><meta name="theme-color" content="#663399"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=b12376b9b88c2b74e77175e369294c9a"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=b12376b9b88c2b74e77175e369294c9a"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=b12376b9b88c2b74e77175e369294c9a"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=b12376b9b88c2b74e77175e369294c9a"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=b12376b9b88c2b74e77175e369294c9a"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=b12376b9b88c2b74e77175e369294c9a"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=b12376b9b88c2b74e77175e369294c9a"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=b12376b9b88c2b74e77175e369294c9a"/><title data-react-helmet="true">Building instant features with advanced Plone themes | Asko Soukka</title><meta data-react-helmet="true" name="description" content="Plone, ”The Ultimate Enterprise CMS”, ships with
+built-in batteries for building sophisticated content management
+solutions without writing a single line of new…"/><meta data-react-helmet="true" property="og:title" content="Building instant features with advanced Plone themes"/><meta data-react-helmet="true" property="og:description" content="Plone, ”The Ultimate Enterprise CMS”, ships with
+built-in batteries for building sophisticated content management
+solutions without writing a single line of new…"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="Asko Soukka"/><meta data-react-helmet="true" name="twitter:title" content="Building instant features with advanced Plone themes"/><meta data-react-helmet="true" name="twitter:description" content="Plone, ”The Ultimate Enterprise CMS”, ships with
+built-in batteries for building sophisticated content management
+solutions without writing a single line of new…"/><link as="script" rel="preload" href="/webpack-runtime-ea6d213926e94492350b.js"/><link as="script" rel="preload" href="/framework-b6445d848003563fdaa2.js"/><link as="script" rel="preload" href="/app-7d19a9e92ffd4161f4ae.js"/><link as="script" rel="preload" href="/commons-c942f6cd8444428ac886.js"/><link as="script" rel="preload" href="/component---src-templates-blog-post-js-b8ff09bc5f9b13acaa62.js"/><link as="fetch" rel="preload" href="/page-data/2017/10/building-instant-features-with-advanced.html/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/63159454.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div style="margin-left:auto;margin-right:auto;max-width:42rem;padding:2.625rem 1.3125rem"><header><h3 style="font-family:Montserrat, sans-serif;margin-top:0"><a style="box-shadow:none;text-decoration:none;color:inherit" href="/">Asko Soukka</a></h3></header><main><h1 style="margin-top:1.75rem;margin-bottom:0">Building instant features with advanced Plone themes</h1><p style="font-size:0.83255rem;line-height:1.75rem;display:block;margin-bottom:1.75rem">October 23, 2017</p><div><p>Plone, ”<a href="https://plone.com/">The Ultimate Enterprise CMS</a>”, ships with
+built-in batteries for building sophisticated content management
+solutions without writing a single line of new Python code. For example,
+a fresh installation of Plone allows to build custom structured content
+types with custom HTML views, define custom state based workflows,
+customize various user interface elements, and finish the user
+experience by configuring custom event triggered content rules to react
+on users’ actions. Not to mention the Diazo based theming tool, which
+allows unlimited tweaking of the resulting HTML.</p>
+<p><strong>All this by just clicking and typing things through-the-web (TTW) with
+your browser.</strong></p>
+<p>Yet, still some say that Plone is a difficult to customize and extend.</p>
+<p>The flip side of customizing Plone TTW is that it’s way too easy to
+lost track of your customizations. That adds to technical debt and
+therefore cost of maintaining those customizations over years and
+upgrades to future Plone releases. The suggested solution to avoid those
+problems has long been to avoid TTW customizations altogether, in favor
+of customizing everything using “buildout-installed file-system Python
+packages”. But that makes customizing Plone feel unnecessary difficult
+and technical.</p>
+<p>At <a href="https://2017.ploneconf.org/">Plone Conference 2017</a> <a href="https://github.com/datakurre/ploneconf2017">I gave a
+talk</a>, where I showed an
+alternative way for this: if it was possible to bundle all those
+customizations together, for example in TTW managed theme, maintaining
+those customizations would no longer be the blocker.</p>
+<p>Customizing Plone could be made easy again.</p>
+<h2>Requirements</h2>
+<p>Technically, Plone has supported exporting and importing most of the
+possible TTW customizations for more than ten years, but the user
+interface for that has been cumbersomely technical. Finally, Plone 4.1
+introduced a new <a href="http://docs.diazo.org/">Diazo</a> based theming feature
+with easy to use theming control panel and theme editor. And now, with
+only a couple of extra packages in your Plone setup, Plone theming
+features get super powers to apply site customizations with any theme.</p>
+<p>To complete the following example, you need a Plone site with these two
+extra Python packages installed:
+<a href="https://pypi.python.org/pypi/collective.themesitesetup">collective.themesitesetup</a>
+and
+<a href="https://pypi.python.org/pypi/collective.themefragments">collective.themefragments</a>.</p>
+<p>As usual, those can be installed by customizing and running buildout</p>
+<div class="gatsby-highlight" data-language="properties">
+      <pre class=" cm-s-solarized"><code><span class="cm-header">[instance]</span><span>
+</span><span class="cm-def">eggs </span><span>=</span><span>
+</span><span class="cm-def">    ...</span><span>
+</span><span class="cm-def">    collective.themesitesetup</span><span>
+</span><span class="cm-def">    collective.themefragments</span></code></pre>
+    </div>
+<p>or you can try out with the official Plone docker image:</p>
+<div class="gatsby-highlight" data-language="bash">
+      <pre class=" cm-s-solarized"><code><span>$ docker run -p 8080:8080 -e PLONE_ADDONS="collective.themesitesetup collective.themefragments" plone fg</span></code></pre>
+    </div>
+<h2>Case of the day: Wall of images</h2>
+<p>As an example feature, we build a simple folder view that displays a
+list of varying size images in an optimal grid layout using popular
+<a href="https://masonry.desandro.com/">Masonry.js</a> layout library, with help an
+another library called
+<a href="https://imagesloaded.desandro.com/">imagesLoaded</a>.</p>
+<p>To summarize, building that view requires:</p>
+<ul>
+<li>Providing JS bundles for both Masonry and imagesLoaded</li>
+<li>Registering those bundles into Plone resource registry</li>
+<li>A folder view template that renders images in that folder</li>
+<li>Way to configure that view on a folder</li>
+<li>JS code to initialize Masonry layout on that view</li>
+</ul>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 320px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/b60945a7eee3aefafd38861d771d873c/72799/three-columns.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 96.62162162162163%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,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'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="image"
+        title="image"
+        src="/static/b60945a7eee3aefafd38861d771d873c/72799/three-columns.png"
+        srcset="/static/b60945a7eee3aefafd38861d771d873c/12f09/three-columns.png 148w,
+/static/b60945a7eee3aefafd38861d771d873c/e4a3f/three-columns.png 295w,
+/static/b60945a7eee3aefafd38861d771d873c/72799/three-columns.png 320w"
+        sizes="(max-width: 320px) 100vw, 320px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<h2>Getting started with theming</h2>
+<p>To get a fast start, we create a dummy theme base named <code>demotheme</code> that
+simply re-uses styles and rules from Barceloneta, the default theme of
+Plone 5. Your theme base should contain the following files:</p>
+<ul>
+<li><code>./index.html</code></li>
+<li><code>./rules.xml</code></li>
+<li><code>./scripts.js</code></li>
+<li><code>./styles.css</code></li>
+<li><code>./manifest.cfg</code></li>
+</ul>
+<p>At first, <code>./index.html</code> is just a copy of the same theme file from
+Barceloneta:</p>
+<div class="gatsby-highlight" data-language="html">
+      <pre class=" cm-s-solarized"><code><span>&lt;!doctype html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Plone Theme&lt;/title&gt;
+    &lt;link rel="shortcut icon" type="image/x-icon"
+          href="++theme++barceloneta/barceloneta-favicon.ico" /&gt;
+    &lt;link rel="apple-touch-icon"
+          href="++theme++barceloneta/barceloneta-apple-touch-icon.png" /&gt;
+    &lt;link rel="apple-touch-icon-precomposed" sizes="144x144"
+          href="++theme++barceloneta/barceloneta-apple-touch-icon-144x144-precomposed.png" /&gt;
+    &lt;link rel="apple-touch-icon-precomposed" sizes="114x114"
+          href="++theme++barceloneta/barceloneta-apple-touch-icon-114x114-precomposed.png" /&gt;
+    &lt;link rel="apple-touch-icon-precomposed" sizes="72x72"
+          href="++theme++barceloneta/barceloneta-apple-touch-icon-72x72-precomposed.png" /&gt;
+    &lt;link rel="apple-touch-icon-precomposed" sizes="57x57"
+          href="++theme++barceloneta/barceloneta-apple-touch-icon-57x57-precomposed.png" /&gt;
+    &lt;link rel="apple-touch-icon-precomposed"
+          href="++theme++barceloneta/barceloneta-apple-touch-icon-precomposed.png" /&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;section id="portal-toolbar"&gt;
+    &lt;/section&gt;
+    &lt;div class="outer-wrapper"&gt;
+      &lt;header id="content-header"&gt;
+        &lt;div class="container"&gt;
+          &lt;header id="portal-top"&gt;
+          &lt;/header&gt;
+          &lt;div id="anonymous-actions"&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/header&gt;
+      &lt;div id="mainnavigation-wrapper"&gt;
+        &lt;div id="mainnavigation"&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div id="hero" class="principal"&gt;
+        &lt;div class="container"&gt;
+          &lt;div class="gigantic"&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div id="above-content-wrapper"&gt;
+          &lt;div id="above-content"&gt;
+          &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="container"&gt;
+        &lt;div class="row"&gt;
+          &lt;aside id="global_statusmessage"&gt;&lt;/aside&gt;
+        &lt;/div&gt;
+        &lt;main id="main-container" class="row row-offcanvas row-offcanvas-right"&gt;
+          &lt;div id="column1-container"&gt;
+          &lt;/div&gt;
+          &lt;div id="content-container"&gt;
+          &lt;/div&gt;
+          &lt;div id="column2-container"&gt;
+          &lt;/div&gt;
+        &lt;/main&gt;&lt;!--/row--&gt;
+      &lt;/div&gt;&lt;!--/container--&gt;
+    &lt;/div&gt; &lt;!--/outer-wrapper --&gt;
+    &lt;footer id="portal-footer-wrapper"&gt;
+      &lt;div class="container" id="portal-footer"&gt;&lt;/div&gt;
+    &lt;/footer&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</span></code></pre>
+    </div>
+<p>Then, <code>./rules.xml</code> does nothing more than includes the existing rules
+directly from the always available Barceloneta theme:</p>
+<div class="gatsby-highlight" data-language="xml">
+      <pre class=" cm-s-solarized"><code><span class="cm-meta">&lt;?xml</span><span> </span><span class="cm-meta">version="1.0" encoding="UTF-8"?&gt;</span><span>
+</span><span class="cm-tag bracket">&lt;</span><span class="cm-tag">rules</span><span>
+</span><span>    </span><span class="cm-attribute">xmlns</span><span>=</span><span class="cm-string">"http://namespaces.plone.org/diazo"</span><span>
+</span><span>    </span><span class="cm-attribute">xmlns:css</span><span>=</span><span class="cm-string">"http://namespaces.plone.org/diazo/css"</span><span>
+</span><span>    </span><span class="cm-attribute">xmlns:xsl</span><span>=</span><span class="cm-string">"http://www.w3.org/1999/XSL/Transform"</span><span>
+</span><span>    </span><span class="cm-attribute">xmlns:xi</span><span>=</span><span class="cm-string">"http://www.w3.org/2001/XInclude"</span><span class="cm-tag bracket">&gt;</span><span>
+
+</span><span>  </span><span class="cm-comment">&lt;!-- Import Barceloneta rules --&gt;</span><span>
+</span><span>  </span><span class="cm-tag bracket">&lt;</span><span class="cm-tag">xi:include</span><span> </span><span class="cm-attribute">href</span><span>=</span><span class="cm-string">"++theme++barceloneta/rules.xml"</span><span> </span><span class="cm-tag bracket">/&gt;</span><span>
+
+</span><span class="cm-tag bracket">&lt;/</span><span class="cm-tag">rules</span><span class="cm-tag bracket">&gt;</span></code></pre>
+    </div>
+<p>File <code>./scripts.js</code> starts empty and file <code>./styles.css</code> with the
+following content to reuse styles from Barceloneta theme:</p>
+<div class="gatsby-highlight" data-language="css">
+      <pre class=" cm-s-solarized"><code><span class="cm-def">@import</span><span> </span><span class="cm-string">"../++theme++barceloneta/less/barceloneta-compiled.css"</span><span>;</span><span>
+
+</span><span class="cm-qualifier">.plone-breadcrumb</span><span> </span><span class="cm-tag">ol</span><span> {</span><span>
+</span><span>    </span><span class="cm-property">padding</span><span>: </span><span class="cm-number">18px</span><span> </span><span class="cm-number">0</span><span>;</span><span>
+</span><span>    </span><span class="cm-property">font-size</span><span>: </span><span class="cm-number">14px</span><span>;</span><span>
+</span><span>}</span></code></pre>
+    </div>
+<p>They both should be registered as the implicit “theme bundle” (or
+“Diazo-bundle”) in <code>./manifest.cfg</code> by setting <code>production-css</code> and
+<code>production-js</code> attributes as follows:</p>
+<div class="gatsby-highlight" data-language="properties">
+      <pre class=" cm-s-solarized"><code><span class="cm-header">[theme]</span><span>
+</span><span class="cm-def">title </span><span>=</span><span class="cm-quote"> Demo Theme</span><span>
+</span><span class="cm-def">description </span><span>=</span><span>
+</span><span class="cm-def">production-css </span><span>=</span><span class="cm-quote"> /++theme++demotheme/styles.css</span><span>
+</span><span class="cm-def">production-js </span><span>=</span><span class="cm-quote"> /++theme++demotheme/scripts.js</span></code></pre>
+    </div>
+<p>Saving these files and enabling the theme should already give the basic
+Barceloneta experience. But let’s continue to extend it with our
+special feature…</p>
+<h2>Registering Masonry.js bundles</h2>
+<p>Plone 5 resource registry supports many ways to configure new front end
+resources. We go with the easy way by simply downloading the 3rd party
+JS distributions and registering them mostly as such for Plone with the
+following steps:</p>
+<ol>
+<li>
+<p>Create folder <code>./bundles</code> into theme to keep the required front-end
+bundles separate from the other theme files</p>
+</li>
+<li>
+<p>Download <a href="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js">the official minified Masonry.js
+distribution</a>
+and save it as <code>./bundles/masonry.pkgd.min.js</code></p>
+</li>
+<li>
+<p>Download <a href="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js">the official minified imagesLoaded
+distribution</a>
+and save it as <code>./bundles/imagesloaded.pkgd.min.js</code></p>
+</li>
+<li>
+<p>Edit both of the previous files by adding line</p>
+<div class="gatsby-highlight" data-language="js">
+      <pre class=" cm-s-solarized"><code><span>(function() { var require, define;</span></code></pre>
+    </div>
+<p>into the beginning of the file, and line</p>
+<div class="gatsby-highlight" data-language="js">
+      <pre class=" cm-s-solarized"><code><span>})();</span></code></pre>
+    </div>
+<p>into the end of the file. These are required for any “AMD packaged”
+JS distribution to work in Plone’s Require.js based JS environment.</p>
+</li>
+<li>
+<p>Add two empty files <code>./bundles/masonry.pkgd.min.css</code> and
+<code>./bundles/imagesloaded.pkgd.min.css</code> for pleasing the Plone
+resource registry in the next step.</p>
+</li>
+<li>
+<p>Create folder <code>./install</code> with file <code>./install/registry.xml</code> with
+the following contents to register the above bundles into Plone
+resource registry:</p>
+<div class="gatsby-highlight" data-language="xml">
+      <pre class=" cm-s-solarized"><code><span class="cm-meta">&lt;?xml</span><span> </span><span class="cm-meta">version="1.0"?&gt;</span><span>
+</span><span class="cm-tag bracket">&lt;</span><span class="cm-tag">registry</span><span class="cm-tag bracket">&gt;</span><span>
+</span><span>  </span><span class="cm-tag bracket">&lt;</span><span class="cm-tag">records</span><span> </span><span class="cm-attribute">prefix</span><span>=</span><span class="cm-string">"plone.bundles/imagesloaded-js"</span><span>
+</span><span>           </span><span class="cm-attribute">interface</span><span>=</span><span class="cm-string">"Products.CMFPlone.interfaces.IBundleRegistry"</span><span class="cm-tag bracket">&gt;</span><span>
+</span><span>    </span><span class="cm-tag bracket">&lt;</span><span class="cm-tag">value</span><span> </span><span class="cm-attribute">key</span><span>=</span><span class="cm-string">"depends"</span><span class="cm-tag bracket">&gt;</span><span>plone</span><span class="cm-tag bracket">&lt;/</span><span class="cm-tag">value</span><span class="cm-tag bracket">&gt;</span><span>
+</span><span>    </span><span class="cm-tag bracket">&lt;</span><span class="cm-tag">value</span><span> </span><span class="cm-attribute">key</span><span>=</span><span class="cm-string">"jscompilation"</span><span class="cm-tag bracket">&gt;</span><span>++theme++demotheme/bundles/imagesloaded.pkgd.min.js</span><span class="cm-tag bracket">&lt;/</span><span class="cm-tag">value</span><span class="cm-tag bracket">&gt;</span><span>
+</span><span>    </span><span class="cm-tag bracket">&lt;</span><span class="cm-tag">value</span><span> </span><span class="cm-attribute">key</span><span>=</span><span class="cm-string">"csscompilation"</span><span class="cm-tag bracket">&gt;</span><span>++theme++demotheme/bundles/imagesloaded.pkgd.min.css</span><span class="cm-tag bracket">&lt;/</span><span class="cm-tag">value</span><span class="cm-tag bracket">&gt;</span><span>
+</span><span>    </span><span class="cm-tag bracket">&lt;</span><span class="cm-tag">value</span><span> </span><span class="cm-attribute">key</span><span>=</span><span class="cm-string">"last_compilation"</span><span class="cm-tag bracket">&gt;</span><span>2017-10-06 00:00:00</span><span class="cm-tag bracket">&lt;/</span><span class="cm-tag">value</span><span class="cm-tag bracket">&gt;</span><span>
+</span><span>    </span><span class="cm-tag bracket">&lt;</span><span class="cm-tag">value</span><span> </span><span class="cm-attribute">key</span><span>=</span><span class="cm-string">"compile"</span><span class="cm-tag bracket">&gt;</span><span>False</span><span class="cm-tag bracket">&lt;/</span><span class="cm-tag">value</span><span class="cm-tag bracket">&gt;</span><span>
+</span><span>    </span><span class="cm-tag bracket">&lt;</span><span class="cm-tag">value</span><span> </span><span class="cm-attribute">key</span><span>=</span><span class="cm-string">"enabled"</span><span class="cm-tag bracket">&gt;</span><span>True</span><span class="cm-tag bracket">&lt;/</span><span class="cm-tag">value</span><span class="cm-tag bracket">&gt;</span><span>
+</span><span>  </span><span class="cm-tag bracket">&lt;/</span><span class="cm-tag">records</span><span class="cm-tag bracket">&gt;</span><span>
+</span><span>  </span><span class="cm-tag bracket">&lt;</span><span class="cm-tag">records</span><span> </span><span class="cm-attribute">prefix</span><span>=</span><span class="cm-string">"plone.bundles/masonry-js"</span><span>
+</span><span>           </span><span class="cm-attribute">interface</span><span>=</span><span class="cm-string">"Products.CMFPlone.interfaces.IBundleRegistry"</span><span class="cm-tag bracket">&gt;</span><span>
+</span><span>    </span><span class="cm-tag bracket">&lt;</span><span class="cm-tag">value</span><span> </span><span class="cm-attribute">key</span><span>=</span><span class="cm-string">"depends"</span><span class="cm-tag bracket">&gt;</span><span>imagesloaded-js</span><span class="cm-tag bracket">&lt;/</span><span class="cm-tag">value</span><span class="cm-tag bracket">&gt;</span><span>
+</span><span>    </span><span class="cm-tag bracket">&lt;</span><span class="cm-tag">value</span><span> </span><span class="cm-attribute">key</span><span>=</span><span class="cm-string">"jscompilation"</span><span class="cm-tag bracket">&gt;</span><span>++theme++demotheme/bundles/masonry.pkgd.min.js</span><span class="cm-tag bracket">&lt;/</span><span class="cm-tag">value</span><span class="cm-tag bracket">&gt;</span><span>
+</span><span>    </span><span class="cm-tag bracket">&lt;</span><span class="cm-tag">value</span><span> </span><span class="cm-attribute">key</span><span>=</span><span class="cm-string">"csscompilation"</span><span class="cm-tag bracket">&gt;</span><span>++theme++demotheme/bundles/masonry.pkgd.min.css</span><span class="cm-tag bracket">&lt;/</span><span class="cm-tag">value</span><span class="cm-tag bracket">&gt;</span><span>
+</span><span>    </span><span class="cm-tag bracket">&lt;</span><span class="cm-tag">value</span><span> </span><span class="cm-attribute">key</span><span>=</span><span class="cm-string">"last_compilation"</span><span class="cm-tag bracket">&gt;</span><span>2017-10-06 00:00:00</span><span class="cm-tag bracket">&lt;/</span><span class="cm-tag">value</span><span class="cm-tag bracket">&gt;</span><span>
+</span><span>    </span><span class="cm-tag bracket">&lt;</span><span class="cm-tag">value</span><span> </span><span class="cm-attribute">key</span><span>=</span><span class="cm-string">"compile"</span><span class="cm-tag bracket">&gt;</span><span>False</span><span class="cm-tag bracket">&lt;/</span><span class="cm-tag">value</span><span class="cm-tag bracket">&gt;</span><span>
+</span><span>    </span><span class="cm-tag bracket">&lt;</span><span class="cm-tag">value</span><span> </span><span class="cm-attribute">key</span><span>=</span><span class="cm-string">"enabled"</span><span class="cm-tag bracket">&gt;</span><span>True</span><span class="cm-tag bracket">&lt;/</span><span class="cm-tag">value</span><span class="cm-tag bracket">&gt;</span><span>
+</span><span>  </span><span class="cm-tag bracket">&lt;/</span><span class="cm-tag">records</span><span class="cm-tag bracket">&gt;</span><span>
+</span><span class="cm-tag bracket">&lt;/</span><span class="cm-tag">registry</span><span class="cm-tag bracket">&gt;</span></code></pre>
+    </div>
+</li>
+</ol>
+<p>Now, once edited theme files are saved and the theme re-activated or
+updated, thanks to <strong>collective.themesitesetup</strong>, every response from
+our site should include our these new resources.</p>
+<h2>Creating a folder view with list of images</h2>
+<p>Creating a view with <strong>collective.themefragments</strong> is similar for
+writing any view template for Plone. Simply add a folder <code>./fragments</code>
+into your theme with our example view <code>./fragments/wall_of_images.pt</code>
+with the following contents:</p>
+<div class="gatsby-highlight" data-language="html">
+      <pre class=" cm-s-solarized"><code><span>&lt;html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="plone"&gt;
+&lt;body&gt;
+&lt;metal:main fill-slot="main"&gt;
+  &lt;metal:content-core define-macro="content-core"&gt;
+    &lt;div class="wall-of-images container-fluid"
+         tal:define="items context/@@contentlisting"&gt;
+      &lt;tal:image tal:repeat="item items"&gt;
+        &lt;img tal:define="obj item/getObject;
+                         scale_func obj/@@images;
+                         scaled_image python:scale_func.scale('image', scale='preview')"
+             tal:replace="structure python:scaled_image.tag()"
+             tal:on-error="string:error" /&gt;
+      &lt;/tal:image&gt;
+    &lt;/div&gt;
+  &lt;/metal:content-core&gt;
+&lt;/metal:main&gt;
+&lt;/body&gt;
+&lt;/html&gt;</span></code></pre>
+    </div>
+<p>Please, note, how the view template uses
+<a href="https://pypi.python.org/pypi/plone.app.contentlisting">plone.app.contentlisting</a>
+API for iterating through every item in the folder and then
+<a href="https://pypi.python.org/pypi/plone.app.imaging">plone.app.imaging</a> API
+for rendering image tags for scaled images. Also, note the use of
+<code>tal:on-error</code> to suppress all possible error messages (you may not
+always want that, though).</p>
+<h2>Enabling the view on a site</h2>
+<p>Unfortunately, <strong>collective.themefragments</strong>’ views do not magically
+appear into Plone toolbar display menu yet. Fortunately, those views can
+be either be set as the default view of a content type or manually
+assigned to a content item by setting its <code>layout</code>-property:</p>
+<ol>
+<li>
+<p>At first, let’s assume that we have a folder</p>
+<p><code>http://localhost:8080/Plone/wall-of-images</code></p>
+</li>
+<li>
+<p>Then, let’s open the good old properties edit form for it</p>
+<p><code>http://localhost:8080/Plone/wall-of-images/manage_propertiesForm</code></p>
+</li>
+<li>
+<p>Finally, let’s add a new property of type <code>string</code> with name
+<code>layout</code> and value <code>++themefragment++wall_of_images</code></p>
+</li>
+</ol>
+<p>Now the content should be rendered using our brand new template,
+displaying all the images one after one. It still does not look as
+intended, though, because nothing enables Masonry.js for it.</p>
+<h2>Invoking Masonry.js on the view</h2>
+<p>To enable Masonry.js on our brand new view, we could add the following
+code into a theme file <code>./scripts.js</code>:</p>
+<div class="gatsby-highlight" data-language="js">
+      <pre class=" cm-s-solarized"><code><span>jQuery(function($) {
+  $('.wall-of-images').imagesLoaded(function() {
+    $('.wall-of-images').masonry({
+      itemSelector: 'img',
+      percentPosition: true
+    });
+  });
+});</span></code></pre>
+    </div>
+<p>That code simply uses jQuery to find our view templates main element and
+configures Masonry.js for it after every image below it has been loaded.</p>
+<p>An alternative for that jQuery script would be to rely on Plone’s
+Require.js setup and define the code as a pattern:</p>
+<div class="gatsby-highlight" data-language="js">
+      <pre class=" cm-s-solarized"><code><span>require([
+  'pat-base'
+], function(Base) {
+  'use strict';
+
+  var Masonry = Base.extend({
+    name: 'masonry',
+    trigger: '.wall-of-images',
+
+    init: function() {
+      var self = this;
+      self.$el.imagesLoaded(function() {
+        self.$el.masonry({
+          itemSelector: 'img',
+          percentPosition: true
+        });
+      });
+    }
+  });
+
+  return Masonry;
+});</span></code></pre>
+    </div>
+<p>But something is still missing. Masonry.js is distributed without any
+default styles. To make our wall of images look as it should, we need to
+define responsive styles with our desired breakpoints in <code>./styles.css</code>:</p>
+<div class="gatsby-highlight" data-language="css">
+      <pre class=" cm-s-solarized"><code><span class="cm-def">@media</span><span> </span><span class="cm-keyword">only</span><span> </span><span class="cm-attribute">screen</span><span> {</span><span>
+</span><span>   </span><span class="cm-qualifier">.wall-of-images</span><span> {</span><span>
+</span><span>        </span><span class="cm-property">padding-left</span><span>: </span><span class="cm-number">0</span><span>;</span><span>
+</span><span>        </span><span class="cm-property">padding-right</span><span>: </span><span class="cm-number">0</span><span>;</span><span>
+</span><span>        </span><span class="cm-property">margin-top</span><span>: </span><span class="cm-number">-20px</span><span>;</span><span>
+</span><span>    }</span><span>
+</span><span>    </span><span class="cm-qualifier">.wall-of-images</span><span> </span><span class="cm-tag">img</span><span> {</span><span>
+</span><span>        </span><span class="cm-property">float</span><span>: </span><span class="cm-atom">left</span><span>;</span><span>
+</span><span>        </span><span class="cm-property">width</span><span>: </span><span class="cm-number">100%</span><span>;</span><span>
+</span><span>        </span><span class="cm-property">height</span><span>: </span><span class="cm-atom">auto</span><span>;</span><span>
+</span><span>        </span><span class="cm-property">border</span><span>: </span><span class="cm-number">5px</span><span> </span><span class="cm-atom">solid</span><span> </span><span class="cm-atom">transparent</span><span>;</span><span>
+</span><span>    }</span><span>
+</span><span>}</span><span>
+
+</span><span class="cm-def">@media</span><span> </span><span class="cm-keyword">only</span><span> </span><span class="cm-attribute">screen</span><span> </span><span class="cm-keyword">and</span><span> (</span><span class="cm-property">min-width</span><span>: </span><span class="cm-number">768px</span><span>) {</span><span>
+</span><span>    </span><span class="cm-qualifier">.wall-of-images</span><span> </span><span class="cm-tag">img</span><span> {</span><span>
+</span><span>        </span><span class="cm-property">float</span><span>: </span><span class="cm-atom">left</span><span>;</span><span>
+</span><span>        </span><span class="cm-property">width</span><span>: </span><span class="cm-number">50%</span><span>;</span><span>
+</span><span>        </span><span class="cm-property">height</span><span>: </span><span class="cm-atom">auto</span><span>;</span><span>
+</span><span>    }</span><span>
+</span><span>}</span><span>
+
+</span><span class="cm-def">@media</span><span> </span><span class="cm-attribute">screen</span><span> </span><span class="cm-keyword">and</span><span> (</span><span class="cm-property">min-width</span><span>: </span><span class="cm-number">900px</span><span>) {</span><span>
+</span><span>    </span><span class="cm-qualifier">.wall-of-images</span><span> </span><span class="cm-tag">img</span><span> {</span><span>
+</span><span>        </span><span class="cm-property">float</span><span>: </span><span class="cm-atom">left</span><span>;</span><span>
+</span><span>        </span><span class="cm-property">width</span><span>: </span><span class="cm-number">33.3333333%</span><span>;</span><span>
+</span><span>        </span><span class="cm-property">height</span><span>: </span><span class="cm-atom">auto</span><span>;</span><span>
+</span><span>    }</span><span>
+</span><span>}</span><span>
+
+</span><span class="cm-def">@media</span><span> </span><span class="cm-attribute">screen</span><span> </span><span class="cm-keyword">and</span><span> (</span><span class="cm-property">min-width</span><span>: </span><span class="cm-number">1200px</span><span>) {</span><span>
+</span><span>  </span><span class="cm-qualifier">.wall-of-images</span><span> </span><span class="cm-tag">img</span><span> {</span><span>
+</span><span>        </span><span class="cm-property">float</span><span>: </span><span class="cm-atom">left</span><span>;</span><span>
+</span><span>        </span><span class="cm-property">width</span><span>: </span><span class="cm-number">25%</span><span>;</span><span>
+</span><span>        </span><span class="cm-property">height</span><span>: </span><span class="cm-atom">auto</span><span>;</span><span>
+</span><span>    }</span><span>
+</span><span>}</span></code></pre>
+    </div>
+<p>Finally, we’d like to make our wall of images be displayed on full
+browser window width. That’s a bit tricky, because we need to escape
+Barceloneta theme’s default content container, but still fully possible
+by adding the following Diazo rules into <code>./rules.xml</code>:</p>
+<div class="gatsby-highlight" data-language="xml">
+      <pre class=" cm-s-solarized"><code><span class="cm-comment">&lt;!-- Wall of Images --&gt;</span><span>
+</span><span class="cm-tag bracket">&lt;</span><span class="cm-tag">rules</span><span> </span><span class="cm-attribute">css:if-content</span><span>=</span><span class="cm-string">".wall-of-images"</span><span class="cm-tag bracket">&gt;</span><span>
+</span><span>  </span><span class="cm-comment">&lt;!-- Make fullwidth --&gt;</span><span>
+</span><span>  </span><span class="cm-tag bracket">&lt;</span><span class="cm-tag">replace</span><span> </span><span class="cm-attribute">css:theme</span><span>=</span><span class="cm-string">".outer-wrapper &gt; .container"</span><span>
+</span><span>           </span><span class="cm-attribute">css:content</span><span>=</span><span class="cm-string">".wall-of-images"</span><span> </span><span class="cm-tag bracket">/&gt;</span><span>
+</span><span>  </span><span class="cm-comment">&lt;!-- Include status message --&gt;</span><span>
+</span><span>  </span><span class="cm-tag bracket">&lt;</span><span class="cm-tag">before</span><span> </span><span class="cm-attribute">css:theme</span><span>=</span><span class="cm-string">".outer-wrapper &gt; .container"</span><span>
+</span><span>          </span><span class="cm-attribute">css:content</span><span>=</span><span class="cm-string">"#global_statusmessage"</span><span>
+</span><span>          </span><span class="cm-attribute">css:if-content</span><span>=</span><span class="cm-string">".wall-of-images"</span><span> </span><span class="cm-tag bracket">/&gt;</span><span>
+</span><span>  </span><span class="cm-tag bracket">&lt;</span><span class="cm-tag">replace</span><span> </span><span class="cm-attribute">css:content</span><span>=</span><span class="cm-string">"#global_statusmessage"</span><span class="cm-tag bracket">&gt;</span><span>
+</span><span>    </span><span class="cm-tag bracket">&lt;</span><span class="cm-tag">div</span><span> </span><span class="cm-attribute">id</span><span>=</span><span class="cm-string">"global_statusmessage"</span><span> </span><span class="cm-attribute">class</span><span>=</span><span class="cm-string">"container-fluid"</span><span class="cm-tag bracket">&gt;</span><span>
+</span><span>      </span><span class="cm-tag bracket">&lt;</span><span class="cm-tag">xsl:apply-templates</span><span> </span><span class="cm-tag bracket">/&gt;</span><span>
+</span><span>    </span><span class="cm-tag bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag bracket">&gt;</span><span>
+</span><span>  </span><span class="cm-tag bracket">&lt;/</span><span class="cm-tag">replace</span><span class="cm-tag bracket">&gt;</span><span>
+</span><span class="cm-tag bracket">&lt;/</span><span class="cm-tag">rules</span><span class="cm-tag bracket">&gt;</span></code></pre>
+    </div>
+<p>Now our wall of images shines in every resolution:</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 320px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/116820fb920bbf26f24dd476a463143d/72799/four-columns.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 75.67567567567568%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAAsSAAALEgHS3X78AAAEgklEQVQ4yx2Ra0xTdxiHT7IPyxaT6Saw6XTOS6bOZCay42I9E2RTiU7ntEEQmVPQlltBEBxgg25AW6o0JVxsZQKrt2EtMFnFQlVAi0WUwqwUKAV6oVREgW0ea/z/duTDk/ze5718eametrYFDptFMuYdlY65XBLn0Ih0yDEidTndUrfHK3W5PVIH5x5Ze6UjIy6pZ3RM6naPzswMDTml9gGHxOEYftOTmM33F1COv7tChp1u9Du9GHR5MeYbx/TzZzOwU5P479lT/DPBufEnXJ7Ay+lJvJh6jumn45h64gM7+QxT4z489bjR8+B+CHXBaFpf2THo1z4cfmXodvrb+7x+u2fCbx32+ZtsHn9j36jf0O+d4QaX39DI+Qar01/XZffrH7v8f1mdr+q7Hf7q5vb1FP/0RSZZayIKfSfqblvI5aZO1BgtqL1rQ6rODEHNXQgut+Ewh5DL8TUmxGvbufoOEq6Y3jgi5Fyitp1EFF1kqM5WA+PqfUictm4M23rIpG8Ug7YeNDdoYWkzwtHTCd/QAP4dc8I32AdPvxWubjNejLvgddjxxN5LJl0D6H1wj5hvGxiqVqdhCn5OJ5VlalSWnSMa9QXIZRJs3sBDZlIq1CUqOLjF6IhoHEtJgapYgUN7I6GU5iNTdBQNdToizyuAulRNWltuMtSv2ceYzxZ/ThbOX4FlC1aRlUtXI3rnbqz85FO8NysQge/PQ1xkFGL4PyA39QAUeTlI/WkfMpKSwHyxBmWS4yT/RBZk4kxSJMlnqCslMkbI30nCQzchYvsukhh3GEV5J7BnWzjCNm7CtyFhOJoghLZKibzsZCjEIiiyUnBKLkfULj6ulv9CdNXFkIvTiKZMxlCnJCcZcUYCKVEUoLpSRW7easag24XrBj1Mt/Sw91lgtfej5WE3aq7V4496HW60tuBOhxlt7a04V60iGk0VHtseka7HvQwl4Q5mZohI7vEsROz4ngjik6A3XEctt3jzRi26HpjQN9iPq1c00DVcQ2NjHVrvd6Cj24LTp+WIiYwh/B27oVKdISYrd1B8PIsRZ2eSo+npiI6MIpKiEtT+WQ+5vACieCEEB+PQaGxGcVE+1BXlOF9ZjlbzPfQO9KHN2ISEg7EkYicfJ3NyyDVDE0OpKlSMoeU2sfR0EHPHrdcTU89Ji1FPNKpSEvdjLAldyyOFhYWktERB5NICEsaEknyZjNy720JyjqSRdWH814LYeJKUmEL2HExlqN+rf2MuaS+htLQY8cIE6Gp1MDbrIYjig8eE47vw7UhOz8YpWT6EBw4geA0PsQkpqDh7BpG79iAkPBIx+2NxKC0Xeeeuc18+r+bpG7SsOCf35eYNoWya6AirLFayIfRadsvmrTNk5hayoqRElrd2Hct8vZGNSz7GKpVKNma/gM1IF7F798W9lKsushVVZ3nU6pVLZ23dsil49Zc0/WFQIB0UNI8jiMvz6Pkff0QHzJ5Dr1i+nJ77wRx6bmAQHRAwl168ZBm9cNFi+q2336WXLFlEvzM7gF4VvC542zdfzfof6wAROJs3ZwUAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="image"
+        title="image"
+        src="/static/116820fb920bbf26f24dd476a463143d/72799/four-columns.png"
+        srcset="/static/116820fb920bbf26f24dd476a463143d/12f09/four-columns.png 148w,
+/static/116820fb920bbf26f24dd476a463143d/e4a3f/four-columns.png 295w,
+/static/116820fb920bbf26f24dd476a463143d/72799/four-columns.png 320w"
+        sizes="(max-width: 320px) 100vw, 320px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 320px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/b60945a7eee3aefafd38861d771d873c/72799/three-columns.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 96.62162162162163%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,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'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="image"
+        title="image"
+        src="/static/b60945a7eee3aefafd38861d771d873c/72799/three-columns.png"
+        srcset="/static/b60945a7eee3aefafd38861d771d873c/12f09/three-columns.png 148w,
+/static/b60945a7eee3aefafd38861d771d873c/e4a3f/three-columns.png 295w,
+/static/b60945a7eee3aefafd38861d771d873c/72799/three-columns.png 320w"
+        sizes="(max-width: 320px) 100vw, 320px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 279px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/dade4abcb5d7269cc20a6a3b02fec336/3af37/two-columns.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 114.86486486486487%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,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'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="image"
+        title="image"
+        src="/static/dade4abcb5d7269cc20a6a3b02fec336/3af37/two-columns.png"
+        srcset="/static/dade4abcb5d7269cc20a6a3b02fec336/12f09/two-columns.png 148w,
+/static/dade4abcb5d7269cc20a6a3b02fec336/3af37/two-columns.png 279w"
+        sizes="(max-width: 279px) 100vw, 279px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 196px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/e7052382f26941ecd434f1d1a0bd9a8c/ad4c1/one-column.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 163.51351351351354%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,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'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="image"
+        title="image"
+        src="/static/e7052382f26941ecd434f1d1a0bd9a8c/ad4c1/one-column.png"
+        srcset="/static/e7052382f26941ecd434f1d1a0bd9a8c/12f09/one-column.png 148w,
+/static/e7052382f26941ecd434f1d1a0bd9a8c/ad4c1/one-column.png 196w"
+        sizes="(max-width: 196px) 100vw, 196px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<p>PS. If want to learn more, my <a href="https://github.com/datakurre/ploneconf2017">talk
+materials</a> include a more
+complex example with custom content types, workflows, permissions,
+portlet assignments and content rules.</p></div><hr style="margin-bottom:1.75rem"/><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li><a rel="prev" href="/2017/02/tile-based-layouts-and-esi-on-plone.html/">← <!-- -->Tile based layouts and ESI on Plone</a></li><li><a rel="next" href="/2017/11/plone-conference-barcelona-2017.html/">Plone Conference Barcelona 2017<!-- --> →</a></li></ul></main></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/2017/10/building-instant-features-with-advanced.html/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-a7432bf2cae4b37092ef.js"],"app":["/app-7d19a9e92ffd4161f4ae.js"],"component---src-pages-404-js":["/component---src-pages-404-js-a17d51831a54ead11512.js"],"component---src-pages-index-js":["/component---src-pages-index-js-c0f3fad264f6e8d674db.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-b8ff09bc5f9b13acaa62.js"]};/*]]>*/</script><script src="/polyfill-a7432bf2cae4b37092ef.js" nomodule=""></script><script src="/component---src-templates-blog-post-js-b8ff09bc5f9b13acaa62.js" async=""></script><script src="/commons-c942f6cd8444428ac886.js" async=""></script><script src="/app-7d19a9e92ffd4161f4ae.js" async=""></script><script src="/framework-b6445d848003563fdaa2.js" async=""></script><script src="/webpack-runtime-ea6d213926e94492350b.js" async=""></script></body></html>
