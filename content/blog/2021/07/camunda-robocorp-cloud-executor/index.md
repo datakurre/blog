@@ -10,7 +10,7 @@ tags: ["camunda", "robocorp", "robot framework", "python", "rpa", "open source"]
 
 Right now, most of the [Robocorp products](https://robocorp.com/docs/robocorp-cloud/overview) and documentation seem to focus on building and running software robots. But I doubt those robots run in isolation. Instead, they probably have their own activites to complete in (more or less) digitized business processes. And that's why I've been working hard to learn [BPMN 2.0](https://en.wikipedia.org/wiki/Business_Process_Model_and_Notation) and [Camunda Platform](https://camunda.com/products/camunda-platform/): I desire to be able to smoothly and transparently integrate automation bots with digitized business processes.
 
-Also Robocorp Cloud does compose of robots into higher level “processes”. But those processes are *just* linear series of steps with access to shared process variables (“work item” in RPA terms). While they are definitely useful, they are far cry from processes which can be modeled with BPMN.
+Also Robocorp Cloud composes tasks into higher level thing called workforce “processes”. But those “processes” are *just* linear series of steps with access to shared process variables (“work item” in RPA terms). For now, it is better to consider Robocorp Cloud “processes” only as a technical configuration concept – not a thing to compare againts BPMN 2.0 modeled business processes.
 
 
 From a BPMN process…
@@ -62,7 +62,7 @@ Configuring Robocorp Cloud bots for these Camunda tasks require the following st
 
    Note that Robocorp does provide [a Dockerfile and instructions](https://robocorp.com/docs/robocorp-cloud/robot-workforce/setting-local-container) for building [and customizing](https://github.com/datakurre/carrot-executor/blob/6577d32c9c8eec66a949573c09fc83bc0cd582ec/robocloud/Dockerfile#L16) these on-premise agents.
 
-3. Defining a Robocorp Cloud workforce processes to bind the executable robot tasks from robot packages with the registered workforce runtime environment agents.
+3. Defining a Robocorp Cloud workforce “processes” to bind the executable robot tasks from robot packages with the registered workforce runtime environment agents.
 
    ![](./robocloud-search-process.png)
 
@@ -70,9 +70,9 @@ Configuring Robocorp Cloud bots for these Camunda tasks require the following st
 
    ![](./robocloud-download-process.png)
 
-Try to not confuse Camunda processes with Robocorp Cloud workforce processes. Camunda executes the business process defined in BPMN. Robocorp Cloud workforce process can be thought more like configuration concept for binding specific robot tasks to be executed with specific agent runtime environments.
+Try to not confuse Camunda processes with Robocorp Cloud workforce “processes”. Camunda executes business process defined in BPMN. Robocorp Cloud workforce “process” are more of a configuration concept for binding specific robot tasks to be executed with specific agent runtime environments.
 
-Workforce processes should work well allocating and monitoring computing resources for robot usage and configuring allowed concurrency for particular tasks. They could also be used to bridge on-premises workforce agents with cloud ones.
+Workforce “process” should work well allocating and monitoring computing resources for robot usage and configuring allowed concurrency for particular tasks. They could also be used to bridge on-premises workforce agents with cloud ones.
 
 
 And the glue code to connect their APIs
@@ -135,9 +135,9 @@ Briefly explained:
 
 1. A custom Camunda external task client fetches and locks pending external tasks from Camunda, schedules their execution at Robocorp Cloud, and keeps polling the Robocorp Process API and the task locked until its execution at Robocorp Cloud has been completed.
 
-2. At Robocorp Cloud, a new workforce process run is triggered for each external task. Robocorp Cloud is responsible for choosing an available worker and controlling the execution.
+2. At Robocorp Cloud, a new workforce “process” run is triggered for each external task. Robocorp Cloud is responsible for choosing an available worker and controlling the execution.
 
-3. Finally, a Robot Framework bot gets just enough external task details from its workforce process' “work item” to be able to fetch the task variables (including files) it needs directly from Camunda. The robot also sends the result variables back to Camunda by itself.
+3. Finally, a Robot Framework bot gets just enough external task details from its workforce “process'” “work item” to be able to fetch the task variables (including files) it needs directly from Camunda. The robot also sends the result variables back to Camunda by itself.
 
 For convenience, the whole [robot run is wrapped](https://github.com/datakurre/carrot-executor/blob/6577d32c9c8eec66a949573c09fc83bc0cd582ec/robocloud/xkcd-bot/robot.yaml#L12) with a [special Robot Framework *listener library*](https://github.com/datakurre/carrot-executor/blob/main/lib/CamundaListener.py). That manages the completion or failing of the task, and submits its log files directly back to Camunda external task context.
 
