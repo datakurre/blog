@@ -88,31 +88,31 @@ sequenceDiagram
     participant Robocorp Cloud
     participant Robot Framework
 
-    Camunda External Task Client->>Camunda: Fetch and lock
+    Camunda External Task Client->>Camunda Platform: Fetch and lock
     loop
-    Camunda-->>Camunda External Task Client: Task
+    Camunda Platform-->>Camunda External Task Client: Task
     par
     Camunda External Task Client->>+Robocorp Cloud: Schedule
     Robocorp Cloud->>+Robot Framework: Execute
     par
     loop
-    Robot Framework->>Camunda: Get task variable
-    Camunda-->>Robot Framework: Variable value
+    Robot Framework->>Camunda Platform: Get task variable
+    Camunda Platform-->>Robot Framework: Variable value
     end
     end
     par
     loop
-    Robot Framework->>Camunda: Set task variable
+    Robot Framework->>Camunda Platform: Set task variable
     end
     end
     alt
-    Robot Framework->>Camunda: Complete task
+    Robot Framework->>Camunda Platform: Complete task
     end
     alt
-    Robot Framework->>Camunda: Handle failure
+    Robot Framework->>Camunda Platform: Handle failure
     end
     alt
-    Robot Framework->>Camunda: Handle BPMN error
+    Robot Framework->>Camunda Platform: Handle BPMN error
     end
     Robot Framework-->>-Robocorp Cloud: [exit code]
     end
@@ -121,7 +121,7 @@ sequenceDiagram
     Camunda External Task Client->>Robocorp Cloud: Poll status
     alt
     Robocorp Cloud-->>Camunda External Task Client: [pending]
-    Camunda External Task Client->>Camunda: Extend lock
+    Camunda External Task Client->>Camunda Platform: Extend lock
     end
     alt
     Robocorp Cloud-->>-Camunda External Task Client: [completed]
