@@ -34,7 +34,7 @@ The process involves fair amount of [BPMN features](https://camunda.com/bpmn/), 
 * alternative process specific end states
 * user tasks for manual process activities
 
-BPMN 2.0 can model all this and more. Camunda Platform, on the other hand, is well capable of executing the process. In addition, it provides good enough APIs to fetch and delegate external tasks in the process to available software robots.
+BPMN 2.0 can model all this and more. Camunda Platform, on the other hand, is well capable of executing the process. In addition, Camunda provides good enough APIs to fetch and delegate external tasks in the process to available software robots.
 
 
 …to Robocorp Cloud processes
@@ -52,7 +52,7 @@ The example process includes two external tasks to be automated:
   ![](./example-fetch.png)
   <br/>
 
-Configuring Robocorp Cloud bots for these Camunda tasks would require the following steps, or something alike:
+Configuring Robocorp Cloud bots for these Camunda tasks require the following steps, or something alike:
 
 1. [Building and packaging a robot](https://robocorp.com/docs/setup/robot-structure). Or multiple robots. Defining a convenient way to package and distribute Robot Framework robots is one of many achievements by Robocorp. In this case, it makes sense to implement all required steps in [a single robot bundle](https://github.com/datakurre/carrot-executor/tree/main/robocloud/xkcd-bot/).
 
@@ -60,9 +60,9 @@ Configuring Robocorp Cloud bots for these Camunda tasks would require the follow
 
    ![](./robocloud-robots.png)
 
-   Robocorp does provide [a Dockerfile and instructions](https://robocorp.com/docs/robocorp-cloud/robot-workforce/setting-local-container) for building [and customizing](https://github.com/datakurre/carrot-executor/blob/6577d32c9c8eec66a949573c09fc83bc0cd582ec/robocloud/Dockerfile#L16) these on-premise agents.
+   Note that Robocorp does provide [a Dockerfile and instructions](https://robocorp.com/docs/robocorp-cloud/robot-workforce/setting-local-container) for building [and customizing](https://github.com/datakurre/carrot-executor/blob/6577d32c9c8eec66a949573c09fc83bc0cd582ec/robocloud/Dockerfile#L16) these on-premise agents.
 
-3. Defining a Robocorp Cloud workforce processes to bind the executable robot tasks from robot packages with registered workforce runtime environment agents.
+3. Defining a Robocorp Cloud workforce processes to bind the executable robot tasks from robot packages with the registered workforce runtime environment agents.
 
    ![](./robocloud-search-process.png)
 
@@ -72,7 +72,7 @@ Configuring Robocorp Cloud bots for these Camunda tasks would require the follow
 
 Try to not confuse Camunda processes with Robocorp Cloud workforce processes. Camunda executes the business process defined in BPMN. Robocorp Cloud workforce process can be thought more like configuration concept for binding specific robot tasks to be executed with specific agent runtime environments.
 
-In addition, Robocorp Cloud does provide quite comprehensive statistics and analytics by their workforce process…
+Workforce processes should work well allocating and monitoring computing resources for robot usage and configuring allowed concurrency for particular tasks. They could also be used to bridge on-premises workforce agents with cloud ones.
 
 
 And the glue code to connect their APIs
@@ -133,17 +133,17 @@ sequenceDiagram
 
 Briefly explained:
 
-1. A custom Camunda external task client fetches and locks pending external tasks from Camunda, schedules their execution at Robocorp Cloud, and keeps polling the Robocorp Process API and keeps the task locked until its execution at Robocorp Cloud has been completed.
+1. A custom Camunda external task client fetches and locks pending external tasks from Camunda, schedules their execution at Robocorp Cloud, and keeps polling the Robocorp Process API and the task locked until its execution at Robocorp Cloud has been completed.
 
 2. At Robocorp Cloud, a new workforce process run is triggered for each external task. Robocorp Cloud is responsible for choosing an available worker and controlling the execution.
 
-3. Finally, a Robot Framework bot gets just enough external task details from its workforce process' “work item” to be able to fetch the actual task variables directly from Camunda. The robot also sets the result task variables back to Camunda by itself.
+3. Finally, a Robot Framework bot gets just enough external task details from its workforce process' “work item” to be able to fetch the task variables (including files) it needs directly from Camunda. The robot also sends the result variables back to Camunda by itself.
 
-For convenience, the whole [robot run is wrapped](https://github.com/datakurre/carrot-executor/blob/6577d32c9c8eec66a949573c09fc83bc0cd582ec/robocloud/xkcd-bot/robot.yaml#L12) with a [special Robot Framework *listener library*](https://github.com/datakurre/carrot-executor/blob/main/lib/CamundaListener.py), which manages the completion or failing of the task, and submits its log files directly back to Camunda external task context.
+For convenience, the whole [robot run is wrapped](https://github.com/datakurre/carrot-executor/blob/6577d32c9c8eec66a949573c09fc83bc0cd582ec/robocloud/xkcd-bot/robot.yaml#L12) with a [special Robot Framework *listener library*](https://github.com/datakurre/carrot-executor/blob/main/lib/CamundaListener.py). That manages the completion or failing of the task, and submits its log files directly back to Camunda external task context.
 
 ![](./camunda-log.png)
 
-With this approach, the log files from automation bot executions are saved into task context and preserved in Camunda process execution history. For both passing and failing executions. This makes the log files also available form Camunda Cockpit, and possibly saves the process owner from need to visit also Robocorp Control Room when in need for any bot execution details.
+With this approach, log files from automation bot executions are saved into related task contexts and preserved in Camunda process execution history. For both passing and failing executions. This makes the log files also available from Camunda Cockpit, and possibly saves the process owner from need to visit also Robocorp Control Room when in need for any bot execution details.
 
 ---
 
