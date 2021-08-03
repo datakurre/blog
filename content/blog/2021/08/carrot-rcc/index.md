@@ -85,7 +85,7 @@ Fleamarket submission demo
 
 A new tool needs a new demo process. [On my previous post](../../07/camunda-robocorp-cloud-executor/) I described an example BPMN process doing a search for matching XKCD comics. While the updated example for that is available at the [carrot-rcc repository](https://github.com/datakurre/carrot-rcc), I also wanted to have something new.
 
-Fleamarket submission demo process showcases all BPMN features from the comic search demo, but adds more Robot Framework automated tasks and also a DMN based business decision task.
+[Fleamarket submission demo process](https://github.com/datakurre/carrot-rcc/tree/main/camunda/deployment) showcases all BPMN features from the comic search demo, but adds more [Robot Framework automated tasks](https://github.com/datakurre/carrot-rcc/tree/main/fleamarket-bot) and also a DMN based business decision task.
 
 In the fleamarket submission demo process:
 
@@ -109,5 +109,5 @@ There is [a silent recording](https://www.youtube.com/watch?v=Aqt6Z76r_YQ) avail
 
 `youtube:https://youtu.be/Aqt6Z76r_YQ`
 
-[^1]: My bot for the object detection uses the example models trained by the original author of YOLO v3 and therefore its recognition capabilities are limited by the objects known by those models. That said, the Internet is full of examples on how to train your own YOLO v3 models (it is just a lot of work).
+[^1]: [My bot](https://github.com/datakurre/carrot-rcc/tree/main/fleamarket-bot) for the object detection uses the example models trained by the original author of YOLO v3 and therefore its recognition capabilities are limited by the objects known by those models. That said, the Internet is full of examples on how to train your own YOLO v3 models (it is just a lot of work).
 
