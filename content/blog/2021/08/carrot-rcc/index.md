@@ -107,7 +107,5 @@ In the fleamarket submission demo process:
 
 There is [a silent recording](https://www.youtube.com/watch?v=Aqt6Z76r_YQ) available the show the process in action while carrot-rcc executes the related automation bots.
 
-`youtube:https://youtu.be/Aqt6Z76r_YQ`
-
 [^1]: [My bot](https://github.com/datakurre/carrot-rcc/tree/main/fleamarket-bot) for the object detection uses the example models trained by the original author of YOLO v3 and therefore its recognition capabilities are limited by the objects known by those models. That said, the Internet is full of examples on how to train your own YOLO v3 models (it is just a lot of work).
 
