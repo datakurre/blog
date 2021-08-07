@@ -109,5 +109,123 @@ In the fleamarket submission demo process:
 
 There is [a silent recording](https://www.youtube.com/watch?v=Aqt6Z76r_YQ) available the show the process in action while carrot-rcc executes the related automation bots.
 
+
+RCC bot dissected
+-----------------
+
+To make it convenient to build and distribute software automation bots, Robocorp had to invent its own [software robot packaging format](https://robocorp.com/docs/setup/robot-structure). Or put simply, define a zip file with configuration metadata, Robot Framework automation code and optional supportive resources. For an example, let's look into the [bot implementing all Fleamarket demo external tasks](https://github.com/datakurre/carrot-rcc/tree/main/fleamarket-bot).
+
+**`./conda.yaml`** defines the [runtime requirements](https://robocorp.com/docs/setup/environment-control) for the bot:
+```yaml
+channels:
+  - conda-forge
+
+dependencies:
+  - python>=3.8,<3.10
+  - rpaframework=9.6.0
+  - appdirs=1.4.4
+  - py-opencv=4.2.0
+```
+In this case, the bot requires Python with [RPA Framework](https://rpaframework.org/), supportive [appdirs](https://pypi.org/project/appdirs/)-package and [OpenCV](https://opencv.org/) for running YOLO v3 object detection. And they all come from [conda-forge](https://anaconda.org/conda-forge) to ensure they work seamlessy together.
+
+**`./robot.yaml`** defines the [task configuration](https://robocorp.com/docs/setup/robot-yaml-format) for the bot:
+```yaml
+tasks:
+
+  Extract items from photo:
+    robotTaskName:
+      Extract items from photo
+
+  Crop image:
+    robotTaskName:
+      Crop image
+
+  Create JSON array:
+    robotTaskName:
+      Create JSON array
+
+  Update JSON object:
+    robotTaskName:
+      Update JSON object
+
+  Save items to spreadsheet:
+    robotTaskName:
+      Save items to spreadsheet
+
+PYTHONPATH:
+  - .
+
+condaConfigFile:
+  conda.yaml
+
+artifactsDir:
+  output
+```
+A single bot may implement multiple tasks, which can be executed separately. When used with carrot-rcc, `robot.yaml` is the place to bind Camunda Platform external tasks to Robot Framework automation tasks (defined in `.robot` files). In our example, Robot Framework task names match the external task topic names, but this is not requred. `robot.yaml` mapping makes it possible even to map the same Robot Framework task for multiple different external task topics.
+
+In addition, `robot.yaml` has plenty of room for additional external task topic specific configuration, if required.
+
+**`./tasks.robot`** is the default Robot Framework task suite for the bot:
+
+```robotframework
+*** Settings ***
+
+Library  RPA.Robocloud.Items
+Library  RPA.Excel.Files
+Library  Collections
+Library  Image
+Library  YOLO
+
+*** Tasks ***
+
+Extract items from photo
+    Set task variables from work item
+    ${items}=  Identify objects  ${input}
+    Set work item variable  items  ${items}
+    Save work item
+
+Crop image
+    Set task variables from work item
+    ${filename}=  Crop image
+    ...  ${input}  ${name}  ${x}  ${y}  ${width}  ${height}
+    ...  output=${OUTPUT_DIR}
+    Set work item variable  output  ${filename}
+    Add work item file  ${OUTPUT_DIR}${/}${filename}
+    Save work item
+
+Create JSON array
+    ${output}=  Create list
+    Set work item variable  output  ${output}
+    Save work item
+
+Update JSON object
+    Set task variables from work item
+    ${keys}=  Get dictionary keys  ${b}
+    FOR  ${key}  IN  @{keys}
+      Set to dictionary  ${a}  ${key}  ${b}[${key}]
+    END
+    Set work item variable  a  ${a}
+    Save work item
+
+Save items to spreadsheet
+    Set task variables from work item
+    Create workbook  fmt=xlsx
+    Set worksheet value  1  A  Item
+    Set worksheet value  1  B  Price
+    Set worksheet value  1  C  Image
+    ${row}=  Set variable  2
+    FOR  ${item}  IN  @{input}
+      Set worksheet value  ${row}  A  ${item}[name]
+      Set worksheet value  ${row}  B  ${item}[price]
+      Insert image to worksheet  ${row}  C  ${${item}[filename]}  0.5
+      ${row}=  Evaluate  ${row} + 1
+    END
+    Save workbook  ${OUTPUT_DIR}${/}items.xslx
+    Set work item variable  output  items.xslx
+    Add work item file  ${OUTPUT_DIR}${/}items.xslx
+    Save work item
+```
+It may surprise, how compact that single `tasks.robot` is, even it implements all external tasks in out example process. That's because most of the custom  code has been abstracted into two reusable Python keyword libraries `YOLO` and `Image`. Both being [part of the same zip package](https://github.com/datakurre/carrot-rcc/tree/main/fleamarket-bot).
+
 [^1]: [My bot](https://github.com/datakurre/carrot-rcc/tree/main/fleamarket-bot) for the object detection uses the example models trained by the original author of YOLO v3 and therefore its recognition capabilities are limited by the objects known by those models. That said, the Internet is full of examples on how to train your own YOLO v3 models (it is just a lot of work).
 
