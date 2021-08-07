@@ -20,7 +20,7 @@ Meet [carrot-rcc](https://pypi.org/project/carrot-rcc/). It is my proof-of-conce
 
 Previously, I've been writing my example Robot Framework bots to interact directly with Camunda Platform. Now, with RCC, it suddenly makes more sense to write bots unaware of Camunda Platform. What if we could simply follow the [Robocorp documentation](https://robocorp.com/docs/) best practices for writing new bots, and they would then just work also for Camunda external tasks? That's what [carrot-rcc](https://pypi.org/project/carrot-rcc/) is about.
 
-![](example-process.gif)
+![Screen recording of carrot-rcc executing multiple tasks in parallel.](example-process.gif)
 
 carrot-rcc is a small program (currently written for NodeJS with Python wrapper for PyPI distribution) that binds RCC-authored Robot Framework automation bots with Camunda external tasks. Briefly, it
 
@@ -91,7 +91,7 @@ A new tool needs a new demo process. [On my previous post](../../07/camunda-robo
 
 In the fleamarket submission demo process:
 
-![](./fleamarket-01.png)
+![Flea market demo main submission process.](./fleamarket-01.png)
 
 1. User submits a photo of items.
 
@@ -99,7 +99,7 @@ In the fleamarket submission demo process:
 
 3. For each detected item, a review subprocess is created.
 
-![](./fleamarket-02.png)
+![Fleamarket demo review subprocess.](./fleamarket-02.png)
 
 4. The review starts by cropping the item from the original photo and assigning initial price for it by its recognized category (with a DMN-powered business task).
 
