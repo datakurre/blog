@@ -156,7 +156,7 @@ tasks:
 ```
 A single bot may implement multiple tasks. Each task can be executed independently from each other. When used with carrot-rcc, `robot.yaml` is the place to bind Camunda Platform external task topics to Robot Framework automation tasks (defined in `tasks.robot`). In our example, Robot Framework task names match the external task topic names, but this is not a strict requirement. For example. `robot.yaml` mapping makes it possible to map the same Robot Framework task to multiple different external task topics.
 
-In addition, `robot.yaml` has plenty of room for additional external task topic specific configuration, when required...
+In addition, `robot.yaml` has plenty of room for additional external task topic specific configuration. For example, in the future, we could add support for annotating tasks with their mandatory variables, and then `robots.yaml` could both configure Camunda Platform external task client to fetch only the required variables, and it could be used to generate [Camunda Modeler element templates](https://github.com/camunda/camunda-modeler/tree/master/docs/element-templates)...
 
 **`./tasks.robot`** is the default Robot Framework task suite for the bot:
 
