@@ -113,7 +113,9 @@ There is [a silent recording](https://www.youtube.com/watch?v=Aqt6Z76r_YQ) avail
 RCC bot dissected
 -----------------
 
-To make it convenient to build and distribute software automation bots, Robocorp had to invent its own [software robot packaging format](https://robocorp.com/docs/setup/robot-structure). Or put simply, define a zip file with configuration metadata, Robot Framework automation code and optional supportive resources. For an example, let's look into the [bot implementing all Fleamarket demo external tasks](https://github.com/datakurre/carrot-rcc/tree/main/fleamarket-bot).
+To make it convenient to build and distribute software automation bots with Robot Framework, Robocorp had to invent its own [software robot packaging format](https://robocorp.com/docs/setup/robot-structure). Or put simply, define a zip file with configuration metadata, Robot Framework automation code and optional supportive resources. They came up with quite nice solution.
+
+For an example, let's look into the [bot implementing all Fleamarket demo external tasks](https://github.com/datakurre/carrot-rcc/tree/main/fleamarket-bot).
 
 **`./conda.yaml`** defines the [runtime requirements](https://robocorp.com/docs/setup/environment-control) for the bot:
 ```yaml
@@ -126,7 +128,7 @@ dependencies:
   - appdirs=1.4.4
   - py-opencv=4.2.0
 ```
-In this case, the bot requires Python with [RPA Framework](https://rpaframework.org/), supportive [appdirs](https://pypi.org/project/appdirs/)-package and [OpenCV](https://opencv.org/) for running YOLO v3 object detection. And they all come from [conda-forge](https://anaconda.org/conda-forge) to ensure they work seamlessy together.
+In this case, the bot requires Python with [RPA Framework](https://rpaframework.org/), supportive [appdirs](https://pypi.org/project/appdirs/)-package and [OpenCV](https://opencv.org/) for running YOLO v3 object detection. And they all come from [conda-forge](https://anaconda.org/conda-forge) to ensure they work seamlessy together on all supported platforms.
 
 **`./robot.yaml`** defines the [task configuration](https://robocorp.com/docs/setup/robot-yaml-format) for the bot:
 ```yaml
@@ -151,19 +153,10 @@ tasks:
   Save items to spreadsheet:
     robotTaskName:
       Save items to spreadsheet
-
-PYTHONPATH:
-  - .
-
-condaConfigFile:
-  conda.yaml
-
-artifactsDir:
-  output
 ```
-A single bot may implement multiple tasks, which can be executed separately. When used with carrot-rcc, `robot.yaml` is the place to bind Camunda Platform external tasks to Robot Framework automation tasks (defined in `.robot` files). In our example, Robot Framework task names match the external task topic names, but this is not requred. `robot.yaml` mapping makes it possible even to map the same Robot Framework task for multiple different external task topics.
+A single bot may implement multiple tasks. Task be executed separately independently from each other. When used with carrot-rcc, `robot.yaml` is the place to bind Camunda Platform external task topics to Robot Framework automation tasks (defined in `.robot` files). In our example, Robot Framework task names match the external task topic names, but this is not a strict requirement. `robot.yaml` mapping makes it possible to even map the same Robot Framework task for multiple different external task topics.
 
-In addition, `robot.yaml` has plenty of room for additional external task topic specific configuration, if required.
+In addition, `robot.yaml` has plenty of room for additional external task topic specific configuration, when required.
 
 **`./tasks.robot`** is the default Robot Framework task suite for the bot:
 
@@ -225,7 +218,9 @@ Save items to spreadsheet
     Add work item file  ${OUTPUT_DIR}${/}items.xslx
     Save work item
 ```
-It may surprise, how compact that single `tasks.robot` is, even it implements all external tasks in out example process. That's because most of the custom  code has been abstracted into two reusable Python keyword libraries `YOLO` and `Image`. Both being [part of the same zip package](https://github.com/datakurre/carrot-rcc/tree/main/fleamarket-bot).
+It may surprise, how compact that single `tasks.robot` is, even it implements all the external task topics in our example process. That's because most the code has been abstracted into reusable Python keyword libraries. Two of them, `Image` and `YOLO`, being custom for this bot and distributed as [part of the same zip package](https://github.com/datakurre/carrot-rcc/tree/main/fleamarket-bot).
+
+Thanks to the power and flexibility of Robot Framework.
 
 [^1]: [My bot](https://github.com/datakurre/carrot-rcc/tree/main/fleamarket-bot) for the object detection uses the example models trained by the original author of YOLO v3 and therefore its recognition capabilities are limited by the objects known by those models. That said, the Internet is full of examples on how to train your own YOLO v3 models (it is just a lot of work).
 

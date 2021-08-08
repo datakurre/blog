@@ -5,7 +5,7 @@
   "author": "Asko Soukka <asko.soukka@iki.fi>",
   "private": true,
   "dependencies": {
-    "codemirror": "git+https://github.com/datakurre/CodeMirror#0d5cc370836d7858a49c63287c93f75b38e52c68",
+    "codemirror": "git+https://github.com/datakurre/CodeMirror#e6cda450b6095d58b70631f7f31a72de36d9df45",
     "gatsby": "^3.9.1",
     "gatsby-image": "^3.9.0",
     "gatsby-plugin-feed": "^3.9.0",

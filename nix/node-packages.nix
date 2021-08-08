@@ -3991,23 +3991,14 @@ let
         sha1 = "0d070b4d043a5bea33a2f1a40e2edb3d9a4ccf77";
       };
     };
-    "codemirror-5.62.0" = {
-      name = "codemirror";
-      packageName = "codemirror";
-      version = "5.62.0";
-      src = fetchurl {
-        url = "https://registry.npmjs.org/codemirror/-/codemirror-5.62.0.tgz";
-        sha512 = "Xnl3304iCc8nyVZuRkzDVVwc794uc9QNX0UcPGeNic1fbzkSrO4l4GVXho9tRNKBgPYZXgocUqXyfIv3BILhCQ==";
-      };
-    };
-    "codemirror-git+https://github.com/datakurre/CodeMirror.git#0d5cc370836d7858a49c63287c93f75b38e52c68" = {
+    "codemirror-git+https://github.com/datakurre/CodeMirror.git#e6cda450b6095d58b70631f7f31a72de36d9df45" = {
       name = "codemirror";
       packageName = "codemirror";
       version = "5.48.3";
       src = fetchgit {
         url = "https://github.com/datakurre/CodeMirror.git";
-        rev = "0d5cc370836d7858a49c63287c93f75b38e52c68";
-        sha256 = "35d879095413967765efdbdb0763d175e632c22b18f98a8fd1861902d33e3a09";
+        rev = "e6cda450b6095d58b70631f7f31a72de36d9df45";
+        sha256 = "7d34cbb9b9e9a7ea41a5bc991d46b7ee0ef8cde0a7c5e997cce97e694a811aec";
       };
     };
     "collapse-white-space-1.0.6" = {
@@ -17769,7 +17760,7 @@ let
         ];
       })
       sources."code-point-at-1.1.0"
-      sources."codemirror-git+https://github.com/datakurre/CodeMirror.git#0d5cc370836d7858a49c63287c93f75b38e52c68"
+      sources."codemirror-git+https://github.com/datakurre/CodeMirror.git#e6cda450b6095d58b70631f7f31a72de36d9df45"
       sources."collapse-white-space-1.0.6"
       sources."collection-visit-1.0.0"
       sources."color-3.1.3"
@@ -18470,7 +18461,7 @@ let
       })
       (sources."gatsby-remark-codemirror-0.6.2" // {
         dependencies = [
-          sources."codemirror-5.62.0"
+          sources."codemirror-git+https://github.com/datakurre/CodeMirror.git#e6cda450b6095d58b70631f7f31a72de36d9df45"
         ];
       })
       sources."gatsby-remark-copy-linked-files-4.6.0"
