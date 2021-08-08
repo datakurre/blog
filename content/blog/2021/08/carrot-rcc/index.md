@@ -113,7 +113,7 @@ There is [a silent recording](https://www.youtube.com/watch?v=Aqt6Z76r_YQ) avail
 RCC bot dissected
 -----------------
 
-To make it convenient to build and distribute software automation bots with Robot Framework, Robocorp had to invent its own [software robot packaging format](https://robocorp.com/docs/setup/robot-structure). Or put simply, define a zip file with configuration metadata, Robot Framework automation code and optional supportive resources. They came up with quite nice solution.
+To make it convenient to build and distribute software automation bots with Robot Framework, Robocorp had to invent its own [software robot packaging format](https://robocorp.com/docs/setup/robot-structure). Or put simply, define convention for a zip file with configuration metadata, Robot Framework automation code and optional supportive resources. I think, they came up with a quite nice solution.
 
 For an example, let's look into the [bot implementing all Fleamarket demo external tasks](https://github.com/datakurre/carrot-rcc/tree/main/fleamarket-bot).
 
@@ -154,9 +154,9 @@ tasks:
     robotTaskName:
       Save items to spreadsheet
 ```
-A single bot may implement multiple tasks. Task be executed separately independently from each other. When used with carrot-rcc, `robot.yaml` is the place to bind Camunda Platform external task topics to Robot Framework automation tasks (defined in `.robot` files). In our example, Robot Framework task names match the external task topic names, but this is not a strict requirement. `robot.yaml` mapping makes it possible to even map the same Robot Framework task for multiple different external task topics.
+A single bot may implement multiple tasks. Each task can be executed independently from each other. When used with carrot-rcc, `robot.yaml` is the place to bind Camunda Platform external task topics to Robot Framework automation tasks (defined in `tasks.robot`). In our example, Robot Framework task names match the external task topic names, but this is not a strict requirement. For example. `robot.yaml` mapping makes it possible to map the same Robot Framework task to multiple different external task topics.
 
-In addition, `robot.yaml` has plenty of room for additional external task topic specific configuration, when required.
+In addition, `robot.yaml` has plenty of room for additional external task topic specific configuration, when required...
 
 **`./tasks.robot`** is the default Robot Framework task suite for the bot:
 
@@ -218,9 +218,11 @@ Save items to spreadsheet
     Add work item file  ${OUTPUT_DIR}${/}items.xslx
     Save work item
 ```
+Please, note, how each task starts with `Set task variables from work item` and ends with `Save work item`. Use of these keywords is how carrot-rcc loads variables from Camunda Platform external tasks and saves added and modified variables back to the same external task context. While being fully consistent with Robocorp [work item documentation](https://robocorp.com/docs/development-guide/robocorp-cloud/data-pipeline).
+
 It may surprise, how compact that single `tasks.robot` is, even it implements all the external task topics in our example process. That's because most the code has been abstracted into reusable Python keyword libraries. Two of them, `Image` and `YOLO`, being custom for this bot and distributed as [part of the same zip package](https://github.com/datakurre/carrot-rcc/tree/main/fleamarket-bot).
 
-Thanks to the power and flexibility of Robot Framework.
+All this is thanks to the power and flexibility of Robot Framework.
 
 [^1]: [My bot](https://github.com/datakurre/carrot-rcc/tree/main/fleamarket-bot) for the object detection uses the example models trained by the original author of YOLO v3 and therefore its recognition capabilities are limited by the objects known by those models. That said, the Internet is full of examples on how to train your own YOLO v3 models (it is just a lot of work).
 
