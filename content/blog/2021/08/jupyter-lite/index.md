@@ -6,7 +6,7 @@ tags: ["jupyter", "jupyter lab", "jupyter lite", "wasm", "camunda", "robot frame
 
 [Jupyter Notebooks](https://jupyter.org/) are extremely popular tool for manipulating, analyzing and visualizing data. [JupyterLab](https://jupyterlab.readthedocs.io/en/latest/), the currently maintained Notebook environment by Project Jupyter, can be scaled to large number of users when deployed with [JupyterHub](https://jupyter.org/hub) [on Kubernetes](https://z2jh.jupyter.org/). All open source.
 
-But soon providing the core Jupyter Notebook features will be significantly easier.
+But soon providing the core Jupyter Notebook features will be much easier.
 
 [JupyterLite](https://blog.jupyter.org/jupyterlite-jupyter-%EF%B8%8F-webassembly-%EF%B8%8F-python-f6e2e41ab3fa) is a JupyterLab distribution that runs entirely in the web browser, backed by in-browser language kernels. It is an unofficial Jupyter project, but being developed by the core Jupyter developers. It reboots and combines knowledge from several attempts at making a **full static Jupyter distribution that runs in the browser**.
 
@@ -18,7 +18,7 @@ This time for real.
 Embedded, frictionless and still powerful
 -----------------------------------------
 
-Example should help to understand the possibilities of in-browser JupyterLab environment. For that, I spent some time to compose a [Camunda Cockpit Plugin Jupyter](https://github.com/datakurre/camunda-cockpit-plugin-jupyter), which integrates JupyterLite as an embedded application right in Camunda Platform's process management interface:
+Example should help to understand the possibilities of in-browser JupyterLab environment. For that, I spent some time composing [Camunda Cockpit Plugin Jupyter](https://github.com/datakurre/camunda-cockpit-plugin-jupyter), which integrates JupyterLite as an embedded application right inside Camunda Platform's process management interface:
 
 ![JupyterLite as a Camunda Cockpit plugin](fleamarket-data.png)
 
@@ -50,7 +50,7 @@ In addition to Matplotlib, JupyterLite supports also [Altair](https://altair-viz
 One more thing...
 -----------------
 
-Well, I would not be blogging about this, if JupyterLite was not also capable of running [Robot Framework](https://robotframework.org). Robot Framework support makes embedded JupyterLite capable of many kind of scripting and maintenance tasks, which would benefit from the step-by-step logging capabilities of RobotoFramework. (Yet, don't expect many Robot Framework ecosystem packages to be compatible with in-browser execution.)
+Well, I would not be blogging about this, if JupyterLite was not also capable of running [Robot Framework](https://robotframework.org). Robot Framework support makes embedded JupyterLite capable of many kind of scripting and maintenance tasks, which would benefit from automatic step-by-step logging. (But, for now, don't expect many Robot Framework ecosystem packages to be compatible with in-browser execution.)
 
 ![Executing Robot Framework in-browser to fetch external task data from Camunda](fleamarket-robot.png)
 
