@@ -34,7 +34,7 @@ JupyterLite makes it possible to remove all friction from Jupter-capable users t
 
 2. For the same reason, there is no need for the users to install anything. Launching embedded JupyterLite from the host application could as simple as a single mouse click.
 
-3. Embedded JupyterLite re-uses authentication and authorization from its host application. For example, on Camunda Cockpit, JupyterLite uses the existing Camunda Cockpit browser session for calling Camunda REST API. Therefore users can analyze the data they are allowed to see.
+3. Embedded JupyterLite re-uses authentication and authorization from its host application. For example, on Camunda Cockpit, JupyterLite uses the existing Camunda Cockpit browser session for calling Camunda REST API. Therefore users can analyze just the data they are allowed to see with single sign-on.
 
 As simple as it could be.
 
@@ -50,7 +50,7 @@ In addition to Matplotlib, JupyterLite supports also [Altair](https://altair-viz
 One more thing...
 -----------------
 
-Well, I would not be blogging about this, if JupyterLite was not also capable of running [Robot Framework](https://robotframework.org). Robot Framework support makes embedded JupyterLite capable of many kind of scripting and maintenance tasks, which would benefit from automatic step-by-step logging. (But, for now, don't expect many Robot Framework ecosystem packages to be compatible with in-browser execution.)
+Well, I would not be blogging about this, if JupyterLite was not also capable of running [Robot Framework](https://robotframework.org). Robot Framework support makes embedded JupyterLite capable of many kind of scripting and maintenance tasks, which would benefit from Robot Framework's awesome step-by-step logging. (But, for now, don't expect many Robot Framework ecosystem packages to be compatible with in-browser execution.)
 
 ![Executing Robot Framework in-browser to fetch external task data from Camunda](fleamarket-robot.png)
 
