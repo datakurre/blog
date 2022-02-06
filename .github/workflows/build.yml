@@ -13,7 +13,7 @@ jobs:
     - uses: cachix/cachix-action@v10
       with:
         name: datakurre
-        signinKey: '${{ secrets.CACHIX_SIGNING_KEY }}'
+        signingKey: '${{ secrets.CACHIX_SIGNING_KEY }}'
     - run: >
         nix-build;
         cp -aL result build;
