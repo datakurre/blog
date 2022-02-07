@@ -183,6 +183,6 @@ Examples, examples…
 
 Personally, I feel the playground to be a low barrier environment to experiment with.
 
-Fun and easy enough that, the my is to stresm [how to use the playground](https://www.twitch.tv/datakurre) every now and with Markus Stahl during this spring. For example, on the last Friday, we converted the latest [Robocorp course: Work data management](https://robocorp.com/docs/courses/work-data-management) to run on the playground, replacing Robocorp Cloud orchestrato with playground's Camunda Platform. The result, and hopefully more on later, is available at [our "GitHub show notes"](https://github.com/datakurre/robotlive).
+Fun and easy enough that, the my is to stream [how to use the playground](https://www.twitch.tv/datakurre) every now and with Markus Stahl during this spring. For example, on the last Friday, we converted the latest [Robocorp course: Work data management](https://robocorp.com/docs/courses/work-data-management) to run on the playground, replacing Robocorp Cloud orchestrato with playground's Camunda Platform. The result, and hopefully more on later, is available at [our "GitHub show notes"](https://github.com/datakurre/robotlive).
 
-Fun fact: [moving to Camunda reduced the lines of robot code](https://github.com/datakurre/robotlive/commit/72cdfe1b8de3342fc567a4d8bf825946be8138fe) (by moving some logic into BPMN.
+Fun fact: [moving to Camunda reduced the lines of robot code](https://github.com/datakurre/robotlive/commit/72cdfe1b8de3342fc567a4d8bf825946be8138fe) (by moving some logic into BPMN).
