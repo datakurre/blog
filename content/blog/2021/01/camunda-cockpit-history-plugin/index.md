@@ -48,6 +48,15 @@ $ curl -L https://raw.githubusercontent.com/datakurre/camunda-cockpit-plugins/82
 $ curl -L https://raw.githubusercontent.com/datakurre/camunda-cockpit-plugins/825566a3544f637225140bff14aa23ca84843194/config.js -o META-INF/resources/webjars/camunda/app/cockpit/scripts/config.js
 ```
 
+**UPDATE 2022-06-16:** For the latest plugin version, instead, use:
+
+```bash
+$ curl -L https://raw.githubusercontent.com/datakurre/camunda-cockpit-plugins/raw/master/definition-historic-activities.js -o META-INF/resources/webjars/camunda/app/cockpit/scripts/definition-historic-activities.js
+$ curl -L https://raw.githubusercontent.com/datakurre/camunda-cockpit-plugins/raw/master/instance-historic-activities.js -o META-INF/resources/webjars/camunda/app/cockpit/scripts/instance-historic-activities.js
+$ curl -L https://raw.githubusercontent.com/datakurre/camunda-cockpit-plugins/raw/master/instance-route-history.js -o META-INF/resources/webjars/camunda/app/cockpit/scripts/instance-route-history.js
+$ curl -L https://raw.githubusercontent.com/datakurre/camunda-cockpit-plugins/raw/master/config.js -o META-INF/resources/webjars/camunda/app/cockpit/scripts/config.js
+```
+
 Finally, update the webapps with these plugins:
 
 ```bash
