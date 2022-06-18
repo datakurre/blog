@@ -54,6 +54,7 @@ $ curl -L https://raw.githubusercontent.com/datakurre/camunda-cockpit-plugins/82
 $ curl -L https://raw.githubusercontent.com/datakurre/camunda-cockpit-plugins/master/definition-historic-activities.js -o META-INF/resources/webjars/camunda/app/cockpit/scripts/definition-historic-activities.js
 $ curl -L https://raw.githubusercontent.com/datakurre/camunda-cockpit-plugins/master/instance-historic-activities.js -o META-INF/resources/webjars/camunda/app/cockpit/scripts/instance-historic-activities.js
 $ curl -L https://raw.githubusercontent.com/datakurre/camunda-cockpit-plugins/master/instance-route-history.js -o META-INF/resources/webjars/camunda/app/cockpit/scripts/instance-route-history.js
+$ curl -L https://raw.githubusercontent.com/datakurre/camunda-cockpit-plugins/master/robot-module.js.js -o META-INF/resources/webjars/camunda/app/cockpit/scripts/tasklist-audit-log.js
 $ curl -L https://raw.githubusercontent.com/datakurre/camunda-cockpit-plugins/master/config.js -o META-INF/resources/webjars/camunda/app/cockpit/scripts/config.js
 ```
 
