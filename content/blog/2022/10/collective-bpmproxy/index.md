@@ -76,7 +76,7 @@ Unfortunately, Camunda Forms are still young and may have surprising limitations
 
 ![Camunda Modeler wih open "Camunda Form"](./modeler-form.png)
 
-Then, eventually, there is need for code. Camunda Platform supports so called ["external task patter"](https://docs.camunda.io/docs/components/best-practices/development/invoking-services-from-the-process-c7/), where execution of a BPMN service task could be delegated to code running outside the platform. In practice, with Camunda Platform 7, a custom microservice could long-poll C7 REST APIs for new external service tasks for a specific topics, execute the custom code with variables from the process, and complete those tasks by calling REST API again.
+Then, eventually, there is need for code. Camunda Platform supports so called ["external task pattern"](https://docs.camunda.io/docs/components/best-practices/development/invoking-services-from-the-process-c7/), where execution of a BPMN service task could be delegated to code running outside the platform. In practice, with Camunda Platform 7, a custom microservice could long-poll C7 REST APIs for new external service tasks for a specific topics, execute the custom code with variables from the process, and complete those tasks by calling REST API again.
 
 A year ago, I wrote one special such service. [carrot-rcc](../../../2021/08/carrot-rcc) further delegates external service task executions to [Robocorp RCC toolchain](https://robocorp.com/docs/rcc/overview). Because of RCC, [Robocorp Robot packaging](https://robocorp.com/docs/rcc/overview), and power of Conda repositories, carrot-rcc is able to take a bunch of different "robot packages", poll and complete a lot of different external service tasks with a single worker service.
 
