@@ -12,6 +12,8 @@ Then we got into [BPMN 2.0](https://camunda.com/bpmn/reference/) and [Camunda Pl
 
 Meanwhile, I've been out of the office for a while, and been able to rethink, out of the box, without any real-life requirements, how would I bring my BPMN love back to Plone.
 
+![Animation of example process in Plone](./request-for-quote.gif)
+
 
 collective.bpmproxy
 -------------------
@@ -39,8 +41,6 @@ The two most obvious use cases with these features are:
   ![Example of signal controlled process to supplement Plone's built-in content workflow with intgration points (service tasks)](./signal-driven-example.png)
 
 But none of this would matter, if running and configuring C7 for the add-on would be complicated. Therefore, most gratifying discovery for myself was, how little customization for C7 made its use with Plone trivial.
-
-![Aniomation of example process in Plone](./request-for-quote.gif)
 
 
 Camunda Platform 7 customizations
