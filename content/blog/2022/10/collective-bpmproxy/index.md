@@ -40,6 +40,8 @@ The two most obvious use cases with these features are:
 
 But none of this would matter, if running and configuring C7 for the add-on would be complicated. Therefore, most gratifying discovery for myself was, how little customization for C7 made its use with Plone trivial.
 
+![Aniomation of example process in Plone](./request-for-quote.gif)
+
 
 Camunda Platform 7 customizations
 ---------------------------------
