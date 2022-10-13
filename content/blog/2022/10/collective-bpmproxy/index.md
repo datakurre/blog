@@ -12,8 +12,6 @@ Then we got into [BPMN 2.0](https://camunda.com/bpmn/reference/) and [Camunda Pl
 
 Meanwhile, I've been out of the office for a while, and been able to rethink, out of the box, without any real-life requirements, how would I bring my BPMN love back to Plone.
 
-![Animation of example process in Plone](./request-for-quote.gif)
-
 
 collective.bpmproxy
 -------------------
