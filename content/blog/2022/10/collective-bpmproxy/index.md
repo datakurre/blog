@@ -18,7 +18,7 @@ Meanwhile, I've been out of the office for a while, and been able to rethink, ou
 collective.bpmproxy
 -------------------
 
-So, I've been playing with a new experimental Plone add-on [collective.bpmproxy](https://github.com/datakurre/collective.bpmproxy) to figure out, the simplest possible way to bring the possibilities of BPMN to Plone. And without any real-life requirements, there has been no need implement specific features by force, but accept the limitation of easily available components, and only do what is easily done, in limited time.
+So, I've been playing with a new experimental Plone add-on [collective.bpmproxy](https://github.com/datakurre/collective.bpmproxy) to figure out, the simplest possible way to bring the possibilities of BPMN to Plone. And without any real-life requirements, there has been no need to implement any specific features by force, but accept the limitation of easily available components, and only do what is easily done, in limited time.
 
 Right now, the add-on comes with:
 
