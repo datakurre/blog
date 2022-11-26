@@ -82,11 +82,14 @@ class Layout extends React.Component {
           </>
         ) : (
           <>
-            <div className="h-entry">
-              <header>{header}</header>
-              <main>{children}</main>
-              <a href="https://fed.brid.gy/"></a>
-            </div>
+            <header>{header}</header>
+            <main>{children}</main>
+            <aside style={{ display: 'none' }}>
+              <div className="h-entry">
+                {title}
+                <a href="https://fed.brid.gy/"></a>
+              </div>
+            </aside>
           </>
         )}
       </div>

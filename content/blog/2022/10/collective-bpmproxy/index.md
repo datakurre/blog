@@ -87,5 +87,3 @@ And, before the end of this year, I am expecting [Robocorp Automation Studio](ht
 ![In the future, "low code" Robocorp Automation could be used to implement code for Camunda Platform external service tasks](./rpa-studio.png)
 
 I almost cannot wait for the next year, being back at work, and hopefully being able to implement a yet another business process use-case with Plone :)
-
-<a class="u-un-follow-of" href="https://fosstodon.org/@noordsestern">@noordsestern@fosstodon.org</a>
