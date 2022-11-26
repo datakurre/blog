@@ -62,6 +62,12 @@ class Layout extends React.Component {
       >
         <header>{header}</header>
         <main>{children}</main>
+        <aside style={{ display: "none" }} className="h-card">
+          <a href="https://datakurre.pandala.org/" rel="me">Asko Soukka</a>
+          <a href="acct:datakurre@datakurre.pandala.org" className="u-url"></a>
+          <img class="u-photo" src="http://iki.fi/asko.soukka/icon.jpg" />
+          <p class="p-note">Software architect at University of Jyväskylä</p>
+        </aside>
       </div>
     );
   }
