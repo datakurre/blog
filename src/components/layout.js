@@ -71,7 +71,7 @@ class Layout extends React.Component {
                 </a>
                 <img class="u-photo" src="http://iki.fi/asko.soukka/icon.jpg" />
                 <a
-                  className="u-url u-uid"
+                  className="u-url"
                   href="acct:datakurre@datakurre.pandala.org"
                 ></a>
                 <p className="p-note">
