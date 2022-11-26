@@ -65,7 +65,7 @@ class Layout extends React.Component {
             <header>{header}</header>
             <main>{children}</main>
             <aside style={{ display: 'none' }}>
-              <span class="h-card">
+              <span className="h-card">
                 <a href="https://datakurre.pandala.org" rel="me">
                   Asko Soukka
                 </a>
