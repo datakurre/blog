@@ -65,11 +65,13 @@ class Layout extends React.Component {
           <main>{children}</main>
           <a href="https://fed.brid.gy/"></a>
         </div>
-        <aside className="h-card" style={{ display: "none" }}>
-          <a href="https://datakurre.pandala.org/" rel="me">Asko Soukka</a>
-          <a href="acct:datakurre@datakurre.pandala.org" className="u-url"></a>
-          <img class="u-photo" src="http://iki.fi/asko.soukka/icon.jpg" />
-          <p class="p-note">Software architect at University of Jyväskylä</p>
+        <aside style={{ display: "none" }}>
+          <span class="h-card">
+            <a href={"https://datakurre.pandala.org" + location.pathname} rel="me">Asko Soukka</a>
+            <a href="acct:datakurre@datakurre.pandala.org" className="u-url"></a  >
+            <img class="u-photo" src="http://iki.fi/asko.soukka/icon.jpg" />
+            <p class="p-note">Software architect at University of Jyväskylä</p>
+          </span>
         </aside>
       </div>
     );
