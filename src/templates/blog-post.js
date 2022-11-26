@@ -64,6 +64,12 @@ class BlogPostTemplate extends React.Component {
             )}
           </li>
         </ul>
+        <aside style={{ display: 'none' }}>
+          <div className="h-entry">
+            {post.frontmatter.title}
+            <a href="https://fed.brid.gy/"></a>
+          </div>
+        </aside>
       </Layout>
     );
   }
