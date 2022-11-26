@@ -20,7 +20,7 @@ class BlogIndex extends React.Component {
             <div key={node.fields.slug}>
               <h3
                 style={{
-                  marginBottom: rhythm(1 / 4)
+                  marginBottom: rhythm(1 / 4),
                 }}
               >
                 <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
@@ -30,7 +30,7 @@ class BlogIndex extends React.Component {
               <small>{node.frontmatter.date}</small>
               <p
                 dangerouslySetInnerHTML={{
-                  __html: node.frontmatter.description || node.excerpt
+                  __html: node.frontmatter.description || node.excerpt,
                 }}
               />
             </div>

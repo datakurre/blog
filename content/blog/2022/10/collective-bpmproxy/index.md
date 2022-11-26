@@ -88,4 +88,4 @@ And, before the end of this year, I am expecting [Robocorp Automation Studio](ht
 
 I almost cannot wait for the next year, being back at work, and hopefully being able to implement a yet another business process use-case with Plone :)
 
-<a class="un-follow-of" href="https://fosstodon.org/@noordsestern">@noordsestern@fosstodon.org</a>
+<a class="u-un-follow-of" href="https://fosstodon.org/@noordsestern">@noordsestern@fosstodon.org</a>

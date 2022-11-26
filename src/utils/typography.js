@@ -8,7 +8,7 @@ Wordpress2016.overrideThemeStyles = () => {
     },
     'div.mermaid svg': {
       height: `auto !important`,
-    }
+    },
   };
 };
 

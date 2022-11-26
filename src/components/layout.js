@@ -15,14 +15,14 @@ class Layout extends React.Component {
           style={{
             ...scale(1.5),
             marginBottom: rhythm(1.5),
-            marginTop: 0
+            marginTop: 0,
           }}
         >
           <Link
             style={{
               boxShadow: `none`,
               textDecoration: `none`,
-              color: `inherit`
+              color: `inherit`,
             }}
             to={`/`}
           >
@@ -35,14 +35,14 @@ class Layout extends React.Component {
         <h3
           style={{
             fontFamily: `Montserrat, sans-serif`,
-            marginTop: 0
+            marginTop: 0,
           }}
         >
           <Link
             style={{
               boxShadow: `none`,
               textDecoration: `none`,
-              color: `inherit`
+              color: `inherit`,
             }}
             to={`/`}
           >
@@ -57,22 +57,38 @@ class Layout extends React.Component {
           marginLeft: `auto`,
           marginRight: `auto`,
           maxWidth: rhythm(24),
-          padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`
+          padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
         }}
       >
-        <div className="h-entry">
-          <header>{header}</header>
-          <main>{children}</main>
-          <a href="https://fed.brid.gy/"></a>
-        </div>
-        <aside style={{ display: "none" }}>
-          <span class="h-card">
-            <a href={"https://datakurre.pandala.org" + location.pathname} rel="me">Asko Soukka</a>
-            <a href="acct:datakurre@datakurre.pandala.org" className="u-url"></a  >
-            <img class="u-photo" src="http://iki.fi/asko.soukka/icon.jpg" />
-            <p class="p-note">Software architect at University of Jyväskylä</p>
-          </span>
-        </aside>
+        {location.pathname === rootPath ? (
+          <>
+            <header>{header}</header>
+            <main>{children}</main>
+            <aside style={{ display: 'none' }}>
+              <span class="h-card">
+                <a href="https://datakurre.pandala.org" rel="me">
+                  Asko Soukka
+                </a>
+                <a
+                  href="acct:datakurre@datakurre.pandala.org"
+                  className="u-url u-uid"
+                ></a>
+                <img class="u-photo" src="http://iki.fi/asko.soukka/icon.jpg" />
+                <p class="p-note">
+                  Software architect at University of Jyväskylä
+                </p>
+              </span>
+            </aside>
+          </>
+        ) : (
+          <>
+            <div className="h-entry">
+              <header>{header}</header>
+              <main>{children}</main>
+              <a href="https://fed.brid.gy/"></a>
+            </div>
+          </>
+        )}
       </div>
     );
   }
