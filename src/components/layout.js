@@ -59,12 +59,13 @@ class Layout extends React.Component {
           maxWidth: rhythm(24),
           padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`
         }}
-        className="h-entry"
       >
-        <header>{header}</header>
-        <main>{children}</main>
-        <a href="https://fed.brid.gy/"></a>
-        <aside style={{ display: "none" }} className="h-card">
+        <div className="h-entry">
+          <header>{header}</header>
+          <main>{children}</main>
+          <a href="https://fed.brid.gy/"></a>
+        </div>
+        <aside className="h-card" style={{ display: "none" }}>
           <a href="https://datakurre.pandala.org/" rel="me">Asko Soukka</a>
           <a href="acct:datakurre@datakurre.pandala.org" className="u-url"></a>
           <img class="u-photo" src="http://iki.fi/asko.soukka/icon.jpg" />
