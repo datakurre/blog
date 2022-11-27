@@ -13,6 +13,14 @@ class BlogIndex extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <Seo title="Follows" />
+        <h1
+          style={{
+            marginTop: rhythm(1),
+            marginBottom: 0,
+          }}
+        >
+          Follows
+        </h1>
         <ul>
           <li id="robotframework" className="h-entry">
             <a className="u-follow-of" href="https://fosstodon.org/@robotframework">
