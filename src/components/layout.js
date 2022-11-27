@@ -83,11 +83,6 @@ class Layout extends React.Component {
                   alt=""
                   src="https://datakurre.pandala.org/icon.jpg"
                 />
-                <img
-                  className="u-featured"
-                  alt=""
-                  src="https://datakurre.pandala.org/header.jpg"
-                />
                 <a
                   className="u-url"
                   href="acct:datakurre@datakurre.pandala.org"
