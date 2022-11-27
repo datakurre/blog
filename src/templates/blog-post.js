@@ -67,8 +67,9 @@ class BlogPostTemplate extends React.Component {
         <aside style={{ display: 'none' }}>
           <div className="h-entry">
             <span className="p-name">{post.frontmatter.title}</span>
+            <a className="p-author h-card" href="https://pandala.org/#datakurre">Asko Soukka</a>
             <span className="u-url">{"https://datakurre.pandala.org" + post.fields.slug}</span>
-            <span className="dt-published" datetime={post.frontmatter.published}/>
+            <time className="dt-published" datetime={post.frontmatter.published}>{post.frontmatter.published}</time>
             <div className="p-summary" dangerouslySetInnerHTML={{
               __html: post.frontmatter.description || post.excerpt,
             }}/>
@@ -98,7 +99,7 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
-        published: date(formatString: "YYYY-MM-DD 12:00:00")
+        published: date(formatString: "YYYY-MM-DD hh:mm:ss")
       }
     }
   }
