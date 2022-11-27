@@ -73,11 +73,6 @@ class Layout extends React.Component {
                 >
                   Asko Soukka
                 </a>
-                <a
-                  className="u-email"
-                  href="mailto:asko.soukka@iki.fi"
-                  rel="me"
-                />
                 <img
                   className="u-featured"
                   alt=""
@@ -90,7 +85,7 @@ class Layout extends React.Component {
                 />
                 <a
                   className="u-url"
-                  href="acct:datakurre@datakurre.pandala.org"
+                  href="acct:datakurre@pandala.org"
                 ></a>
                 <p className="p-note">
                   Software architect at University of Jyväskylä
