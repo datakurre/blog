@@ -22,6 +22,12 @@ class BlogIndex extends React.Component {
           Follows
         </h1>
         <ul>
+          <li id="camunda" className="h-entry">
+            <a className="u-follow-of" href="https://mas.to/@camunda">
+              @camunda@mas.to
+            </a>
+            <a href="https://fed.brid.gy/"></a>
+          </li>
           <li id="robotframework" className="h-entry">
             <a className="u-follow-of" href="https://fosstodon.org/@robotframework">
               @robotframework@fosstodon.org
