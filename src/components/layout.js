@@ -79,6 +79,11 @@ class Layout extends React.Component {
                   rel="me"
                 />
                 <img
+                  className="u-featured"
+                  alt=""
+                  src="https://datakurre.pandala.org/header.jpg"
+                />
+                <img
                   className="u-photo"
                   alt=""
                   src="https://datakurre.pandala.org/icon.jpg"
