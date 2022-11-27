@@ -70,8 +70,8 @@ class Layout extends React.Component {
                   Asko Soukka
                 </a>
                 <img
-                  class="u-photo"
-                  src="view-source:https://secure.gravatar.com/avatar/8970a4aa4836984ed5a32d9a82844791?s=512"
+                  className="u-photo"
+                  src="https://secure.gravatar.com/avatar/8970a4aa4836984ed5a32d9a82844791?s=512"
                 />
                 <a
                   className="u-url"
