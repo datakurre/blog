@@ -65,10 +65,15 @@ class BlogPostTemplate extends React.Component {
           </li>
         </ul>
         <aside style={{ display: 'none' }}>
-          <span className="h-entry">
-            {post.frontmatter.title}
+          <div className="h-entry">
+            <span className="p-name">{post.frontmatter.title}</span>
+            <span className="u-url">{"https://datakurre.pandala.org" + post.fields.slug}</span>
+            <span className="dt-published" datetime={post.frontmatter.published}/>
+            <div className="p-summary" dangerouslySetInnerHTML={{
+              __html: post.frontmatter.description || post.excerpt,
+            }}/>
             <a href="https://fed.brid.gy/"></a>
-          </span>
+          </div>
         </aside>
       </Layout>
     );
@@ -87,11 +92,13 @@ export const pageQuery = graphql`
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
       id
+      fields { slug }
       excerpt(pruneLength: 160)
       html
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
+        published: date(formatString: "YYYY-MM-DD 12:00:00")
       }
     }
   }
