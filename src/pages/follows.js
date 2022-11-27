@@ -14,6 +14,12 @@ class BlogIndex extends React.Component {
       <Layout location={this.props.location} title={siteTitle}>
         <Seo title="Follows" />
         <ul>
+          <li id="robotframework" className="h-entry">
+            <a className="u-follow-of" href="https://fosstodon.org/@robotframework">
+              @robotframework@fosstodon.org
+            </a>
+            <a href="https://fed.brid.gy/"></a>
+          </li>
           <li id="nlea" className="h-entry">
             <a className="u-follow-of" href="https://social.anoxinon.de/@nlea">
               @nlea@social.anoxinon.de
