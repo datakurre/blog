@@ -73,6 +73,7 @@ class Layout extends React.Component {
                 >
                   Asko Soukka
                 </a>
+                <a className="u-url" href="https://pandala.org/" rel="me" />
                 <img
                   className="u-featured"
                   alt=""

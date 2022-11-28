@@ -21,7 +21,7 @@ class BlogIndex extends React.Component {
         >
           Follows
         </h1>
-        <br/>
+        <br />
         <ul>
           <li id="camunda" className="h-entry">
             <a className="u-follow-of" href="https://mas.to/@camunda">
@@ -30,7 +30,10 @@ class BlogIndex extends React.Component {
             <a href="https://fed.brid.gy/"></a>
           </li>
           <li id="robotframework" className="h-entry">
-            <a className="u-follow-of" href="https://fosstodon.org/@robotframework">
+            <a
+              className="u-follow-of"
+              href="https://fosstodon.org/@robotframework"
+            >
               @robotframework@fosstodon.org
             </a>
             <a href="https://fed.brid.gy/"></a>
@@ -42,7 +45,10 @@ class BlogIndex extends React.Component {
             <a href="https://fed.brid.gy/"></a>
           </li>
           <li id="noordsestern" className="h-entry">
-            <a className="u-follow-of" href="https://fosstodon.org/@noordsestern">
+            <a
+              className="u-follow-of"
+              href="https://fosstodon.org/@noordsestern"
+            >
               @noordsestern@fosstodon.org
             </a>
             <a href="https://fed.brid.gy/"></a>
