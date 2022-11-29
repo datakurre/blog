@@ -45,7 +45,9 @@ pkgs.stdenv.mkDerivation {
     HOME=$(pwd) node_modules/.bin/gatsby build --prefix-paths
   '';
   installPhase = ''
+    mkdir -p $out
     cp -a public $out
+    cp -a .cache $out
   '';
   buildInputs = with pkgs; [
     bindfs

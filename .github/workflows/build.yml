@@ -18,11 +18,20 @@ jobs:
         signingKey: '${{ secrets.CACHIX_SIGNING_KEY }}'
     - run: >
         nix-build;
-        cp -aL result build;
-        chmod a+w -R build;
+        cp -aL result/.cache .;
+        cp -aL result/public .;
+        chmod a+w -R .cache public;
+        mv -aL public build;
         rm result
     - run: nix-shell shell.nix --run "echo OK"
     - run: nix-shell default.nix --run "echo OK"
+    - name: Cache GatsbyJS build
+      uses: actions/cache@v3
+      with:
+        path: |
+          ~/.cache
+          ~/public
+
     - uses: JamesIves/github-pages-deploy-action@4.1.4
       with:
         branch: gh-pages
