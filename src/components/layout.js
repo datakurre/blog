@@ -86,7 +86,7 @@ class Layout extends React.Component {
                 />
                 <a
                   className="u-url"
-                  href="acct:datakurre@pandala.org"
+                  href="acct:datakurre@datakurre.pandala.org"
                 ></a>
                 <p className="p-note">
                   Software architect at University of Jyväskylä
