@@ -89,6 +89,7 @@ class BlogPostTemplate extends React.Component {
               }}
             />
             <a href="https://fed.brid.gy/"></a>
+            <a href="https://fediverse.pandala.org/"></a>
           </div>
         </aside>
       </Layout>

@@ -23,11 +23,19 @@ class BlogIndex extends React.Component {
         </h1>
         <br />
         <ul>
+          <li id="uwe" className="h-entry">
+            <a className="u-follow-of" href="https://fosstodon.org/@asys3">
+              @asys3@fosstodon.org
+            </a>
+            <a href="https://fed.brid.gy/"></a>
+            <a href="https://fediverse.pandala.org/"></a>
+          </li>
           <li id="camunda" className="h-entry">
             <a className="u-follow-of" href="https://mas.to/@camunda">
               @camunda@mas.to
             </a>
             <a href="https://fed.brid.gy/"></a>
+            <a href="https://fediverse.pandala.org/"></a>
           </li>
           <li id="robotframework" className="h-entry">
             <a
@@ -37,12 +45,14 @@ class BlogIndex extends React.Component {
               @robotframework@fosstodon.org
             </a>
             <a href="https://fed.brid.gy/"></a>
+            <a href="https://fediverse.pandala.org/"></a>
           </li>
           <li id="nlea" className="h-entry">
             <a className="u-follow-of" href="https://social.anoxinon.de/@nlea">
               @nlea@social.anoxinon.de
             </a>
             <a href="https://fed.brid.gy/"></a>
+            <a href="https://fediverse.pandala.org/"></a>
           </li>
           <li id="noordsestern" className="h-entry">
             <a
@@ -52,6 +62,7 @@ class BlogIndex extends React.Component {
               @noordsestern@fosstodon.org
             </a>
             <a href="https://fed.brid.gy/"></a>
+            <a href="https://fediverse.pandala.org/"></a>
           </li>
         </ul>
       </Layout>
