@@ -21,7 +21,7 @@ jobs:
         cp -aL result/.cache .;
         cp -aL result/public .;
         chmod a+w -R .cache public;
-        mv -aL public build;
+        cp -aL public build;
         rm result
     - run: nix-shell shell.nix --run "echo OK"
     - run: nix-shell default.nix --run "echo OK"
@@ -31,7 +31,6 @@ jobs:
         path: |
           ~/.cache
           ~/public
-
     - uses: JamesIves/github-pages-deploy-action@4.1.4
       with:
         branch: gh-pages

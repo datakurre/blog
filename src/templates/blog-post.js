@@ -73,9 +73,9 @@ class BlogPostTemplate extends React.Component {
             >
               Asko Soukka
             </a>
-            <span className="u-url">
+            <a className="u-url">
               {'https://datakurre.pandala.org' + post.fields.slug}
-            </span>
+            </a>
             <time
               className="dt-published"
               datetime={post.frontmatter.published}
@@ -88,8 +88,8 @@ class BlogPostTemplate extends React.Component {
                 __html: post.frontmatter.description || post.excerpt,
               }}
             />
-            <a href="https://fed.brid.gy/"></a>
-            <a href="https://fediverse.pandala.org/"></a>
+            <a className="u-syndication" href="https://fed.brid.gy/"></a>
+            <a className="u-syndication" href="https://fediverse.pandala.org/"></a>
           </div>
         </aside>
       </Layout>
