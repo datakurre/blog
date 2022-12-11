@@ -22,9 +22,44 @@ class BlogPostTemplate extends React.Component {
             marginTop: rhythm(1),
             marginBottom: 0,
           }}
+          className="p-name"
         >
           {post.frontmatter.title}
         </h1>
+        <a
+          className="p-author h-card"
+          href="https://pandala.org/#datakurre"
+          style={{ display: 'none' }}
+        >
+          Asko Soukka
+        </a>
+        <a className="u-url" style={{ display: 'none' }}>
+          {'https://datakurre.pandala.org' + post.fields.slug}
+        </a>
+        <time
+          className="dt-published"
+          datetime={post.frontmatter.published}
+          style={{ display: 'none' }}
+        >
+          {post.frontmatter.published}
+        </time>
+        <div
+          className="p-summary"
+          dangerouslySetInnerHTML={{
+            __html: post.frontmatter.description || post.excerpt,
+          }}
+          style={{ display: 'none' }}
+        />
+        <a
+          className="u-syndication"
+          href="https://fed.brid.gy/"
+          style={{ display: 'none' }}
+        ></a>
+        <a
+          className="u-syndication"
+          href="https://fediverse.pandala.org/"
+          style={{ display: 'none' }}
+        ></a>
         <p
           style={{
             ...scale(-1 / 5),
@@ -64,34 +99,6 @@ class BlogPostTemplate extends React.Component {
             )}
           </li>
         </ul>
-        <aside style={{ display: 'none' }}>
-          <div className="h-entry">
-            <span className="p-name">{post.frontmatter.title}</span>
-            <a
-              className="p-author h-card"
-              href="https://pandala.org/#datakurre"
-            >
-              Asko Soukka
-            </a>
-            <a className="u-url">
-              {'https://datakurre.pandala.org' + post.fields.slug}
-            </a>
-            <time
-              className="dt-published"
-              datetime={post.frontmatter.published}
-            >
-              {post.frontmatter.published}
-            </time>
-            <div
-              className="p-summary"
-              dangerouslySetInnerHTML={{
-                __html: post.frontmatter.description || post.excerpt,
-              }}
-            />
-            <a className="u-syndication" href="https://fed.brid.gy/"></a>
-            <a className="u-syndication" href="https://fediverse.pandala.org/"></a>
-          </div>
-        </aside>
       </Layout>
     );
   }

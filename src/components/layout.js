@@ -84,10 +84,7 @@ class Layout extends React.Component {
                   alt=""
                   src="https://datakurre.pandala.org/icon.jpg"
                 />
-                <a
-                  className="u-url"
-                  href="acct:datakurre@pandala.org"
-                ></a>
+                <a className="u-url" href="acct:datakurre@pandala.org"></a>
                 <p className="p-note">
                   Software architect at University of Jyväskylä
                 </p>
@@ -97,7 +94,7 @@ class Layout extends React.Component {
         ) : (
           <>
             <header>{header}</header>
-            <main>{children}</main>
+            <main className="h-entry">{children}</main>
           </>
         )}
       </div>
