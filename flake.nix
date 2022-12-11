@@ -38,6 +38,8 @@
             # Custom codemirror
             rm -rf node_modules/gatsby-remark-codemirror/node_modules/codemirror
             cp -a node_modules/codemirror node_modules/gatsby-remark-codemirror/node_modules
+            # Patch gatsby-remark-mermaid 2.x
+            substituteInPlace node_modules/gatsby-remark-mermaid/index.js --replace "puppeteer.launch({" "puppeteer.launch({executablePath: 'chromium', "
             # Patch GatsbyJS
             patch -p1 <${./gatsby-nixpkgs.patch}
           '';
