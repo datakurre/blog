@@ -2,8 +2,8 @@ import React from 'react';
 import { Link, graphql } from 'gatsby';
 
 import Layout from '../components/layout';
-import Seo from '../components/seo';
 import { rhythm } from '../utils/typography';
+import Meta from "../components/meta";
 
 class BlogIndex extends React.Component {
   render() {
@@ -13,7 +13,6 @@ class BlogIndex extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <Seo title="All posts" />
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug;
           return (
@@ -43,6 +42,8 @@ class BlogIndex extends React.Component {
 
 export default BlogIndex;
 
+export const Head = () => <Meta title="All posts" slug="/"/>
+
 export const pageQuery = graphql`
   query {
     site {
@@ -50,7 +51,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(sort: { frontmatter: { date: DESC } }) {
       edges {
         node {
           excerpt

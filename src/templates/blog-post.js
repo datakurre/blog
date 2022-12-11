@@ -2,8 +2,8 @@ import React from 'react';
 import { Link, graphql } from 'gatsby';
 
 import Layout from '../components/layout';
-import Seo from '../components/seo';
 import { rhythm, scale } from '../utils/typography';
+import Meta from "../components/meta";
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -13,10 +13,6 @@ class BlogPostTemplate extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <Seo
-          title={post.frontmatter.title}
-          description={post.frontmatter.description || post.excerpt}
-        />
         <h1
           style={{
             marginTop: rhythm(1),
@@ -33,7 +29,8 @@ class BlogPostTemplate extends React.Component {
         >
           Asko Soukka
         </a>
-        <a className="u-url" style={{ display: 'none' }}>
+        <a className="u-url u-uid" style={{ display: 'none' }} href=
+          {'https://datakurre.pandala.org' + post.fields.slug}>
           {'https://datakurre.pandala.org' + post.fields.slug}
         </a>
         <time
@@ -54,12 +51,12 @@ class BlogPostTemplate extends React.Component {
           className="u-syndication"
           href="https://fed.brid.gy/"
           style={{ display: 'none' }}
-        ></a>
+        >https://fed.brid.gy/</a>
         <a
           className="u-syndication"
           href="https://fediverse.pandala.org/"
           style={{ display: 'none' }}
-        ></a>
+        >https://fediverse.pandala.org/</a>
         <p
           style={{
             ...scale(-1 / 5),
@@ -105,6 +102,8 @@ class BlogPostTemplate extends React.Component {
 }
 
 export default BlogPostTemplate;
+
+export const Head = ({data}) => <Meta title={data.markdownRemark.frontmatter.title} description={data.markdownRemark.frontmatter.description || data.markdownRemark.excerpt} slug={data.markdownRemark.fields.slug} />;
 
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {

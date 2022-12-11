@@ -73,7 +73,7 @@ class Layout extends React.Component {
                 >
                   Asko Soukka
                 </a>
-                <a className="u-url" href="https://pandala.org/" rel="me" />
+                <a className="u-url" href="https://pandala.org/" rel="me">https://pandala.org/</a>
                 <img
                   className="u-featured"
                   alt=""
@@ -84,7 +84,7 @@ class Layout extends React.Component {
                   alt=""
                   src="https://datakurre.pandala.org/icon.jpg"
                 />
-                <a className="u-url" href="acct:datakurre@pandala.org"></a>
+                <a className="u-url" href="acct:datakurre@pandala.org">acct:datakurre@pandala.org</a>
                 <p className="p-note">
                   Software architect at University of Jyväskylä
                 </p>
