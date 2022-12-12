@@ -3,7 +3,7 @@ import { Link, graphql } from 'gatsby';
 
 import Layout from '../components/layout';
 import { rhythm, scale } from '../utils/typography';
-import Meta from "../components/meta";
+import Meta from '../components/meta';
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -21,7 +21,7 @@ class BlogPostTemplate extends React.Component {
         >
           {post.frontmatter.title}
         </h1>
-        <span className="p-name" style={{ display: "none" }}>
+        <span className="p-name" style={{ display: 'none' }}>
           {post.frontmatter.title}
         </span>
         <a
@@ -31,34 +31,36 @@ class BlogPostTemplate extends React.Component {
         >
           Asko Soukka
         </a>
-        <a className="u-url u-uid" style={{ display: 'none' }} href=
-          {'https://datakurre.pandala.org' + post.fields.slug}>
-          {'https://datakurre.pandala.org' + post.fields.slug}
-        </a>
-        <time
-          className="dt-published"
-          datetime={post.frontmatter.published}
+        <a
+          className="u-url u-uid"
           style={{ display: 'none' }}
+          href={'https://datakurre.pandala.org' + post.fields.slug}
         >
-          {post.frontmatter.published}
-        </time>
-        <div
-          className="p-summary"
-          dangerouslySetInnerHTML={{
-            __html: post.frontmatter.description || post.excerpt,
-          }}
-          style={{ display: 'none' }}
-        />
+          <time className="dt-published" datetime={post.frontmatter.published}>
+            {post.frontmatter.published}
+          </time>
+        </a>
+        <div className="p-summary" style={{ display: 'none' }}>
+          <div
+            dangerouslySetInnerHTML={{
+              __html: post.frontmatter.description || post.excerpt,
+            }}
+          />
+        </div>
         <a
           className="u-syndication"
           href="https://fed.brid.gy/"
           style={{ display: 'none' }}
-        >https://fed.brid.gy/</a>
+        >
+          https://fed.brid.gy/
+        </a>
         <a
           className="u-syndication"
           href="https://fediverse.pandala.org/"
           style={{ display: 'none' }}
-        >https://fediverse.pandala.org/</a>
+        >
+          https://fediverse.pandala.org/
+        </a>
         <p
           style={{
             ...scale(-1 / 5),
@@ -107,7 +109,15 @@ class BlogPostTemplate extends React.Component {
 
 export default BlogPostTemplate;
 
-export const Head = ({data}) => <Meta title={data.markdownRemark.frontmatter.title} description={data.markdownRemark.frontmatter.description || data.markdownRemark.excerpt} slug={data.markdownRemark.fields.slug} />;
+export const Head = ({ data }) => (
+  <Meta
+    title={data.markdownRemark.frontmatter.title}
+    description={
+      data.markdownRemark.frontmatter.description || data.markdownRemark.excerpt
+    }
+    slug={data.markdownRemark.fields.slug}
+  />
+);
 
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {

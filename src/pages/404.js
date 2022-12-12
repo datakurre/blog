@@ -20,7 +20,7 @@ class NotFoundPage extends React.Component {
 
 export default NotFoundPage;
 
-export const Head = () => <Meta title="404: Not Found" />
+export const Head = () => <Meta title="404: Not Found" />;
 
 export const pageQuery = graphql`
   query {

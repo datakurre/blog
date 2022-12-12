@@ -21,7 +21,9 @@ function Meta({ title, description, slug, children }) {
   return (
     <>
       <title>{`${title} | ${site.siteMetadata.title}`}</title>
-      {!!slug ? <link rel="canonical" href={`https://datakurre.pandala.org${slug}`} /> : null}
+      {!!slug ? (
+        <link rel="canonical" href={`https://datakurre.pandala.org${slug}`} />
+      ) : null}
       <meta name="description" content={metaDescription} />
       <meta name="og:type" content="website" />
       <meta name="og:title" content={title} />

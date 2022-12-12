@@ -3,7 +3,7 @@ import { Link, graphql } from 'gatsby';
 
 import Layout from '../components/layout';
 import { rhythm } from '../utils/typography';
-import Meta from "../components/meta";
+import Meta from '../components/meta';
 
 class BlogIndex extends React.Component {
   render() {
@@ -42,7 +42,7 @@ class BlogIndex extends React.Component {
 
 export default BlogIndex;
 
-export const Head = () => <Meta title="All posts" slug="/"/>
+export const Head = () => <Meta title="All posts" slug="/" />;
 
 export const pageQuery = graphql`
   query {
