@@ -18,9 +18,10 @@ class BlogPostTemplate extends React.Component {
             marginTop: rhythm(1),
             marginBottom: 0,
           }}
-          className="p-name"
         >
+          <span className="p-name">
           {post.frontmatter.title}
+          </span>
         </h1>
         <a
           className="p-author h-card"
