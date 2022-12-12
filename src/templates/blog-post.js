@@ -38,6 +38,15 @@ class BlogPostTemplate extends React.Component {
             }}
           />
         </div>
+        {post.frontmatter.tags.map((tag) => (
+          <a
+            className="p-category"
+            href={'https://datakurre.pandala.org' + post.fields.slug}
+            style={{ display: 'none' }}
+          >
+            {tag}
+          </a>
+        ))}
         <a
           className="u-syndication"
           href="https://fed.brid.gy/"
@@ -132,6 +141,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
+        tags
         date(formatString: "MMMM DD, YYYY")
         published: date(formatString: "YYYY-MM-DD hh:mm:ss")
       }
