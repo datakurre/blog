@@ -29,6 +29,7 @@ class BlogPostTemplate extends React.Component {
           href="https://pandala.org/#datakurre"
           style={{ display: 'none' }}
         >
+          <img className="u-photo" src="/icon.jpg" alt="" />
           Asko Soukka
         </a>
         <div className="p-summary" style={{ display: 'none' }}>
