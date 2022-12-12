@@ -67,6 +67,7 @@ class BlogPostTemplate extends React.Component {
             ...scale(-1 / 5),
             display: `block`,
             color: `black`,
+            boxShadow: `none`,
             marginBottom: rhythm(1),
           }}
           href={'https://datakurre.pandala.org' + post.fields.slug}
