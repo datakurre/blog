@@ -19,10 +19,11 @@ class BlogPostTemplate extends React.Component {
             marginBottom: 0,
           }}
         >
-          <span className="p-name">
           {post.frontmatter.title}
-          </span>
         </h1>
+        <span className="p-name" style={{ display: "none" }}>
+          {post.frontmatter.title}
+        </span>
         <a
           className="p-author h-card"
           href="https://pandala.org/#datakurre"
@@ -67,7 +68,9 @@ class BlogPostTemplate extends React.Component {
         >
           {post.frontmatter.date}
         </p>
-        <div className="e-content" dangerouslySetInnerHTML={{ __html: post.html }} />
+        <div className="e-content">
+          <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        </div>
         <hr
           style={{
             marginBottom: rhythm(1),
