@@ -1,7 +1,7 @@
 ---
 title: Nix expressions as executable commands
 date: "2014-09-11T06:00:00Z"
-tags: ["nix", "python"]
+tags: ["Nix", "Python"]
 ---
 
 **Updated 2015-07-07:** [Stateless Nix environment

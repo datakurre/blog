@@ -1,7 +1,7 @@
 ---
 title: Creating Jupyter Docker-containers with Nix
 date: "2015-11-13T06:00:00Z"
-tags: ["jupyter", "nix", "R"]
+tags: ["Jupyter", "Nix", "R"]
 ---
 
 [Jupyter](http://jupyter.org/) is the new name and brand for an awesome

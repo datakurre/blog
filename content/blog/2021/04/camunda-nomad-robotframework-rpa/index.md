@@ -1,7 +1,7 @@
 ---
 title: My dream open source RPA orchestrator with Camunda and Nomad
 date: "2021-04-11T12:00:00Z"
-tags: ["camunda", "nomad", "robot framework", "python", "rpa", "open source"]
+tags: ["Camunda", "Nomad", "Robot Framework", "Python", "RPA", "Open Source"]
 ---
 
 RPA, *Robotic Process Automation*, is a fancy marketing term for executing glue code between two systems, which may have not been designed to communicate with each other otherwise.

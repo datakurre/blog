@@ -1,7 +1,7 @@
 ---
 title: Building Plone widget with React + Redux
 date: "2016-04-11T06:00:00Z"
-tags: ["diazo", "patternslib", "plone", "react", "redux", "webpack"]
+tags: ["Diazo", "Patternslib", "Plone", "React", "Redux", "Webpack"]
 ---
 
 As much I love the new through-the-web resource registries in Plone 5 (I

@@ -1,7 +1,7 @@
 ---
 title: Static is fast, but CMS still required – a JAMstack story
 date: "2020-06-12T12:00:00Z"
-tags: ["open source", "plone", "volto", "hasura", "gatsbyjs", "postgres", "graphql"]
+tags: ["Open Source", "Plone", "Volto", "Hasura", "GatsbyJS", "Postgres", "GraphQL"]
 ---
 
 An another iteration of [our university's new study guide web site](https://studyguide.jyu.fi/2020/) has been completed. The project that started more than a year ago as a [JAMstack](https://jamstack.org/) experiment with [GatsbyJS](https://www.gatsbyjs.org/) and [Hasura](https://hasura.io/), has finally matured enough to get its long expected expansion: [a content management system](http://voltocms.com/)!

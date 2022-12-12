@@ -1,7 +1,7 @@
 ---
 title: ploneCustom for Plone 5
 date: "2015-05-12T06:00:00Z"
-tags: ["plone", "requirejs", "ttw"]
+tags: ["Plone", "RequireJS", "TTW"]
 ---
 
 **No more custom** skins folder with infamous **ploneCustom** in Plone

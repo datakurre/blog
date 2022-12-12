@@ -1,7 +1,7 @@
 ---
 title: Using Camunda with Robocorp Cloud for orchestrating automation
 date: "2021-07-14T12:00:00Z"
-tags: ["camunda", "robocorp", "robot framework", "python", "rpa", "open source"]
+tags: ["Camunda", "Robocorp", "Robot Framework", "Python", "RPA", "Open Source"]
 ---
 
 ![](./robocloud-queue.png)

@@ -1,7 +1,7 @@
 ---
 title: Digital Signage management with Plone and GatsbyJS
 date: "2019-09-01T09:00:00Z"
-tags: ["plone", "gatsbyjs", "digital signage"]
+tags: ["Plone", "GatsbyJS", "Digital Signage"]
 ---
 
 Sometimes complex problems have simple solutions, and this was one of those times. At work, we are piloting a new digital signage solution for our university. Unfortunately, the new system lacks in permission management, and for a while, it looked like we were unable to safely delegate digital signage content management to departments.

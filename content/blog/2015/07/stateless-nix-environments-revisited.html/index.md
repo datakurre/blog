@@ -1,7 +1,7 @@
 ---
 title: Stateless Nix environments revisited
 date: "2015-07-07T06:00:00Z"
-tags: ["nix"]
+tags: ["Nix"]
 ---
 
 It\'s almost a year, since I tried to bend [Nix](http://nixos.org/nix/)

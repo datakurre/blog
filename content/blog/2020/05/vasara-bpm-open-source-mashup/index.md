@@ -1,7 +1,7 @@
 ---
 title: Vasara – an open source mashup for business process digitalization
 date: "2020-05-17T12:00:00Z"
-tags: ["open source", "workflow", "camunda", "hasura", "react-admin", "postgres", "graphql"]
+tags: ["Open Source", "Workflow", "Camunda", "Hasura", "React-Admin", "Postgres", "GraphQL"]
 ---
 
 In the beginning of this year, we met to discuss the options for making more of our existing business processes more automatic, more efficient, more transparent, more digital. More everything. Commercial tools exist, but their pricing is prohibitive. Long-term costs erratic. Aren't there any more real alternatives? How about open source?

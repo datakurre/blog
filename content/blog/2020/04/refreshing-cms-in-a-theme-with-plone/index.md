@@ -1,7 +1,7 @@
 ---
 title: Refreshing CMS, in a theme, with Plone
 date: "2020-04-13T12:00:00Z"
-tags: ["plone", "theming", "mosaic"]
+tags: ["Plone", "Theming", "Mosaic"]
 ---
 
 “How hard can it be? It is just a theme…”

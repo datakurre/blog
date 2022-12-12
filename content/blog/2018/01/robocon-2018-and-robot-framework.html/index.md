@@ -1,7 +1,7 @@
 ---
 title: RoboCon 2018 and Robot Framework Jupyter support
 date: "2018-01-27T06:00:00Z"
-tags: ["jupyter", "plone", "python", "robotframework", "sprint"]
+tags: ["Jupyter", "Plone", "Python", "Robot Framework", "Sprint"]
 ---
 
 It\'s already over a week since I got back home from the first [Robot

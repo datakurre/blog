@@ -1,7 +1,7 @@
 ---
 title: JupyterLite makes open source data analysis ubiquitous
 date: "2021-08-16T12:00:00Z"
-tags: ["jupyter", "jupyter lab", "jupyter lite", "wasm", "camunda", "robot framework", "python", "rpa", "open source"]
+tags: ["Jupyter", "JupyterLab", "JupyterLite", "Wasm", "Camunda", "Robot Framework", "Python", "RPA", "Open Source"]
 ---
 
 [Jupyter Notebooks](https://jupyter.org/) are extremely popular tool for manipulating, analyzing and visualizing data. [JupyterLab](https://jupyterlab.readthedocs.io/en/latest/), the currently maintained Notebook environment by Project Jupyter, can be scaled to large number of users when deployed with [JupyterHub](https://jupyter.org/hub) [on Kubernetes](https://z2jh.jupyter.org/). All open source.

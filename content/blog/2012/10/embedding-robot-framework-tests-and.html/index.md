@@ -1,7 +1,7 @@
 ---
 title: Embedding Robot Framework tests and keywords into Sphinx documentation
 date: "2012-10-22T06:00:00Z"
-tags: ["plone", "python", "robot framework", "sphinx", "testing"]
+tags: ["Plone", "Python", "Robot Framework", "Sphinx", "Testing"]
 ---
 
 [Robot Framework](http://code.google.com/p/robotframework/) ships with

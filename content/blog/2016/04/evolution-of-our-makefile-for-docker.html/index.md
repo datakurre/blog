@@ -1,7 +1,7 @@
 ---
 title: Evolution of a Makefile for building projects with Docker
 date: "2016-04-30T06:00:00Z"
-tags: ["docker", "make", "python", "selenium", "testing"]
+tags: ["Docker", "Make", "Python", "Selenium", "Testing"]
 ---
 
 It\'s hard to move to [GitLab](https://gitlab.com/) and resist the

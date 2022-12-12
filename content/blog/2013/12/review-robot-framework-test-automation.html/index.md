@@ -1,7 +1,7 @@
 ---
 title: "Review: Robot Framework Test Automation (Bisht 2013)"
 date: "2013-12-08T06:00:00Z"
-tags: ["review", "robot framework", "testing"]
+tags: ["Review", "Robot Framework", "Testing"]
 ---
 
 During the past year, I\'ve been lucky to meet many people new to Robot

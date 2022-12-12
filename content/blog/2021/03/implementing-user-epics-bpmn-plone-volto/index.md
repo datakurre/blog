@@ -1,7 +1,7 @@
 ---
 title: Implementing user epics with BPMN
 date: "2021-03-21T12:00:00Z"
-tags: ["plone", "volto", "bpmn", "camunda", "python", "open source"]
+tags: ["Plone", "Volto", "BPMN", "Camunda", "Python", "Open Source"]
 ---
 
 Many user stories start simple. For example: “A user self registers into a course”.

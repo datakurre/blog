@@ -1,7 +1,7 @@
 ---
 title: Running Robot Framework tests with Google App Engine SDK
 date: "2012-06-01T06:00:00Z"
-tags: ["google app engine", "python", "robot framework", "selenium", "testing"]
+tags: ["Google App Engine", "Python", "Robot Framework", "Selenium", "Testing"]
 ---
 
 For a long time I thought that Selenium was hard to set up and tests for

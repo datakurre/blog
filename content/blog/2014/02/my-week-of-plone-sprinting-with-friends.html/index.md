@@ -1,7 +1,7 @@
 ---
 title: My week of Plone sprinting with friends and robots
 date: "2014-02-19T06:00:00Z"
-tags: ["plone", "robot framework", "screenshots", "selenium", "sphinx"]
+tags: ["Plone", "Robot Framework", "Screenshots", "Selenium", "Sphinx"]
 ---
 
 I\'m a bit late, but yes, I had a great time at last week\'s

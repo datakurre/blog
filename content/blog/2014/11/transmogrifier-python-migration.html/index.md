@@ -1,7 +1,7 @@
 ---
 title: Transmogrifier, the Python migration pipeline, also for Python 3
 date: "2014-11-19T06:00:00Z"
-tags: ["migration", "plone", "python", "transmogrifier"]
+tags: ["Migration", "Plone", "Python", "Transmogrifier"]
 ---
 
 **TL;DR;** I forked

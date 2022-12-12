@@ -1,7 +1,7 @@
 ---
 title: Nix in Docker – Best of Both Worlds
 date: "2015-11-16T06:00:00Z"
-tags: ["jupyter", "nix"]
+tags: ["Jupyter", "Nix"]
 ---
 
 I\'m using [Nix](https://nixos.org/nix/) mostly on a mac as a

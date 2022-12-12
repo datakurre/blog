@@ -1,7 +1,7 @@
 ---
 title: Building open source “history plugin” for Camunda Cockpit
 date: "2021-05-03T12:00:00Z"
-tags: ["camunda", "bpm", "cockpit", "history", "plugin", "open source"]
+tags: ["Camunda", "BPMN", "Open Source"]
 ---
 
 For the last few months, I've been steadily developing [an open source “history plugin” for Camunda Community Edition Cockpit](https://github.com/datakurre/camunda-cockpit-plugins/). Obviously a very basic one, but one that's growing and learning Camunda with me. This is a small writeup on how it came to be.

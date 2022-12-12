@@ -1,7 +1,7 @@
 ---
 title: Introducing RobotLab
 date: "2019-09-21T09:00:00Z"
-tags: ["robotlab", "robotframework", "testing", "rpa", "robots-from-jupyter", "jupyter"]
+tags: ["RobotLab", "Robot Framework", "Testing", "RPA", "Jupyter"]
 ---
 
 Say hello to [RobotLab](https://robots-from-jupyter.github.io/)! JupyterLab powered interactive Robot Framework test suite and RPA task suite authoring platform for Windows, MacOS and Linux. Provided for you by the [Robots from Jupyter](https://github.com/robots-from-jupyter) team. Welcome to the era of Robot Framework authoring with fast, fun, and more interactive iterations:

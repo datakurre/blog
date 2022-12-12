@@ -1,7 +1,7 @@
 ---
 title: BPMN for Plone – the best CMS deserves equal workflows
 date: "2022-10-12T12:00:00Z"
-tags: ["camunda", "Plone", "python", "BPMN", "open source"]
+tags: ["Camunda", "Plone", "Python", "BPMN", "Open Source"]
 ---
 
 Doing whatever necessary to implement various business process use cases with [Plone CMS](https://plone.org) used to be my groundhog day at work.

@@ -1,7 +1,7 @@
 ---
 title: Getting started with Robot Framework and plone.app.testing
 date: "2012-09-01T06:00:00Z"
-tags: ["plone", "python", "robot framework", "selenium", "testing"]
+tags: ["Plone", "Python", "Robot Famework", "Selenium", "Testing"]
 ---
 
 Selenium testing Plone doesn\'t need to be difficult. Actually, with the

@@ -1,7 +1,7 @@
 ---
 title: Building instant features with advanced Plone themes
 date: "2017-10-23T06:00:00Z"
-tags: ["chameleon", "plone", "requirejs", "templating", "theming"]
+tags: ["Chameleon", "Plone", "RequireJS", "Templating", "Theming"]
 ---
 
 Plone, "[The Ultimate Enterprise CMS](https://plone.com/)", ships with

@@ -1,7 +1,7 @@
 ---
 title: Setting up Camunda Run and connecting with Robocloud
 date: "2020-07-12T12:00:00Z"
-tags: ["open source", "rpa", "robocloud", "camunda"]
+tags: ["Open Source", "RPA", "Robocloud", "Camunda"]
 ---
 
 [In my previous post](/2020/07/camunda-robocloud/) I wrote an overview, how to implement a semi-automated business process involving both humans and robot with just [Camunda BPM](https://camunda.com/) and [Robocorp Robocloud RPA](https://hub.robocorp.com/). But how to really get started with Camunda BPM with Robocloud RPA?

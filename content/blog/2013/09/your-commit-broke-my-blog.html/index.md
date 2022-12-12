@@ -1,7 +1,7 @@
 ---
 title: Blogging examples of use with automated screenshots
 date: "2013-09-23T06:00:00Z"
-tags: ["doctest", "plone", "robot framework", "screenshots", "selenium", "sphinx", "testing"]
+tags: ["Doctest", "Plone", "Robot Framework", "Screenshots", "Selenium", "Sphinx", "Testing"]
 ---
 
 > But how much does it makes sense to write acceptance tests while

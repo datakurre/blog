@@ -1,7 +1,7 @@
 ---
 title: Cross-Browser Selenium testing with Robot Framework and Sauce Labs
 date: "2014-03-20T06:00:00Z"
-tags: ["python", "robot framework", "Sauce Labs", "selenium", "testing"]
+tags: ["Python", "Robot Framework", "Sauce Labs", "Selenium", "Testing"]
 ---
 
 How do you keep your [Selenium](http://docs.seleniumhq.org/) tests

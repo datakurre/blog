@@ -1,7 +1,7 @@
 ---
 title: Asynchronous stream iterators and experimental promises for Plone
 date: "2014-05-04T06:00:00Z"
-tags: ["async", "asyncore", "medusa", "plone", "promises", "python"]
+tags: ["Async", "Asyncore", "Plone", "Python"]
 ---
 
 *This post may contain traces of legacy Zope2 and Python 2.x.*

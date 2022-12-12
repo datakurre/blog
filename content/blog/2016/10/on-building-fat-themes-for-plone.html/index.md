@@ -1,7 +1,7 @@
 ---
 title: On building fat themes for Plone
 date: "2016-10-04T06:00:00Z"
-tags: ["diazo", "plone", "requirejs", "theming", "ttw", "webpack"]
+tags: ["Diazo", "Plone", "RequireJS", "Theming", "TTW", "Webpack"]
 ---
 
 Could fat themes become the common ground between filesystem Plone

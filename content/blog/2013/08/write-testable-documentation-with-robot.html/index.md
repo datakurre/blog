@@ -1,7 +1,7 @@
 ---
 title: Write testable documentation with Robot Framework
 date: "2013-08-15T06:00:00Z"
-tags: ["doctest", "plone", "robot framework", "testing"]
+tags: ["Doctest", "Plone", "Robot Framework", "Testing"]
 ---
 
 If you have background as a Python programmer, you must be familiar with

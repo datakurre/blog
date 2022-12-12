@@ -1,7 +1,7 @@
 ---
 title: Stay accessible – Robot Framework library for WAVE-toolbar
 date: "2013-05-26T06:00:00Z"
-tags: ["accessibility", "plone", "robot framework", "vagrant", "wave", "webaim"]
+tags: ["Accessibility", "Plone", "Robot Framework", "Vagrant", "Wave", "WebAIM"]
 ---
 
 [WAVE Web Accessibility Tool](http://wave.webaim.org/) is a popular

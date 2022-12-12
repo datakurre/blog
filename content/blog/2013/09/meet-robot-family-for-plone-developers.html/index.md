@@ -1,7 +1,7 @@
 ---
 title: Meet the Robot family (for Plone developers)
 date: "2013-09-28T06:00:00Z"
-tags: ["accessibility", "plone", "robot framework", "screenshots", "selenium", "sphinx", "testing", "wave", "webaim"]
+tags: ["Accessibility", "Plone", "Robot Framework", "Screenshots", "Selenium", "Sphinx", "Testing", "Wave", "WebAIM"]
 ---
 
 I only need to go two years back in time, and I had never really tried

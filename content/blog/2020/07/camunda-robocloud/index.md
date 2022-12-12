@@ -1,7 +1,7 @@
 ---
 title: Connecting the dots – Automated business process with Robocloud and Camunda BPM
 date: "2020-07-10T12:00:00Z"
-tags: ["open source", "rpa", "robocloud", "camunda"]
+tags: ["Open Source", "RPA", "Robocloud", "Camunda"]
 ---
 
 <!-- ![](tweet-approval-process.png) -->

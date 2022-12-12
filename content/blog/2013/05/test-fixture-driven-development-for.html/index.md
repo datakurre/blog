@@ -1,7 +1,7 @@
 ---
 title: Test fixture driven development for Plone add-ons?
 date: "2013-05-10T06:00:00Z"
-tags: ["plone", "testing"]
+tags: ["Plone", "Testing"]
 ---
 
 You may have already seen [Maurizio Delmonte\'s

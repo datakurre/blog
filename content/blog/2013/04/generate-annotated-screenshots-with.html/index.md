@@ -1,7 +1,7 @@
 ---
 title: Generate annotated screenshots with plone.app.robotframework
 date: "2013-04-09T06:00:00Z"
-tags: ["plone", "robot framework", "screencasts", "screenshots"]
+tags: ["Plone", "Robot Framework", "Screencasts", "Screenshots"]
 ---
 
 Greetings from Sorrento, from [Plone Open Garden

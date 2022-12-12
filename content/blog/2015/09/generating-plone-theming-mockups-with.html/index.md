@@ -1,7 +1,7 @@
 ---
 title: Generating Plone theming mockups with Chameleon
 date: "2015-09-06T06:00:00Z"
-tags: ["chameleon", "diazo", "plone", "templating", "theming"]
+tags: ["Chameleon", "Diazo", "Plone", "Templating", "Theming"]
 ---
 
 Some days ago there was a question at the Plone IRC-channel, whether the

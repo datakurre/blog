@@ -1,7 +1,7 @@
 ---
 title: Too many ways to do async tasks with Plone
 date: "2014-10-23T06:00:00Z"
-tags: ["async", "asyncore", "futures", "medusa", "plone", "promises", "RabbitMQ"]
+tags: ["Async", "Asyncore", "Medusa", "Plone", "RabbitMQ"]
 ---
 
 Triggering asynchronous tasks from [Plone](http://plone.org/) is hard,

@@ -1,7 +1,7 @@
 ---
 title: Create custom views for Dexterity-types TTW
 date: "2013-01-31T06:00:00Z"
-tags: ["dexterity", "plone", "ttw"]
+tags: ["Dexterity", "Plone", "TTW"]
 ---
 
 [Plone 4.3](http://plone.org/products/plone/releases/4.3) will ship with

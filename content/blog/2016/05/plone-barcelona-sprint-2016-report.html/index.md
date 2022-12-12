@@ -1,7 +1,7 @@
 ---
 title: Plone Barcelona Sprint 2016 Report
 date: "2016-05-22T06:00:00Z"
-tags: ["aiohttp", "async", "dexterity", "plone", "sprint", "zodb"]
+tags: ["AioHttp", "Async", "Dexterity", "Plone", "Sprint", "Zodb"]
 ---
 
 For the last week, I was lucky enough to be allowed to participate

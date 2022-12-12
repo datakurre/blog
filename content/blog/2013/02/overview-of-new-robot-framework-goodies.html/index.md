@@ -1,7 +1,7 @@
 ---
 title: Overview of the new Robot Framework goodies for Plone
 date: "2013-02-11T06:00:00Z"
-tags: ["plone", "robot framework", "selenium", "testing"]
+tags: ["Plone", "Robot Framework", "Selenium", "Testing"]
 ---
 
 Greetings from [Plone testing

@@ -1,7 +1,7 @@
 ---
 title: Nix for Python developers
 date: "2015-10-28T06:00:00Z"
-tags: ["python", "docker", "nix"]
+tags: ["Python", "Docker", "Nix"]
 ---
 
 About a week ago, I had the pleasure of giving a [presentation about my

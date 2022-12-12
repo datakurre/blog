@@ -1,7 +1,7 @@
 ---
 title: Customize Plone 5 default theme on the fly
 date: "2015-05-25T06:00:00Z"
-tags: ["plone", "ttw"]
+tags: ["Plone", "TTW"]
 ---
 
 When I recently wrote about, how to reintroduce [ploneCustom for

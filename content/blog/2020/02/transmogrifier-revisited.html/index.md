@@ -1,7 +1,7 @@
 ---
 title: Creating Plone content with Transmogrifier on Python 3
 date: "2020-02-25T12:00:00Z"
-tags: ["plone", "python3", "transmogrifier", "api"]
+tags: ["Plone", "Python", "Transmogrifier", "API"]
 ---
 
 TL;DR; This blog post ends with minimal example of creating Plone 5.2 content with

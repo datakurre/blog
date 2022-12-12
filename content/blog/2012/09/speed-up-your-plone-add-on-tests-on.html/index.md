@@ -1,7 +1,7 @@
 ---
 title: Speed up your Plone add-on tests on Travis CI with the Unified Installer
 date: "2012-09-09T06:00:00Z"
-tags: ["plone", "testing", "Travis CI"]
+tags: ["Plone", "Testing", "Travis CI"]
 ---
 
 Many thanks for Héctor Verlarde for [encouraging us to try out Travis CI

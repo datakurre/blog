@@ -1,7 +1,7 @@
 ---
 title: Documentation – a plausible excuse for acceptance testing
 date: "2013-09-20T06:00:00Z"
-tags: ["plone", "robot framework", "selenium", "sphinx"]
+tags: ["Plone", "Robot Framework", "Selenium", "Sphinx"]
 ---
 
 > Or how to use [Sphinx](http://sphinx-doc.org/) to create user guides

@@ -1,7 +1,7 @@
 ---
 title: RCC toolchain compatible Robot Framework automation bots for Camunda Platform
 date: "2021-08-03T12:00:00Z"
-tags: ["camunda", "robocorp", "robot framework", "python", "rpa", "open source"]
+tags: ["Camunda", "Robocorp", "Robot Framework", "Python", "RPA", "Open Source"]
 ---
 
 [On my previous post](../../07/camunda-robocorp-cloud-executor/), I shortly revisited [Robocorp](https://robocorp.com/) contributions to [Robot Framework RPA](https://robotframework.org/rpa/) ecosystem, and then tried out their [cloud](https://robocorp.com/docs/robocorp-cloud/overview) for orchestrating [Camunda Platform external task](https://docs.camunda.org/manual/latest/user-guide/ext-client/) bots. While re-learning their tools, I realised, I had overlooked their latest open-source contribution: [Robot Code Configuration toolchain](https://robocorp.com/blog/simplifying-python-based-automation-introducing-rcc/) (or simply RCC).

@@ -1,7 +1,7 @@
 ---
 title: Building Docker containers from scratch using Nix
 date: "2015-07-09T06:00:00Z"
-tags: ["buildout", "docker", "nix", "plone"]
+tags: ["Buildout", "Docker", "Nix", "Plone"]
 ---
 
 [Nix](https://nixos.org/nix/) makes it reasonable to build Docker

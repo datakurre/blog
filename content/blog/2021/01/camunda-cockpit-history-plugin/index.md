@@ -1,7 +1,7 @@
 ---
 title: Open source “history plugin” for Camunda Cockpit
 date: "2021-01-03T12:00:00Z"
-tags: ["camunda", "bpm", "cockpit", "history", "plugin", "open source"]
+tags: ["Camunda", "BPMN", "Open Source"]
 ---
 
 Year 2020 was a good year to learn business process automation possibilities with BPMN and [Camunda](https://camunda.com/) – an open-source workflow and decision automation platform. Not only were the related conferences online and free to attend, but good feature releases made the Camunda platform easier to adopt and extend.

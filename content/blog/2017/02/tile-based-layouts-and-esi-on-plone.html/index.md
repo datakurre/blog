@@ -1,7 +1,7 @@
 ---
 title: Tile based layouts and ESI on Plone
 date: "2017-02-26T06:00:00Z"
-tags: ["blocks", "ESI", "plone", "tiles", "varnish"]
+tags: ["Blocks", "ESI", "Plone", "Tiles", "Varnish"]
 ---
 
 Plone\'s [Blocks: Grid based

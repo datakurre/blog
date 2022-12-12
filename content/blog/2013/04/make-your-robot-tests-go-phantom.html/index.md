@@ -1,7 +1,7 @@
 ---
 title: Make your Robot tests go Phantom
 date: "2013-04-27T06:00:00Z"
-tags: ["phantomjs", "plone", "robot framework", "selenium"]
+tags: ["PhantomJS", "Plone", "Robot Framework", "Selenium"]
 ---
 
 A new version of

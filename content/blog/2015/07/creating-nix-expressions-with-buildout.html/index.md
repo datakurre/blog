@@ -1,7 +1,7 @@
 ---
 title: Creating Nix-expressions with buildout
 date: "2015-07-08T06:00:00Z"
-tags: ["buildout", "nix", "plone"]
+tags: ["Buildout", "Nix", "Plone"]
 ---
 
 The greatest blocker for using [Nix](https://nixos.org/nix/) or complex

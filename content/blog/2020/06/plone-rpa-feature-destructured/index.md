@@ -1,7 +1,7 @@
 ---
 title: Automated subtitles – destructuring a successful Plone CMS integration
 date: "2020-06-22T12:00:00Z"
-tags: ["open source", "plone", "rpa", "jenkins"]
+tags: ["Open Source", "Plone", "RPA", "Jenkins"]
 ---
 
 Never underestimate the importance of being able to make changes to your software – especially when they are critical to your business processes.

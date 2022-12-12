@@ -1,7 +1,7 @@
 ---
 title: Plone Conference Barcelona 2017
 date: "2017-11-03T06:00:00Z"
-tags: ["plone"]
+tags: ["Plone"]
 ---
 
 It was awesome to be back at Plone Conference this year. Finally! We

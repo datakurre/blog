@@ -1,7 +1,7 @@
 ---
 title: Cross-browser test your Plone add-on with Robot Framework, Travis-CI and Sauce Labs
 date: "2013-03-12T06:00:00Z"
-tags: ["plone", "robot framework", "Sauce Labs", "selenium", "testing", "Travis CI"]
+tags: ["Plone", "Robot Framework", "Sauce Labs", "Selenium", "Testing", "Travis CI"]
 ---
 
 Thanks to [Rok Garbas](http://garbas.si/), I became aware of [Sauce

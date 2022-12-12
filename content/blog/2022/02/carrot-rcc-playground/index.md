@@ -1,7 +1,7 @@
 ---
 title: Having fun at open-source automation playground
 date: "2022-02-08T12:00:00Z"
-tags: ["camunda", "robocorp", "robot framework", "python", "rpa", "open source"]
+tags: ["Camunda", "Robocorp", "Robot Framework", "Python", "RPA", "Open Source"]
 ---
 
 Successful business process automation requires real ability to iterate the automation part.

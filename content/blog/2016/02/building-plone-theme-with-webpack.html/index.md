@@ -1,7 +1,7 @@
 ---
 title: Building Plone theme with Webpack
 date: "2016-02-15T06:00:00Z"
-tags: ["plone", "theming", "webpack"]
+tags: ["Plone", "Theming", "Webpack"]
 ---
 
 I just fixed my old post on [customizing Plone 5 default theme on the
