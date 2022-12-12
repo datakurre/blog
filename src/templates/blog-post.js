@@ -31,15 +31,6 @@ class BlogPostTemplate extends React.Component {
         >
           Asko Soukka
         </a>
-        <a
-          className="u-url u-uid"
-          style={{ display: 'none' }}
-          href={'https://datakurre.pandala.org' + post.fields.slug}
-        >
-          <time className="dt-published" datetime={post.frontmatter.published}>
-            {post.frontmatter.published}
-          </time>
-        </a>
         <div className="p-summary" style={{ display: 'none' }}>
           <div
             dangerouslySetInnerHTML={{
@@ -61,15 +52,20 @@ class BlogPostTemplate extends React.Component {
         >
           https://fediverse.pandala.org/
         </a>
-        <p
+        <a
+          className="u-url u-uid"
           style={{
             ...scale(-1 / 5),
             display: `block`,
+            color: `black`,
             marginBottom: rhythm(1),
           }}
+          href={'https://datakurre.pandala.org' + post.fields.slug}
         >
-          {post.frontmatter.date}
-        </p>
+          <time className="dt-published" datetime={post.frontmatter.published}>
+            {post.frontmatter.date}
+          </time>
+        </a>
         <div className="e-content">
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
         </div>
