@@ -5,9 +5,9 @@ tags: ["Camunda", "Robot Framework", "Python", "BPMN", "Open Source"]
 ---
 
 This year I've been tinkering mainly around [Camunda Platform](https://camunda.com/download/), the BPMN based open-source process orchestration platform of my choice [[1]](#footnote-1).
-Especially, how [Robot Framework](https://robotframework.org/), an open source automation framework with extensive ecosystem, seems to be an unexpected match for implementing automated tasks in BPMN processes.
+My special interest has been, how [Robot Framework](https://robotframework.org/), an open source automation framework with extensive ecosystem, seems to be an unexpected match for implementing automated tasks in BPMN processes.
 
-Let's start by asking OpenAI's ChatGPT about the topic:
+But let's start by asking OpenAI's ChatGPT about the topic:
 
 **How would you conceptually align Camunda platform and Robot Framework so that Camunda automates the execution of BPMN defined processes, but Robot Framework is used to execute external service tasks within those processes?**
 
@@ -17,7 +17,7 @@ Let's start by asking OpenAI's ChatGPT about the topic:
 
 *Overall, this approach would allow you to use Camunda to manage and automate your business processes, while leveraging the power of Robot Framework to automate specific tasks within those processes. This could help to improve the efficiency and reliability of your processes, and ultimately help your organization to achieve its goals.*
 
-I couldn't agree more... but **what does it really mean to integrate Robot Framework into your Camunda processes?**
+I couldn't agree more... but what could it **really** mean to integrate Robot Framework into your Camunda processes?
 
 ![Robot Framework](./robot.png)
 
@@ -25,15 +25,15 @@ I couldn't agree more... but **what does it really mean to integrate Robot Frame
 Tasks are work items
 --------------------
 
-Robot Framework is a generic automation framework, which does not dictate by itself how it should be integrated with other systems. To avoid inventing my own way, I chose to follow [Robocorp's conventions](https://robocorp.com/docs/development-guide/robocorp-cloud/data-pipeline).
+Robot Framework is a generic automation framework, which does not dictate by itself, how it should be integrated with other systems. To avoid inventing my own way, I chose to follow [Robocorp's conventions](https://robocorp.com/docs/development-guide/robocorp-cloud/data-pipeline).
 
 Camunda Platform recommends to model computer automated tasks in BPMN processes as *external service tasks* [[2]](#footnote-2). Therefore every automated task in Camunda is an *external service task instance*. When a software worker activates a such task, Camunda Platform delivers the worker a payload: a list of *task variables* with their values from the activated *task instance*.
 
 ![Service task](./service-task.png)
 
-Meanwhile, Robocorp maintains [RPA Framework](https://rpaframework.org/) a comprehensive and well documented collection of various automation libraries for Robot Framework and Python. RPA Framework happens to include also [a library for interacting with available work items](https://rpaframework.org/libraries/robocorp_workitems/index.html). While the default implemention is designed for Robocorp's own cloud service only, the library supports *adapter pattern* for local customization. This allows to use it as a generic keyword API for integrating Robot Framework with process orchestration: the same keywords that are used to interact with work items at Robocorp Cloud, could also be configured to work elsewhere.
+Meanwhile, Robocorp maintains [RPA Framework](https://rpaframework.org/) a comprehensive and well documented collection of various automation libraries for Robot Framework and Python. RPA Framework happens to include also [a library for interacting with available work items](https://rpaframework.org/libraries/robocorp_workitems/index.html). While the default implemention is designed for Robocorp's own cloud service only, the library does supports *adapter pattern* for local customization. This allows to use it as a generic keyword API for integrating Robot Framework with process orchestration: the same keywords that are used to interact with work items at Robocorp Cloud, could also be configured to work elsewhere.
 
-Coincidentally, Camunda Platform *task variables* and RPA Framework *work items* are both implemented as list of key value pairs. This makes it simple to map task variables from a single external service task instance to a single RPA Framework WorkItems library work item.
+Coincidentally, Camunda Platform *task variables* and RPA Framework *work items* are both implemented as list of key value pairs. This makes it straightforward to map task variables from a single external service task instance to a single RPA Framework WorkItems library work item.
 
 To put it simply: **task variables make work item** [[3]](#footnote-3).
 
@@ -43,7 +43,7 @@ To put it simply: **task variables make work item** [[3]](#footnote-3).
 WorkItems library as API
 ------------------------
 
-Why is it so significant to be able to map Camunda Platform task variables into RPA Framework WorkItems library work items? Because, not only does RPA Framework's WorkItems library provide well designed keword API for interacting with Camunda task variables from Robot Framework task code, but it also comes with existing documentation and tooling.
+Why is it so significant to be able to map Camunda Platform task variables into RPA Framework WorkItems library work items? Because, not only does RPA Framework's WorkItems library provide well designed keword API for interacting with Camunda task variables from Robot Framework task code, but it also comes with existing documentation and tooling!
 
 For example, this could be the simplest way to access any Camunda task instance variables from Robot Framework task code:
 
@@ -108,6 +108,8 @@ Login into portal
 
 To prove the point, all the examples above were copied or adapted from [RPA Framework WorkItems library documentation](https://rpaframework.org/libraries/robocorp_workitems/index.html). And to eat my own dog food, this is also how I've integrated Camunda Platform to Robot Framework in [carrot-rcc](http://github.com/datakurre/carrot-rcc) and [parrot-rcc](http://github.com/datakurre/parrot-rcc).
 
+By supporting this pattern, there is no difference between Robot Framework code for Robocorp Cloud or Robot Framework code for Camunda Platform. All existing tools and documentation just work for both.
+
 
 Tools and docs make DX
 ----------------------
@@ -116,17 +118,17 @@ When it comes to open source, developer experience is not always guaranteed. For
 
 At first, https://robotframework.org/ has evolved into a portal of Robot Framework news, libraries and in-browser runnable examples to give immediate taste of the framework and its ecosystem. That said, I really want to praise the efforts at Robocorp to make their developer tools and documentation free, open and generally available for all Robot Framework users.
 
-Currently, in my opinion, the best Robot Framework developer experience is provided with [Robocorp Code](https://robocorp.com/docs/developer-tools/visual-studio-code/overview), the free and open source Robocorp extension Microsoft Visual Studio Code (or VSCodium, its open source distribution).
+Currently, I must admit, the best Robot Framework developer experience is provided with [Robocorp Code](https://robocorp.com/docs/developer-tools/visual-studio-code/overview), the free and open source Robocorp extension Microsoft Visual Studio Code (or VSCodium, its open source distribution).
 
 ![Robocorp Code](./robocorp-code.png)
 
-Robocorp Code supports creating new Robot Framework automation package projects from templates (or scratch), developing and debugging them with modern IDE experience, and it helps to manage their Robot Framework and Python dependencies. In addition, it allows to try those automation packages straight from the editor, also with example work item data.
+Robocorp Code supports creating new Robot Framework automation projects from templates (or scratch), developing and debugging them with modern IDE experience, and also it helps to manage their Robot Framework and Python dependencies. In addition, it allows to try those automation tasks straight from the editor, also with example work item data.
 
 ![Robocorp Code Debugger](./robocorp-code-debugger.png)
 
-Did I mention work items? Building the integration between Camunda Platform and Robot Framework on top of the [RPA Framework](https://rpaframework.org) work items, makes it possible to benefit from all these work item related features in Robocorp tools. For example, automation packages could be functionally tested with local work items before trying them with a process engine. In addition, Robocorp provides and maintains a lot of [tutorials and other documentation](https://robocorp.com/docs/quickstart-guide), and is also building an [automation portal](https://robocorp.com/portal) with free examples, even out-of-the-box usable automation packages.
+Did I mention work items? Building the integration between Camunda Platform and Robot Framework on top of the [RPA Framework](https://rpaframework.org) work items, makes it possible to benefit from all these work item related features in Robocorp tools. For example, a automation tasks could be functionally tested with local work items before trying them with a process engine. Robocorp provides and maintains also a lot of [tutorials and other documentation](https://robocorp.com/docs/quickstart-guide), and is also building an [automation portal](https://robocorp.com/portal) with free examples, even out-of-the-box usable automation packages.
 
-And that's not all. Robocorp has also been developing a visual editor: [Automation Studio](https://robocorp.com/products/automation-studio). This fall also Automation studio got support for RPA Framework's WorkItems library and can now be used to implement compatible automation packages.
+And that's not all. Robocorp has been developing a visual editor: [Automation Studio](https://robocorp.com/products/automation-studio). This fall Automation studio got support for RPA Framework's WorkItems library too and can now be used to implement compatible automation packages.
 
 ![Automation Studio](./automation-studio.png)
 
@@ -136,11 +138,11 @@ RCC brings superpowers
 
 I saved the best for the last.
 
-[RCC](https://robocorp.com/docs/rcc/overview) is at the very heart of Robocorp tools for Robot Framework ecosystem. RCC is the really cool command line tool, which makes Robot Framework automation packages "just work". Practically everywhere (Mac, Windows or Linux). From scratch. And it is [just a single binary download](https://downloads.robocorp.com/rcc/releases/index.html).
+[RCC](https://robocorp.com/docs/rcc/overview) is at the very heart of Robocorp tools for Robot Framework ecosystem. RCC is the really cool command line tool behind the scenes, and makes Robot Framework automation packages "just work". Practically everywhere (Mac, Windows or Linux). From scratch. And it is [just a single binary download](https://downloads.robocorp.com/rcc/releases/index.html).
 
-Given a [properly structured robot package](https://robocorp.com/docs/setup/robot-structure), RCC prepares a runtime environment with required dependencies and then executes named automation task from the package. Then dependencies are cached for fast re-use. It supports being executed in parallel for concurrent automation, and it also provides scaffolding commands for creating and wrapping new automation code packages. Finally, it is not limited for executing just Robot Framework code, technically not even just Python...
+Given a [properly structured robot package](https://robocorp.com/docs/setup/robot-structure), RCC prepares a runtime environment with required dependencies and then executes named automation task from the package. Dependencies are then cached for fast re-use in future runs. It supports being executed in parallel for concurrent automation, and it also provides scaffolding commands for creating and wrapping new automation code packages. Finally, it is not limited for executing just Robot Framework code, technically not even just Python...
 
-Properly structure robot package, means a zip with `robot.yaml` and `conda.yaml` along the actual code. At first, `robot.yaml` contains all the metadata RCC needs to execute automation tasks from the package.:
+Properly structured robot package, means just a zip file with `robot.yaml` and `conda.yaml` along the actual code. At first, `robot.yaml` contains all the metadata RCC needs to execute automation tasks from the package.:
 
 ```yaml
 tasks:
@@ -207,7 +209,7 @@ ignoreFiles:
   - .gitignore
 ```
 
-Then, `conda.yaml` defines the required dependencies to really run execute automatoin task. For Robot Framework tasks, the minimum requirements are `python` and `rpaframework` for Robot Framework with RPA Framework's WorkItems library). And as the filename `conda.yaml` suggests, the requirements are fetched from public [conda repositories](https://anaconda.org/search), making the whole scientific Python ecosystem trivially available:
+Then, `conda.yaml` defines the required dependencies to really run execute the packaged automation tasks. For Robot Framework tasks, the minimum requirements are `python` and `rpaframework` for Robot Framework with RPA Framework's WorkItems library). As the filename `conda.yaml` suggests, requirements are fetched from public [conda repositories](https://anaconda.org/search). This makes the whole scientific Python ecosystem trivially available for Robot Framework based automation:
 
 ```yaml
 # Conda channels. We recommend using packages from the conda-forge channel.
@@ -230,7 +232,7 @@ $ rcc robot wrap
 OK.
 ```
 
-RCC could well be the easiest way to execute Robot Framework, or even Python in general. That's should align pretty well for making process automation more accessible.
+RCC could well be the easiest way to execute Robot Framework, or even Python code in general. That's should align pretty well with Camunda Platform for making process automation more accessible.
 
 
 Notes
