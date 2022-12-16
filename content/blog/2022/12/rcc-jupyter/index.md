@@ -4,21 +4,21 @@ date: "2022-12-16T12:00:00Z"
 tags: ["Jupyter", "Robot Framework", "RCC", "Nix", "Open Source"]
 ---
 
-**Nix way, RCC way, or the high way?**
+**Nix way, RCC way, or the high way?** On how to declarative configure Jupyter environments...
 
 Q: **Explain how declarative configuration differs from imperative configuration in a tweet.**
 
 A: *Declarative configuration focuses on what the desired end state should be, while imperative configuration focuses on the specific steps needed to achieve that end state. In declarative configuration, the system automatically sets up the necessary resources and configurations, whereas in imperative configuration, the user must explicitly define and execute each step. #declarativeconfig #imperativeconfig* -ChatGPT
 
-I'm a fan of [Project Jupyter](https://jupyter.org/), which develops and maintains interactive computing environments all programming languages. Mostly known for [JupyterLab](https://jupyter.org/try) and [Jupyter Notebook](https://jupyter.org/try). Yet, I use them much less than I'd like to. Most probably, because I am missing a convenient way to define and maintain local Jupyter environments within those projects where they could be useful.
+I'm a fan of [Project Jupyter](https://jupyter.org/), which develops and maintains interactive computing environments for all programming languages. Mostly known for [JupyterLab](https://jupyter.org/try) and [Jupyter Notebook](https://jupyter.org/try). Yet, I use them much less than I'd like to. Most probably, because I am missing a convenient way to define and maintain local Jupyter environments within those projects where they could be useful.
 
-As of today, I might have found the way I have been looking for. Unfortunately, it might not be [Nix](https://nixos.org/), but something else, that everyone can use in minutes. That said, let's try the Nix way at first.
+As of today, I might have found the way I have been looking for. Unfortunately, it might not be [Nix](https://nixos.org/), but something else, that everyone can use in minutes. That said, let's try out the Nix way at first.
 
 
 Status quo: jupyterWith
 -----------------------
 
-[jupyterWith](https://github.com/tweag/jupyterWith) is a project, which helps to define and maintain Jupyter environments with [Nix](https://nixos.org), the purely functional package manager. Let's assume that Nix has already been installed and flakes enabled as told in  [withJupyter's documentation](https://jupyterwith.tweag.io/getting-started/), and continue to follow it to create JupyterLab with [Robot Framework kernel](https://pypi.org/project/robotkernel/).
+[jupyterWith](https://github.com/tweag/jupyterWith) is a project, which helps to define and maintain Jupyter environments with [Nix](https://nixos.org), the purely functional package manager. Let's assume that Nix has already been installed and "flakes" enabled as told in  [withJupyter's documentation](https://jupyterwith.tweag.io/getting-started/). Then we continue to follow the docs to create JupyterLab with [Robot Framework kernel](https://pypi.org/project/robotkernel/).
 
 At first, we need to scaffold the base environment with:
 
@@ -47,9 +47,9 @@ $ nix run
 
 ![Default JupyterLab using JupyterWith](./jupyterwith-00.png)
 
-Although, this gives us JupyterLab with only plain Python kernel. It's good to know, that jupyterWith properly separates JupyterLab from its kernels, and is then able to support any number of different kernels or configurations in a single environment. Thankfully, to get started with custom kernel configuration, it creates a template for Python kernel with custom packages.
+Although, this gives us JupyterLab with only plain Python kernel. It's good to know that jupyterWith properly separates JupyterLab from its kernels, and is then able to support any number of different kernels or configurations in a single environment. Thankfully, to get started with custom kernel configuration, it has already created us a template for Python kernel with custom packages.
 
-And it took a couple of hours for me to figure out, how to customize jupyterWith's Python kernel setup to run Python based RobotFramework kernel instead. That required defining a Python environment with [RobotKernel](https://pypi.org/project/robotkernel/) into the Python custom kernel template at `./kernels/python` with [Poetry](https://python-poetry.org/):
+But it took a couple of hours for me to figure out, how to customize jupyterWith's Python kernel setup to run Python based RobotFramework kernel instead. That required defining a Python environment with [RobotKernel](https://pypi.org/project/robotkernel/) into the Python custom kernel template at `./kernels/python` with [Poetry](https://python-poetry.org/):
 
 ```
 $ poetry init
@@ -70,7 +70,7 @@ Enter package # to add, or the complete package name if it is not listed:
 Do you confirm generation? (yes/no) [yes]
 ```
 
-And, of course, also lock its dependencies:
+And, of course, lock its dependencies:
 
 ```
 $ poetry lock
@@ -81,7 +81,7 @@ Resolving dependencies... (31.3s)
 Writing lock file
 ```
 
-And then the hard part... With the following `./kernels/python/default.nix`:
+And, finally, the hard part... With the following `./kernels/python/default.nix`:
 
 ```
 {
@@ -126,9 +126,9 @@ I was able to have my declarative JupyterLab with Robot Framework kernel started
 
 ![Robot Framework kernel in action](./jupyterwith-02.png)
 
-Unfortunately, even after all that, my JupyterLab was still missing syntax highlighting for Robot Framework code, because that would have required Nix-packaging and installing [jupyterlab-robotmode](https://pypi.org/project/jupyterlab-robotmode/) extension into the Python environment of JupyterLab itself.
+Unfortunately, even after all that, my JupyterLab was still missing syntax highlighting for Robot Framework code. That would have required additional configuration for Nix-packaging and installation of [jupyterlab-robotmode](https://pypi.org/project/jupyterlab-robotmode/) extension into the Python environment of JupyterLab itself.
 
-According to jupyterWith's documentation. They are still working on to support declarative configuration for extensions...
+According to jupyterWith's documentation. They are still working on to support declarative configuration for extensions... Fair enough.
 
 
 Contender: RCC
@@ -136,7 +136,7 @@ Contender: RCC
 
 How about the challenger? [RCC](https://robocorp.com/docs/rcc/overview) is an open source environment management and task execution tool from [Robocorp](https://robocorp.com). Initially designed to manage environments and execution of Robot Framework and Python RPA bots, but technically generic enough to manage any environment based on packages available at [Conda](https://conda.io/) [repositories](https://anaconda.org/search) or installable with [Pip](https://pypi.org/project/pip/). (Under the hood it is using [Miniconda](https://docs.conda.io/en/latest/miniconda.html) as its package manager.)
 
-At first, RCC is installed usually just by [downloading a precompiled binary](https://downloads.robocorp.com/rcc/releases/index.html). Then it requires two files to built the environment and start a program from it. `conda.yaml`:
+RCC is installed usually just by [downloading a precompiled binary](https://downloads.robocorp.com/rcc/releases/index.html). Then it requires two files to built the environment and start a program from it. So, let's have `conda.yaml`:
 
 ```yaml
 channels:
@@ -166,23 +166,21 @@ Once these are in place, the sole task from `robot.yaml` run from the environmen
 $ rcc task run
 ```
 
-This was all that was required to have a declaratively configured JupyterLab launched from a project directory.
-
 ![JupyterLab using RCC with Robot Framework kernel](./rcc-00.png)
 
-And this time also syntax highlighting was enabled:
+This was all that was required to have a declaratively configured JupyterLab launched from a project directory. And this time also syntax highlighting was enabled:
 
 ![Robot Framework kernel in action](./rcc-01.png)
 
-Looks like we have a winner!
+Looks like we have the  winner!
 
 
 How about reproducibility?
 --------------------------
 
-Was this a fair comparison? Not completely. Nix package manager is built to maximize reproducibility, while Conda used by RCC does more like "best effort" for it. Also, jupyterWith is clearly desiged to support also more complex JupyterLab environments with multiple kernels, when my use case required only one, based on Python. Therefore installing kernel packages into the same environment with JupyterLab itself was possible.
+Was this a fair comparison? Not completely. Nix package manager is built to maximize reproducibility, while Conda used by RCC promises more like "best effort" for it. Also, jupyterWith is clearly desiged to support even complex JupyterLab environments with multiple kernels. Meanwhile my current use case required only one kernel at time, and mostly based on Python. Therefore installing kernel packages into the same environment with JupyterLab itself is feasible.
 
-That said, RCC tries its best to make the environment as reproducible as possible with Conda. When `rcc task run` is run with ambiquous `conda.yaml` it outputs `environment_[system]_[arch]_freeze.yaml` (e.g. `environment_linux_amd64_freeze.yaml`) with all installed packages:
+That said, RCC tries its best to make the environment as reproducible as possible with Conda. When `rcc task run` is run with ambiquous `conda.yaml`, it also generates `environment_[system]_[arch]_freeze.yaml` (e.g. `environment_linux_amd64_freeze.yaml`) with all the installed packages:
 
 
 ```yaml
