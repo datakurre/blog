@@ -52,6 +52,18 @@ exports.createPages = async ({ graphql, actions }) => {
   const fediverse = yaml.load(
     fs.readFileSync('./content/fediverse.yaml', 'utf-8')
   );
+  Object.entries(fediverse.follows).forEach(([key, value]) => {
+    if (!!value.enabled) {
+      createPage({
+        path: `/fediverse/follows/${key}`,
+        component: require.resolve('./src/templates/follow.js'),
+        context: {
+          href: value.href,
+          username: value.username,
+        },
+      });
+    }
+  });
   fediverse.likes.forEach((href) => {
     createPage({
       path: `/fediverse/likes/${crypto

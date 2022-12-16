@@ -2,7 +2,7 @@ follows:
   uwe:
     href: https://fosstodon.org/@asys3
     username: "@asys3@fosstodon.org"
-    enable: true
+    enabled: true
   nlea:
     href: https://social.anoxinon.de/@nlea
     username:  "@nlea@social.anoxinon.de"
@@ -18,7 +18,7 @@ follows:
   noordsestern:
     href: https://fosstodon.org/@noordsestern
     username: "@noordsestern@fosstodon.org"
-    enable: true
+    enabled: true
 likes:
   - https://fosstodon.org/@noordsestern/109483408538367521
   - https://social.anoxinon.de/@nlea/109522176214250855
