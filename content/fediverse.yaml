@@ -1,0 +1,23 @@
+follows:
+  uwe:
+    href: https://fosstodon.org/@asys3
+    username: "@asys3@fosstodon.org"
+    enable: true
+  nlea:
+    href: https://social.anoxinon.de/@nlea
+    username:  "@nlea@social.anoxinon.de"
+    enabled: true
+  camunda:
+    href: https://mas.to/@camunda
+    username: "@camunda@mas.to"
+    enable: true
+  robotframework:
+    href: https://fosstodon.org/@robotframework
+    username: "@robotframework@fosstodon.org"
+    enabled: true
+  noordsestern:
+    href: https://fosstodon.org/@noordsestern
+    username: "@noordsestern@fosstodon.org"
+    enable: true
+likes:
+  - https://social.anoxinon.de/@nlea/109522176214250855

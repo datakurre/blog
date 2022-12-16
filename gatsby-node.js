@@ -1,4 +1,7 @@
+const fs = require(`fs`);
+const crypto = require('crypto');
 const path = require(`path`);
+const yaml = require(`js-yaml`);
 const { createFilePath } = require(`gatsby-source-filesystem`);
 
 exports.createPages = async ({ graphql, actions }) => {
@@ -7,20 +10,20 @@ exports.createPages = async ({ graphql, actions }) => {
   const blogPost = path.resolve(`./src/templates/blog-post.js`);
   const result = await graphql(
     `
-    {
-  allMarkdownRemark(sort: {frontmatter: {date: DESC}}, limit: 1000) {
-    edges {
-      node {
-        fields {
-          slug
-        }
-        frontmatter {
-          title
+      {
+        allMarkdownRemark(sort: { frontmatter: { date: DESC } }, limit: 1000) {
+          edges {
+            node {
+              fields {
+                slug
+              }
+              frontmatter {
+                title
+              }
+            }
+          }
         }
       }
-    }
-  }
-}
     `
   );
 
@@ -41,8 +44,24 @@ exports.createPages = async ({ graphql, actions }) => {
       context: {
         slug: post.node.fields.slug,
         previous,
-        next
-      }
+        next,
+      },
+    });
+  });
+
+  const fediverse = yaml.load(
+    fs.readFileSync('./content/fediverse.yaml', 'utf-8')
+  );
+  fediverse.likes.forEach((href) => {
+    createPage({
+      path: `/fediverse/likes/${crypto
+        .createHash('md5')
+        .update(href)
+        .digest('hex')}`,
+      component: require.resolve('./src/templates/like.js'),
+      context: {
+        href,
+      },
     });
   });
 };
@@ -55,7 +74,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     createNodeField({
       name: `slug`,
       node,
-      value
+      value,
     });
   }
 };

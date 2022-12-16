@@ -73,13 +73,13 @@ module.exports = {
             resolve: 'gatsby-remark-mermaid',
             options: {
               launchOptions: {
-                executablePath: 'chromium'
+                executablePath: 'chromium',
               },
               mermaidOptions: {
                 theme: 'neutral',
-                themeCSS: '.node rect { fill: #fff; }'
-              }
-            }
+                themeCSS: '.node rect { fill: #fff; }',
+              },
+            },
           },
           {
             resolve: 'gatsby-remark-images',
