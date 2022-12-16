@@ -10,7 +10,7 @@ follows:
   camunda:
     href: https://mas.to/@camunda
     username: "@camunda@mas.to"
-    enable: true
+    enabled: true
   robotframework:
     href: https://fosstodon.org/@robotframework
     username: "@robotframework@fosstodon.org"
@@ -18,6 +18,10 @@ follows:
   noordsestern:
     href: https://fosstodon.org/@noordsestern
     username: "@noordsestern@fosstodon.org"
+    enabled: true
+  pekkaklarck:
+    href: https://mas.to/@pekkaklarck
+    username: "@pekkaklarck@mas.to"
     enabled: true
 likes:
   - https://fosstodon.org/@noordsestern/109483408538367521
