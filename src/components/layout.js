@@ -76,6 +76,30 @@ class Layout extends React.Component {
                 <a className="u-url" href="https://pandala.org/" rel="me">
                   https://pandala.org/
                 </a>
+                {/* eslint-disable-next-line jsx-a11y/anchor-has-content,jsx-a11y/control-has-associated-label */}
+                <a
+                  className="u-url"
+                  href="https://fosstodon.org/@datakurre@pandala.org"
+                  rel="me"
+                />
+                {/* eslint-disable-next-line jsx-a11y/anchor-has-content,jsx-a11y/control-has-associated-label */}
+                <a
+                  className="u-url"
+                  href="https://mas.to/@datakurre@pandala.org"
+                  rel="me"
+                />
+                {/* eslint-disable-next-line jsx-a11y/anchor-has-content,jsx-a11y/control-has-associated-label */}
+                <a
+                  className="u-url"
+                  href="https://mastodon.online/@datakurre@pandala.org"
+                  rel="me"
+                />
+                {/* eslint-disable-next-line jsx-a11y/anchor-has-content,jsx-a11y/control-has-associated-label */}
+                <a
+                  className="u-url"
+                  href="https://social.anoxinon.de/@datakurre@pandala.org"
+                  rel="me"
+                />
                 <img
                   className="u-featured"
                   alt=""

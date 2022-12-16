@@ -23,6 +23,10 @@ follows:
     href: https://mas.to/@pekkaklarck
     username: "@pekkaklarck@mas.to"
     enabled: true
+  tobiasschaefer:
+    href: https://mas.to/@tobiasschaefer
+    username: "@tobiasschaefer@mas.to"
+    enabled: true
 likes:
   - https://fosstodon.org/@noordsestern/109483408538367521
   - https://social.anoxinon.de/@nlea/109522176214250855
