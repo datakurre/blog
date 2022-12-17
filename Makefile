@@ -9,6 +9,7 @@ publish: build
 	git add public
 	git commit -m `git rev-parse HEAD^` public
 	git push origin `git subtree split --prefix public master`:gh-pages --force
+	git branch -D gh-pages
 	git subtree split --prefix public -b gh-pages
 	git reset --hard HEAD^
 	mkdir -p public
