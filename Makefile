@@ -11,6 +11,9 @@ publish: build
 	git push origin `git subtree split --prefix public master`:gh-pages --force
 	git subtree split --prefix public -b gh-pages
 	git reset --hard HEAD^
+	mkdir -p public
+	git --work-tree=`pwd`/public checkout gh-pages -- .
+	git restore --staged .
 
 .PHONY: shell
 shell: init
