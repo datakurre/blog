@@ -1,12 +1,29 @@
-all: build
+all: nix-build
+
+.PHONY: build
 build: init
-	nix develop --command gatsby build
+	gatsby build
+
+.PHONY: publish
+publish: build
+	git add public
+	git commit -m `git rev-parse HEAD^` public
+	git push origin `git subtree split --prefix public master`:gh-pages --force
+	git subtree split --prefix public -b gh-pages
+	git reset --hard HEAD^
+
+.PHONY: shell
 shell: init
 	nix develop
+
+.PHONY: watch
 watch: init
-	nix develop --command gatsby develop
+	gatsby develop
 
 ###
+
+nix-%:
+	nix develop --command $(MAKE) $*
 
 .PHONY: init
 init:
