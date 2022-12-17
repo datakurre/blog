@@ -1,4 +1,4 @@
-all: nix-build
+all: nix-publish
 
 .PHONY: build
 build: init
