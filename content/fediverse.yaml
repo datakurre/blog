@@ -1,36 +1,13 @@
 follows:
-  uwe:
-    href: https://fosstodon.org/@asys3
-    username: "@asys3@fosstodon.org"
-    enabled: true
-  nlea:
-    href: https://social.anoxinon.de/@nlea
-    username:  "@nlea@social.anoxinon.de"
-    enabled: true
-  camunda:
-    href: https://mas.to/@camunda
-    username: "@camunda@mas.to"
-    enabled: true
-  robotframework:
-    href: https://fosstodon.org/@robotframework
-    username: "@robotframework@fosstodon.org"
-    enabled: true
-  noordsestern:
-    href: https://fosstodon.org/@noordsestern
-    username: "@noordsestern@fosstodon.org"
-    enabled: true
-  pekkaklarck:
-    href: https://mas.to/@pekkaklarck
-    username: "@pekkaklarck@mas.to"
-    enabled: true
-  tobiasschaefer:
-    href: https://mas.to/@tobiasschaefer
-    username: "@tobiasschaefer@mas.to"
-    enabled: true
-  domenkozar:
-    href: https://fosstodon.org/@domenkozar
-    username: "@domenkozar@fosstodon.org"
-    enabled: true
+  - https://mas.to/@camunda
+  - https://fosstodon.org/@domenkozar
+  - https://fosstodon.org/@hafflgav
+  - https://social.anoxinon.de/@nlea
+  - https://fosstodon.org/@noordsestern
+  - https://mas.to/@pekkaklarck
+  - https://fosstodon.org/@robotframework
+  - https://mas.to/@tobiasschaefer
+  - https://fosstodon.org/@asys3
 likes:
   - https://fosstodon.org/@noordsestern/109483408538367521
   - https://social.anoxinon.de/@nlea/109522176214250855

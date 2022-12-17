@@ -1,6 +1,7 @@
-const fs = require(`fs`);
 const crypto = require('crypto');
+const fs = require(`fs`);
 const path = require(`path`);
+const urlStatusCode = require('url-status-code');
 const yaml = require(`js-yaml`);
 const { createFilePath } = require(`gatsby-source-filesystem`);
 
@@ -52,29 +53,53 @@ exports.createPages = async ({ graphql, actions }) => {
   const fediverse = yaml.load(
     fs.readFileSync('./content/fediverse.yaml', 'utf-8')
   );
-  Object.entries(fediverse.follows).forEach(([key, value]) => {
-    if (!!value.enabled) {
-      createPage({
-        path: `/fediverse/follows/${key}`,
-        component: require.resolve('./src/templates/follow.js'),
-        context: {
-          href: value.href,
-          username: value.username,
-        },
-      });
-    }
+  const federated = [];
+  fediverse.follows.forEach((url) => {
+    const { host, pathname } = new URL(url);
+    const username = `${pathname.substring(1)}@${host}`;
+    const path = `/fediverse/follows/${username}`;
+    createPage({
+      path: path,
+      component: require.resolve('./src/templates/follow.js'),
+      context: {
+        href: url,
+        username: username,
+      },
+    });
+    federated.push(path);
   });
   fediverse.likes.forEach((href) => {
+    const path = `/fediverse/likes/${crypto
+      .createHash('md5')
+      .update(href)
+      .digest('hex')}`;
     createPage({
-      path: `/fediverse/likes/${crypto
-        .createHash('md5')
-        .update(href)
-        .digest('hex')}`,
+      path,
       component: require.resolve('./src/templates/like.js'),
       context: {
         href,
       },
     });
+    federated.push(path);
+  });
+  Promise.all(
+    federated.map(
+      (path) =>
+        new Promise((resolve, reject) =>
+          urlStatusCode(
+            `https://datakurre.pandala.org${path}`,
+            (error, statusCode) =>
+              error ? reject(error) : resolve([path, statusCode])
+          )
+        )
+    )
+  ).then((pairs) => {
+    const cmds = pairs.map(([path, statusCode]) =>
+      statusCode !== 404
+        ? ''
+        : `curl -i -d source=http://datakurre.pandala.org${path} -d target=https://fediverse.pandala.org https://fediverse.pandala.org/webmention\n`
+    );
+    fs.writeFileSync('webmentions.sh', cmds.join(''));
   });
 };
 
