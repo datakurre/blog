@@ -32,6 +32,36 @@ exports.onRenderBody = ({
         rel="me"
         style={{ display: 'none' }}
       />,
+      // eslint-disable-next-line jsx-a11y/anchor-has-content,jsx-a11y/control-has-associated-label
+      <a
+        href="https://mastodon.lol/@datakurre@pandala.org"
+        rel="me"
+        style={{ display: 'none' }}
+      />,
+      // eslint-disable-next-line jsx-a11y/anchor-has-content,jsx-a11y/control-has-associated-label
+      <a
+        href="https://mastodon.nl/@datakurre@pandala.org"
+        rel="me"
+        style={{ display: 'none' }}
+      />,
+      // eslint-disable-next-line jsx-a11y/anchor-has-content,jsx-a11y/control-has-associated-label
+      <a
+        href="https://plone.social/@datakurre@pandala.org"
+        rel="me"
+        style={{ display: 'none' }}
+      />,
+      // eslint-disable-next-line jsx-a11y/anchor-has-content,jsx-a11y/control-has-associated-label
+      <a
+        href="https://floss.social/@datakurre@pandala.org"
+        rel="me"
+        style={{ display: 'none' }}
+      />,
+      // eslint-disable-next-line jsx-a11y/anchor-has-content,jsx-a11y/control-has-associated-label
+      <a
+        href="https://graz.social/@datakurre@pandala.org"
+        rel="me"
+        style={{ display: 'none' }}
+      />,
     ]);
   }
 };
