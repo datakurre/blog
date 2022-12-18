@@ -4,13 +4,13 @@ date: "2022-12-16T12:00:00Z"
 tags: ["Jupyter", "Robot Framework", "RCC", "Nix", "Open Source"]
 ---
 
-**Nix way, RCC way, or the high way?** On how to declarative configure Jupyter environments...
+**Nix way, RCC way, or the high way?**
+
+I'm a fan of [Project Jupyter](https://jupyter.org/), which develops and maintains interactive computing environments for all programming languages. Mostly known for [JupyterLab](https://jupyter.org/try) and [Jupyter Notebook](https://jupyter.org/try). Yet, I use them much less than I'd like to. Most probably, because I am missing a convenient way to define and maintain local Jupyter environments within those projects where they could be useful.
 
 Q: **Explain how declarative configuration differs from imperative configuration in a tweet.**
 
 A: *Declarative configuration focuses on what the desired end state should be, while imperative configuration focuses on the specific steps needed to achieve that end state. In declarative configuration, the system automatically sets up the necessary resources and configurations, whereas in imperative configuration, the user must explicitly define and execute each step. #declarativeconfig #imperativeconfig* -ChatGPT
-
-I'm a fan of [Project Jupyter](https://jupyter.org/), which develops and maintains interactive computing environments for all programming languages. Mostly known for [JupyterLab](https://jupyter.org/try) and [Jupyter Notebook](https://jupyter.org/try). Yet, I use them much less than I'd like to. Most probably, because I am missing a convenient way to define and maintain local Jupyter environments within those projects where they could be useful.
 
 As of today, I might have found the way I have been looking for. Unfortunately, it might not be [Nix](https://nixos.org/), but something else, that everyone can use in minutes. That said, let's try out the Nix way at first.
 
@@ -172,7 +172,7 @@ This was all that was required to have a declaratively configured JupyterLab lau
 
 ![Robot Framework kernel in action](./rcc-01.png)
 
-Looks like we have the  winner!
+Looks like we have a winner!
 
 
 How about reproducibility?
