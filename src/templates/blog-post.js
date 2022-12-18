@@ -26,7 +26,7 @@ class BlogPostTemplate extends React.Component {
         </span>
         <img
           className="u-photo"
-          src={`/cover${post.fields.slug
+          src={`https://datakurre.pandala.org/cover${post.fields.slug
             .substring(0, post.fields.slug.length - 1)
             .replaceAll('/', '-')}.png`}
           alt=""
@@ -135,13 +135,13 @@ export const Head = ({ data }) => (
       <>
         <meta
           name="og:image"
-          content={`/cover${data.markdownRemark.fields.slug
+          content={`https://datakurre.pandala.org/cover${data.markdownRemark.fields.slug
             .substring(0, data.markdownRemark.fields.slug.length - 1)
             .replaceAll('/', '-')}.png`}
         />
         <meta
           name="twitter:image"
-          content={`/cover${data.markdownRemark.fields.slug
+          content={`https://datakurre.pandala.org/cover${data.markdownRemark.fields.slug
             .substring(0, data.markdownRemark.fields.slug.length - 1)
             .replaceAll('/', '-')}.png`}
         />
