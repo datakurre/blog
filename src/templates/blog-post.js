@@ -132,12 +132,20 @@ export const Head = ({ data }) => (
     }
     slug={data.markdownRemark.fields.slug}
     children={
-      <meta
-        name="og:image"
-        href={`/cover${data.markdownRemark.fields.slug
-          .substring(0, data.markdownRemark.fields.slug.length - 1)
-          .replaceAll('/', '-')}.png`}
-      />
+      <>
+        <meta
+          name="og:image"
+          content={`/cover${data.markdownRemark.fields.slug
+            .substring(0, data.markdownRemark.fields.slug.length - 1)
+            .replaceAll('/', '-')}.png`}
+        />
+        <meta
+          name="twitter:image"
+          content={`/cover${data.markdownRemark.fields.slug
+            .substring(0, data.markdownRemark.fields.slug.length - 1)
+            .replaceAll('/', '-')}.png`}
+        />
+      </>
     }
   />
 );
