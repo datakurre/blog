@@ -24,7 +24,14 @@ class BlogPostTemplate extends React.Component {
         <span className="p-name" style={{ display: 'none' }}>
           {post.frontmatter.title}
         </span>
-        <img className="u-photo" src={`/cover${post.fields.slug.replaceAll("/", "-")}.png`} alt="" />
+        <img
+          className="u-photo"
+          src={`/cover${post.fields.slug
+            .substring(0, post.fields.slug.length - 1)
+            .replaceAll('/', '-')}.png`}
+          alt=""
+          style={{ display: 'none' }}
+        />
         <a
           className="p-author h-card"
           href="https://pandala.org/#datakurre"
@@ -125,7 +132,12 @@ export const Head = ({ data }) => (
     }
     slug={data.markdownRemark.fields.slug}
     children={
-        <meta name="og:image" href={`/cover${data.markdownRemark.fields.slug.replaceAll("/", "-")}.png`} />
+      <meta
+        name="og:image"
+        href={`/cover${data.markdownRemark.fields.slug
+          .substring(0, data.markdownRemark.fields.slug.length - 1)
+          .replaceAll('/', '-')}.png`}
+      />
     }
   />
 );
