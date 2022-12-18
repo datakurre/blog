@@ -25,14 +25,21 @@
         ];
         node_modules_attrs = {
           buildInputs = [
+            pkgs.cairo
+            pkgs.pango
+            pkgs.nodePackages.node-gyp
+            pkgs.pixman
             pkgs.pkgconfig
             pkgs.python3
-            pkgs.nodePackages.node-gyp
             pkgs.vips
           ];
           postBuild = ''
             # Fix sharp
             cd node_modules/sharp
+            node-gyp rebuild
+            cd ../..
+            # Fix canvas
+            cd node_modules/canvas
             node-gyp rebuild
             cd ../..
             # Custom codemirror
