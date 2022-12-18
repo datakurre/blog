@@ -25,10 +25,9 @@ function Meta({ title, description, slug, children }) {
         <link rel="canonical" href={`https://datakurre.pandala.org${slug}`} />
       ) : null}
       <meta name="author" content="Asko Soukka" />
-      <meta name="description" content={metaDescription} />
-      <meta name="og:type" content="website" />
-      <meta name="og:title" content={title} />
-      <meta name="og:description" content={metaDescription} />
+      <meta name="description" property="og:description" content={metaDescription} />
+      <meta name="title" property="og:title" content={title} />
+      <meta name="type" property="og:type" content="website" />
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:creator" content={site.siteMetadata.author} />
       <meta name="twitter:title" content={title} />

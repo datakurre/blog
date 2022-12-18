@@ -134,7 +134,7 @@ export const Head = ({ data }) => (
     children={
       <>
         <meta
-          name="og:image"
+          name="image" property="og:image"
           content={`https://datakurre.pandala.org/cover${data.markdownRemark.fields.slug
             .substring(0, data.markdownRemark.fields.slug.length - 1)
             .replaceAll('/', '-')}.png`}
