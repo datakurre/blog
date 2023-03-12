@@ -4,31 +4,30 @@ date: "2023-03-12T12:00:00Z"
 tags: ["Camunda", "Robot Framework", "RCC", "RPA", "Open Source"]
 ---
 
-**[RCC](https://robocorp.com/docs/rcc/) is a Really Cool Command...**
+**[RCC](https://robocorp.com/docs/rcc/) is a really cool command...**
 
-In January 2023, together with Niall Deehan, we hosted a [RoboCon 2023](https://robocon.io) workshop [Business process automation with Robot Framework and Camunda Platform](https://datakurre.github.io/automation-playground/workshop/index.html). The workshop was based as much as possible on open source. Even the environment was a [pre-built Linux-desktop](https://datakurre.github.io/automation-playground/) ensuring equal experience for the participants.
+In January 2023, together with Niall Deehan, we hosted [RoboCon 2023](https://robocon.io) workshop [Business process automation with Robot Framework and Camunda Platform](https://datakurre.github.io/automation-playground/workshop/index.html). The workshop was based as much as possible on open source. Even the development environment was a [pre-built Linux-desktop](https://datakurre.github.io/automation-playground/) ensuring equal experience for the participants.
 
-But something we may not have emphasized enough, is that all the open source automation learned at the workshop, is compatible with [Camunda Platform SaaS](https://camunda.com/platform/), and even for implementing RPA on Windows!
+But something we may not have emphasized enough: all the open source automation learned at the workshop, is also compatible with [Camunda Platform SaaS](https://camunda.com/platform/), and even for implementing RPA on Windows!
 
 
 ## Open-source Windows RPA
 
 To get started with [Robocorp RCC](https://robocorp.com/docs/rcc/overview) based open-source automation on Windows, one can choose between two alternative development experiences:
 
-1. [VSCode with Robocorp extensions](https://robocorp.com/docs/developer-tools/visual-studio-code/extension-features) provides professional development experience for all kinds of rCC driven automation, both in [Robot Framework ](https://robotframework.org/rpa/) and in Python.
+1. [VSCode with Robocorp extensions](https://robocorp.com/docs/developer-tools/visual-studio-code/extension-features) provides professional development experience for all kinds of RCC driven automation, both in [Robot Framework ](https://robotframework.org/rpa/) and/or in Python.
 
-2. [Robocorp Automation Studio](https://robocorp.com/products/automation-studio) is a standalone low code development tool for implementing Robot Framework based automation.
+2. [Robocorp Automation Studio](https://robocorp.com/products/automation-studio) is a standalone low code development tool for implementing the most common use-cases for Robot Framework based automation.
 
    ![Robocorp Automation Studio](automation-studio.png)
 
 [Starting with Automation Studio](https://robocorp.com/download) is the easiest and safest choice, because any project started with Automation Studio, could be later continued and developed further with VSCode.
 
-Here's a [downloadable example RPA Calculator bot](calculate-sum.zip) based on a Automation Studio template for Windows automation. It's a dummy bot to calculate sum of two input variables by automating Windows Calculator app. Yet, it is [ready to be orchestrated using Camunda Platform](../../../2022/12/robot-framework-rcc-camunda). Just unzip the package, open its folder form Automation Studio, try it out, and zip it back for deployment.
+Here's a [downloadable example RPA Calculator bot](calculate-sum.zip) based on a Automation Studio template for Windows automation. It's a dummy bot to calculate sum of two input variables by automating Windows Calculator app. Yet, it is [ready to be orchestrated using Camunda Platform](../../../2022/12/robot-framework-rcc-camunda). Just unzip the package, open its folder in Automation Studio, try it out, and zip its contents back for deployment.
 
-![Run a bot directly from studio with mock work item](automation-studio-run-menu.png)
+![Run a bot directly from studio with an example work item](automation-studio-run-menu.png)
 
 ![Running a project from Robocorp Automation Studio](automation-studio-run.png)
-
 
 
 ## Camunda Platform SaaS as orchestrator
@@ -41,13 +40,13 @@ Now, that we have a bot, the next thing is to integrate it with Camunda Platform
 
 [![Example calculator orchestration process](calculate-sum-with-calculator.png)](calculate-sum-with-calculator.bpmn)
 
-To continue, it is required to have a client credentials for the cluster with scope **Zeebe**. Those could be use to deploy the process to the cluster using Camunda Desktop Modeler. The credentials are also required for integrating RCC bots with the running processes.
+To continue, it is required to have client credentials for the cluster with scope **Zeebe**. Those could be use to deploy the process to the cluster using Camunda Desktop Modeler. The credentials are also required for integrating RCC bots with the running processes.
 
 ![Creating new client credentials](camunda-platform-client.png)
 
 Make sure to download or save the information shown after creating new credentials. **Client secret** is only shown right after creation, but also **client id**, **cluster id** and **cluster region** are required for running the integration.
 
-Once the process is deployed (either using the cloud or desktop modeler), at last on instance of it has been started, and the first user task completed, everything is ready for the RCC automation part.
+Once the process is deployed (either using the cloud or desktop modeler), at least one instance of it has been started, and the first user task has been completed, everything is ready for the RCC automation part.
 
 ![SaaS process waiting for RCC automation](camunda-platform-ready.png)
 
@@ -56,7 +55,7 @@ Once the process is deployed (either using the cloud or desktop modeler), at las
 
 Integrating an RCC bot with Camunda Platform requires some preparation. But not much! The following integration is based on [parrot-rcc](https://github.com/datakurre/parrot-rcc) (an open source [pyzeebe](https://pypi.org/project/pyzeebe/) based Zeebe client), which delegates Camunda Platform tasks to be run by RCC.
 
-The integration has prerequisite of two writble buckets at S3 compatible storage for storing **execution logs** and possible **file payloads**. For development purposes, the easiest way is to download and start [MinIO](https://min.io/docs/minio/windows/index.html) [executable](https://dl.min.io/server/minio/release/windows-amd64/minio.exe) and run it locally.
+The integration has prerequisite of two writable buckets at S3 compatible object storage for storing **execution logs** and possible **file payloads**. For development purposes, the easiest way is to download [MinIO](https://min.io/docs/minio/windows/index.html) [executable](https://dl.min.io/server/minio/release/windows-amd64/minio.exe) and run it locally.
 
 For example, with
 
@@ -89,11 +88,11 @@ Documentation: https://min.io/docs/minio/linux/index.html
 Warning: The standard parity is set to 0. This can lead to data loss.
 ```
 
-By its default configuration parrot-rcc expects buckets, `rcc` for logs and `zeebe` for file payloads, to be available at the configured storage. Those may be created easily through web browser at Minio (for example at http://localhost:9001/ with the default user `minioadmin` and password `minioadmin`).
+By its default configuration parrot-rcc expects two writable buckets, `rcc` for logs and `zeebe` for file payloads, to be available at the configured storage. For MinIO those may be created easily through its web console (for example at http://localhost:9001/ with the default user `minioadmin` and password `minioadmin`).
 
 ![Minio with buckets ready for parrot-rcc](minio-buckets.png)
 
-At next, [RCC must be downloaded](https://downloads.robocorp.com/rcc/releases/index.html). Similary to MinIO, RCC is just a simple binary, runnable as such, without any extra installation phase. RCC is used for both, executing `parrot-rcc`, and then by `parrot-rcc` to execute automation tasks.
+Next, [RCC must be downloaded](https://downloads.robocorp.com/rcc/releases/index.html). Similary to MinIO, RCC is just a simple binary, runnable as such, without any extra installation required. RCC is used for executing `parrot-rcc`, and then `parrot-rcc` is also using RCC for executing the automation tasks.
 
 The final step requires creation of two configuration files. At first, `conda.yaml`, which defines an RCC runtime environment with a known good version of parrot-rcc installed:
 
@@ -128,17 +127,19 @@ ignoreFiles:
   - .gitignore
 ```
 
-**All done!** Now, it is only required to execute `rcc run` (for `parrot-rcc`) with all the required arguments for connecting Camunda Platform SaaS and locating our zipped RPA bot. For example,
+**All done!**
+
+Now, it is only required to execute `rcc run` (for `parrot-rcc`) with the required configuration arguments for connecting to Camunda Platform SaaS and locating our zipped RPA bots. For example, with
 
 ```shell
 c:\Users\User\Downloads\rcc.exe run -- --rcc-executable=c:\Users\User\Downloads\rcc.exe --camunda-client-id=MY_CLIENT_ID --camunda-client-secret=MY_CLIENT_SECRET --camunda-cluster-id=CAMUNDA_CLUSTER_ID --camunda-region=CAMUNDA_CLUSTER_REGION --log-level=debug --rcc-fixed-spaces c:\Users\User\Downloads\calculate-sum.zip
 ```
 
-RCC will start parrot-rcc, which reads zipped bots, connects to Camunda Platform, waits for tasks matching the bots, executes the bots and returns their output work items back to Camunda as variables in local scope of the executed tasks.
+RCC will start parrot-rcc, which reads zipped bots, connects to Camunda Platform, waits for tasks matching the bots, executes the bots, and returns their output work items back to Camunda as variables in local scope of the executed tasks.
 
 ![RCC executing RPA bot, which automates Windows calculator](calculate-sum.gif)
 
-In addition to the output work item variables, the RCC integration also saves links to RPA execution logs as variables in the local scope. This should really help validating that the bot did the right thing, and debug the bot execution when something went wrong.
+In addition to the output work item variables, the RCC integration also saves links to RPA execution logs as task scoped variables. This should really help validating that bots did the right thing, and debug them when something goes weird.
 
 ![RPA exeuction log linked into a task local variable](camunda-platform-variables.png)
 
@@ -146,12 +147,12 @@ In addition to the output work item variables, the RCC integration also saves li
 
 ## Further reading
 
-If you got interested, there's plenty of on-line material for learning more and filling the gaps left into this introduction:
+If you got interested, there's much online material for learning more and filling the gaps left into this introduction:
 
-* [Robocorp Quickstart Guide](https://robocorp.com/docs/quickstart-guide) is the gateway for all the official resources onRCC based automation. Just remember, that with Camunda Platform and the RCC integration shown here, you may not need to use their cloud offering at all.
+* [Robocorp Quickstart Guide](https://robocorp.com/docs/quickstart-guide) is the portal for all the official resources on RCC based automation. Just remember, that with Camunda Platform and the RCC integration shown here, you may not need to use their cloud offering at all.
 
-* Our [RoboCon 2023 automation workshop](https://datakurre.github.io/automation-playground/) material remain available. They describe in detailed examples, how to configure BPMN tasks for RCC automation bots. Even with just Zeebe, without any Camunda cloud offerings.
+* Our [RoboCon 2023 automation workshop](https://datakurre.github.io/automation-playground/) materials remain to be available. They describe in detailed examples, how to configure BPMN tasks for RCC automation bots. Even with just Zeebe, without any Camunda cloud offerings.
 
-* Finally, [Camunda Platform documentation](https://docs.camunda.io/), of rouces, is available for all the remaining BPMN or Camunda related questions.
+* Finally, [Camunda Platform documentation](https://docs.camunda.io/), of course, is available for all the remaining BPMN or Camunda related questions.
 
 Happy automation!
