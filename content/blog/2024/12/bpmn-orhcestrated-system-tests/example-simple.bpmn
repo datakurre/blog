@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:modeler="http://camunda.org/schema/modeler/1.0" id="Definitions_1dbflh0" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="5.28.0" modeler:executionPlatform="Camunda Platform" modeler:executionPlatformVersion="7.22.0">
+  <bpmn:process id="Process_10q6kh5" isExecutable="true">
+    <bpmn:startEvent id="StartEvent_1">
+      <bpmn:outgoing>Flow_1mcjwow</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:sequenceFlow id="Flow_1mcjwow" sourceRef="StartEvent_1" targetRef="Robot_1" />
+    <bpmn:sequenceFlow id="Flow_0rj3qhd" sourceRef="Robot_1" targetRef="Robot_2" />
+    <bpmn:sequenceFlow id="Flow_182av2i" sourceRef="Robot_2" targetRef="Robot_3" />
+    <bpmn:endEvent id="Event_0mv8cqo">
+      <bpmn:incoming>Flow_17punv9</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="Flow_17punv9" sourceRef="Robot_3" targetRef="Event_0mv8cqo" />
+    <bpmn:serviceTask id="Robot_1" name="Setup test enviroment">
+      <bpmn:incoming>Flow_1mcjwow</bpmn:incoming>
+      <bpmn:outgoing>Flow_0rj3qhd</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:serviceTask id="Robot_2" name="Run test suite">
+      <bpmn:incoming>Flow_0rj3qhd</bpmn:incoming>
+      <bpmn:outgoing>Flow_182av2i</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:serviceTask id="Robot_3" name="Teardown test environment">
+      <bpmn:incoming>Flow_182av2i</bpmn:incoming>
+      <bpmn:outgoing>Flow_17punv9</bpmn:outgoing>
+    </bpmn:serviceTask>
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Process_10q6kh5">
+      <bpmndi:BPMNShape id="_BPMNShape_StartEvent_2" bpmnElement="StartEvent_1">
+        <dc:Bounds x="179" y="99" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_0mv8cqo_di" bpmnElement="Event_0mv8cqo">
+        <dc:Bounds x="752" y="99" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1bxclk3_di" bpmnElement="Robot_1">
+        <dc:Bounds x="270" y="77" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_09jdhc8_di" bpmnElement="Robot_2">
+        <dc:Bounds x="430" y="77" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1fa20td_di" bpmnElement="Robot_3">
+        <dc:Bounds x="590" y="77" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Flow_1mcjwow_di" bpmnElement="Flow_1mcjwow">
+        <di:waypoint x="215" y="117" />
+        <di:waypoint x="270" y="117" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0rj3qhd_di" bpmnElement="Flow_0rj3qhd">
+        <di:waypoint x="370" y="117" />
+        <di:waypoint x="430" y="117" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_182av2i_di" bpmnElement="Flow_182av2i">
+        <di:waypoint x="530" y="117" />
+        <di:waypoint x="590" y="117" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_17punv9_di" bpmnElement="Flow_17punv9">
+        <di:waypoint x="690" y="117" />
+        <di:waypoint x="752" y="117" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>
