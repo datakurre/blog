@@ -48,6 +48,7 @@ But modeling is just the beginning. A powerful open-source BPMN engine may rival
 
 The same open-source BPMN setup we use in the workshop for test execution can also be applied to more traditional business process and task automation. BPMN-based orchestration doesn't need to be a secret of the few. Let's democratize it!
 
-
 **See you in February!** [At RoboCon 2025 Helsinki.](https://robocon.io/)
+
+![Operaton in operation](operaton.png)
 

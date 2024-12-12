@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:color="http://www.omg.org/spec/BPMN/non-normative/color/1.0" xmlns:modeler="http://camunda.org/schema/modeler/1.0" id="Definitions_1vfn0lj" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="5.28.0" modeler:executionPlatform="Camunda Platform" modeler:executionPlatformVersion="7.22.0">
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:color="http://www.omg.org/spec/BPMN/non-normative/color/1.0" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:modeler="http://camunda.org/schema/modeler/1.0" id="Definitions_1vfn0lj" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="5.28.0" modeler:executionPlatform="Camunda Platform" modeler:executionPlatformVersion="7.22.0">
   <bpmn:collaboration id="Collaboration_1tckh1y">
     <bpmn:participant id="Participant_1h9z744" name="SUT" processRef="Process_166a9zs" />
   </bpmn:collaboration>
-  <bpmn:process id="Process_166a9zs" isExecutable="true">
+  <bpmn:process id="Process_166a9zs" isExecutable="true" camunda:historyTimeToLive="1">
     <bpmn:startEvent id="StartEvent_1" name="">
       <bpmn:outgoing>Flow_01k1sr8</bpmn:outgoing>
     </bpmn:startEvent>
@@ -41,23 +41,23 @@
     <bpmn:endEvent id="Event_0dvfv96" name="End A">
       <bpmn:incoming>Flow_0agg5q4</bpmn:incoming>
     </bpmn:endEvent>
-    <bpmn:serviceTask id="Robot_1" name="1st test suite in parallel">
+    <bpmn:serviceTask id="Robot_1" name="1st test suite in parallel" camunda:type="external" camunda:topic="hello-world">
       <bpmn:incoming>Flow_125ilw2</bpmn:incoming>
       <bpmn:outgoing>Flow_06fpt5b</bpmn:outgoing>
     </bpmn:serviceTask>
-    <bpmn:serviceTask id="Robot_2" name="2nd test suite in parallel">
+    <bpmn:serviceTask id="Robot_2" name="2nd test suite in parallel" camunda:type="external" camunda:topic="hello-world">
       <bpmn:incoming>Flow_0cobngl</bpmn:incoming>
       <bpmn:outgoing>Flow_1batkpn</bpmn:outgoing>
     </bpmn:serviceTask>
-    <bpmn:serviceTask id="Robot_3" name="3rd test suite in parallel">
+    <bpmn:serviceTask id="Robot_3" name="3rd test suite in parallel" camunda:type="external" camunda:topic="hello-world">
       <bpmn:incoming>Flow_0hpspzb</bpmn:incoming>
       <bpmn:outgoing>Flow_1mgm8jk</bpmn:outgoing>
     </bpmn:serviceTask>
-    <bpmn:serviceTask id="Robot_4" name="Primary test suite">
+    <bpmn:serviceTask id="Robot_4" name="Primary test suite" camunda:type="external" camunda:topic="hello-world">
       <bpmn:incoming>Flow_0qgfr68</bpmn:incoming>
       <bpmn:outgoing>Flow_0lrf0yk</bpmn:outgoing>
     </bpmn:serviceTask>
-    <bpmn:serviceTask id="Robot_5" name="Optional test suite">
+    <bpmn:serviceTask id="Robot_5" name="Optional test suite" camunda:type="external" camunda:topic="hello-world">
       <bpmn:incoming>Flow_14uiek6</bpmn:incoming>
       <bpmn:outgoing>Flow_0x855xm</bpmn:outgoing>
     </bpmn:serviceTask>
@@ -66,8 +66,12 @@
     <bpmn:sequenceFlow id="Flow_0cobngl" sourceRef="Gateway_0f4o2dw" targetRef="Robot_2" />
     <bpmn:sequenceFlow id="Flow_0hpspzb" sourceRef="Gateway_0f4o2dw" targetRef="Robot_3" />
     <bpmn:sequenceFlow id="Flow_1mgm8jk" sourceRef="Robot_3" targetRef="Gateway_1h60nl8" />
-    <bpmn:sequenceFlow id="Flow_0qgfr68" sourceRef="Gateway_1h60nl8" targetRef="Robot_4" />
-    <bpmn:sequenceFlow id="Flow_14uiek6" name="Yes" sourceRef="Gateway_1h60nl8" targetRef="Robot_5" />
+    <bpmn:sequenceFlow id="Flow_0qgfr68" sourceRef="Gateway_1h60nl8" targetRef="Robot_4">
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">${true}</bpmn:conditionExpression>
+    </bpmn:sequenceFlow>
+    <bpmn:sequenceFlow id="Flow_14uiek6" name="Yes" sourceRef="Gateway_1h60nl8" targetRef="Robot_5">
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">${true}</bpmn:conditionExpression>
+    </bpmn:sequenceFlow>
     <bpmn:sequenceFlow id="Flow_0x855xm" sourceRef="Robot_5" targetRef="Gateway_1jas7kg" />
     <bpmn:sequenceFlow id="Flow_0lrf0yk" sourceRef="Robot_4" targetRef="Gateway_1jas7kg" />
     <bpmn:sequenceFlow id="Flow_1kpuy4t" sourceRef="Gateway_1jas7kg" targetRef="Gateway_1shdlq4" />
@@ -76,9 +80,11 @@
     <bpmn:sequenceFlow id="Flow_06fpt5b" sourceRef="Robot_1" targetRef="Gateway_1shc6bq" />
     <bpmn:sequenceFlow id="Flow_1batkpn" sourceRef="Robot_2" targetRef="Gateway_1shc6bq" />
     <bpmn:sequenceFlow id="Flow_0agg5q4" sourceRef="Gateway_1trfe10" targetRef="Event_0dvfv96" />
-    <bpmn:sequenceFlow id="Flow_1q8u0qv" name="Yes" sourceRef="Gateway_1trfe10" targetRef="Robot_6" />
+    <bpmn:sequenceFlow id="Flow_1q8u0qv" name="Yes" sourceRef="Gateway_1trfe10" targetRef="Robot_6">
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">${true}</bpmn:conditionExpression>
+    </bpmn:sequenceFlow>
     <bpmn:sequenceFlow id="Flow_0tb5vxm" sourceRef="Robot_6" targetRef="Event_02whryu" />
-    <bpmn:serviceTask id="Robot_6" name="Optional test suite">
+    <bpmn:serviceTask id="Robot_6" name="Optional test suite" camunda:type="external" camunda:topic="hello-world">
       <bpmn:incoming>Flow_1q8u0qv</bpmn:incoming>
       <bpmn:outgoing>Flow_0tb5vxm</bpmn:outgoing>
     </bpmn:serviceTask>
