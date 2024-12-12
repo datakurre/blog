@@ -19,6 +19,8 @@ With this mindset, [Markus Stahl](https://noordsestern.medium.com/) and yours tr
 
 Even traditional test flows make beautiful diagrams, but the more challenging the flow, the more BPMN excels.
 
+**What if test suites take a long time to complete because they are waiting for external services?**
+
 ![Example BPMN test flow polling for external services](example-poll.png)
 
 **What if they take days due to waiting for third parties to complete their tasks?**
