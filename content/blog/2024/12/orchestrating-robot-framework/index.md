@@ -25,12 +25,12 @@ While supporting Robot Framework as a scripting language may seem tempting and f
 
 * Managing Robot Framework suites that span multiple files can become complex.
 
-* Horizontal scaling is only possible by scaling the engine itself.
+* Scaling is only possible by scaling the engine itself.
 
 
 ## Script task with RemoteLibrary service
 
-Some limitations of the Script Task can be circumvented using a clever built-in feature of Robot Framework: [the remote library interface](https://github.com/robotframework/RemoteInterface). This is Robot Framework's native mechanism for scaling execution vertically by providing test and task suite keywords as external services.
+Some limitations of the Script Task can be circumvented using a clever built-in feature of Robot Framework: [the remote library interface](https://github.com/robotframework/RemoteInterface). This is Robot Framework's native mechanism for scaling execution by providing test and task suite keywords as external services.
 
 ![Script Task with RemoteLibrary service](./script-task-remote.png)
 
