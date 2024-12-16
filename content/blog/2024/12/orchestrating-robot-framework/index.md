@@ -45,6 +45,8 @@ The BPMN **Service Task** is a task activity that typically relies on an externa
 
 ![Service Task](./service-task.png)
 
+The obvious external Service Task-based Robot Framework orchestration solution is to set up dedicated microservices with the required dependencies for each type of Service Task. With good BPM engine libraries and a robust CI/CD pipeline, this is likely the most straightforward and scalable approach. However, as a debatable counter-argument, it is also the least flexible option and may waste resources by maintaining many low-volume, always-on microservices.
+
 
 ## Service task with generic worker service
 
