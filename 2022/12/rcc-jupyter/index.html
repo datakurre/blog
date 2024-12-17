@@ -1,0 +1,467 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.75 'Merriweather','Georgia',serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.9);font-family:'Merriweather','Georgia',serif;font-weight:400;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:Montserrat,sans-serif;font-weight:900;text-rendering:optimizeLegibility;font-size:2.5rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.73286rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.4427rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;letter-spacing:0.140625em;text-transform:uppercase;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.83255rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.75966rem;line-height:1.1;font-style:italic;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}ul{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;list-style:disc;}ol{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:0.85rem;line-height:1.75rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1rem;line-height:1.75rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}blockquote{margin-left:-1.75rem;margin-right:1.75rem;margin-top:0;padding-bottom:0;padding-left:1.42188rem;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1.20112rem;line-height:1.75rem;color:hsla(0,0%,0%,0.59);font-style:italic;border-left:0.32813rem solid hsla(0,0%,0%,0.9);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.75rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.75rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}li > ul{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.75rem / 2);}code{font-size:0.85rem;line-height:1.75rem;}kbd{font-size:0.85rem;line-height:1.75rem;}samp{font-size:0.85rem;line-height:1.75rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.16667rem;padding-right:1.16667rem;padding-top:0.875rem;padding-bottom:calc(0.875rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}blockquote > :last-child{margin-bottom:0;}blockquote cite{font-size:1rem;line-height:1.75rem;color:hsla(0,0%,0%,0.9);font-weight:400;}blockquote cite:before{content:"— ";}ul,ol{margin-left:0;}@media only screen and (max-width:480px){ul,ol{margin-left:1.75rem;}blockquote{margin-left:-1.3125rem;margin-right:0;padding-left:0.98438rem;}}h1,h2,h3,h4,h5,h6{margin-top:3.5rem;}a{box-shadow:0 1px 0 0 currentColor;color:#007acc;text-decoration:none;}a:hover,a:active{box-shadow:none;}mark,ins{background:#007acc;color:white;padding:0.10938rem 0.21875rem;text-decoration:none;}a.gatsby-resp-image-link{box-shadow:none;}div.mermaid svg{height:auto !important;}</style><meta name="generator" content="Gatsby 5.2.0"/><meta name="author" content="Asko Soukka" data-gatsby-head="true"/><meta name="description" property="og:description" content="Nix way, RCC way, or the high way? I’m a fan of Project Jupyter, which develops and maintains interactive computing environments for all programming languages…" data-gatsby-head="true"/><meta name="title" property="og:title" content="Exploring two alternative declarative roads to Jupyter" data-gatsby-head="true"/><meta name="type" property="og:type" content="website" data-gatsby-head="true"/><meta name="twitter:card" content="summary" data-gatsby-head="true"/><meta name="twitter:creator" content="Asko Soukka" data-gatsby-head="true"/><meta name="twitter:title" content="Exploring two alternative declarative roads to Jupyter" data-gatsby-head="true"/><meta name="twitter:description" content="Nix way, RCC way, or the high way? I’m a fan of Project Jupyter, which develops and maintains interactive computing environments for all programming languages…" data-gatsby-head="true"/><meta name="image" property="og:image" content="https://datakurre.pandala.org/cover-2022-12-rcc-jupyter.png" data-gatsby-head="true"/><meta name="twitter:image" content="https://datakurre.pandala.org/cover-2022-12-rcc-jupyter.png" data-gatsby-head="true"/><meta name="theme-color" content="#663399"/><style data-href="/styles.5caeda19fca28245274c.css" data-identity="gatsby-global-css">@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/static/montserrat-latin-100-8d7d79679b70dbe27172b6460e7a7910.woff2) format("woff2"),url(/static/montserrat-latin-100-ec38980a9e0119a379e2a9b3dbb1901a.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/static/montserrat-latin-100italic-e279051046ba1286706adc886cf1c96b.woff2) format("woff2"),url(/static/montserrat-latin-100italic-3b325a3173c8207435cd1b76e19bf501.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/static/montserrat-latin-200-9d266fbbfa6cab7009bd56003b1eeb67.woff2) format("woff2"),url(/static/montserrat-latin-200-2d8ba08717110d27122e54c34b8a5798.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/static/montserrat-latin-200italic-6e5b3756583bb2263eb062eae992735e.woff2) format("woff2"),url(/static/montserrat-latin-200italic-a0d6f343e4b536c582926255367a57da.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/static/montserrat-latin-300-00b3e893aab5a8fd632d6342eb72551a.woff2) format("woff2"),url(/static/montserrat-latin-300-ea303695ceab35f17e7d062f30e0173b.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/static/montserrat-latin-300italic-56f34ea368f6aedf89583d444bbcb227.woff2) format("woff2"),url(/static/montserrat-latin-300italic-54b0bf2c8c4c12ffafd803be2466a790.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/static/montserrat-latin-400-b71748ae4f80ec8c014def4c5fa8688b.woff2) format("woff2"),url(/static/montserrat-latin-400-0659a9f4e90db5cf51b50d005bff1e41.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/static/montserrat-latin-400italic-6eed6b4cbb809c6efc7aa7ddad6dbe3e.woff2) format("woff2"),url(/static/montserrat-latin-400italic-7583622cfde30ae49086d18447ab28e7.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/static/montserrat-latin-500-091b209546e16313fd4f4fc36090c757.woff2) format("woff2"),url(/static/montserrat-latin-500-edd311588712a96bbf435fad264fff62.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/static/montserrat-latin-500italic-c90ced68b46050061d1a41842d6dfb43.woff2) format("woff2"),url(/static/montserrat-latin-500italic-5146cbfe02b1deea5dffea27a5f2f998.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/static/montserrat-latin-600-0480d2f8a71f38db8633b84d8722e0c2.woff2) format("woff2"),url(/static/montserrat-latin-600-b77863a375260a05dd13f86a1cee598f.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/static/montserrat-latin-600italic-cf46ffb11f3a60d7df0567f8851a1d00.woff2) format("woff2"),url(/static/montserrat-latin-600italic-c4fcfeeb057724724097167e57bd7801.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/static/montserrat-latin-700-7dbcc8a5ea2289d83f657c25b4be6193.woff2) format("woff2"),url(/static/montserrat-latin-700-99271a835e1cae8c76ef8bba99a8cc4e.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/static/montserrat-latin-700italic-c41ad6bdb4bd504a843d546d0a47958d.woff2) format("woff2"),url(/static/montserrat-latin-700italic-6779372f04095051c62ed36bc1dcc142.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/static/montserrat-latin-800-db9a3e0ba7eaea32e5f55328ace6cf23.woff2) format("woff2"),url(/static/montserrat-latin-800-4e3c615967a2360f5db87d2f0fd2456f.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/static/montserrat-latin-800italic-bf45bfa14805969eda318973947bc42b.woff2) format("woff2"),url(/static/montserrat-latin-800italic-fe82abb0bcede51bf724254878e0c374.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/static/montserrat-latin-900-e66c7edc609e24bacbb705175669d814.woff2) format("woff2"),url(/static/montserrat-latin-900-8211f418baeb8ec880b80ba3c682f957.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/static/montserrat-latin-900italic-4454c775e48152c1a72510ceed3603e2.woff2) format("woff2"),url(/static/montserrat-latin-900italic-efcaa0f6a82ee0640b83a0916e6e8d68.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:normal;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/static/merriweather-latin-300-fc117160c69a8ea0851b26dd14748ee4.woff2) format("woff2"),url(/static/merriweather-latin-300-58b18067ebbd21fda77b67e73c241d3b.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:italic;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/static/merriweather-latin-300italic-fe29961474f8dbf77c0aa7b9a629e4bc.woff2) format("woff2"),url(/static/merriweather-latin-300italic-23c3f1f88683618a4fb8d265d33d383a.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:normal;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/static/merriweather-latin-400-d9479e8023bef9cbd9bf8d6eabd6bf36.woff2) format("woff2"),url(/static/merriweather-latin-400-040426f99ff6e00b86506452e0d1f10b.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:italic;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/static/merriweather-latin-400italic-2de7bfeaf08fb03d4315d49947f062f7.woff2) format("woff2"),url(/static/merriweather-latin-400italic-79db67aca65f5285964ab332bd65f451.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:normal;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/static/merriweather-latin-700-4b08e01d805fa35d7bf777f1b24314ae.woff2) format("woff2"),url(/static/merriweather-latin-700-22fb8afba4ab1f093b6ef9e28a9b6e92.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:italic;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/static/merriweather-latin-700italic-cd92541b177652fffb6e3b952f1c33f1.woff2) format("woff2"),url(/static/merriweather-latin-700italic-f87f3d87cea0dd0979bfc8ac9ea90243.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:normal;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/static/merriweather-latin-900-f813fc6a4bee46eda5224ac7ebf1b7be.woff2) format("woff2"),url(/static/merriweather-latin-900-5d4e42cb44410674acd99153d57df032.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:italic;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/static/merriweather-latin-900italic-b7901d85486871c1779c0e93ddd85656.woff2) format("woff2"),url(/static/merriweather-latin-900italic-9647f9fdab98756989a8a5550eb205c3.woff) format("woff")}.solarized.base03{color:#002b36}.solarized.base02{color:#073642}.solarized.base01{color:#586e75}.solarized.base00{color:#657b83}.solarized.base0{color:#839496}.solarized.base1{color:#93a1a1}.solarized.base2{color:#eee8d5}.solarized.base3{color:#fdf6e3}.solarized.solar-yellow{color:#b58900}.solarized.solar-orange{color:#cb4b16}.solarized.solar-red{color:#dc322f}.solarized.solar-magenta{color:#d33682}.solarized.solar-violet{color:#6c71c4}.solarized.solar-blue{color:#268bd2}.solarized.solar-cyan{color:#2aa198}.solarized.solar-green{color:#859900}.cm-s-solarized{color-profile:sRGB;rendering-intent:auto;line-height:1.45em}.cm-s-solarized.cm-s-dark{background-color:#002b36;color:#839496;text-shadow:#002b36 0 1px}.cm-s-solarized.cm-s-light{background-color:#fdf6e3;color:#657b83;text-shadow:#eee8d5 0 1px}.cm-s-solarized .CodeMirror-widget{text-shadow:none}.cm-s-solarized .cm-header{color:#586e75}.cm-s-solarized .cm-quote{color:#93a1a1}.cm-s-solarized .cm-keyword{color:#cb4b16}.cm-s-solarized .cm-atom,.cm-s-solarized .cm-number{color:#d33682}.cm-s-solarized .cm-def{color:#2aa198}.cm-s-solarized .cm-variable{color:#839496}.cm-s-solarized .cm-variable-2{color:#b58900}.cm-s-solarized .cm-type,.cm-s-solarized .cm-variable-3{color:#6c71c4}.cm-s-solarized .cm-property{color:#2aa198}.cm-s-solarized .cm-operator{color:#6c71c4}.cm-s-solarized .cm-comment{color:#586e75;font-style:italic}.cm-s-solarized .cm-string{color:#859900}.cm-s-solarized .cm-string-2{color:#b58900}.cm-s-solarized .cm-meta{color:#859900}.cm-s-solarized .cm-qualifier{color:#b58900}.cm-s-solarized .cm-builtin{color:#d33682}.cm-s-solarized .cm-bracket{color:#cb4b16}.cm-s-solarized .CodeMirror-matchingbracket{color:#859900}.cm-s-solarized .CodeMirror-nonmatchingbracket{color:#dc322f}.cm-s-solarized .cm-tag{color:#93a1a1}.cm-s-solarized .cm-attribute{color:#2aa198}.cm-s-solarized .cm-hr{border-top:1px solid #586e75;color:transparent;display:block}.cm-s-solarized .cm-link{color:#93a1a1;cursor:pointer}.cm-s-solarized .cm-special{color:#6c71c4}.cm-s-solarized .cm-em{color:#999;text-decoration:underline;text-decoration-style:dotted}.cm-s-solarized .cm-error,.cm-s-solarized .cm-invalidchar{border-bottom:1px dotted #dc322f;color:#586e75}.cm-s-solarized.cm-s-dark div.CodeMirror-selected{background:#073642}.cm-s-solarized.cm-s-dark.CodeMirror ::selection{background:rgba(7,54,66,.99)}.cm-s-dark .CodeMirror-line>span::-moz-selection,.cm-s-dark .CodeMirror-line>span>span::-moz-selection,.cm-s-solarized.cm-s-dark .CodeMirror-line::-moz-selection{background:rgba(7,54,66,.99)}.cm-s-solarized.cm-s-light div.CodeMirror-selected{background:#eee8d5}.cm-s-light .CodeMirror-line>span::selection,.cm-s-light .CodeMirror-line>span>span::selection,.cm-s-solarized.cm-s-light .CodeMirror-line::selection{background:#eee8d5}.cm-s-ligh .CodeMirror-line>span::-moz-selection,.cm-s-ligh .CodeMirror-line>span>span::-moz-selection,.cm-s-solarized.cm-s-light .CodeMirror-line::-moz-selection{background:#eee8d5}.cm-s-solarized.CodeMirror{box-shadow:inset 7px 0 12px -6px #000}.cm-s-solarized .CodeMirror-gutters{border-right:0}.cm-s-solarized.cm-s-dark .CodeMirror-gutters{background-color:#073642}.cm-s-solarized.cm-s-dark .CodeMirror-linenumber{color:#586e75;text-shadow:#021014 0 -1px}.cm-s-solarized.cm-s-light .CodeMirror-gutters{background-color:#eee8d5}.cm-s-solarized.cm-s-light .CodeMirror-linenumber{color:#839496}.cm-s-solarized .CodeMirror-linenumber{padding:0 5px}.cm-s-solarized .CodeMirror-guttermarker-subtle{color:#586e75}.cm-s-solarized.cm-s-dark .CodeMirror-guttermarker{color:#ddd}.cm-s-solarized.cm-s-light .CodeMirror-guttermarker{color:#cb4b16}.cm-s-solarized .CodeMirror-gutter .CodeMirror-gutter-text{color:#586e75}.cm-s-solarized .CodeMirror-cursor{border-left:1px solid #819090}.cm-s-solarized.cm-s-light.cm-fat-cursor .CodeMirror-cursor{background:#7e7}.cm-s-solarized.cm-s-light .cm-animate-fat-cursor{background-color:#7e7}.cm-s-solarized.cm-s-dark.cm-fat-cursor .CodeMirror-cursor{background:#586e75}.cm-s-solarized.cm-s-dark .cm-animate-fat-cursor{background-color:#586e75}.cm-s-solarized.cm-s-dark .CodeMirror-activeline-background{background:hsla(0,0%,100%,.06)}.cm-s-solarized.cm-s-light .CodeMirror-activeline-background{background:rgba(0,0,0,.06)}ol,ul{margin-left:1em}.gatsby-highlight{background:#fdfaf6;border-bottom:1px solid #eee;border-top:1px solid #eee;margin-bottom:1.75rem;overflow-x:auto;padding:1ex 1em}.gatsby-highlight pre{margin-bottom:0}</style><title data-gatsby-head="true">Exploring two alternative declarative roads to Jupyter | Asko Soukka</title><link rel="canonical" href="https://datakurre.pandala.org/2022/12/rcc-jupyter/" data-gatsby-head="true"/><link rel="alternate" type="application/rss+xml" title="datakurre" href="/rss.xml"/><link rel="alternate" type="application/rss+xml" title="datakurre on &quot;plone&quot;" href="/feeds/posts/default/-/plone"/><style>.gatsby-image-wrapper{position:relative;overflow:hidden}.gatsby-image-wrapper picture.object-fit-polyfill{position:static!important}.gatsby-image-wrapper img{bottom:0;height:100%;left:0;margin:0;max-width:none;padding:0;position:absolute;right:0;top:0;width:100%;object-fit:cover}.gatsby-image-wrapper [data-main-image]{opacity:0;transform:translateZ(0);transition:opacity .25s linear;will-change:opacity}.gatsby-image-wrapper-constrained{display:inline-block;vertical-align:top}</style><noscript><style>.gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}</style></noscript><script type="module">const e="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;e&&document.body.addEventListener("load",(function(e){const t=e.target;if(void 0===t.dataset.mainImage)return;if(void 0===t.dataset.gatsbyImageSsr)return;let a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector("[data-placeholder-image]"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition="opacity 500ms linear")}))}),!0);</script><link rel="icon" href="/favicon-32x32.png?v=b12376b9b88c2b74e77175e369294c9a" type="image/png"/><link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=b12376b9b88c2b74e77175e369294c9a"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=b12376b9b88c2b74e77175e369294c9a"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=b12376b9b88c2b74e77175e369294c9a"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=b12376b9b88c2b74e77175e369294c9a"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=b12376b9b88c2b74e77175e369294c9a"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=b12376b9b88c2b74e77175e369294c9a"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=b12376b9b88c2b74e77175e369294c9a"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=b12376b9b88c2b74e77175e369294c9a"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div style="margin-left:auto;margin-right:auto;max-width:42rem;padding:2.625rem 1.3125rem"><header><h3 style="font-family:Montserrat, sans-serif;margin-top:0"><a style="box-shadow:none;text-decoration:none;color:inherit" href="/">Asko Soukka</a></h3></header><main class="h-entry"><h1 style="margin-top:1.75rem;margin-bottom:0">Exploring two alternative declarative roads to Jupyter</h1><span class="p-name" style="display:none">Exploring two alternative declarative roads to Jupyter</span><img class="u-photo" src="https://datakurre.pandala.org/cover-2022-12-rcc-jupyter.png" alt="" style="display:none"/><a class="p-author h-card" href="https://pandala.org/#datakurre" style="display:none"><img class="u-photo" src="https://datakurre.pandala.org/icon.jpg" alt=""/>Asko Soukka</a><div class="p-summary" style="display:none"><div>Nix way, RCC way, or the high way? I’m a fan of Project Jupyter, which develops and maintains interactive computing environments for all programming languages…</div></div><a class="p-category" href="https://datakurre.pandala.org/2022/12/rcc-jupyter/" style="display:none">Jupyter</a><a class="p-category" href="https://datakurre.pandala.org/2022/12/rcc-jupyter/" style="display:none">Robot Framework</a><a class="p-category" href="https://datakurre.pandala.org/2022/12/rcc-jupyter/" style="display:none">RCC</a><a class="p-category" href="https://datakurre.pandala.org/2022/12/rcc-jupyter/" style="display:none">Nix</a><a class="p-category" href="https://datakurre.pandala.org/2022/12/rcc-jupyter/" style="display:none">Open Source</a><a class="u-syndication" href="https://fed.brid.gy/" style="display:none">https://fed.brid.gy/</a><a class="u-syndication" href="https://fediverse.pandala.org/" style="display:none">https://fediverse.pandala.org/</a><a class="u-url u-uid" style="font-size:0.83255rem;line-height:1.75rem;display:block;color:black;box-shadow:none;margin-bottom:1.75rem" href="https://datakurre.pandala.org/2022/12/rcc-jupyter/"><time class="dt-published" datetime="2022-12-16 12:00:00">December 16, 2022</time></a><div class="e-content"><div><p><strong>Nix way, RCC way, or the high way?</strong></p>
+<p>I’m a fan of <a href="https://jupyter.org/">Project Jupyter</a>, which develops and maintains interactive computing environments for all programming languages. Mostly known for <a href="https://jupyter.org/try">JupyterLab</a> and <a href="https://jupyter.org/try">Jupyter Notebook</a>. Yet, I use them much less than I’d like to. Most probably, because I am missing a convenient way to define and maintain local Jupyter environments within those projects where they could be useful.</p>
+<p>Q: <strong>Explain how declarative configuration differs from imperative configuration in a tweet.</strong></p>
+<p>A: <em>Declarative configuration focuses on what the desired end state should be, while imperative configuration focuses on the specific steps needed to achieve that end state. In declarative configuration, the system automatically sets up the necessary resources and configurations, whereas in imperative configuration, the user must explicitly define and execute each step. #declarativeconfig #imperativeconfig</em> -ChatGPT</p>
+<p>As of today, I might have found the way I have been looking for. Unfortunately, it might not be <a href="https://nixos.org/">Nix</a>, but something else, that everyone can use in minutes. That said, let’s try out the Nix way at first.</p>
+<h2>Status quo: jupyterWith</h2>
+<p><a href="https://github.com/tweag/jupyterWith">jupyterWith</a> is a project, which helps to define and maintain Jupyter environments with <a href="https://nixos.org">Nix</a>, the purely functional package manager. Let’s assume that Nix has already been installed and “flakes” enabled as told in  <a href="https://jupyterwith.tweag.io/getting-started/">withJupyter’s documentation</a>. Then we continue to follow the docs to create JupyterLab with <a href="https://pypi.org/project/robotkernel/">Robot Framework kernel</a>.</p>
+<p>At first, we need to scaffold the base environment with:</p>
+<div class="gatsby-highlight" data-language="null">
+      <pre class=" cm-s-solarized"><code><span>$ nix flake init --template github:tweag/jupyterWith
+wrote: .../flake.nix
+wrote: .../default.nix
+wrote: .../kernels/python
+wrote: .../kernels
+
+    You have created a jupyterWith template.
+
+    Run nix run to immediately try it out.
+
+    See the jupyterWith documentation for more information.
+
+    https://github.com/tweag/jupyterWith/blob/main/docs/how-to.md
+    https://github.com/tweag/jupyterWith/blob/main/docs/tutorials.md</span></code></pre>
+    </div>
+<p>And then we are able to start the default setup with:</p>
+<div class="gatsby-highlight" data-language="null">
+      <pre class=" cm-s-solarized"><code><span>$ nix run</span></code></pre>
+    </div>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/e4e185646dd5559daabf67c7b31a3074/4352a/jupyterwith-00.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 50%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAAAsSAAALEgHS3X78AAABQUlEQVQoz41SXW/DIAzM//9be+3zNKmrlC5tSlKSAAEC5OOGqZg0dWt7khXjmPNhu3gvr3j74LBGwxiDU33BmV2hrAfvepRliePx+NQor65rFOWJoRUW3ntM0wQzOWxLgOtbWBfgQ/Sde2oh5jVNg+J8qqCVTIRVVSVSAmu+oj8CXuNVSClRcN7Fiw7rukII+UPIuya2QUEPLZZlSbFt2/41ghACRSbIF4KPT5g3HJjGHDzWmLs+ILojpEFkkJJc4NLGVhiJqw5JPbYXFVprfxFSg9coq49Pdm7CaOyN8AH+JKQgEdJwyPb7zzS5eQ5Y5gWLj8ViC0Kym+qsLhe86yH9IIWE3W6X9op3PA7GYKhGtH0NKVjcO9oGe6dUKYWi73uM45jYqZ80+nwmn77DMGAQA5S8xTjnKa61TrnZGGP4BuK1B3+3bJ7EAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Default JupyterLab using JupyterWith"
+        title="Default JupyterLab using JupyterWith"
+        src="/static/e4e185646dd5559daabf67c7b31a3074/fcda8/jupyterwith-00.png"
+        srcset="/static/e4e185646dd5559daabf67c7b31a3074/12f09/jupyterwith-00.png 148w,
+/static/e4e185646dd5559daabf67c7b31a3074/e4a3f/jupyterwith-00.png 295w,
+/static/e4e185646dd5559daabf67c7b31a3074/fcda8/jupyterwith-00.png 590w,
+/static/e4e185646dd5559daabf67c7b31a3074/efc66/jupyterwith-00.png 885w,
+/static/e4e185646dd5559daabf67c7b31a3074/c83ae/jupyterwith-00.png 1180w,
+/static/e4e185646dd5559daabf67c7b31a3074/4352a/jupyterwith-00.png 1364w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<p>Although, this gives us JupyterLab with only plain Python kernel. It’s good to know that jupyterWith properly separates JupyterLab from its kernels, and is then able to support any number of different kernels or configurations in a single environment. Thankfully, to get started with custom kernel configuration, it has already created us a template for Python kernel with custom packages.</p>
+<p>But it took a couple of hours for me to figure out, how to customize jupyterWith’s Python kernel setup to run Python based RobotFramework kernel instead. That required defining a Python environment with <a href="https://pypi.org/project/robotkernel/">RobotKernel</a> into the Python custom kernel template at <code>./kernels/python</code> with <a href="https://python-poetry.org/">Poetry</a>:</p>
+<div class="gatsby-highlight" data-language="null">
+      <pre class=" cm-s-solarized"><code><span>$ poetry init
+
+This command will guide you through creating your pyproject.toml config.
+
+Package name [python]:  robotkernel-env
+
+Would you like to define your main dependencies interactively? (yes/no) [yes]
+
+Search for package to add (or leave blank to continue): robotkernel
+
+Enter package # to add, or the complete package name if it is not listed:
+ [0] robotkernel
+ [1] jupyterlite-robotkernel
+ &gt; 0
+
+Do you confirm generation? (yes/no) [yes]</span></code></pre>
+    </div>
+<p>And, of course, lock its dependencies:</p>
+<div class="gatsby-highlight" data-language="null">
+      <pre class=" cm-s-solarized"><code><span>$ poetry lock
+Creating virtualenv robotkernel-env-aFhfNoGt-py3.9 in .../.cache/pypoetry/virtualenvs
+Updating dependencies
+Resolving dependencies... (31.3s)
+
+Writing lock file</span></code></pre>
+    </div>
+<p>And, finally, the hard part… With the following <code>./kernels/python/default.nix</code>:</p>
+<div class="gatsby-highlight" data-language="null">
+      <pre class=" cm-s-solarized"><code><span>{
+  name,
+  availableKernels,
+  extraArgs,
+}:
+let base = availableKernels.python {
+  projectDir = ./.;
+  displayName = "Robot Framework";
+  name = "robotframework";
+  preferWheels = true;
+}; in {
+  path = ./kernel.nix;
+  args = base.args // { inherit (base) path; };
+}</span></code></pre>
+    </div>
+<p>And <code>./kernels/python/kernel.nix</code>:</p>
+<div class="gatsby-highlight" data-language="null">
+      <pre class=" cm-s-solarized"><code><span>args@{ path, ...}:
+
+let
+  base = import path (builtins.removeAttrs args [ "path" ]);
+in base // {
+  argv = [
+    (builtins.head base.argv)
+    "-m"
+    "robotkernel.kernel"
+    "-f"
+    "{connection_file}"
+  ];
+  language = "robotframework";
+  codemirrorMode = "robotframework";
+}</span></code></pre>
+    </div>
+<p>I was able to have my declarative JupyterLab with Robot Framework kernel started simply with re-running <code>nix run</code>.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/e2a8d2d514d75d18ac63b14d2d8e96d4/4352a/jupyterwith-01.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 50%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAAAsSAAALEgHS3X78AAABQklEQVQoz41SXW+DMAzk//+sPfd5mtRVooLSQAMJAUK+4BZnysPUru1JVhLHOTtnF5/lDR9fHHqZsSwL6uaKC7tBaQveDyjLEufz+aVRXNM0KMqaoZMa1his64plNdiDgxk6aONgnYeJd6/MOYe2bVFc6gqTkvDeo65r6FWDwNoqJpgALYB9xzsYxxEF532qbI+PlFJpT+B9G2VQUJwhhJB8FPOfEaSUKDJBfuBs/ILfcWIzvLMIT0geElIjMqiSnODaVZiXEc0YSbft/Qq11n8ISeBt2zHELxuzQqopnren2j0kJCcRWmuTHY/fqXMheAQfEGxMFiVwyVxKkqvLCe80pAuqkHA4HNJc8Z5jFgtENaEbGoySxbmjCdB3lVJTi2EYME1TYic9qfX5THtahRAQUkCNvz7OefLP85xiszHG8AO9kgdpm+bPjwAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="JupyterLab using JupyterWith with Robot Framework kernel"
+        title="JupyterLab using JupyterWith with Robot Framework kernel"
+        src="/static/e2a8d2d514d75d18ac63b14d2d8e96d4/fcda8/jupyterwith-01.png"
+        srcset="/static/e2a8d2d514d75d18ac63b14d2d8e96d4/12f09/jupyterwith-01.png 148w,
+/static/e2a8d2d514d75d18ac63b14d2d8e96d4/e4a3f/jupyterwith-01.png 295w,
+/static/e2a8d2d514d75d18ac63b14d2d8e96d4/fcda8/jupyterwith-01.png 590w,
+/static/e2a8d2d514d75d18ac63b14d2d8e96d4/efc66/jupyterwith-01.png 885w,
+/static/e2a8d2d514d75d18ac63b14d2d8e96d4/c83ae/jupyterwith-01.png 1180w,
+/static/e2a8d2d514d75d18ac63b14d2d8e96d4/4352a/jupyterwith-01.png 1364w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/9ac804a05769523edbad3555de49cb99/4352a/jupyterwith-02.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 50%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAAAsSAAALEgHS3X78AAABO0lEQVQoz6WSyU7DMBCG/f5PwwXxABxRJQ4IgVRI0jh2MNnqxHaWNj8eVylhuVBG+jWOM/pmM3uM33H7VMCaDsYYcJ4h4QLaOBRlhSSOsdvtkKbpFy135KMowna7hRACLEolZGVhXQ9jLVqt0XZdgO33e1TVybdtC03/vF+L7pRSQVmWgSnJMfcawBG1EqhbB91Z5LlEXdfo+x7WJyI5587nRZ1PTqLuyrIEu3sWuNoo3Dw0uN4I3MdNAEavL0iSBLFvmXMe2mma5gxYtK48ACvtyeaINz2h6ibEygfZESJXocKiKIKnYKpoHEcMw/BD0zSFONY7i087hhZnXGY0a0ZZyWZPORwOAXj6nv8kMhrJCjgHIA3+X8AFsEBoRpcaLYfRO6MNEZ1mkOd5OH9/b7+9P1oYLWtZmpQSH6CsAveSWpeHAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Robot Framework kernel in action"
+        title="Robot Framework kernel in action"
+        src="/static/9ac804a05769523edbad3555de49cb99/fcda8/jupyterwith-02.png"
+        srcset="/static/9ac804a05769523edbad3555de49cb99/12f09/jupyterwith-02.png 148w,
+/static/9ac804a05769523edbad3555de49cb99/e4a3f/jupyterwith-02.png 295w,
+/static/9ac804a05769523edbad3555de49cb99/fcda8/jupyterwith-02.png 590w,
+/static/9ac804a05769523edbad3555de49cb99/efc66/jupyterwith-02.png 885w,
+/static/9ac804a05769523edbad3555de49cb99/c83ae/jupyterwith-02.png 1180w,
+/static/9ac804a05769523edbad3555de49cb99/4352a/jupyterwith-02.png 1364w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<p>Unfortunately, even after all that, my JupyterLab was still missing syntax highlighting for Robot Framework code. That would have required additional configuration for Nix-packaging and installation of <a href="https://pypi.org/project/jupyterlab-robotmode/">jupyterlab-robotmode</a> extension into the Python environment of JupyterLab itself.</p>
+<p>According to jupyterWith’s documentation. They are still working on to support declarative configuration for extensions… Fair enough.</p>
+<h2>Contender: RCC</h2>
+<p>How about the challenger? <a href="https://robocorp.com/docs/rcc/overview">RCC</a> is an open source environment management and task execution tool from <a href="https://robocorp.com">Robocorp</a>. Initially designed to manage environments and execution of Robot Framework and Python RPA bots, but technically generic enough to manage any environment based on packages available at <a href="https://conda.io/">Conda</a> <a href="https://anaconda.org/search">repositories</a> or installable with <a href="https://pypi.org/project/pip/">Pip</a>. (Under the hood it is using <a href="https://docs.conda.io/en/latest/miniconda.html">Miniconda</a> as its package manager.)</p>
+<p>RCC is installed usually just by <a href="https://downloads.robocorp.com/rcc/releases/index.html">downloading a precompiled binary</a>. Then it requires two files to built the environment and start a program from it. So, let’s have <code>conda.yaml</code>:</p>
+<div class="gatsby-highlight" data-language="yaml">
+      <pre class=" cm-s-solarized"><code><span class="cm-atom">channels</span><span class="cm-meta">:</span><span>
+</span><span class="cm-meta">  - </span><span>conda-forge</span><span>
+</span><span class="cm-atom">dependencies</span><span class="cm-meta">:</span><span>
+</span><span class="cm-meta">  - </span><span>jupyterlab</span><span>
+</span><span class="cm-meta">  - </span><span class="cm-atom">pip</span><span class="cm-meta">:</span><span>
+</span><span class="cm-meta">      - </span><span>robotkernel</span><span>
+</span><span class="cm-meta">      - </span><span>jupyterlab-robotmode</span></code></pre>
+    </div>
+<p>And <code>robot.yaml</code>:</p>
+<div class="gatsby-highlight" data-language="yaml">
+      <pre class=" cm-s-solarized"><code><span class="cm-atom">tasks</span><span class="cm-meta">:</span><span>
+</span><span class="cm-atom">  lab</span><span class="cm-meta">:</span><span>
+</span><span class="cm-atom">    shell</span><span class="cm-meta">: </span><span>jupyter lab</span><span>
+</span><span class="cm-atom">condaConfigFile</span><span class="cm-meta">:</span><span>
+</span><span>  conda.yaml</span><span>
+</span><span class="cm-atom">artifactsDir</span><span class="cm-meta">:</span><span>
+</span><span>  .</span></code></pre>
+    </div>
+<p>Once these are in place, the sole task from <code>robot.yaml</code> run from the environment defined in <code>conda.yaml</code> can be run with:</p>
+<div class="gatsby-highlight" data-language="null">
+      <pre class=" cm-s-solarized"><code><span>$ rcc task run</span></code></pre>
+    </div>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/5c432c6532f3b2b4ab8f53f7f293a819/4352a/rcc-00.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 50%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAAAsSAAALEgHS3X78AAABO0lEQVQoz5VSy26DMBDk/z+rp0bKmR4SCSJSY8CxeRpsDFOvK+fQtE270mhh1oyH3U3SvMHLm8A0jR4TrqzEO2/Qawtxk8iyDJfL5SnyPAdjDElWlKhbDWMM5nnGNC/YnYWRNfRigX0PtWVZfoW1FlVVIWnKEn2rglhRFCFT8OqKYexwPp+xbRv+El3XIWmlgtYa67oGIgo2gmHoFdI0DTWK3bv9CRRt2yKJAvEDa/wvrDuySsOt9qnQgyC5i+GcuztkdeEPNDi8Hv7n8KsgNXjbdgjBsczaZ/G0h98KEkmCNFHCyQ+DJkdibnVwxl9mjefMnY/u4oUPPaQCOaQ4Ho9hr8RNYFQTVDGglgxdy/3e0TboB6d93yORUmIYhqBOi02Tju/0TFkpBeVXq+8+OWoD8eM4hrMRnHN8AHIBBiwehQeNAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="JupyterLab using RCC with Robot Framework kernel"
+        title="JupyterLab using RCC with Robot Framework kernel"
+        src="/static/5c432c6532f3b2b4ab8f53f7f293a819/fcda8/rcc-00.png"
+        srcset="/static/5c432c6532f3b2b4ab8f53f7f293a819/12f09/rcc-00.png 148w,
+/static/5c432c6532f3b2b4ab8f53f7f293a819/e4a3f/rcc-00.png 295w,
+/static/5c432c6532f3b2b4ab8f53f7f293a819/fcda8/rcc-00.png 590w,
+/static/5c432c6532f3b2b4ab8f53f7f293a819/efc66/rcc-00.png 885w,
+/static/5c432c6532f3b2b4ab8f53f7f293a819/c83ae/rcc-00.png 1180w,
+/static/5c432c6532f3b2b4ab8f53f7f293a819/4352a/rcc-00.png 1364w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<p>This was all that was required to have a declaratively configured JupyterLab launched from a project directory. And this time also syntax highlighting was enabled:</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/bf465a343fd5e9ac4926bd2bddbaa7d7/4352a/rcc-01.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 50%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAAAsSAAALEgHS3X78AAABY0lEQVQoz52Sy07DMBBF8/8/g9jwAWy7YFFEJUQakjTvR20nthPncfEYqpa2YsFIR7YTz52byXhvnxWedzUEZ5BS4nBIEB1SCKlQ1Q3CMEQURZYYcXyGnp3WIAjg+z7SNIW3jzNkRwU9DJBKg3MO0SmURQ/GONpjAyE4uq6ziJ/1jBACRVE4kiSBx8ocs2IAJrRlBmMGqH5GGnZgtcSgJ+vcFpMaShHqBq01xnFE27bwXt4LPGxyPG2PeNwkqLm0FwxeP0rsggTb/R5+VCE+WOfWcW/b0vf9DdQuJ9hYgUauKLsJVWdswgA9GvhljJynth0NWi5Qs865ISeDbc8l5JBWJzhohXMsYLZ/o1mwTAvWebXY/Tw7pmm6gQr8EqSqFOsKzDaJXnyf17tcxvWZfuiF4OoEqdpfgvdYlsXlMMbgnQROIsYY/DdohDz6bponUifLeZ67/fW83aNpGgdpEFmW4Qt5wQKqh/fVzwAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Robot Framework kernel in action"
+        title="Robot Framework kernel in action"
+        src="/static/bf465a343fd5e9ac4926bd2bddbaa7d7/fcda8/rcc-01.png"
+        srcset="/static/bf465a343fd5e9ac4926bd2bddbaa7d7/12f09/rcc-01.png 148w,
+/static/bf465a343fd5e9ac4926bd2bddbaa7d7/e4a3f/rcc-01.png 295w,
+/static/bf465a343fd5e9ac4926bd2bddbaa7d7/fcda8/rcc-01.png 590w,
+/static/bf465a343fd5e9ac4926bd2bddbaa7d7/efc66/rcc-01.png 885w,
+/static/bf465a343fd5e9ac4926bd2bddbaa7d7/c83ae/rcc-01.png 1180w,
+/static/bf465a343fd5e9ac4926bd2bddbaa7d7/4352a/rcc-01.png 1364w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<p>Looks like we have a winner!</p>
+<h2>How about reproducibility?</h2>
+<p>Was this a fair comparison? Not completely. Nix package manager is built to maximize reproducibility, while Conda used by RCC promises more like “best effort” for it. Also, jupyterWith is clearly desiged to support even complex JupyterLab environments with multiple kernels. Meanwhile my current use case required only one kernel at time, and mostly based on Python. Therefore installing kernel packages into the same environment with JupyterLab itself is feasible.</p>
+<p>That said, RCC tries its best to make the environment as reproducible as possible with Conda. When <code>rcc task run</code> is run with ambiquous <code>conda.yaml</code>, it also generates <code>environment_[system]_[arch]_freeze.yaml</code> (e.g. <code>environment_linux_amd64_freeze.yaml</code>) with all the installed packages:</p>
+<div class="gatsby-highlight" data-language="yaml">
+      <pre class=" cm-s-solarized"><code><span class="cm-atom">channels</span><span class="cm-meta">:</span><span>
+</span><span class="cm-meta">- </span><span>conda-forge</span><span>
+</span><span class="cm-atom">dependencies</span><span class="cm-meta">:</span><span>
+</span><span class="cm-meta">- </span><span>_libgcc_mutex=0.1</span><span>
+</span><span class="cm-meta">- </span><span>_openmp_mutex=4.5</span><span>
+</span><span class="cm-meta">- </span><span>anyio=3.6.2</span><span>
+</span><span class="cm-meta">- </span><span>argon2-cffi=21.3.0</span><span>
+</span><span class="cm-meta">- </span><span>argon2-cffi-bindings=21.2.0</span><span>
+</span><span class="cm-meta">- </span><span>asttokens=2.2.1</span><span>
+</span><span class="cm-meta">- </span><span>attrs=22.1.0</span><span>
+</span><span class="cm-meta">- </span><span>babel=2.11.0</span><span>
+</span><span class="cm-meta">- </span><span>backcall=0.2.0</span><span>
+</span><span class="cm-meta">- </span><span>backports=1.0</span><span>
+</span><span class="cm-meta">- </span><span>backports.functools_lru_cache=1.6.4</span><span>
+</span><span class="cm-meta">- </span><span>beautifulsoup4=4.11.1</span><span>
+</span><span class="cm-meta">- </span><span>bleach=5.0.1</span><span>
+</span><span class="cm-meta">- </span><span>brotlipy=0.7.0</span><span>
+</span><span class="cm-meta">- </span><span>bzip2=1.0.8</span><span>
+</span><span class="cm-meta">- </span><span>ca-certificates=2022.12.7</span><span>
+</span><span class="cm-meta">- </span><span>certifi=2022.12.7</span><span>
+</span><span class="cm-meta">- </span><span>cffi=1.15.1</span><span>
+</span><span class="cm-meta">- </span><span>charset-normalizer=2.1.1</span><span>
+</span><span class="cm-meta">- </span><span>cryptography=38.0.4</span><span>
+</span><span class="cm-meta">- </span><span>debugpy=1.6.4</span><span>
+</span><span class="cm-meta">- </span><span>decorator=5.1.1</span><span>
+</span><span class="cm-meta">- </span><span>defusedxml=0.7.1</span><span>
+</span><span class="cm-meta">- </span><span>entrypoints=0.4</span><span>
+</span><span class="cm-meta">- </span><span>executing=1.2.0</span><span>
+</span><span class="cm-meta">- </span><span>flit-core=3.8.0</span><span>
+</span><span class="cm-meta">- </span><span>idna=3.4</span><span>
+</span><span class="cm-meta">- </span><span>importlib-metadata=5.1.0</span><span>
+</span><span class="cm-meta">- </span><span>importlib_resources=5.10.1</span><span>
+</span><span class="cm-meta">- </span><span>ipykernel=6.14.0</span><span>
+</span><span class="cm-meta">- </span><span>ipython=8.4.0</span><span>
+</span><span class="cm-meta">- </span><span>ipython_genutils=0.2.0</span><span>
+</span><span class="cm-meta">- </span><span>jedi=0.18.2</span><span>
+</span><span class="cm-meta">- </span><span>jinja2=3.1.2</span><span>
+</span><span class="cm-meta">- </span><span>json5=0.9.5</span><span>
+</span><span class="cm-meta">- </span><span>jsonschema=4.17.3</span><span>
+</span><span class="cm-meta">- </span><span>jupyter_client=7.4.8</span><span>
+</span><span class="cm-meta">- </span><span>jupyter_core=5.1.0</span><span>
+</span><span class="cm-meta">- </span><span>jupyter_events=0.5.0</span><span>
+</span><span class="cm-meta">- </span><span>jupyter_server=2.0.1</span><span>
+</span><span class="cm-meta">- </span><span>jupyter_server_terminals=0.4.2</span><span>
+</span><span class="cm-meta">- </span><span>jupyterlab=3.5.1</span><span>
+</span><span class="cm-meta">- </span><span>jupyterlab_pygments=0.2.2</span><span>
+</span><span class="cm-meta">- </span><span>jupyterlab_server=2.16.5</span><span>
+</span><span class="cm-meta">- </span><span>ld_impl_linux-64=2.39</span><span>
+</span><span class="cm-meta">- </span><span>libffi=3.4.2</span><span>
+</span><span class="cm-meta">- </span><span>libgcc-ng=12.2.0</span><span>
+</span><span class="cm-meta">- </span><span>libgomp=12.2.0</span><span>
+</span><span class="cm-meta">- </span><span>libnsl=2.0.0</span><span>
+</span><span class="cm-meta">- </span><span>libsodium=1.0.18</span><span>
+</span><span class="cm-meta">- </span><span>libsqlite=3.40.0</span><span>
+</span><span class="cm-meta">- </span><span>libstdcxx-ng=12.2.0</span><span>
+</span><span class="cm-meta">- </span><span>libuuid=2.32.1</span><span>
+</span><span class="cm-meta">- </span><span>libzlib=1.2.13</span><span>
+</span><span class="cm-meta">- </span><span>markupsafe=2.1.1</span><span>
+</span><span class="cm-meta">- </span><span>matplotlib-inline=0.1.6</span><span>
+</span><span class="cm-meta">- </span><span>mistune=2.0.4</span><span>
+</span><span class="cm-meta">- </span><span>nbclassic=0.4.8</span><span>
+</span><span class="cm-meta">- </span><span>nbclient=0.7.2</span><span>
+</span><span class="cm-meta">- </span><span>nbconvert=7.2.6</span><span>
+</span><span class="cm-meta">- </span><span>nbconvert-core=7.2.6</span><span>
+</span><span class="cm-meta">- </span><span>nbconvert-pandoc=7.2.6</span><span>
+</span><span class="cm-meta">- </span><span>nbformat=5.7.0</span><span>
+</span><span class="cm-meta">- </span><span>ncurses=6.3</span><span>
+</span><span class="cm-meta">- </span><span>nest-asyncio=1.5.6</span><span>
+</span><span class="cm-meta">- </span><span>notebook=6.5.2</span><span>
+</span><span class="cm-meta">- </span><span>notebook-shim=0.2.2</span><span>
+</span><span class="cm-meta">- </span><span>openssl=3.0.7</span><span>
+</span><span class="cm-meta">- </span><span>packaging=22.0</span><span>
+</span><span class="cm-meta">- </span><span>pandoc=2.19.2</span><span>
+</span><span class="cm-meta">- </span><span>pandocfilters=1.5.0</span><span>
+</span><span class="cm-meta">- </span><span>parso=0.8.3</span><span>
+</span><span class="cm-meta">- </span><span>pexpect=4.8.0</span><span>
+</span><span class="cm-meta">- </span><span>pickleshare=0.7.5</span><span>
+</span><span class="cm-meta">- </span><span>pip=22.3.1</span><span>
+</span><span class="cm-meta">- </span><span>pkgutil-resolve-name=1.3.10</span><span>
+</span><span class="cm-meta">- </span><span>platformdirs=2.6.0</span><span>
+</span><span class="cm-meta">- </span><span>prometheus_client=0.15.0</span><span>
+</span><span class="cm-meta">- </span><span>prompt-toolkit=3.0.36</span><span>
+</span><span class="cm-meta">- </span><span>psutil=5.9.4</span><span>
+</span><span class="cm-meta">- </span><span>ptyprocess=0.7.0</span><span>
+</span><span class="cm-meta">- </span><span>pure_eval=0.2.2</span><span>
+</span><span class="cm-meta">- </span><span>pycparser=2.21</span><span>
+</span><span class="cm-meta">- </span><span>pygments=2.13.0</span><span>
+</span><span class="cm-meta">- </span><span>pyopenssl=22.1.0</span><span>
+</span><span class="cm-meta">- </span><span>pyrsistent=0.19.2</span><span>
+</span><span class="cm-meta">- </span><span>pysocks=1.7.1</span><span>
+</span><span class="cm-meta">- </span><span>python=3.10.8</span><span>
+</span><span class="cm-meta">- </span><span>python-dateutil=2.8.2</span><span>
+</span><span class="cm-meta">- </span><span>python-fastjsonschema=2.16.2</span><span>
+</span><span class="cm-meta">- </span><span>python-json-logger=2.0.1</span><span>
+</span><span class="cm-meta">- </span><span>python_abi=3.10</span><span>
+</span><span class="cm-meta">- </span><span>pytz=2022.6</span><span>
+</span><span class="cm-meta">- </span><span>pyyaml=6.0</span><span>
+</span><span class="cm-meta">- </span><span>pyzmq=24.0.1</span><span>
+</span><span class="cm-meta">- </span><span>readline=8.1.2</span><span>
+</span><span class="cm-meta">- </span><span>requests=2.28.1</span><span>
+</span><span class="cm-meta">- </span><span>send2trash=1.8.0</span><span>
+</span><span class="cm-meta">- </span><span>setuptools=65.5.1</span><span>
+</span><span class="cm-meta">- </span><span>six=1.16.0</span><span>
+</span><span class="cm-meta">- </span><span>sniffio=1.3.0</span><span>
+</span><span class="cm-meta">- </span><span>soupsieve=2.3.2.post1</span><span>
+</span><span class="cm-meta">- </span><span>stack_data=0.6.2</span><span>
+</span><span class="cm-meta">- </span><span>terminado=0.15.0</span><span>
+</span><span class="cm-meta">- </span><span>tinycss2=1.2.1</span><span>
+</span><span class="cm-meta">- </span><span>tk=8.6.12</span><span>
+</span><span class="cm-meta">- </span><span>tomli=2.0.1</span><span>
+</span><span class="cm-meta">- </span><span>tornado=6.2</span><span>
+</span><span class="cm-meta">- </span><span>traitlets=5.7.1</span><span>
+</span><span class="cm-meta">- </span><span>typing_extensions=4.4.0</span><span>
+</span><span class="cm-meta">- </span><span>tzdata=2022g</span><span>
+</span><span class="cm-meta">- </span><span>urllib3=1.26.13</span><span>
+</span><span class="cm-meta">- </span><span>wcwidth=0.2.5</span><span>
+</span><span class="cm-meta">- </span><span>webencodings=0.5.1</span><span>
+</span><span class="cm-meta">- </span><span>websocket-client=1.4.2</span><span>
+</span><span class="cm-meta">- </span><span>wheel=0.38.4</span><span>
+</span><span class="cm-meta">- </span><span>xz=5.2.6</span><span>
+</span><span class="cm-meta">- </span><span>yaml=0.2.5</span><span>
+</span><span class="cm-meta">- </span><span>zeromq=4.3.4</span><span>
+</span><span class="cm-meta">- </span><span>zipp=3.11.0</span><span>
+</span><span class="cm-meta">- </span><span class="cm-atom">pip</span><span class="cm-meta">:</span><span>
+</span><span class="cm-meta">  - </span><span>arrow==1.2.3</span><span>
+</span><span class="cm-meta">  - </span><span>backports.functools-lru-cache==1.6.4</span><span>
+</span><span class="cm-meta">  - </span><span>docutils==0.19</span><span>
+</span><span class="cm-meta">  - </span><span>fastjsonschema==2.16.2</span><span>
+</span><span class="cm-meta">  - </span><span>flit_core==3.8.0</span><span>
+</span><span class="cm-meta">  - </span><span>fqdn==1.5.1</span><span>
+</span><span class="cm-meta">  - </span><span>importlib-resources==5.10.1</span><span>
+</span><span class="cm-meta">  - </span><span>ipython-genutils==0.2.0</span><span>
+</span><span class="cm-meta">  - </span><span>ipywidgets==8.0.3</span><span>
+</span><span class="cm-meta">  - </span><span>isoduration==20.11.0</span><span>
+</span><span class="cm-meta">  - </span><span>jsonpointer==2.3</span><span>
+</span><span class="cm-meta">  - </span><span>jupyter-events==0.5.0</span><span>
+</span><span class="cm-meta">  - </span><span>jupyterlab-pygments==0.2.2</span><span>
+</span><span class="cm-meta">  - </span><span>jupyterlab-robotmode==0.3.1</span><span>
+</span><span class="cm-meta">  - </span><span>jupyterlab-widgets==3.0.4</span><span>
+</span><span class="cm-meta">  - </span><span>lunr==0.6.2</span><span>
+</span><span class="cm-meta">  - </span><span>notebook_shim==0.2.2</span><span>
+</span><span class="cm-meta">  - </span><span>Pillow==9.3.0</span><span>
+</span><span class="cm-meta">  - </span><span>pkgutil_resolve_name==1.3.10</span><span>
+</span><span class="cm-meta">  - </span><span>prometheus-client==0.15.0</span><span>
+</span><span class="cm-meta">  - </span><span>pure-eval==0.2.2</span><span>
+</span><span class="cm-meta">  - </span><span>rfc3339-validator==0.1.4</span><span>
+</span><span class="cm-meta">  - </span><span>rfc3986-validator==0.1.1</span><span>
+</span><span class="cm-meta">  - </span><span>robotframework==6.0.1</span><span>
+</span><span class="cm-meta">  - </span><span>robotkernel==1.6</span><span>
+</span><span class="cm-meta">  - </span><span>stack-data==0.6.2</span><span>
+</span><span class="cm-meta">  - </span><span>uri-template==1.2.0</span><span>
+</span><span class="cm-meta">  - </span><span>webcolors==1.12</span><span>
+</span><span class="cm-meta">  - </span><span>widgetsnbextension==4.0.4</span></code></pre>
+    </div>
+<p>Adding this to <code>robot.yaml</code>:</p>
+<div class="gatsby-highlight" data-language="yaml">
+      <pre class=" cm-s-solarized"><code><span class="cm-atom">tasks</span><span class="cm-meta">:</span><span>
+</span><span class="cm-atom">  notebook</span><span class="cm-meta">:</span><span>
+</span><span class="cm-atom">    shell</span><span class="cm-meta">: </span><span>jupyter lab</span><span>
+</span><span class="cm-atom">condaConfigFile</span><span class="cm-meta">:</span><span>
+</span><span>  conda.yaml</span><span>
+</span><span class="cm-atom">artifactsDir</span><span class="cm-meta">:</span><span>
+</span><span>  .</span><span>
+</span><span class="cm-atom">environmentConfigs</span><span class="cm-meta">:</span><span>
+</span><span class="cm-meta">- </span><span>environment_linux_amd64_freeze.yaml</span></code></pre>
+    </div>
+<p>should help the environment to build and run with the same version also on other machines.</p>
+<p>P.S. You may disable RCC telemetry with <code>rcc configuration identity -t</code>.</p>
+<p>P.P.S. Check RCC authors <a href="https://github.com/robocorp/rcc/blob/master/docs/recipes.md">Tips, tricks, and recipies</a> for more interesting features and use cases.</p></div></div><hr style="margin-bottom:1.75rem"/><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li><a rel="prev" href="/2022/12/robot-framework-rcc-camunda/">← <!-- -->How Robot Framework and RCC align with Camunda Platform for process automation</a></li><li><a rel="next" href="/2023/03/rcc-camunda-cloud/">Orchestrating open-source RPA with Camunda Cloud<!-- --> →</a></li></ul></main></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/2022/12/rcc-jupyter/";/*]]>*/</script><!-- slice-start id="_gatsby-scripts-1" -->
+          <script
+            id="gatsby-chunk-mapping"
+          >
+            window.___chunkMapping="{\"app\":[\"/app-8e352158238d7a981d99.js\"],\"component---src-pages-404-js\":[\"/component---src-pages-404-js-97805cac34ee32fd2ff3.js\"],\"component---src-pages-index-js\":[\"/component---src-pages-index-js-d702b3556e2e37664238.js\"],\"component---src-templates-blog-post-js\":[\"/component---src-templates-blog-post-js-db3b846139cc4b35992f.js\"],\"component---src-templates-follow-js\":[\"/component---src-templates-follow-js-48b9dd3d02ab9724ef8f.js\"],\"component---src-templates-like-js\":[\"/component---src-templates-like-js-8481525f17b37bf9ff44.js\"]}";
+          </script>
+        <script>window.___webpackCompilationHash="1117cca6506347fc7992";</script><script src="/webpack-runtime-e10ad14bfe4fe997f9f6.js" async></script><script src="/framework-a3d1aa3677a1ff482f17.js" async></script><script src="/app-8e352158238d7a981d99.js" async></script><!-- slice-end id="_gatsby-scripts-1" --></body></html>

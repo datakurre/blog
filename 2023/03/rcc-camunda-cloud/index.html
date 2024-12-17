@@ -1,0 +1,403 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.75 'Merriweather','Georgia',serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.9);font-family:'Merriweather','Georgia',serif;font-weight:400;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:Montserrat,sans-serif;font-weight:900;text-rendering:optimizeLegibility;font-size:2.5rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.73286rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.4427rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;letter-spacing:0.140625em;text-transform:uppercase;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.83255rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.75966rem;line-height:1.1;font-style:italic;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}ul{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;list-style:disc;}ol{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:0.85rem;line-height:1.75rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1rem;line-height:1.75rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}blockquote{margin-left:-1.75rem;margin-right:1.75rem;margin-top:0;padding-bottom:0;padding-left:1.42188rem;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1.20112rem;line-height:1.75rem;color:hsla(0,0%,0%,0.59);font-style:italic;border-left:0.32813rem solid hsla(0,0%,0%,0.9);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.75rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.75rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}li > ul{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.75rem / 2);}code{font-size:0.85rem;line-height:1.75rem;}kbd{font-size:0.85rem;line-height:1.75rem;}samp{font-size:0.85rem;line-height:1.75rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.16667rem;padding-right:1.16667rem;padding-top:0.875rem;padding-bottom:calc(0.875rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}blockquote > :last-child{margin-bottom:0;}blockquote cite{font-size:1rem;line-height:1.75rem;color:hsla(0,0%,0%,0.9);font-weight:400;}blockquote cite:before{content:"— ";}ul,ol{margin-left:0;}@media only screen and (max-width:480px){ul,ol{margin-left:1.75rem;}blockquote{margin-left:-1.3125rem;margin-right:0;padding-left:0.98438rem;}}h1,h2,h3,h4,h5,h6{margin-top:3.5rem;}a{box-shadow:0 1px 0 0 currentColor;color:#007acc;text-decoration:none;}a:hover,a:active{box-shadow:none;}mark,ins{background:#007acc;color:white;padding:0.10938rem 0.21875rem;text-decoration:none;}a.gatsby-resp-image-link{box-shadow:none;}div.mermaid svg{height:auto !important;}</style><meta name="generator" content="Gatsby 5.2.0"/><meta name="author" content="Asko Soukka" data-gatsby-head="true"/><meta name="description" property="og:description" content="RCC is a really cool command… In January 2023, together with Niall Deehan, we hosted RoboCon 2023 workshop Business process automation with Robot Framework and…" data-gatsby-head="true"/><meta name="title" property="og:title" content="Orchestrating open-source RPA with Camunda Cloud" data-gatsby-head="true"/><meta name="type" property="og:type" content="website" data-gatsby-head="true"/><meta name="twitter:card" content="summary" data-gatsby-head="true"/><meta name="twitter:creator" content="Asko Soukka" data-gatsby-head="true"/><meta name="twitter:title" content="Orchestrating open-source RPA with Camunda Cloud" data-gatsby-head="true"/><meta name="twitter:description" content="RCC is a really cool command… In January 2023, together with Niall Deehan, we hosted RoboCon 2023 workshop Business process automation with Robot Framework and…" data-gatsby-head="true"/><meta name="image" property="og:image" content="https://datakurre.pandala.org/cover-2023-03-rcc-camunda-cloud.png" data-gatsby-head="true"/><meta name="twitter:image" content="https://datakurre.pandala.org/cover-2023-03-rcc-camunda-cloud.png" data-gatsby-head="true"/><meta name="theme-color" content="#663399"/><style data-href="/styles.5caeda19fca28245274c.css" data-identity="gatsby-global-css">@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/static/montserrat-latin-100-8d7d79679b70dbe27172b6460e7a7910.woff2) format("woff2"),url(/static/montserrat-latin-100-ec38980a9e0119a379e2a9b3dbb1901a.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/static/montserrat-latin-100italic-e279051046ba1286706adc886cf1c96b.woff2) format("woff2"),url(/static/montserrat-latin-100italic-3b325a3173c8207435cd1b76e19bf501.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/static/montserrat-latin-200-9d266fbbfa6cab7009bd56003b1eeb67.woff2) format("woff2"),url(/static/montserrat-latin-200-2d8ba08717110d27122e54c34b8a5798.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/static/montserrat-latin-200italic-6e5b3756583bb2263eb062eae992735e.woff2) format("woff2"),url(/static/montserrat-latin-200italic-a0d6f343e4b536c582926255367a57da.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/static/montserrat-latin-300-00b3e893aab5a8fd632d6342eb72551a.woff2) format("woff2"),url(/static/montserrat-latin-300-ea303695ceab35f17e7d062f30e0173b.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/static/montserrat-latin-300italic-56f34ea368f6aedf89583d444bbcb227.woff2) format("woff2"),url(/static/montserrat-latin-300italic-54b0bf2c8c4c12ffafd803be2466a790.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/static/montserrat-latin-400-b71748ae4f80ec8c014def4c5fa8688b.woff2) format("woff2"),url(/static/montserrat-latin-400-0659a9f4e90db5cf51b50d005bff1e41.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/static/montserrat-latin-400italic-6eed6b4cbb809c6efc7aa7ddad6dbe3e.woff2) format("woff2"),url(/static/montserrat-latin-400italic-7583622cfde30ae49086d18447ab28e7.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/static/montserrat-latin-500-091b209546e16313fd4f4fc36090c757.woff2) format("woff2"),url(/static/montserrat-latin-500-edd311588712a96bbf435fad264fff62.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/static/montserrat-latin-500italic-c90ced68b46050061d1a41842d6dfb43.woff2) format("woff2"),url(/static/montserrat-latin-500italic-5146cbfe02b1deea5dffea27a5f2f998.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/static/montserrat-latin-600-0480d2f8a71f38db8633b84d8722e0c2.woff2) format("woff2"),url(/static/montserrat-latin-600-b77863a375260a05dd13f86a1cee598f.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/static/montserrat-latin-600italic-cf46ffb11f3a60d7df0567f8851a1d00.woff2) format("woff2"),url(/static/montserrat-latin-600italic-c4fcfeeb057724724097167e57bd7801.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/static/montserrat-latin-700-7dbcc8a5ea2289d83f657c25b4be6193.woff2) format("woff2"),url(/static/montserrat-latin-700-99271a835e1cae8c76ef8bba99a8cc4e.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/static/montserrat-latin-700italic-c41ad6bdb4bd504a843d546d0a47958d.woff2) format("woff2"),url(/static/montserrat-latin-700italic-6779372f04095051c62ed36bc1dcc142.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/static/montserrat-latin-800-db9a3e0ba7eaea32e5f55328ace6cf23.woff2) format("woff2"),url(/static/montserrat-latin-800-4e3c615967a2360f5db87d2f0fd2456f.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/static/montserrat-latin-800italic-bf45bfa14805969eda318973947bc42b.woff2) format("woff2"),url(/static/montserrat-latin-800italic-fe82abb0bcede51bf724254878e0c374.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/static/montserrat-latin-900-e66c7edc609e24bacbb705175669d814.woff2) format("woff2"),url(/static/montserrat-latin-900-8211f418baeb8ec880b80ba3c682f957.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/static/montserrat-latin-900italic-4454c775e48152c1a72510ceed3603e2.woff2) format("woff2"),url(/static/montserrat-latin-900italic-efcaa0f6a82ee0640b83a0916e6e8d68.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:normal;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/static/merriweather-latin-300-fc117160c69a8ea0851b26dd14748ee4.woff2) format("woff2"),url(/static/merriweather-latin-300-58b18067ebbd21fda77b67e73c241d3b.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:italic;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/static/merriweather-latin-300italic-fe29961474f8dbf77c0aa7b9a629e4bc.woff2) format("woff2"),url(/static/merriweather-latin-300italic-23c3f1f88683618a4fb8d265d33d383a.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:normal;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/static/merriweather-latin-400-d9479e8023bef9cbd9bf8d6eabd6bf36.woff2) format("woff2"),url(/static/merriweather-latin-400-040426f99ff6e00b86506452e0d1f10b.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:italic;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/static/merriweather-latin-400italic-2de7bfeaf08fb03d4315d49947f062f7.woff2) format("woff2"),url(/static/merriweather-latin-400italic-79db67aca65f5285964ab332bd65f451.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:normal;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/static/merriweather-latin-700-4b08e01d805fa35d7bf777f1b24314ae.woff2) format("woff2"),url(/static/merriweather-latin-700-22fb8afba4ab1f093b6ef9e28a9b6e92.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:italic;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/static/merriweather-latin-700italic-cd92541b177652fffb6e3b952f1c33f1.woff2) format("woff2"),url(/static/merriweather-latin-700italic-f87f3d87cea0dd0979bfc8ac9ea90243.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:normal;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/static/merriweather-latin-900-f813fc6a4bee46eda5224ac7ebf1b7be.woff2) format("woff2"),url(/static/merriweather-latin-900-5d4e42cb44410674acd99153d57df032.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:italic;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/static/merriweather-latin-900italic-b7901d85486871c1779c0e93ddd85656.woff2) format("woff2"),url(/static/merriweather-latin-900italic-9647f9fdab98756989a8a5550eb205c3.woff) format("woff")}.solarized.base03{color:#002b36}.solarized.base02{color:#073642}.solarized.base01{color:#586e75}.solarized.base00{color:#657b83}.solarized.base0{color:#839496}.solarized.base1{color:#93a1a1}.solarized.base2{color:#eee8d5}.solarized.base3{color:#fdf6e3}.solarized.solar-yellow{color:#b58900}.solarized.solar-orange{color:#cb4b16}.solarized.solar-red{color:#dc322f}.solarized.solar-magenta{color:#d33682}.solarized.solar-violet{color:#6c71c4}.solarized.solar-blue{color:#268bd2}.solarized.solar-cyan{color:#2aa198}.solarized.solar-green{color:#859900}.cm-s-solarized{color-profile:sRGB;rendering-intent:auto;line-height:1.45em}.cm-s-solarized.cm-s-dark{background-color:#002b36;color:#839496;text-shadow:#002b36 0 1px}.cm-s-solarized.cm-s-light{background-color:#fdf6e3;color:#657b83;text-shadow:#eee8d5 0 1px}.cm-s-solarized .CodeMirror-widget{text-shadow:none}.cm-s-solarized .cm-header{color:#586e75}.cm-s-solarized .cm-quote{color:#93a1a1}.cm-s-solarized .cm-keyword{color:#cb4b16}.cm-s-solarized .cm-atom,.cm-s-solarized .cm-number{color:#d33682}.cm-s-solarized .cm-def{color:#2aa198}.cm-s-solarized .cm-variable{color:#839496}.cm-s-solarized .cm-variable-2{color:#b58900}.cm-s-solarized .cm-type,.cm-s-solarized .cm-variable-3{color:#6c71c4}.cm-s-solarized .cm-property{color:#2aa198}.cm-s-solarized .cm-operator{color:#6c71c4}.cm-s-solarized .cm-comment{color:#586e75;font-style:italic}.cm-s-solarized .cm-string{color:#859900}.cm-s-solarized .cm-string-2{color:#b58900}.cm-s-solarized .cm-meta{color:#859900}.cm-s-solarized .cm-qualifier{color:#b58900}.cm-s-solarized .cm-builtin{color:#d33682}.cm-s-solarized .cm-bracket{color:#cb4b16}.cm-s-solarized .CodeMirror-matchingbracket{color:#859900}.cm-s-solarized .CodeMirror-nonmatchingbracket{color:#dc322f}.cm-s-solarized .cm-tag{color:#93a1a1}.cm-s-solarized .cm-attribute{color:#2aa198}.cm-s-solarized .cm-hr{border-top:1px solid #586e75;color:transparent;display:block}.cm-s-solarized .cm-link{color:#93a1a1;cursor:pointer}.cm-s-solarized .cm-special{color:#6c71c4}.cm-s-solarized .cm-em{color:#999;text-decoration:underline;text-decoration-style:dotted}.cm-s-solarized .cm-error,.cm-s-solarized .cm-invalidchar{border-bottom:1px dotted #dc322f;color:#586e75}.cm-s-solarized.cm-s-dark div.CodeMirror-selected{background:#073642}.cm-s-solarized.cm-s-dark.CodeMirror ::selection{background:rgba(7,54,66,.99)}.cm-s-dark .CodeMirror-line>span::-moz-selection,.cm-s-dark .CodeMirror-line>span>span::-moz-selection,.cm-s-solarized.cm-s-dark .CodeMirror-line::-moz-selection{background:rgba(7,54,66,.99)}.cm-s-solarized.cm-s-light div.CodeMirror-selected{background:#eee8d5}.cm-s-light .CodeMirror-line>span::selection,.cm-s-light .CodeMirror-line>span>span::selection,.cm-s-solarized.cm-s-light .CodeMirror-line::selection{background:#eee8d5}.cm-s-ligh .CodeMirror-line>span::-moz-selection,.cm-s-ligh .CodeMirror-line>span>span::-moz-selection,.cm-s-solarized.cm-s-light .CodeMirror-line::-moz-selection{background:#eee8d5}.cm-s-solarized.CodeMirror{box-shadow:inset 7px 0 12px -6px #000}.cm-s-solarized .CodeMirror-gutters{border-right:0}.cm-s-solarized.cm-s-dark .CodeMirror-gutters{background-color:#073642}.cm-s-solarized.cm-s-dark .CodeMirror-linenumber{color:#586e75;text-shadow:#021014 0 -1px}.cm-s-solarized.cm-s-light .CodeMirror-gutters{background-color:#eee8d5}.cm-s-solarized.cm-s-light .CodeMirror-linenumber{color:#839496}.cm-s-solarized .CodeMirror-linenumber{padding:0 5px}.cm-s-solarized .CodeMirror-guttermarker-subtle{color:#586e75}.cm-s-solarized.cm-s-dark .CodeMirror-guttermarker{color:#ddd}.cm-s-solarized.cm-s-light .CodeMirror-guttermarker{color:#cb4b16}.cm-s-solarized .CodeMirror-gutter .CodeMirror-gutter-text{color:#586e75}.cm-s-solarized .CodeMirror-cursor{border-left:1px solid #819090}.cm-s-solarized.cm-s-light.cm-fat-cursor .CodeMirror-cursor{background:#7e7}.cm-s-solarized.cm-s-light .cm-animate-fat-cursor{background-color:#7e7}.cm-s-solarized.cm-s-dark.cm-fat-cursor .CodeMirror-cursor{background:#586e75}.cm-s-solarized.cm-s-dark .cm-animate-fat-cursor{background-color:#586e75}.cm-s-solarized.cm-s-dark .CodeMirror-activeline-background{background:hsla(0,0%,100%,.06)}.cm-s-solarized.cm-s-light .CodeMirror-activeline-background{background:rgba(0,0,0,.06)}ol,ul{margin-left:1em}.gatsby-highlight{background:#fdfaf6;border-bottom:1px solid #eee;border-top:1px solid #eee;margin-bottom:1.75rem;overflow-x:auto;padding:1ex 1em}.gatsby-highlight pre{margin-bottom:0}</style><title data-gatsby-head="true">Orchestrating open-source RPA with Camunda Cloud | Asko Soukka</title><link rel="canonical" href="https://datakurre.pandala.org/2023/03/rcc-camunda-cloud/" data-gatsby-head="true"/><link rel="alternate" type="application/rss+xml" title="datakurre" href="/rss.xml"/><link rel="alternate" type="application/rss+xml" title="datakurre on &quot;plone&quot;" href="/feeds/posts/default/-/plone"/><style>.gatsby-image-wrapper{position:relative;overflow:hidden}.gatsby-image-wrapper picture.object-fit-polyfill{position:static!important}.gatsby-image-wrapper img{bottom:0;height:100%;left:0;margin:0;max-width:none;padding:0;position:absolute;right:0;top:0;width:100%;object-fit:cover}.gatsby-image-wrapper [data-main-image]{opacity:0;transform:translateZ(0);transition:opacity .25s linear;will-change:opacity}.gatsby-image-wrapper-constrained{display:inline-block;vertical-align:top}</style><noscript><style>.gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}</style></noscript><script type="module">const e="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;e&&document.body.addEventListener("load",(function(e){const t=e.target;if(void 0===t.dataset.mainImage)return;if(void 0===t.dataset.gatsbyImageSsr)return;let a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector("[data-placeholder-image]"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition="opacity 500ms linear")}))}),!0);</script><link rel="icon" href="/favicon-32x32.png?v=b12376b9b88c2b74e77175e369294c9a" type="image/png"/><link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=b12376b9b88c2b74e77175e369294c9a"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=b12376b9b88c2b74e77175e369294c9a"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=b12376b9b88c2b74e77175e369294c9a"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=b12376b9b88c2b74e77175e369294c9a"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=b12376b9b88c2b74e77175e369294c9a"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=b12376b9b88c2b74e77175e369294c9a"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=b12376b9b88c2b74e77175e369294c9a"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=b12376b9b88c2b74e77175e369294c9a"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div style="margin-left:auto;margin-right:auto;max-width:42rem;padding:2.625rem 1.3125rem"><header><h3 style="font-family:Montserrat, sans-serif;margin-top:0"><a style="box-shadow:none;text-decoration:none;color:inherit" href="/">Asko Soukka</a></h3></header><main class="h-entry"><h1 style="margin-top:1.75rem;margin-bottom:0">Orchestrating open-source RPA with Camunda Cloud</h1><span class="p-name" style="display:none">Orchestrating open-source RPA with Camunda Cloud</span><img class="u-photo" src="https://datakurre.pandala.org/cover-2023-03-rcc-camunda-cloud.png" alt="" style="display:none"/><a class="p-author h-card" href="https://pandala.org/#datakurre" style="display:none"><img class="u-photo" src="https://datakurre.pandala.org/icon.jpg" alt=""/>Asko Soukka</a><div class="p-summary" style="display:none"><div>RCC is a really cool command… In January 2023, together with Niall Deehan, we hosted RoboCon 2023 workshop Business process automation with Robot Framework and…</div></div><a class="p-category" href="https://datakurre.pandala.org/2023/03/rcc-camunda-cloud/" style="display:none">Camunda</a><a class="p-category" href="https://datakurre.pandala.org/2023/03/rcc-camunda-cloud/" style="display:none">Robot Framework</a><a class="p-category" href="https://datakurre.pandala.org/2023/03/rcc-camunda-cloud/" style="display:none">RCC</a><a class="p-category" href="https://datakurre.pandala.org/2023/03/rcc-camunda-cloud/" style="display:none">RPA</a><a class="p-category" href="https://datakurre.pandala.org/2023/03/rcc-camunda-cloud/" style="display:none">Open Source</a><a class="u-syndication" href="https://fed.brid.gy/" style="display:none">https://fed.brid.gy/</a><a class="u-syndication" href="https://fediverse.pandala.org/" style="display:none">https://fediverse.pandala.org/</a><a class="u-url u-uid" style="font-size:0.83255rem;line-height:1.75rem;display:block;color:black;box-shadow:none;margin-bottom:1.75rem" href="https://datakurre.pandala.org/2023/03/rcc-camunda-cloud/"><time class="dt-published" datetime="2023-03-12 12:00:00">March 12, 2023</time></a><div class="e-content"><div><p><strong><a href="https://robocorp.com/docs/rcc/">RCC</a> is a really cool command…</strong></p>
+<p>In January 2023, together with Niall Deehan, we hosted <a href="https://robocon.io">RoboCon 2023</a> workshop <a href="https://datakurre.github.io/automation-playground/workshop/index.html">Business process automation with Robot Framework and Camunda Platform</a>. The workshop was based as much as possible on open source. Even the development environment was a <a href="https://datakurre.github.io/automation-playground/">pre-built Linux-desktop</a> ensuring equal experience for the participants.</p>
+<p>But something we may not have emphasized enough: all the open source automation learned at the workshop, is also compatible with <a href="https://camunda.com/platform/">Camunda Platform SaaS</a>, and even for implementing RPA on Windows!</p>
+<h2>Open-source Windows RPA</h2>
+<p>To get started with <a href="https://robocorp.com/docs/rcc/overview">Robocorp RCC</a> based open-source automation on Windows, one can choose between two alternative development experiences:</p>
+<ol>
+<li>
+<p><a href="https://robocorp.com/docs/developer-tools/visual-studio-code/extension-features">VSCode with Robocorp extensions</a> provides professional development experience for all kinds of RCC driven automation, both in <a href="https://robotframework.org/rpa/">Robot Framework </a> and/or in Python.</p>
+</li>
+<li>
+<p><a href="https://robocorp.com/products/automation-studio">Robocorp Automation Studio</a> is a standalone low code development tool for implementing the most common use-cases for Robot Framework based automation.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/84af05031a5b4fd2ef67ea8a01fa47b4/ad00e/automation-studio.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 56.08108108108109%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAABM5AAATOQGPwlYBAAABnElEQVQoz2VRy27cMAz0/39PgJ56yCXnopugSbfrdJ/dJmtblkSKlESplHcDFK0wJkYGHzNUZ8d5GMw8e6aosFNCl5SkSJvncP8JZuMRyDvUiMBKvAWD7L5vOvAQYo65xJzMnD7f8fPX6ANAYO9lHEVK1S9LFc2KNudSi0ittN13l9GfJ5ypOBKg9HuwxqHFaIEtBkoRo2DMGCsFA8OTsSHFmGqN+30XPLxdxpT0WiF4Y804BWNVHXMuIZYkN6g640JoDVtxOR47xuA8MHMpdfb21/twOvvLOE8+upA9N0faJUoBlsGyzqjqRM/p1LnZAUXiBCSE78GfrUdi9qou5VKKLFCjlMSGvBTLrRgdOMAlo7Ya1B/MSa6gDxKT6F5Hi4DatbUQla2euVmoKoVatk5Qq/IPKIrKNpBylpTkVsxeny80JSIqXteB1OL/UD21yS81L+KPh46JaLm0ybWGj3glV85XXuqyqL88D99ebN/z4UD7PWx3Ybc7rrdT/9OsN+PLenxczavVjy+Pb08H3O00p6X1/fT6ah8e/gBwA3ls6ZjTHgAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Robocorp Automation Studio"
+        title="Robocorp Automation Studio"
+        src="/static/84af05031a5b4fd2ef67ea8a01fa47b4/fcda8/automation-studio.png"
+        srcset="/static/84af05031a5b4fd2ef67ea8a01fa47b4/12f09/automation-studio.png 148w,
+/static/84af05031a5b4fd2ef67ea8a01fa47b4/e4a3f/automation-studio.png 295w,
+/static/84af05031a5b4fd2ef67ea8a01fa47b4/fcda8/automation-studio.png 590w,
+/static/84af05031a5b4fd2ef67ea8a01fa47b4/efc66/automation-studio.png 885w,
+/static/84af05031a5b4fd2ef67ea8a01fa47b4/c83ae/automation-studio.png 1180w,
+/static/84af05031a5b4fd2ef67ea8a01fa47b4/ad00e/automation-studio.png 1366w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+</li>
+</ol>
+<p><a href="https://robocorp.com/download">Starting with Automation Studio</a> is the easiest and safest choice, because any project started with Automation Studio, could be later continued and developed further with VSCode.</p>
+<p>Here’s a <a href="/68b77b1103d48c25a0537accc6b6aaaf/calculate-sum.zip">downloadable example RPA Calculator bot</a> based on a Automation Studio template for Windows automation. It’s a dummy bot to calculate sum of two input variables by automating Windows Calculator app. Yet, it is <a href="../../../2022/12/robot-framework-rcc-camunda">ready to be orchestrated using Camunda Platform</a>. Just unzip the package, open its folder in Automation Studio, try it out, and zip its contents back for deployment.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/9c661fcbec08d52507327ae9523d1577/ad00e/automation-studio-run-menu.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 56.08108108108109%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAABM5AAATOQGPwlYBAAABnklEQVQoz4VTXW/bMAz0//87A/a2hwHDngc0RdE1DRon+0g9xdYnJdny7aShWIEmqOAzBZOieEe6M2qCUiP0ZBFjQpQMfc5wJnOfkJJgexfw+aNrMcELnPXNehfa3hmHKUTY71t0nh8kz8jLSsyYdManDwn3mxmSAhJ9Iaw4q4KyAgtfb7AUZACyP6Abzg6/x4BJVphY4OKMkzKExjA6nE2AdoKQE0IqxPIWPBNawiM6cR7Pg0JmJXV5Yflmgta8RBsY0qoHZjK4inlBPZ16Jkw+wFjX9CsFrMZgUH+oKxNPGo6aCquo1NZ1Je0LIOXyktBqCx/ZgDTTFsTwDLG/oA215SVWqC8raAfLFbxOGFidJa3moOgxMYn3RETMvGAu/+01kEFkwtg3DR07mZt+lVLMK7tecaUB7zUlsikiwmyFT2nUW8A7kNegzpwsyBPHps5ZZGUvq5ZendXKBSRc8JV/Nv48oVN399C7HeLxCDkc4PY9Qt/jx8Me4+4J48MjFP8AtdlA39xg++0Wp9sjPONqrOcw68cdBmL88hV/AX5HVCcpN/IvAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Run a bot directly from studio with an example work item"
+        title="Run a bot directly from studio with an example work item"
+        src="/static/9c661fcbec08d52507327ae9523d1577/fcda8/automation-studio-run-menu.png"
+        srcset="/static/9c661fcbec08d52507327ae9523d1577/12f09/automation-studio-run-menu.png 148w,
+/static/9c661fcbec08d52507327ae9523d1577/e4a3f/automation-studio-run-menu.png 295w,
+/static/9c661fcbec08d52507327ae9523d1577/fcda8/automation-studio-run-menu.png 590w,
+/static/9c661fcbec08d52507327ae9523d1577/efc66/automation-studio-run-menu.png 885w,
+/static/9c661fcbec08d52507327ae9523d1577/c83ae/automation-studio-run-menu.png 1180w,
+/static/9c661fcbec08d52507327ae9523d1577/ad00e/automation-studio-run-menu.png 1366w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/592145b373a00e7ef0ff77825fae4860/ad00e/automation-studio-run.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 56.08108108108109%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAABM5AAATOQGPwlYBAAABrElEQVQoz22R227bMAyG82x7gD3a7vYq2/WKAMWQJR2CdUCGBK09OwdZog6URMnHMQ5S9GIfZIKQ+ZO/6QWC0xqd9RqsNeg9GeMaIYWQUoJsFB/NgDGaCyxHrbRyHv8cFsGBD8E6suhDartxCkTHE3N0zvkZROT8IhqGE+QmRG1ZLk4ChcrW5BDJUUfdGGO01l6L7rD+cnMCcL3nJ6WhqhdSkjgb0IAh98PEBDZiLWtuLZhb8uaCxZZorFmssW7E6RyNIwzRU8vfyEVExF3iTJh5M8JiE+NVrAy9yIxWOfQas/KtUPwq5pxTSnSHb96LdQhDVfFk2p2ztpcGlABsTKiFbtvc933btt0Mr8P78B+xw/xX4r6GUtIZgsJcC5NyHvq+uzONue/I3WExeD+LbQIL7BkcKRtD6qUybUrjMLB+vIZhW5htAdfps4HAkxEH/lWp7wNveJriPTYY2JWjBLz2GBuMHz6tPn7+ITRcAITWUuuGaDgeF3q3x5fXUJR8YlHa17L4va82T4fv693y4fCw3H798mu52n1bFet1/fTztN1Wm039/OweH/8B+cpoZt3GCpwAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Running a project from Robocorp Automation Studio"
+        title="Running a project from Robocorp Automation Studio"
+        src="/static/592145b373a00e7ef0ff77825fae4860/fcda8/automation-studio-run.png"
+        srcset="/static/592145b373a00e7ef0ff77825fae4860/12f09/automation-studio-run.png 148w,
+/static/592145b373a00e7ef0ff77825fae4860/e4a3f/automation-studio-run.png 295w,
+/static/592145b373a00e7ef0ff77825fae4860/fcda8/automation-studio-run.png 590w,
+/static/592145b373a00e7ef0ff77825fae4860/efc66/automation-studio-run.png 885w,
+/static/592145b373a00e7ef0ff77825fae4860/c83ae/automation-studio-run.png 1180w,
+/static/592145b373a00e7ef0ff77825fae4860/ad00e/automation-studio-run.png 1366w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<h2>Camunda Platform SaaS as orchestrator</h2>
+<p>Now, that we have a bot, the next thing is to integrate it with Camunda Platform SaaS. Here is a <a href="/e5372357d65819866d5976dc7a8be3f9/calculate-sum-with-calculator.bpmn">simple example process</a>:</p>
+<ol>
+<li>It provides user taks form for asking the input values,</li>
+<li>orchestrates the RPA bot for the task, and</li>
+<li>displays the results through an another user task form.</li>
+</ol>
+<p><a href="/e5372357d65819866d5976dc7a8be3f9/calculate-sum-with-calculator.bpmn"><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 14.864864864864865%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAADCAYAAACTWi8uAAAACXBIWXMAAAsSAAALEgHS3X78AAAAmklEQVQI11WOywqDMBBF/f+/syhd6MYINol5GpMoqLdOpIsO3MXAuY8qpYTzPJFzRtf1cN5DyhnLEnBdF+r6BSEknPNQSoOOsRHT9IEvrCzcvu+w1qLiXEBrXQAybtt2mx2MsfcvMAwMMUZQMZkplI0jQghF/GbCuqJt32iaFtVvIQUJ+SyhYIKP48CsVGk2xpRiOgolPaX/C7/fV+OS86tQEQAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Example calculator orchestration process"
+        title="Example calculator orchestration process"
+        src="/static/638bedf2d42c41415c487487705070f1/fcda8/calculate-sum-with-calculator.png"
+        srcset="/static/638bedf2d42c41415c487487705070f1/12f09/calculate-sum-with-calculator.png 148w,
+/static/638bedf2d42c41415c487487705070f1/e4a3f/calculate-sum-with-calculator.png 295w,
+/static/638bedf2d42c41415c487487705070f1/fcda8/calculate-sum-with-calculator.png 590w,
+/static/638bedf2d42c41415c487487705070f1/efc66/calculate-sum-with-calculator.png 885w,
+/static/638bedf2d42c41415c487487705070f1/c83ae/calculate-sum-with-calculator.png 1180w,
+/static/638bedf2d42c41415c487487705070f1/c587f/calculate-sum-with-calculator.png 1863w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></a></p>
+<p>To continue, it is required to have client credentials for the cluster with scope <strong>Zeebe</strong>. Those could be use to deploy the process to the cluster using Camunda Desktop Modeler. The credentials are also required for integrating RCC bots with the running processes.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/8c76c69455d84fc42095a23692202c6d/4352a/camunda-platform-client.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 50%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAAAsSAAALEgHS3X78AAABwklEQVQoz12ST2/aQBDF/YEqNbce2kvOiVEvVW7knj9SD43UFmEb22sHIvXr9AaXVqYSyBR6wSAXlB5QpEgo2AYbk5edxTaFlZ7e7Gr825lZS7VaDYqiQFVV6LoO2pMMwxAyTVN4fp4rz6XvNE0rziXaVKvVAkiAVquFXq+HbreLTqeDwWAAz/MwGo2E+74Px3GKC8WlmUsEUVUNChfFlDQej5EkCVarFeI4FvHhms1mGcwAYyZYDmSMFeVTXK/XMRwOMZ/PsVgsEAQBwjAU8OUyQhSFWK8TTKcTNBoN3NYbsG+5czFmQSKqZVmwbbtwqpAqy2FBECLiHi5jPEUbRLxgf/IP3+5snF9bePvBxrszG1c35naGlUpFzJBmSdW2220BS9OUV7MWStYp1wZx8oxn3vJkei8e88vXKm4+K/jEpWj6tsJisHx+VCG1TJD9RZgNVyp2jw/3PH87O8viYtkMD38P8maziX6/D9d1+Wu7cH8P4IyAn1w/PMDxge/tWfFrETiPpd3hDloulyHLMuRSCSX5BKfvz/Dm+g9eX/k4uvTw6uIvjj/+Ei9M2gMetvy/78nQeXs7maaegcwMvM17AR25SqqcbjiXAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Creating new client credentials"
+        title="Creating new client credentials"
+        src="/static/8c76c69455d84fc42095a23692202c6d/fcda8/camunda-platform-client.png"
+        srcset="/static/8c76c69455d84fc42095a23692202c6d/12f09/camunda-platform-client.png 148w,
+/static/8c76c69455d84fc42095a23692202c6d/e4a3f/camunda-platform-client.png 295w,
+/static/8c76c69455d84fc42095a23692202c6d/fcda8/camunda-platform-client.png 590w,
+/static/8c76c69455d84fc42095a23692202c6d/efc66/camunda-platform-client.png 885w,
+/static/8c76c69455d84fc42095a23692202c6d/c83ae/camunda-platform-client.png 1180w,
+/static/8c76c69455d84fc42095a23692202c6d/4352a/camunda-platform-client.png 1364w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<p>Make sure to download or save the information shown after creating new credentials. <strong>Client secret</strong> is only shown right after creation, but also <strong>client id</strong>, <strong>cluster id</strong> and <strong>cluster region</strong> are required for running the integration.</p>
+<p>Once the process is deployed (either using the cloud or desktop modeler), at least one instance of it has been started, and the first user task has been completed, everything is ready for the RCC automation part.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/a37f6b0dc930687e78980717ec43ef2f/4352a/camunda-platform-ready.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 50%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAAAsSAAALEgHS3X78AAABX0lEQVQoz4WS607DMAyF8/4POMEPLkMrjKZN0zaX5taDnW2lQwgmfYoT22c9TsTr6R3ntsOgJ8hOVTql0asR02yhx7nm9GgwTmY7u2Aw0MrnreypR0MM3qLtVT3kIikVZuPgl4iYMgkYKD3CWA/nFoSYa/4G91jna+x8gCh5xboCpawVjhMJcdKSSAwJwUUsSyBBD+8XIlS49tbLK4sKUPDzl1KiL6JGKmjNhIehQaA9f+1MTOSG/4xFci4V1lHDBNHTfD7lSLZnHJsOUlkYX2AcWbMZ2kZ01MwibDmS5ZRKJcR0B+fEqZ9weOpxeO7weNR4OXu8yYRjG2mNNW66y9zitakKp1xHs6cKukizsY4sWLJAc8yZLCQib/AIWIxnxY08T45vdhnec424HNwn7/fr1rC/vN8pdMt/Fnzjl+utx73NciVvqwj8LP6DRPihNx+yvkd+o5bmuH+PDOe+AD/8Cot1JPy6AAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="SaaS process waiting for RCC automation"
+        title="SaaS process waiting for RCC automation"
+        src="/static/a37f6b0dc930687e78980717ec43ef2f/fcda8/camunda-platform-ready.png"
+        srcset="/static/a37f6b0dc930687e78980717ec43ef2f/12f09/camunda-platform-ready.png 148w,
+/static/a37f6b0dc930687e78980717ec43ef2f/e4a3f/camunda-platform-ready.png 295w,
+/static/a37f6b0dc930687e78980717ec43ef2f/fcda8/camunda-platform-ready.png 590w,
+/static/a37f6b0dc930687e78980717ec43ef2f/efc66/camunda-platform-ready.png 885w,
+/static/a37f6b0dc930687e78980717ec43ef2f/c83ae/camunda-platform-ready.png 1180w,
+/static/a37f6b0dc930687e78980717ec43ef2f/4352a/camunda-platform-ready.png 1364w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<h2>Running RCC integration</h2>
+<p>Integrating an RCC bot with Camunda Platform requires some preparation. But not much! The following integration is based on <a href="https://github.com/datakurre/parrot-rcc">parrot-rcc</a> (an open source <a href="https://pypi.org/project/pyzeebe/">pyzeebe</a> based Zeebe client), which delegates Camunda Platform tasks to be run by RCC.</p>
+<p>The integration has prerequisite of two writable buckets at S3 compatible object storage for storing <strong>execution logs</strong> and possible <strong>file payloads</strong>. For development purposes, the easiest way is to download <a href="https://min.io/docs/minio/windows/index.html">MinIO</a> <a href="https://dl.min.io/server/minio/release/windows-amd64/minio.exe">executable</a> and run it locally.</p>
+<p>For example, with</p>
+<div class="gatsby-highlight" data-language="null">
+      <pre class=" cm-s-solarized"><code><span>.\minio.exe server C:\minio --console-address :9001</span></code></pre>
+    </div>
+<p>as in</p>
+<div class="gatsby-highlight" data-language="shell">
+      <pre class=" cm-s-solarized"><code><span>PS C:\Users\User\Downloads&gt; .\minio.exe server C:\minio </span><span class="cm-attribute">--console-address</span><span> :9001</span><span>
+</span><span>WARNING: Detected default credentials </span><span class="cm-string">'minioadmin:minioadmin'</span><span>, we recommend that you change these values with </span><span class="cm-string">'MINIO_ROOT_USER'</span><span> and </span><span class="cm-string">'MINIO_ROOT_PASSWORD'</span><span> environment variables</span><span>
+</span><span>MinIO Object Storage Server</span><span>
+</span><span>Copyright: </span><span class="cm-number">2015</span><span class="cm-attribute">-2023</span><span> MinIO, Inc.</span><span>
+</span><span>License: GNU AGPLv3 &lt;https://www.gnu.org/licenses/agpl-3.0.html&gt;</span><span>
+</span><span>Version: RELEASE.2023-03-09T23-16-13Z (go1.19.7 windows/amd64)</span><span>
+
+</span><span>Status:         </span><span class="cm-number">1</span><span> Online, </span><span class="cm-number">0</span><span> Offline.</span><span>
+</span><span>API: http://10.0.2.15:9000  http://127.0.0.1:9000</span><span>
+</span><span>RootUser: minioadmin</span><span>
+</span><span>RootPass: minioadmin</span><span>
+</span><span>Console: http://10.0.2.15:9001 http://127.0.0.1:9001</span><span>
+</span><span>RootUser: minioadmin</span><span>
+</span><span>RootPass: minioadmin</span><span>
+
+</span><span>Command-line: https://min.io/docs/minio/linux/reference/minio-mc.html</span><span class="cm-comment">#quickstart</span><span>
+</span><span>   </span><span class="cm-def">$ mc</span><span>.exe alias </span><span class="cm-keyword">set</span><span> myminio http://10.0.2.15:9000 minioadmin minioadmin</span><span>
+
+</span><span>Documentation: https://min.io/docs/minio/linux/index.html</span><span>
+</span><span>Warning: The standard parity is </span><span class="cm-keyword">set</span><span> to </span><span class="cm-number">0</span><span>. This can lead to data loss.</span></code></pre>
+    </div>
+<p>By its default configuration parrot-rcc expects two writable buckets, <code>rcc</code> for logs and <code>zeebe</code> for file payloads, to be available at the configured storage. For MinIO those may be created easily through its web console (for example at <a href="http://localhost:9001/">http://localhost:9001/</a> with the default user <code>minioadmin</code> and password <code>minioadmin</code>).</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/83f78c512791760aca02bcd3fd2746e5/ad00e/minio-buckets.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 56.08108108108109%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAABM5AAATOQGPwlYBAAABeElEQVQoz2O4cObCxUvXz56/cv/+o+9fvgDR18+f4egbKvr66dPnDx8+vH79+t27D1evMqg5JpgHF4gZhqQWd3758unN27f//v37jxf8+/sXpOLZMwZ+41DpoCJGk4j4gnagyM+fv4B6wQiqBpvuf3/////96BEDj26AgGEIg5R9EkIzCPz48ePPnz9Akb9///7+/Rsi+BsMQEL///95/JiBVy9Q0DCYQdw2pajz18/vX79+BSoCavv+7RtQDZD969evL1++QDQDZX/+/AmUBmr+B3Q2j16AgEEQg4h1ciHUZrC7/sF9DjELwgYy/kF8BdMMtlnMBuJsnP5EBiBXw2wGaRaxzqroA5kNliBWs4B+oAjYz/lV/SDNwLAByuFHv0G++PfkCQOLqierph8Dj2l6cTfYV6TY3N8xe3rfnEnt0/ev3/H72fMfjx49v/3o0/2Hn+7c+3DrzoerV75cuXLv4tU31578ePT4Oxh9uXf/7b37n44dAwCcNC4SrLn+pwAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Minio with buckets ready for parrot-rcc"
+        title="Minio with buckets ready for parrot-rcc"
+        src="/static/83f78c512791760aca02bcd3fd2746e5/fcda8/minio-buckets.png"
+        srcset="/static/83f78c512791760aca02bcd3fd2746e5/12f09/minio-buckets.png 148w,
+/static/83f78c512791760aca02bcd3fd2746e5/e4a3f/minio-buckets.png 295w,
+/static/83f78c512791760aca02bcd3fd2746e5/fcda8/minio-buckets.png 590w,
+/static/83f78c512791760aca02bcd3fd2746e5/efc66/minio-buckets.png 885w,
+/static/83f78c512791760aca02bcd3fd2746e5/c83ae/minio-buckets.png 1180w,
+/static/83f78c512791760aca02bcd3fd2746e5/ad00e/minio-buckets.png 1366w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<p>Next, <a href="https://downloads.robocorp.com/rcc/releases/index.html">RCC must be downloaded</a>. Similary to MinIO, RCC is just a simple binary, runnable as such, without any extra installation required. RCC is used for executing <code>parrot-rcc</code>, and then <code>parrot-rcc</code> is also using RCC for executing the automation tasks.</p>
+<p>The final step requires creation of two configuration files. At first, <code>conda.yaml</code>, which defines an RCC runtime environment with a known good version of parrot-rcc installed:</p>
+<div class="gatsby-highlight" data-language="yaml">
+      <pre class=" cm-s-solarized"><code><span class="cm-atom">channels</span><span class="cm-meta">:</span><span>
+</span><span class="cm-meta">  - </span><span>conda-forge</span><span>
+
+</span><span class="cm-atom">dependencies</span><span class="cm-meta">:</span><span>
+</span><span class="cm-meta">  - </span><span>python=3.9.13</span><span>
+</span><span class="cm-meta">  - </span><span>pip=22.1.2</span><span>
+</span><span class="cm-meta">  - </span><span class="cm-atom">pip</span><span class="cm-meta">:</span><span>
+</span><span class="cm-meta">    - </span><span>https://github.com/datakurre/parrot-rcc/archive/46553ce2f73d14fa46a9188802d59e645a106a19.tar.gz</span></code></pre>
+    </div>
+<p>And then, <code>robots.yaml</code>, which instructs RCC to actually execute parrot-rcc in that environment:</p>
+<div class="gatsby-highlight" data-language="yaml">
+      <pre class=" cm-s-solarized"><code><span class="cm-atom">tasks</span><span class="cm-meta">:</span><span>
+</span><span class="cm-atom">  RCC</span><span class="cm-meta">:</span><span>
+</span><span class="cm-atom">    shell</span><span class="cm-meta">: </span><span>parrot-rcc</span><span>
+
+</span><span class="cm-atom">condaConfigFile</span><span class="cm-meta">: </span><span>conda.yaml</span><span>
+
+</span><span class="cm-atom">artifactsDir</span><span class="cm-meta">: </span><span>output</span><span>
+
+</span><span class="cm-atom">PATH</span><span class="cm-meta">:</span><span>
+</span><span class="cm-meta">  - </span><span>.</span><span>
+</span><span class="cm-atom">PYTHONPATH</span><span class="cm-meta">:</span><span>
+</span><span class="cm-meta">  - </span><span>.</span><span>
+
+</span><span class="cm-atom">ignoreFiles</span><span class="cm-meta">:</span><span>
+</span><span class="cm-meta">  - </span><span>.gitignore</span></code></pre>
+    </div>
+<p><strong>All done!</strong></p>
+<p>Now, it is only required to execute <code>rcc run</code> (for <code>parrot-rcc</code>) with the required configuration arguments for connecting to Camunda Platform SaaS and locating our zipped RPA bots. For example, with</p>
+<div class="gatsby-highlight" data-language="shell">
+      <pre class=" cm-s-solarized"><code><span>c:\Users\User\Downloads\r</span><span class="cm-builtin">cc</span><span>.exe run </span><span class="cm-attribute">--</span><span> </span><span class="cm-attribute">--rcc-executable</span><span class="cm-operator">=</span><span>c:\Users\User\Downloads\r</span><span class="cm-builtin">cc</span><span>.exe </span><span class="cm-attribute">--camunda-client-id</span><span class="cm-operator">=</span><span>MY_CLIENT_ID </span><span class="cm-attribute">--camunda-client-secret</span><span class="cm-operator">=</span><span>MY_CLIENT_SECRET </span><span class="cm-attribute">--camunda-cluster-id</span><span class="cm-operator">=</span><span>CAMUNDA_CLUSTER_ID </span><span class="cm-attribute">--camunda-region</span><span class="cm-operator">=</span><span>CAMUNDA_CLUSTER_REGION </span><span class="cm-attribute">--log-level</span><span class="cm-operator">=</span><span>debug </span><span class="cm-attribute">--rcc-fixed-spaces</span><span> c:\Users\User\Downloads\calculate-sum.zip</span></code></pre>
+    </div>
+<p>RCC will start parrot-rcc, which reads zipped bots, connects to Camunda Platform, waits for tasks matching the bots, executes the bots, and returns their output work items back to Camunda as variables in local scope of the executed tasks.</p>
+<p><img src="/03c166ed5b472309bedd162b8517fee6/calculate-sum.gif" alt="RCC executing RPA bot, which automates Windows calculator"></p>
+<p>In addition to the output work item variables, the RCC integration also saves links to RPA execution logs as task scoped variables. This should really help validating that bots did the right thing, and debug them when something goes weird.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/d12ef8baee02743dd6913cd47a2cea5a/4352a/camunda-platform-variables.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 50%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAAAsSAAALEgHS3X78AAABlElEQVQoz3VSi07DMAzs///bHmxoEuIhhsZYH0mTtnl3Pex0GxOIqCdHdn09n1u8H444VQ1a1aFuZEYjFYTU6HoDpXtIqik9QHfDLTdjQEuR81Utck/ROoNKyJzkl+paoh8snI+IaSQCzncwxsJYhxDHXL+Ce4xx+W6sRzGdJ4CfC/gkInIuwBKBDwmH2uHURiSX4CnPNe/DredMHFcU43jGbwQi6QYPTV/n+PTR4/XTYCMOEEqjp2lYMRPc97GQ4p59mn7ufNjXkvzlcViptETkYq7dK2MyPo0gD2NMyCB2T74Fus9fnPICGqEwkEcMSx5Z53HtCSFmVSnNCrOHpZSoypq21OCDNs4LmF8OGTHG3Fg2Grq36Gjc4bI0Vh5pSYnIOPIURUfG748Kb58KlUqo9IiSIqO6xFonInE3W3a7HRaLBdbrNZbLJVarFfb7/bwUEwNq6fDVGMh+/ANBaAmsirfO6p+fX4jsAZvtIzabLV5e3yBEm2sFSx3HGSmlf6E7A9Hq7FOI5/w/8tgMYwP6i8/fuMMDfq1xSRgAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="RPA exeuction log linked into a task local variable"
+        title="RPA exeuction log linked into a task local variable"
+        src="/static/d12ef8baee02743dd6913cd47a2cea5a/fcda8/camunda-platform-variables.png"
+        srcset="/static/d12ef8baee02743dd6913cd47a2cea5a/12f09/camunda-platform-variables.png 148w,
+/static/d12ef8baee02743dd6913cd47a2cea5a/e4a3f/camunda-platform-variables.png 295w,
+/static/d12ef8baee02743dd6913cd47a2cea5a/fcda8/camunda-platform-variables.png 590w,
+/static/d12ef8baee02743dd6913cd47a2cea5a/efc66/camunda-platform-variables.png 885w,
+/static/d12ef8baee02743dd6913cd47a2cea5a/c83ae/camunda-platform-variables.png 1180w,
+/static/d12ef8baee02743dd6913cd47a2cea5a/4352a/camunda-platform-variables.png 1364w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/f29e280a9a4c42f616290174c40923c7/ad00e/robot-log.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 56.08108108108109%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAABM5AAATOQGPwlYBAAABfUlEQVQoz3VQ7Y7bIBD0+z/X/TxV6jXJXRNsY/PhEBsbjAMYg3MbR9Wlam80QoPY2WE3YyUetdLDADwzxur6QbqRE0IqTKsKBCOEU/KoqShtXl8zUDUhMcZ1XW//wForxMUYA/rrOSU4XFFkHNrUddd2o9bOOahTSukNUkpxObOmtnb66gcZm/mKUCYoGYYBlyWp70IIAT9hd1CMMcpPu8PPQfWba31Ovpsb3nOhu7btOmnMBLEdKEAnOedlhd7zH2r8xkxJnVcYMp9mXh9IKS0xhGhTis+LWEL4k0yLipSQyXjbSjNO3lyD9enqwPmfFQLCPMM5gVm2TY6PISziIhsh9Xi1LviQ/JzmAP70+MVfZu/hbk6nzPTdER1Gpc78UmEmpTLGeR+9X5xb5jnChDDA7YnLZnaQvHiHaN7CnmBrqpdaTc6GuIQYb99gifd5AiGZPubn/dtYoPb3r/bjfUQI744DKvQJKeBhN+135dteHthMiN8INX1RqJeXT+WJbftH5V8rAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="RPA execution log viewed at S3 compatible storage"
+        title="RPA execution log viewed at S3 compatible storage"
+        src="/static/f29e280a9a4c42f616290174c40923c7/fcda8/robot-log.png"
+        srcset="/static/f29e280a9a4c42f616290174c40923c7/12f09/robot-log.png 148w,
+/static/f29e280a9a4c42f616290174c40923c7/e4a3f/robot-log.png 295w,
+/static/f29e280a9a4c42f616290174c40923c7/fcda8/robot-log.png 590w,
+/static/f29e280a9a4c42f616290174c40923c7/efc66/robot-log.png 885w,
+/static/f29e280a9a4c42f616290174c40923c7/c83ae/robot-log.png 1180w,
+/static/f29e280a9a4c42f616290174c40923c7/ad00e/robot-log.png 1366w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<h2>Further reading</h2>
+<p>If you got interested, there’s much online material for learning more and filling the gaps left into this introduction:</p>
+<ul>
+<li>
+<p><a href="https://robocorp.com/docs/quickstart-guide">Robocorp Quickstart Guide</a> is the portal for all the official resources on RCC based automation. Just remember, that with Camunda Platform and the RCC integration shown here, you may not need to use their cloud offering at all.</p>
+</li>
+<li>
+<p>Our <a href="https://datakurre.github.io/automation-playground/">RoboCon 2023 automation workshop</a> materials remain to be available. They describe in detailed examples, how to configure BPMN tasks for RCC automation bots. Even with just Zeebe, without any Camunda cloud offerings.</p>
+</li>
+<li>
+<p>Finally, <a href="https://docs.camunda.io/">Camunda Platform documentation</a>, of course, is available for all the remaining BPMN or Camunda related questions.</p>
+</li>
+</ul>
+<p>Happy automation!</p></div></div><hr style="margin-bottom:1.75rem"/><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li><a rel="prev" href="/2022/12/rcc-jupyter/">← <!-- -->Exploring two alternative declarative roads to Jupyter</a></li><li><a rel="next" href="/2023/04/diy-zeebe-dashboards/">DIY Zeebe Applications<!-- --> →</a></li></ul></main></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/2023/03/rcc-camunda-cloud/";/*]]>*/</script><!-- slice-start id="_gatsby-scripts-1" -->
+          <script
+            id="gatsby-chunk-mapping"
+          >
+            window.___chunkMapping="{\"app\":[\"/app-8e352158238d7a981d99.js\"],\"component---src-pages-404-js\":[\"/component---src-pages-404-js-97805cac34ee32fd2ff3.js\"],\"component---src-pages-index-js\":[\"/component---src-pages-index-js-d702b3556e2e37664238.js\"],\"component---src-templates-blog-post-js\":[\"/component---src-templates-blog-post-js-db3b846139cc4b35992f.js\"],\"component---src-templates-follow-js\":[\"/component---src-templates-follow-js-48b9dd3d02ab9724ef8f.js\"],\"component---src-templates-like-js\":[\"/component---src-templates-like-js-8481525f17b37bf9ff44.js\"]}";
+          </script>
+        <script>window.___webpackCompilationHash="1117cca6506347fc7992";</script><script src="/webpack-runtime-e10ad14bfe4fe997f9f6.js" async></script><script src="/framework-a3d1aa3677a1ff482f17.js" async></script><script src="/app-8e352158238d7a981d99.js" async></script><!-- slice-end id="_gatsby-scripts-1" --></body></html>

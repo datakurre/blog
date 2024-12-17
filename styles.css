@@ -1,0 +1,16 @@
+ul, ol {
+    margin-left: 1em;
+}
+
+.gatsby-highlight {
+    background: #fdfaf6;
+    padding: 1ex 1em;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 1.75rem;
+    overflow-x: auto;
+}
+
+.gatsby-highlight pre {
+    margin-bottom: 0;
+}

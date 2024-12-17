@@ -1,0 +1,510 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.75 'Merriweather','Georgia',serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.9);font-family:'Merriweather','Georgia',serif;font-weight:400;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:Montserrat,sans-serif;font-weight:900;text-rendering:optimizeLegibility;font-size:2.5rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.73286rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.4427rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;letter-spacing:0.140625em;text-transform:uppercase;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.83255rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.75966rem;line-height:1.1;font-style:italic;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}ul{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;list-style:disc;}ol{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:0.85rem;line-height:1.75rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1rem;line-height:1.75rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}blockquote{margin-left:-1.75rem;margin-right:1.75rem;margin-top:0;padding-bottom:0;padding-left:1.42188rem;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1.20112rem;line-height:1.75rem;color:hsla(0,0%,0%,0.59);font-style:italic;border-left:0.32813rem solid hsla(0,0%,0%,0.9);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.75rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.75rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}li > ul{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.75rem / 2);}code{font-size:0.85rem;line-height:1.75rem;}kbd{font-size:0.85rem;line-height:1.75rem;}samp{font-size:0.85rem;line-height:1.75rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.16667rem;padding-right:1.16667rem;padding-top:0.875rem;padding-bottom:calc(0.875rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}blockquote > :last-child{margin-bottom:0;}blockquote cite{font-size:1rem;line-height:1.75rem;color:hsla(0,0%,0%,0.9);font-weight:400;}blockquote cite:before{content:"— ";}ul,ol{margin-left:0;}@media only screen and (max-width:480px){ul,ol{margin-left:1.75rem;}blockquote{margin-left:-1.3125rem;margin-right:0;padding-left:0.98438rem;}}h1,h2,h3,h4,h5,h6{margin-top:3.5rem;}a{box-shadow:0 1px 0 0 currentColor;color:#007acc;text-decoration:none;}a:hover,a:active{box-shadow:none;}mark,ins{background:#007acc;color:white;padding:0.10938rem 0.21875rem;text-decoration:none;}a.gatsby-resp-image-link{box-shadow:none;}div.mermaid svg{height:auto !important;}</style><meta name="generator" content="Gatsby 5.2.0"/><meta name="author" content="Asko Soukka" data-gatsby-head="true"/><meta name="description" property="og:description" content="Updated 2015-07-07: Stateless Nix environment
+revisited
+Consider this entry deprecated. Updated 2014-09-24: I learned that in a mixed (OSX and nixpkgs…" data-gatsby-head="true"/><meta name="title" property="og:title" content="Nix expressions as executable commands" data-gatsby-head="true"/><meta name="type" property="og:type" content="website" data-gatsby-head="true"/><meta name="twitter:card" content="summary" data-gatsby-head="true"/><meta name="twitter:creator" content="Asko Soukka" data-gatsby-head="true"/><meta name="twitter:title" content="Nix expressions as executable commands" data-gatsby-head="true"/><meta name="twitter:description" content="Updated 2015-07-07: Stateless Nix environment
+revisited
+Consider this entry deprecated. Updated 2014-09-24: I learned that in a mixed (OSX and nixpkgs…" data-gatsby-head="true"/><meta name="image" property="og:image" content="https://datakurre.pandala.org/cover-2014-09-nix-expressions-as-executable-commands.html.png" data-gatsby-head="true"/><meta name="twitter:image" content="https://datakurre.pandala.org/cover-2014-09-nix-expressions-as-executable-commands.html.png" data-gatsby-head="true"/><meta name="theme-color" content="#663399"/><style data-href="/styles.5caeda19fca28245274c.css" data-identity="gatsby-global-css">@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/static/montserrat-latin-100-8d7d79679b70dbe27172b6460e7a7910.woff2) format("woff2"),url(/static/montserrat-latin-100-ec38980a9e0119a379e2a9b3dbb1901a.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/static/montserrat-latin-100italic-e279051046ba1286706adc886cf1c96b.woff2) format("woff2"),url(/static/montserrat-latin-100italic-3b325a3173c8207435cd1b76e19bf501.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/static/montserrat-latin-200-9d266fbbfa6cab7009bd56003b1eeb67.woff2) format("woff2"),url(/static/montserrat-latin-200-2d8ba08717110d27122e54c34b8a5798.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/static/montserrat-latin-200italic-6e5b3756583bb2263eb062eae992735e.woff2) format("woff2"),url(/static/montserrat-latin-200italic-a0d6f343e4b536c582926255367a57da.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/static/montserrat-latin-300-00b3e893aab5a8fd632d6342eb72551a.woff2) format("woff2"),url(/static/montserrat-latin-300-ea303695ceab35f17e7d062f30e0173b.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/static/montserrat-latin-300italic-56f34ea368f6aedf89583d444bbcb227.woff2) format("woff2"),url(/static/montserrat-latin-300italic-54b0bf2c8c4c12ffafd803be2466a790.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/static/montserrat-latin-400-b71748ae4f80ec8c014def4c5fa8688b.woff2) format("woff2"),url(/static/montserrat-latin-400-0659a9f4e90db5cf51b50d005bff1e41.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/static/montserrat-latin-400italic-6eed6b4cbb809c6efc7aa7ddad6dbe3e.woff2) format("woff2"),url(/static/montserrat-latin-400italic-7583622cfde30ae49086d18447ab28e7.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/static/montserrat-latin-500-091b209546e16313fd4f4fc36090c757.woff2) format("woff2"),url(/static/montserrat-latin-500-edd311588712a96bbf435fad264fff62.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/static/montserrat-latin-500italic-c90ced68b46050061d1a41842d6dfb43.woff2) format("woff2"),url(/static/montserrat-latin-500italic-5146cbfe02b1deea5dffea27a5f2f998.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/static/montserrat-latin-600-0480d2f8a71f38db8633b84d8722e0c2.woff2) format("woff2"),url(/static/montserrat-latin-600-b77863a375260a05dd13f86a1cee598f.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/static/montserrat-latin-600italic-cf46ffb11f3a60d7df0567f8851a1d00.woff2) format("woff2"),url(/static/montserrat-latin-600italic-c4fcfeeb057724724097167e57bd7801.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/static/montserrat-latin-700-7dbcc8a5ea2289d83f657c25b4be6193.woff2) format("woff2"),url(/static/montserrat-latin-700-99271a835e1cae8c76ef8bba99a8cc4e.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/static/montserrat-latin-700italic-c41ad6bdb4bd504a843d546d0a47958d.woff2) format("woff2"),url(/static/montserrat-latin-700italic-6779372f04095051c62ed36bc1dcc142.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/static/montserrat-latin-800-db9a3e0ba7eaea32e5f55328ace6cf23.woff2) format("woff2"),url(/static/montserrat-latin-800-4e3c615967a2360f5db87d2f0fd2456f.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/static/montserrat-latin-800italic-bf45bfa14805969eda318973947bc42b.woff2) format("woff2"),url(/static/montserrat-latin-800italic-fe82abb0bcede51bf724254878e0c374.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/static/montserrat-latin-900-e66c7edc609e24bacbb705175669d814.woff2) format("woff2"),url(/static/montserrat-latin-900-8211f418baeb8ec880b80ba3c682f957.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/static/montserrat-latin-900italic-4454c775e48152c1a72510ceed3603e2.woff2) format("woff2"),url(/static/montserrat-latin-900italic-efcaa0f6a82ee0640b83a0916e6e8d68.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:normal;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/static/merriweather-latin-300-fc117160c69a8ea0851b26dd14748ee4.woff2) format("woff2"),url(/static/merriweather-latin-300-58b18067ebbd21fda77b67e73c241d3b.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:italic;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/static/merriweather-latin-300italic-fe29961474f8dbf77c0aa7b9a629e4bc.woff2) format("woff2"),url(/static/merriweather-latin-300italic-23c3f1f88683618a4fb8d265d33d383a.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:normal;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/static/merriweather-latin-400-d9479e8023bef9cbd9bf8d6eabd6bf36.woff2) format("woff2"),url(/static/merriweather-latin-400-040426f99ff6e00b86506452e0d1f10b.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:italic;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/static/merriweather-latin-400italic-2de7bfeaf08fb03d4315d49947f062f7.woff2) format("woff2"),url(/static/merriweather-latin-400italic-79db67aca65f5285964ab332bd65f451.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:normal;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/static/merriweather-latin-700-4b08e01d805fa35d7bf777f1b24314ae.woff2) format("woff2"),url(/static/merriweather-latin-700-22fb8afba4ab1f093b6ef9e28a9b6e92.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:italic;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/static/merriweather-latin-700italic-cd92541b177652fffb6e3b952f1c33f1.woff2) format("woff2"),url(/static/merriweather-latin-700italic-f87f3d87cea0dd0979bfc8ac9ea90243.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:normal;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/static/merriweather-latin-900-f813fc6a4bee46eda5224ac7ebf1b7be.woff2) format("woff2"),url(/static/merriweather-latin-900-5d4e42cb44410674acd99153d57df032.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:italic;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/static/merriweather-latin-900italic-b7901d85486871c1779c0e93ddd85656.woff2) format("woff2"),url(/static/merriweather-latin-900italic-9647f9fdab98756989a8a5550eb205c3.woff) format("woff")}.solarized.base03{color:#002b36}.solarized.base02{color:#073642}.solarized.base01{color:#586e75}.solarized.base00{color:#657b83}.solarized.base0{color:#839496}.solarized.base1{color:#93a1a1}.solarized.base2{color:#eee8d5}.solarized.base3{color:#fdf6e3}.solarized.solar-yellow{color:#b58900}.solarized.solar-orange{color:#cb4b16}.solarized.solar-red{color:#dc322f}.solarized.solar-magenta{color:#d33682}.solarized.solar-violet{color:#6c71c4}.solarized.solar-blue{color:#268bd2}.solarized.solar-cyan{color:#2aa198}.solarized.solar-green{color:#859900}.cm-s-solarized{color-profile:sRGB;rendering-intent:auto;line-height:1.45em}.cm-s-solarized.cm-s-dark{background-color:#002b36;color:#839496;text-shadow:#002b36 0 1px}.cm-s-solarized.cm-s-light{background-color:#fdf6e3;color:#657b83;text-shadow:#eee8d5 0 1px}.cm-s-solarized .CodeMirror-widget{text-shadow:none}.cm-s-solarized .cm-header{color:#586e75}.cm-s-solarized .cm-quote{color:#93a1a1}.cm-s-solarized .cm-keyword{color:#cb4b16}.cm-s-solarized .cm-atom,.cm-s-solarized .cm-number{color:#d33682}.cm-s-solarized .cm-def{color:#2aa198}.cm-s-solarized .cm-variable{color:#839496}.cm-s-solarized .cm-variable-2{color:#b58900}.cm-s-solarized .cm-type,.cm-s-solarized .cm-variable-3{color:#6c71c4}.cm-s-solarized .cm-property{color:#2aa198}.cm-s-solarized .cm-operator{color:#6c71c4}.cm-s-solarized .cm-comment{color:#586e75;font-style:italic}.cm-s-solarized .cm-string{color:#859900}.cm-s-solarized .cm-string-2{color:#b58900}.cm-s-solarized .cm-meta{color:#859900}.cm-s-solarized .cm-qualifier{color:#b58900}.cm-s-solarized .cm-builtin{color:#d33682}.cm-s-solarized .cm-bracket{color:#cb4b16}.cm-s-solarized .CodeMirror-matchingbracket{color:#859900}.cm-s-solarized .CodeMirror-nonmatchingbracket{color:#dc322f}.cm-s-solarized .cm-tag{color:#93a1a1}.cm-s-solarized .cm-attribute{color:#2aa198}.cm-s-solarized .cm-hr{border-top:1px solid #586e75;color:transparent;display:block}.cm-s-solarized .cm-link{color:#93a1a1;cursor:pointer}.cm-s-solarized .cm-special{color:#6c71c4}.cm-s-solarized .cm-em{color:#999;text-decoration:underline;text-decoration-style:dotted}.cm-s-solarized .cm-error,.cm-s-solarized .cm-invalidchar{border-bottom:1px dotted #dc322f;color:#586e75}.cm-s-solarized.cm-s-dark div.CodeMirror-selected{background:#073642}.cm-s-solarized.cm-s-dark.CodeMirror ::selection{background:rgba(7,54,66,.99)}.cm-s-dark .CodeMirror-line>span::-moz-selection,.cm-s-dark .CodeMirror-line>span>span::-moz-selection,.cm-s-solarized.cm-s-dark .CodeMirror-line::-moz-selection{background:rgba(7,54,66,.99)}.cm-s-solarized.cm-s-light div.CodeMirror-selected{background:#eee8d5}.cm-s-light .CodeMirror-line>span::selection,.cm-s-light .CodeMirror-line>span>span::selection,.cm-s-solarized.cm-s-light .CodeMirror-line::selection{background:#eee8d5}.cm-s-ligh .CodeMirror-line>span::-moz-selection,.cm-s-ligh .CodeMirror-line>span>span::-moz-selection,.cm-s-solarized.cm-s-light .CodeMirror-line::-moz-selection{background:#eee8d5}.cm-s-solarized.CodeMirror{box-shadow:inset 7px 0 12px -6px #000}.cm-s-solarized .CodeMirror-gutters{border-right:0}.cm-s-solarized.cm-s-dark .CodeMirror-gutters{background-color:#073642}.cm-s-solarized.cm-s-dark .CodeMirror-linenumber{color:#586e75;text-shadow:#021014 0 -1px}.cm-s-solarized.cm-s-light .CodeMirror-gutters{background-color:#eee8d5}.cm-s-solarized.cm-s-light .CodeMirror-linenumber{color:#839496}.cm-s-solarized .CodeMirror-linenumber{padding:0 5px}.cm-s-solarized .CodeMirror-guttermarker-subtle{color:#586e75}.cm-s-solarized.cm-s-dark .CodeMirror-guttermarker{color:#ddd}.cm-s-solarized.cm-s-light .CodeMirror-guttermarker{color:#cb4b16}.cm-s-solarized .CodeMirror-gutter .CodeMirror-gutter-text{color:#586e75}.cm-s-solarized .CodeMirror-cursor{border-left:1px solid #819090}.cm-s-solarized.cm-s-light.cm-fat-cursor .CodeMirror-cursor{background:#7e7}.cm-s-solarized.cm-s-light .cm-animate-fat-cursor{background-color:#7e7}.cm-s-solarized.cm-s-dark.cm-fat-cursor .CodeMirror-cursor{background:#586e75}.cm-s-solarized.cm-s-dark .cm-animate-fat-cursor{background-color:#586e75}.cm-s-solarized.cm-s-dark .CodeMirror-activeline-background{background:hsla(0,0%,100%,.06)}.cm-s-solarized.cm-s-light .CodeMirror-activeline-background{background:rgba(0,0,0,.06)}ol,ul{margin-left:1em}.gatsby-highlight{background:#fdfaf6;border-bottom:1px solid #eee;border-top:1px solid #eee;margin-bottom:1.75rem;overflow-x:auto;padding:1ex 1em}.gatsby-highlight pre{margin-bottom:0}</style><title data-gatsby-head="true">Nix expressions as executable commands | Asko Soukka</title><link rel="canonical" href="https://datakurre.pandala.org/2014/09/nix-expressions-as-executable-commands.html/" data-gatsby-head="true"/><link rel="alternate" type="application/rss+xml" title="datakurre" href="/rss.xml"/><link rel="alternate" type="application/rss+xml" title="datakurre on &quot;plone&quot;" href="/feeds/posts/default/-/plone"/><style>.gatsby-image-wrapper{position:relative;overflow:hidden}.gatsby-image-wrapper picture.object-fit-polyfill{position:static!important}.gatsby-image-wrapper img{bottom:0;height:100%;left:0;margin:0;max-width:none;padding:0;position:absolute;right:0;top:0;width:100%;object-fit:cover}.gatsby-image-wrapper [data-main-image]{opacity:0;transform:translateZ(0);transition:opacity .25s linear;will-change:opacity}.gatsby-image-wrapper-constrained{display:inline-block;vertical-align:top}</style><noscript><style>.gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}</style></noscript><script type="module">const e="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;e&&document.body.addEventListener("load",(function(e){const t=e.target;if(void 0===t.dataset.mainImage)return;if(void 0===t.dataset.gatsbyImageSsr)return;let a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector("[data-placeholder-image]"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition="opacity 500ms linear")}))}),!0);</script><link rel="icon" href="/favicon-32x32.png?v=b12376b9b88c2b74e77175e369294c9a" type="image/png"/><link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=b12376b9b88c2b74e77175e369294c9a"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=b12376b9b88c2b74e77175e369294c9a"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=b12376b9b88c2b74e77175e369294c9a"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=b12376b9b88c2b74e77175e369294c9a"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=b12376b9b88c2b74e77175e369294c9a"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=b12376b9b88c2b74e77175e369294c9a"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=b12376b9b88c2b74e77175e369294c9a"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=b12376b9b88c2b74e77175e369294c9a"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div style="margin-left:auto;margin-right:auto;max-width:42rem;padding:2.625rem 1.3125rem"><header><h3 style="font-family:Montserrat, sans-serif;margin-top:0"><a style="box-shadow:none;text-decoration:none;color:inherit" href="/">Asko Soukka</a></h3></header><main class="h-entry"><h1 style="margin-top:1.75rem;margin-bottom:0">Nix expressions as executable commands</h1><span class="p-name" style="display:none">Nix expressions as executable commands</span><img class="u-photo" src="https://datakurre.pandala.org/cover-2014-09-nix-expressions-as-executable-commands.html.png" alt="" style="display:none"/><a class="p-author h-card" href="https://pandala.org/#datakurre" style="display:none"><img class="u-photo" src="https://datakurre.pandala.org/icon.jpg" alt=""/>Asko Soukka</a><div class="p-summary" style="display:none"><div>Updated 2015-07-07: Stateless Nix environment
+revisited
+Consider this entry deprecated. Updated 2014-09-24: I learned that in a mixed (OSX and nixpkgs…</div></div><a class="p-category" href="https://datakurre.pandala.org/2014/09/nix-expressions-as-executable-commands.html/" style="display:none">Nix</a><a class="p-category" href="https://datakurre.pandala.org/2014/09/nix-expressions-as-executable-commands.html/" style="display:none">Python</a><a class="u-syndication" href="https://fed.brid.gy/" style="display:none">https://fed.brid.gy/</a><a class="u-syndication" href="https://fediverse.pandala.org/" style="display:none">https://fediverse.pandala.org/</a><a class="u-url u-uid" style="font-size:0.83255rem;line-height:1.75rem;display:block;color:black;box-shadow:none;margin-bottom:1.75rem" href="https://datakurre.pandala.org/2014/09/nix-expressions-as-executable-commands.html/"><time class="dt-published" datetime="2014-09-11 06:00:00">September 11, 2014</time></a><div class="e-content"><div><p><strong>Updated 2015-07-07:</strong> <a href="http://datakurre.pandala.org/2015/07/stateless-nix-environments-revisited.html">Stateless Nix environment
+revisited</a>
+Consider this entry deprecated.</p>
+<p><strong>Updated 2014-09-24:</strong> I learned that in a mixed (OSX and nixpkgs)
+environment, one should not set <code>LD_LIBRARY_PATH</code>, but fix dynamic
+linking to use absolute paths. Yet, I refactored my wrapper to use
+<em>myEnvFun</em> when required (see the buildout example).</p>
+<p><strong>Updated 2014-09-22:</strong> I was wrong about, how nix-built Python
+environments could be used together with
+<a href="https://pypi.python.org/pypi/zc.buildout">buildout</a> and updated this
+post to reflect my experiences.</p>
+<p>My main tools for Python based software development have been
+<a href="https://pypi.python.org/pypi/virtualenv">virtualenv</a> and
+<a href="https://pypi.python.org/pypi/zc.buildout">buildout</a> for a long time.
+I’ve used virtualenv for providing isolated Python installation
+(separate from so often polluted system python) and buildout for
+managing both the required Python packages, developed packages, and
+supporting software (like Redis or memcached).</p>
+<p>Basically everything still works, but:</p>
+<ul>
+<li>Managing clean Python virtualenvs for only to avoid possible
+conflicts with system installed packages feels a lot of work with a
+small return.</li>
+<li>Remembering to activate and deactivate the correct Python virtualenv
+is not fun either.</li>
+<li>Also, while buildout provides excellent tool
+(<a href="https://pypi.python.org/pypi/mr.developer">mr.developer</a>) for
+managing sources for all the project packages, it’s far from
+optimal for building and managing supporting (not Python) software.</li>
+</ul>
+<p>I’ve also using quite a bit of Vagrant and Docker, but, because I’m
+mostly working on Mac, those require a VM, which makes them much less
+convenient.</p>
+<h2>About Nix</h2>
+<p>I believe, I heard about <a href="http://nixos.org/nix/">Nix</a> package manager
+from <a href="http://garbas.si/">Rok</a> at the first time at <a href="http://www.coactivate.org/projects/barcelona-sprint">Barcelona Plone
+Testing Sprint</a> in
+the early 2013. It sounded a bit esoteric and complex back then, but
+after about about twenty months of more virtualenvs, buildouts,
+Vagrantfiles, Docker containers and puppet manifests… not so much
+anymore.</p>
+<p>Currently, outside <a href="http://nixos.org/">NixOS</a>, I understand Nix as</p>
+<ol>
+<li>a functional language for describing configuration of software and</li>
+<li>a package manager for managing those configurations.</li>
+</ol>
+<p>From my own experience, the easiest way to get familiar with Nix is to
+follow <a href="https://www.domenkozar.com/">Domen</a>’s <a href="https://www.domenkozar.com/2014/01/02/getting-started-with-nix-package-manager/">blog post about getting
+started with Nix package
+manager</a>.
+But to really make it a new tool to your toolbox, you should learn to
+<a href="http://nixos.org/nix/manual/#chap-writing-nix-expressions">write your own Nix
+expressions</a>.</p>
+<p>Even the the most common way to use the Nix package manager is to
+install Nix expressions into your current environment with <strong>nix-env</strong>,
+the expressions can also be used without really installing them, in a
+quite stateless way.</p>
+<p>I’m not sure how proper use of Nix this is, but it seems to work for
+me.</p>
+<p>(Yes, I’m aware of <strong>myEnvFun</strong>, for creating named stateful
+development environments with Nix expressions, but here I’m trying to
+use Nix in a more stateless, Docker-inspired way.)</p>
+<h2>Nix expressions as virtualenv replacements</h2>
+<p>It’s almost never safe to install a Python software directly into your
+system Python. Different software may require different versions of same
+libraries and sooner than later the conflicting requirements break your
+Python installation.</p>
+<p>Let’s take a small utility software called <a href="https://pypi.org/project/i18ndude/">i18ndude</a> as an example
+of such software with way too frightening dependencies for any system
+Python. Traditionally, you could install it into a separate Python
+virtualenv and use it with the following steps:</p>
+<div class="gatsby-highlight" data-language="shell">
+      <pre class=" cm-s-solarized"><code><span class="cm-def">$ virtualenv</span><span> ~/.../i18ndude-env</span><span>
+</span><span class="cm-def">$ source</span><span> ~/.../i18ndude-env/bin/activate</span><span>
+</span><span class="cm-def">$ pip</span><span> install i18ndude</span><span>
+</span><span class="cm-def">$ i18ndude</span><span>
+</span><span>...</span><span>
+</span><span class="cm-def">$ deactivate</span></code></pre>
+    </div>
+<p>With an executable Nix expression, I can call it in a stateless way with
+simply executing the expression:</p>
+<div class="gatsby-highlight" data-language="shell">
+      <pre class=" cm-s-solarized"><code><span class="cm-def">$ </span><span>./i18ndude.nix</span><span>
+</span><span>➜ /nix/store/gjhzw843qs1736r0qcd9mz69247g4svb-python2.7-i18ndude-3.3.5/bin/i18ndude</span><span>
+</span><span>usage: i18ndude [-h]</span><span>
+</span><span>                {find-untranslated,rebuild-pot,merge,sync,filter,admix,list,trmerge}</span><span>
+</span><span>                ...</span><span>
+</span><span>18ndude: error: too few arguments</span></code></pre>
+    </div>
+<p>Maybe even better, I can install the expression into my default Nix
+environment with</p>
+<div class="gatsby-highlight" data-language="shell">
+      <pre class=" cm-s-solarized"><code><span class="cm-def">$ nix</span><span class="cm-attribute">-env</span><span> </span><span class="cm-attribute">-i</span><span> </span><span class="cm-attribute">-f</span><span> i18ndude.nix</span></code></pre>
+    </div>
+<p>and use it like it would have been installed into my system Python in
+the first place (but this time without polluting it):</p>
+<div class="gatsby-highlight" data-language="shell">
+      <pre class=" cm-s-solarized"><code><span class="cm-def">$ i18ndude</span><span>.nix</span><span>
+</span><span>usage: i18ndude [-h]</span><span>
+</span><span>                {find-untranslated,rebuild-pot,merge,sync,filter,admix,list,trmerge}</span><span>
+</span><span>                ...</span><span>
+</span><span>18ndude: error: too few arguments</span></code></pre>
+    </div>
+<p>No more activating or deactivating virtualenvs, not to mention about
+needing to remember their names or locations.</p>
+<p>For the most common Python softare, it’s not required to write your own
+expression, but you could simply install the contributed expressions
+directly from Nix packages repository.</p>
+<p>The easiest way to check for existing expressions from nixpkgs Python
+packages seems to be grepping the package list with
+<code>nix-env -qaP \*|grep something</code>.</p>
+<p>If you’d like to see more packages available by default, you can
+contribute them to
+<a href="https://github.com/NixOS/nixpkgs/blob/master/pkgs/top-level/python-packages.nix">upstream</a>
+with a simple pull request.</p>
+<p>Anyway, since <a href="https://pypi.org/project/i18ndude/">i18ndude</a> was not yet available in time of writing
+(although, most of its dependencies were), this is how my expression for
+it looked like:</p>
+<div class="gatsby-highlight" data-language="null">
+      <pre class=" cm-s-solarized"><code><span>#!/usr/bin/env nix-exec
+with import &lt;nixpkgs&gt; { };
+
+let dependencies = rec {
+  ordereddict = buildPythonPackage {
+    name = "ordereddict-1.1";
+    src = fetchurl {
+      url = "https://pypi.python.org/packages/source/o/ordereddict/ordereddict-1.1.tar.gz";
+      md5 = "a0ed854ee442051b249bfad0f638bbec";
+    };
+  };
+};
+
+in with dependencies; rec {
+  i18ndude = buildPythonPackage {
+    name = "i18ndude-3.3.5";
+    src = fetchurl {
+      url = "https://pypi.python.org/packages/source/i/i18ndude/i18ndude-3.3.5.zip";
+      md5 = "ef599b1c64eaabba4049fcd2b027ba21";
+    };
+    propagatedBuildInputs = [
+      ordereddict
+      python27Packages."zope.tal-3.5.2"
+      python27Packages."plone.i18n-2.0.9"
+    ];
+  };
+}</span></code></pre>
+    </div>
+<h2>Nix expression for <em>nix-exec</em> shell wrapper</h2>
+<p>Of course, Nix expressions are not executable by default. To get them
+work as I wanted, I had to create tiny <a href="https://gist.github.com/datakurre/7a3c9eaf6ba51e9d8bd5">wrapper
+script</a> to be
+used as the hash-bang line <code>#!/usr/bin/env nix-exec</code> of executable
+expressions.</p>
+<p>The script simply calls <strong>nix-build</strong> and then the named executable from
+the build output directory (with some standard environment variables
+set). To put it another way, the wrapper script translates the following
+command:</p>
+<div class="gatsby-highlight" data-language="shell">
+      <pre class=" cm-s-solarized"><code><span class="cm-def">$ </span><span>./i18ndude.nix </span><span class="cm-attribute">--help</span></code></pre>
+    </div>
+<p>into</p>
+<div class="gatsby-highlight" data-language="shell">
+      <pre class=" cm-s-solarized"><code><span class="cm-def">$ </span><span class="cm-quote">`nix-build --no-out-link i18ndude.nix`</span><span>/bin/i18ndude </span><span class="cm-attribute">--help</span></code></pre>
+    </div>
+<p>It’s not required to suffix the expressions fiels with <code>.nix</code>, but they
+could also be named without suffix to look more like real commands.</p>
+<p>The wrapper script itself, of course, can be installed from a Nix
+expression into your default Nix environment with
+<code>nix-env -i -f filename.nix</code>:</p>
+<div class="gatsby-highlight" data-language="null">
+      <pre class=" cm-s-solarized"><code><span>with import &lt;nixpkgs&gt; { };
+
+stdenv.mkDerivation {
+  name = "datakurre-nix-exec-1.2.1";
+
+  builder = builtins.toFile "builder.sh" "
+    source $stdenv/setup
+    mkdir -p $out/bin
+    echo \"#!/bin/bash
+build=\\`nix-build --no-out-link \\$1\\`
+if [ \\$build ]; then
+
+  MY_TZ=\\\"\\$TZ\\\"
+  MY_PATH=\\\"\\$build/bin:\\$build/sbin:\\$build/libexec:\\$PATH\\\"
+  MY_http_proxy=\\\"\\$http_proxy\\\"
+  MY_ftp_proxy=\\\"\\$http_proxy\\\"
+
+  if [ -d \\$build/dev-envs ]; then
+    source \\\"\\$build/dev-envs/\\\"*
+
+    export TZ=\\\"\\$MY_TZ\\\"
+    export PATH=\\\"\\$PATH:\\$MY_PATH\\\"
+    export http_proxy=\\\"\\$MY_http_proxy\\\"
+    export ftp_proxy=\\\"\\$MY_ftp_proxy\\\"
+
+    export CFLAGS=\\`echo \\$NIX_CFLAGS_COMPILE|sed 's/-isystem /-I/g'\\`
+    export LDFLAGS=\\$NIX_LDFLAGS
+  else
+    export PATH=\\\"\\$MY_PATH\\\"
+  fi
+
+  cmd=\\$\{1##*/\}; cmd=\\$\{cmd%%@*\}; cmd=\\$\{cmd%.nix\}
+  paths=(\\\"\\$build/bin\\\" \\\"\\$build/sbin\\\" \\\"\\$build/libexec\\\")
+  for path in \\\"\\$\{paths[@]\}\\\"; do
+    if [ -f \\\"\\$path/\\$\{cmd\}\\\" ]; then
+      cmd=\\\"\\$path/\\$\{cmd\}\\\"
+      break
+    fi
+  done
+
+  if [ -t 1 ]; then echo \\\"➜\\\" \\$cmd \\\"\\$\{@:2\}\\\"; fi
+  \\\"\\$cmd\\\" \\\"\\$\{@:2\}\\\"
+fi
+\" &gt; $out/bin/nix-exec
+    chmod a+x $out/bin/nix-exec
+  ";
+}</span></code></pre>
+    </div>
+<p>The wrapper does execute the expression defined command in a fully clean
+environment (the only isolation is the one <em>myEnvFun</em> provides), but
+mostly prepends everything defined by the expression into its
+surrounding execution environment (so that its paths are preferred over
+the versions in the current environment).</p>
+<p>A mostly positive side effect from using Nix expressions like this (only
+building them, but not installing them into any environment) is that
+they can be cleaned (from the disk) anytime with simply:</p>
+<div class="gatsby-highlight" data-language="shell">
+      <pre class=" cm-s-solarized"><code><span class="cm-def">$ nix</span><span class="cm-attribute">-collect-garbage</span></code></pre>
+    </div>
+<h2>Nix expressions with buildout</h2>
+<p><strong>Update 2014-09-24:</strong> The example was updated to use <em>myEnvFun</em> to
+simplify the wrapper script.</p>
+<p><strong>Update 2014-09-22:</strong> I originally covered Nix expressions with
+buildout as an example of replacing Python virtualenvs with Nix.
+Unfortunately, because of some buildout limitations that didn’t work
+out as I expected…</p>
+<p>A very special case of Python development environment is the one with
+<a href="https://pypi.python.org/pypi/zc.buildout">buildout</a>, which is required
+e.g. for all development with <a href="http://plone.org/">Plone</a>.</p>
+<p>When using Nix expressions with
+<a href="https://pypi.python.org/pypi/zc.buildout">buildout</a>, there is a one
+very special limitation: <strong>buildout does not support any additional
+Python packages installed into your Nix expression based environment</strong>.</p>
+<p>That’s because buildout sees Nix defined Python as a system Python, and
+buildout does its best to prevent any extra packages installed into
+system Python being available for the buildout by default.</p>
+<p>An additional issue for buildout is that the extra Python packages
+defined in Nix expression are not installed directly into under the
+Python installation, but are made available only when that Python is
+executed through a specialc Nix generated wrapper.</p>
+<p>But to cut this short, here’s an example executable Nix expression,
+which could be used as a <a href="http://plone.org/">Plone</a>-compatible Python
+environment. It includes a clean Python installation with some
+additional (non-Python) libraries required by Plone buildout to be able
+to compile a few special Python packages (like <a href="https://pypi.org/project/Pillow/">Pillow</a>, <a href="https://pypi.org/project/lxml/">lxml</a> and
+<a href="https://pypi.org/project/python-ldap/">python-ldap</a>):</p>
+<div class="gatsby-highlight" data-language="null">
+      <pre class=" cm-s-solarized"><code><span>#!/usr/bin/env nix-exec
+with import &lt;nixpkgs&gt; { };
+
+let dependencies = rec {
+  buildInputs = [
+    cyrus_sasl
+    openldap
+    libxslt
+    libxml2
+    freetype
+    libpng
+    libjpeg
+    python27Full
+  ];
+};
+
+in with dependencies; buildEnv {
+  name = "nix";
+  paths = [(myEnvFun { name = "nix"; inherit buildInputs; })] ++ buildInputs;
+}</span></code></pre>
+    </div>
+<p>With this Nix expression named as an executable <code>./python.nix</code>, it could
+be used to execute buildout’s bootstrap, buildout and eventually
+launching the Plone site like:</p>
+<div class="gatsby-highlight" data-language="shell">
+      <pre class=" cm-s-solarized"><code><span class="cm-def">$ </span><span>./python.nix bootstrap.py</span><span>
+</span><span class="cm-def">$ </span><span>./python.nix bin/buildout  </span><span class="cm-comment"># or ./python.nix -S bin/buildout</span><span>
+</span><span class="cm-def">$ </span><span>./python.nix bin/instance fg</span></code></pre>
+    </div>
+<p>I must agree that this is not as convenient as it should be, because
+each command (bootstrap, buildout and the final buildout generated
+script) must be executed explicitly using our executable Nix expression
+defining the required Python-environment.</p>
+<p>Also, probably because my wrapper does not completely isolate the Nix
+expression call from its surrounding environment, sometimes it’s
+required to call the buildout with <code>-S</code> given for the Python expression,
+like <code>./python.nix -S bin/buildout</code> (otherwise buildout does not find
+it’s own bootstrapped installation).</p>
+<p>On the other hand, this approach defines the execution environment
+explicitly and statelessly for each call.</p>
+<p>P.S. Because I’m working with RHEL systems, it’s nice to use Python
+with similar configuration with those. With Nix, it’s easy to define
+local overrides for existing packages (nixpkgs derivations) there’s a
+special function with only the required configuration changes. The
+following <code>~/.nixpkgs/config.nix</code>-example configures Python with similar
+unicode flag to RHEL’s native Python:</p>
+<div class="gatsby-highlight" data-language="null">
+      <pre class=" cm-s-solarized"><code><span>{
+  packageOverrides = pkgs : with pkgs; rec {
+    python27 = pkgs.python27.overrideDerivation (args: {
+      configureFlags = "--enable-shared --with-threads --enable-unicode=ucs4";
+    }) // { modules = pkgs.python27.modules; };
+  };
+}</span></code></pre>
+    </div>
+<h2>Nix expressions as stateless development environments</h2>
+<p><strong>Updated 2014-09-24:</strong> Because of OSX, I had to fix openldap expression
+to fix link one library with absolute path to not allow it to resolve an
+OSX library instead of the Nix built one.</p>
+<p>In test driven development, the whole development environment can be
+built just around the selected test runner.</p>
+<p>Here’s an example Nix expression, which saved as an executable file
+called <code>./py.test</code> can be used to execute <a href="https://pypi.org/project/pytest/">pytest</a> test runner with a
+couple of selected plugins and all the dependencies required by the
+tested software in question:</p>
+<div class="gatsby-highlight" data-language="null">
+      <pre class=" cm-s-solarized"><code><span>#!/usr/bin/env nix-exec
+with import &lt;nixpkgs&gt; { };
+
+let dependencies = rec {
+  execnet = buildPythonPackage {
+    name = "execnet-1.2.0";
+    src = fetchurl {
+      url = "https://pypi.python.org/packages/source/e/execnet/execnet-1.2.0.tar.gz";
+      md5 = "1886d12726b912fc2fd05dfccd7e6432";
+    };
+    doCheck = false;
+  };
+  pycparser = buildPythonPackage {
+    name = "pycparser-2.10";
+    src = fetchurl {
+      url = "https://pypi.python.org/packages/source/p/pycparser/pycparser-2.10.tar.gz";
+      md5 = "d87aed98c8a9f386aa56d365fe4d515f";
+    };
+  };
+  cffi = buildPythonPackage {
+    name = "cffi-0.8.6";
+    src = fetchurl {
+      url = "http://pypi.python.org/packages/source/c/cffi/cffi-0.8.6.tar.gz";
+      md5 = "474b5a68299a6f05009171de1dc91be6";
+    };
+    propagatedBuildInputs = [ pycparser ];
+  };
+  pytest_cache = buildPythonPackage {
+    name = "pytest-cache-1.0";
+    src = fetchurl {
+      url = "https://pypi.python.org/packages/source/p/pytest-cache/pytest-cache-1.0.tar.gz";
+      md5 = "e51ff62fec70a1fd456d975ce47977cd";
+    };
+    propagatedBuildInputs = [
+       python27Packages.pytest
+       execnet
+    ];
+  };
+  pytest_flakes = buildPythonPackage {
+    name = "pytest-flakes-0.2";
+    src = fetchurl {
+      url = "https://pypi.python.org/packages/source/p/pytest-flakes/pytest-flakes-0.2.zip";
+      md5 = "44b8f9746fcd827de5c02f14b01728c1";
+    };
+    propagatedBuildInputs = [
+       python27Packages.pytest
+       python27Packages.pyflakes
+       pytest_cache
+    ];
+  };
+  pytest_pep8 = buildPythonPackage {
+    name = "pytest-pep8-1.0.6";
+    src = fetchurl {
+      url = "https://pypi.python.org/packages/source/p/pytest-pep8/pytest-pep8-1.0.6.tar.gz";
+      md5 = "3debd0bac8f63532ae70c7351e73e993";
+    };
+    propagatedBuildInputs = [
+      python27Packages.pytest
+      python27Packages.pep8
+      pytest_cache
+    ];
+  };
+  buildInputs = [
+    (python27Packages.pytest.override {
+      propagatedBuildInputs = [
+        python27Packages.readline
+        python27Packages.plumbum
+        python27Packages.py
+        pytest_flakes
+        pytest_pep8
+      ];
+    })
+    (lib.overrideDerivation openldap (args: {
+      postBuild = if stdenv.isDarwin then ''
+        install_name_tool -change /libsasl2.dylib ${cyrus_sasl}/lib/libsasl2.dylib servers/slapd/slapadd
+     '' else null;
+    }))
+  ];
+};
+
+in with dependencies; buildEnv {
+  name = "nix";
+  paths = [(myEnvFun { name = "nix"; inherit buildInputs; })] ++ buildInputs;
+}</span></code></pre>
+    </div>
+<p>In other words, this expression could work as a stateless environment
+for developing the product in question:</p>
+<div class="gatsby-highlight" data-language="shell">
+      <pre class=" cm-s-solarized"><code><span class="cm-def">$ </span><span>./py.test</span><span>
+</span><span>➜ /nix/store/a2w3hwc66gqm6bncic8km6b69lw2byc6-py.test/bin/py.test</span><span>
+</span><span class="cm-operator">==================================</span><span> test session starts </span><span class="cm-operator">==================================</span><span>
+</span><span>platform darwin </span><span class="cm-attribute">--</span><span> Python </span><span class="cm-number">2</span><span>.7.8 </span><span class="cm-attribute">--</span><span> pytest-2.5.1</span><span>
+</span><span>plugins: flakes, cache, pep8</span><span>
+</span><span>collected </span><span class="cm-number">2</span><span> items</span><span>
+
+</span><span>src/.../tests/test_things.py ..</span><span>
+</span><span class="cm-operator">===============================</span><span> </span><span class="cm-number">2</span><span> passed </span><span class="cm-keyword">in</span><span> </span><span class="cm-number">0</span><span>.22 seconds </span><span class="cm-operator">================================</span></code></pre>
+    </div>
+<p>And, once the development is completed, an another expression could be
+defined for using the developed product.</p>
+<h2>Nix expression for Robot Framework test runner</h2>
+<p>Finally, as a bonus, here’s an expression, which configures a Python
+environment with <a href="http://robotframework.org">Robot Framework</a> and its
+<a href="https://pypi.python.org/pypi/robotframework-selenium2library">Selenium2Library</a>
+with <a href="http://phantomjs.org">PhantomJS</a>:</p>
+<div class="gatsby-highlight" data-language="null">
+      <pre class=" cm-s-solarized"><code><span>#!/usr/bin/env nix-exec
+with import &lt;nixpkgs&gt; { };
+
+let dependencies = rec {
+  docutils = buildPythonPackage {
+    name = "docutils-0.12";
+    src = fetchurl {
+      url = "https://pypi.python.org/packages/source/d/docutils/docutils-0.12.tar.gz";
+      md5 = "4622263b62c5c771c03502afa3157768";
+    };
+  };
+  selenium = buildPythonPackage {
+    name = "selenium-2.43.0";
+    src = fetchurl {
+      url = "https://pypi.python.org/packages/source/s/selenium/selenium-2.43.0.tar.gz";
+      md5 = "bf2b46caa5c1ea4b68434809c695d69b";
+    };
+  };
+  decorator = buildPythonPackage {
+    name = "decorator-3.4.0";
+    src = fetchurl {
+      url = "https://pypi.python.org/packages/source/d/decorator/decorator-3.4.0.tar.gz";
+      md5 = "1e8756f719d746e2fc0dd28b41251356";
+    };
+  };
+  robotframework = buildPythonPackage {
+    name = "robotframework-2.8.5";
+    src = fetchurl {
+      url = "https://pypi.python.org/packages/source/r/robotframework/robotframework-2.8.5.tar.gz";
+      md5 = "2d2c6938830f71a6aa6f4be32227997f";
+    };
+    propagatedBuildInputs = [
+      docutils
+    ];
+  };
+  robotframework-selenium2library = buildPythonPackage {
+    name = "robotframework-selenium2library-1.5.0";
+    src = fetchurl {
+      url = "https://pypi.python.org/packages/source/r/robotframework-selenium2library/robotframework-selenium2library-1.5.0.tar.gz";
+      md5 = "07c64a9e183642edd682c2b79ba2f32c";
+    };
+    propagatedBuildInputs = [
+      robotframework
+      decorator
+      selenium
+    ];
+  };
+};
+
+in with dependencies; buildEnv {
+  name = "pybot";
+  paths = [
+    phantomjs
+    (robotframework.override {
+      propagatedBuildInputs = [ robotframework-selenium2library ];
+    })
+  ];
+}</span></code></pre>
+    </div>
+<p>Since you may need differently configured Robot Framework installations
+(with different add-on keyword libraries installed) for different
+projects, this should be a good fit as an executable Nix expression:</p>
+<div class="gatsby-highlight" data-language="shell">
+      <pre class=" cm-s-solarized"><code><span class="cm-def">$ </span><span>./pybot.nix</span><span>
+</span><span>➜ /nix/store/q15bimgng25qcxkq2q10finyk0n6qkm2-pybot/bin/pybot</span><span>
+</span><span>[ ERROR ] Expected at least </span><span class="cm-number">1</span><span> argument, got </span><span class="cm-number">0</span><span>.</span><span>
+
+</span><span>Try </span><span class="cm-attribute">--help</span><span> </span><span class="cm-keyword">for</span><span> usage information.</span></code></pre>
+    </div></div></div><hr style="margin-bottom:1.75rem"/><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li><a rel="prev" href="/2014/05/asynchronous-stream-iterators-and.html/">← <!-- -->Asynchronous stream iterators and experimental promises for Plone</a></li><li><a rel="next" href="/2014/10/too-many-ways-to-do-async-tasks-with.html/">Too many ways to do async tasks with Plone<!-- --> →</a></li></ul></main></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/2014/09/nix-expressions-as-executable-commands.html/";/*]]>*/</script><!-- slice-start id="_gatsby-scripts-1" -->
+          <script
+            id="gatsby-chunk-mapping"
+          >
+            window.___chunkMapping="{\"app\":[\"/app-8e352158238d7a981d99.js\"],\"component---src-pages-404-js\":[\"/component---src-pages-404-js-97805cac34ee32fd2ff3.js\"],\"component---src-pages-index-js\":[\"/component---src-pages-index-js-d702b3556e2e37664238.js\"],\"component---src-templates-blog-post-js\":[\"/component---src-templates-blog-post-js-db3b846139cc4b35992f.js\"],\"component---src-templates-follow-js\":[\"/component---src-templates-follow-js-48b9dd3d02ab9724ef8f.js\"],\"component---src-templates-like-js\":[\"/component---src-templates-like-js-8481525f17b37bf9ff44.js\"]}";
+          </script>
+        <script>window.___webpackCompilationHash="1117cca6506347fc7992";</script><script src="/webpack-runtime-e10ad14bfe4fe997f9f6.js" async></script><script src="/framework-a3d1aa3677a1ff482f17.js" async></script><script src="/app-8e352158238d7a981d99.js" async></script><!-- slice-end id="_gatsby-scripts-1" --></body></html>

@@ -1,0 +1,464 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.75 'Merriweather','Georgia',serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.9);font-family:'Merriweather','Georgia',serif;font-weight:400;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:Montserrat,sans-serif;font-weight:900;text-rendering:optimizeLegibility;font-size:2.5rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.73286rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.4427rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;letter-spacing:0.140625em;text-transform:uppercase;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.83255rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.75966rem;line-height:1.1;font-style:italic;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}ul{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;list-style:disc;}ol{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:0.85rem;line-height:1.75rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1rem;line-height:1.75rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}blockquote{margin-left:-1.75rem;margin-right:1.75rem;margin-top:0;padding-bottom:0;padding-left:1.42188rem;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1.20112rem;line-height:1.75rem;color:hsla(0,0%,0%,0.59);font-style:italic;border-left:0.32813rem solid hsla(0,0%,0%,0.9);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.75rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.75rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}li > ul{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.75rem / 2);}code{font-size:0.85rem;line-height:1.75rem;}kbd{font-size:0.85rem;line-height:1.75rem;}samp{font-size:0.85rem;line-height:1.75rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.16667rem;padding-right:1.16667rem;padding-top:0.875rem;padding-bottom:calc(0.875rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}blockquote > :last-child{margin-bottom:0;}blockquote cite{font-size:1rem;line-height:1.75rem;color:hsla(0,0%,0%,0.9);font-weight:400;}blockquote cite:before{content:"— ";}ul,ol{margin-left:0;}@media only screen and (max-width:480px){ul,ol{margin-left:1.75rem;}blockquote{margin-left:-1.3125rem;margin-right:0;padding-left:0.98438rem;}}h1,h2,h3,h4,h5,h6{margin-top:3.5rem;}a{box-shadow:0 1px 0 0 currentColor;color:#007acc;text-decoration:none;}a:hover,a:active{box-shadow:none;}mark,ins{background:#007acc;color:white;padding:0.10938rem 0.21875rem;text-decoration:none;}a.gatsby-resp-image-link{box-shadow:none;}div.mermaid svg{height:auto !important;}</style><meta name="generator" content="Gatsby 5.2.0"/><meta name="author" content="Asko Soukka" data-gatsby-head="true"/><meta name="description" property="og:description" content="About a week ago, I had the pleasure of giving a presentation about my
+Nix
+experiences
+at PyCon Finland 2015. This is an executive
+afterthought summary of that…" data-gatsby-head="true"/><meta name="title" property="og:title" content="Nix for Python developers" data-gatsby-head="true"/><meta name="type" property="og:type" content="website" data-gatsby-head="true"/><meta name="twitter:card" content="summary" data-gatsby-head="true"/><meta name="twitter:creator" content="Asko Soukka" data-gatsby-head="true"/><meta name="twitter:title" content="Nix for Python developers" data-gatsby-head="true"/><meta name="twitter:description" content="About a week ago, I had the pleasure of giving a presentation about my
+Nix
+experiences
+at PyCon Finland 2015. This is an executive
+afterthought summary of that…" data-gatsby-head="true"/><meta name="image" property="og:image" content="https://datakurre.pandala.org/cover-2015-10-nix-for-python-developers.html.png" data-gatsby-head="true"/><meta name="twitter:image" content="https://datakurre.pandala.org/cover-2015-10-nix-for-python-developers.html.png" data-gatsby-head="true"/><meta name="theme-color" content="#663399"/><style data-href="/styles.5caeda19fca28245274c.css" data-identity="gatsby-global-css">@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/static/montserrat-latin-100-8d7d79679b70dbe27172b6460e7a7910.woff2) format("woff2"),url(/static/montserrat-latin-100-ec38980a9e0119a379e2a9b3dbb1901a.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/static/montserrat-latin-100italic-e279051046ba1286706adc886cf1c96b.woff2) format("woff2"),url(/static/montserrat-latin-100italic-3b325a3173c8207435cd1b76e19bf501.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/static/montserrat-latin-200-9d266fbbfa6cab7009bd56003b1eeb67.woff2) format("woff2"),url(/static/montserrat-latin-200-2d8ba08717110d27122e54c34b8a5798.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/static/montserrat-latin-200italic-6e5b3756583bb2263eb062eae992735e.woff2) format("woff2"),url(/static/montserrat-latin-200italic-a0d6f343e4b536c582926255367a57da.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/static/montserrat-latin-300-00b3e893aab5a8fd632d6342eb72551a.woff2) format("woff2"),url(/static/montserrat-latin-300-ea303695ceab35f17e7d062f30e0173b.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/static/montserrat-latin-300italic-56f34ea368f6aedf89583d444bbcb227.woff2) format("woff2"),url(/static/montserrat-latin-300italic-54b0bf2c8c4c12ffafd803be2466a790.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/static/montserrat-latin-400-b71748ae4f80ec8c014def4c5fa8688b.woff2) format("woff2"),url(/static/montserrat-latin-400-0659a9f4e90db5cf51b50d005bff1e41.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/static/montserrat-latin-400italic-6eed6b4cbb809c6efc7aa7ddad6dbe3e.woff2) format("woff2"),url(/static/montserrat-latin-400italic-7583622cfde30ae49086d18447ab28e7.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/static/montserrat-latin-500-091b209546e16313fd4f4fc36090c757.woff2) format("woff2"),url(/static/montserrat-latin-500-edd311588712a96bbf435fad264fff62.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/static/montserrat-latin-500italic-c90ced68b46050061d1a41842d6dfb43.woff2) format("woff2"),url(/static/montserrat-latin-500italic-5146cbfe02b1deea5dffea27a5f2f998.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/static/montserrat-latin-600-0480d2f8a71f38db8633b84d8722e0c2.woff2) format("woff2"),url(/static/montserrat-latin-600-b77863a375260a05dd13f86a1cee598f.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/static/montserrat-latin-600italic-cf46ffb11f3a60d7df0567f8851a1d00.woff2) format("woff2"),url(/static/montserrat-latin-600italic-c4fcfeeb057724724097167e57bd7801.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/static/montserrat-latin-700-7dbcc8a5ea2289d83f657c25b4be6193.woff2) format("woff2"),url(/static/montserrat-latin-700-99271a835e1cae8c76ef8bba99a8cc4e.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/static/montserrat-latin-700italic-c41ad6bdb4bd504a843d546d0a47958d.woff2) format("woff2"),url(/static/montserrat-latin-700italic-6779372f04095051c62ed36bc1dcc142.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/static/montserrat-latin-800-db9a3e0ba7eaea32e5f55328ace6cf23.woff2) format("woff2"),url(/static/montserrat-latin-800-4e3c615967a2360f5db87d2f0fd2456f.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/static/montserrat-latin-800italic-bf45bfa14805969eda318973947bc42b.woff2) format("woff2"),url(/static/montserrat-latin-800italic-fe82abb0bcede51bf724254878e0c374.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/static/montserrat-latin-900-e66c7edc609e24bacbb705175669d814.woff2) format("woff2"),url(/static/montserrat-latin-900-8211f418baeb8ec880b80ba3c682f957.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/static/montserrat-latin-900italic-4454c775e48152c1a72510ceed3603e2.woff2) format("woff2"),url(/static/montserrat-latin-900italic-efcaa0f6a82ee0640b83a0916e6e8d68.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:normal;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/static/merriweather-latin-300-fc117160c69a8ea0851b26dd14748ee4.woff2) format("woff2"),url(/static/merriweather-latin-300-58b18067ebbd21fda77b67e73c241d3b.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:italic;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/static/merriweather-latin-300italic-fe29961474f8dbf77c0aa7b9a629e4bc.woff2) format("woff2"),url(/static/merriweather-latin-300italic-23c3f1f88683618a4fb8d265d33d383a.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:normal;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/static/merriweather-latin-400-d9479e8023bef9cbd9bf8d6eabd6bf36.woff2) format("woff2"),url(/static/merriweather-latin-400-040426f99ff6e00b86506452e0d1f10b.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:italic;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/static/merriweather-latin-400italic-2de7bfeaf08fb03d4315d49947f062f7.woff2) format("woff2"),url(/static/merriweather-latin-400italic-79db67aca65f5285964ab332bd65f451.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:normal;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/static/merriweather-latin-700-4b08e01d805fa35d7bf777f1b24314ae.woff2) format("woff2"),url(/static/merriweather-latin-700-22fb8afba4ab1f093b6ef9e28a9b6e92.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:italic;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/static/merriweather-latin-700italic-cd92541b177652fffb6e3b952f1c33f1.woff2) format("woff2"),url(/static/merriweather-latin-700italic-f87f3d87cea0dd0979bfc8ac9ea90243.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:normal;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/static/merriweather-latin-900-f813fc6a4bee46eda5224ac7ebf1b7be.woff2) format("woff2"),url(/static/merriweather-latin-900-5d4e42cb44410674acd99153d57df032.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:italic;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/static/merriweather-latin-900italic-b7901d85486871c1779c0e93ddd85656.woff2) format("woff2"),url(/static/merriweather-latin-900italic-9647f9fdab98756989a8a5550eb205c3.woff) format("woff")}.solarized.base03{color:#002b36}.solarized.base02{color:#073642}.solarized.base01{color:#586e75}.solarized.base00{color:#657b83}.solarized.base0{color:#839496}.solarized.base1{color:#93a1a1}.solarized.base2{color:#eee8d5}.solarized.base3{color:#fdf6e3}.solarized.solar-yellow{color:#b58900}.solarized.solar-orange{color:#cb4b16}.solarized.solar-red{color:#dc322f}.solarized.solar-magenta{color:#d33682}.solarized.solar-violet{color:#6c71c4}.solarized.solar-blue{color:#268bd2}.solarized.solar-cyan{color:#2aa198}.solarized.solar-green{color:#859900}.cm-s-solarized{color-profile:sRGB;rendering-intent:auto;line-height:1.45em}.cm-s-solarized.cm-s-dark{background-color:#002b36;color:#839496;text-shadow:#002b36 0 1px}.cm-s-solarized.cm-s-light{background-color:#fdf6e3;color:#657b83;text-shadow:#eee8d5 0 1px}.cm-s-solarized .CodeMirror-widget{text-shadow:none}.cm-s-solarized .cm-header{color:#586e75}.cm-s-solarized .cm-quote{color:#93a1a1}.cm-s-solarized .cm-keyword{color:#cb4b16}.cm-s-solarized .cm-atom,.cm-s-solarized .cm-number{color:#d33682}.cm-s-solarized .cm-def{color:#2aa198}.cm-s-solarized .cm-variable{color:#839496}.cm-s-solarized .cm-variable-2{color:#b58900}.cm-s-solarized .cm-type,.cm-s-solarized .cm-variable-3{color:#6c71c4}.cm-s-solarized .cm-property{color:#2aa198}.cm-s-solarized .cm-operator{color:#6c71c4}.cm-s-solarized .cm-comment{color:#586e75;font-style:italic}.cm-s-solarized .cm-string{color:#859900}.cm-s-solarized .cm-string-2{color:#b58900}.cm-s-solarized .cm-meta{color:#859900}.cm-s-solarized .cm-qualifier{color:#b58900}.cm-s-solarized .cm-builtin{color:#d33682}.cm-s-solarized .cm-bracket{color:#cb4b16}.cm-s-solarized .CodeMirror-matchingbracket{color:#859900}.cm-s-solarized .CodeMirror-nonmatchingbracket{color:#dc322f}.cm-s-solarized .cm-tag{color:#93a1a1}.cm-s-solarized .cm-attribute{color:#2aa198}.cm-s-solarized .cm-hr{border-top:1px solid #586e75;color:transparent;display:block}.cm-s-solarized .cm-link{color:#93a1a1;cursor:pointer}.cm-s-solarized .cm-special{color:#6c71c4}.cm-s-solarized .cm-em{color:#999;text-decoration:underline;text-decoration-style:dotted}.cm-s-solarized .cm-error,.cm-s-solarized .cm-invalidchar{border-bottom:1px dotted #dc322f;color:#586e75}.cm-s-solarized.cm-s-dark div.CodeMirror-selected{background:#073642}.cm-s-solarized.cm-s-dark.CodeMirror ::selection{background:rgba(7,54,66,.99)}.cm-s-dark .CodeMirror-line>span::-moz-selection,.cm-s-dark .CodeMirror-line>span>span::-moz-selection,.cm-s-solarized.cm-s-dark .CodeMirror-line::-moz-selection{background:rgba(7,54,66,.99)}.cm-s-solarized.cm-s-light div.CodeMirror-selected{background:#eee8d5}.cm-s-light .CodeMirror-line>span::selection,.cm-s-light .CodeMirror-line>span>span::selection,.cm-s-solarized.cm-s-light .CodeMirror-line::selection{background:#eee8d5}.cm-s-ligh .CodeMirror-line>span::-moz-selection,.cm-s-ligh .CodeMirror-line>span>span::-moz-selection,.cm-s-solarized.cm-s-light .CodeMirror-line::-moz-selection{background:#eee8d5}.cm-s-solarized.CodeMirror{box-shadow:inset 7px 0 12px -6px #000}.cm-s-solarized .CodeMirror-gutters{border-right:0}.cm-s-solarized.cm-s-dark .CodeMirror-gutters{background-color:#073642}.cm-s-solarized.cm-s-dark .CodeMirror-linenumber{color:#586e75;text-shadow:#021014 0 -1px}.cm-s-solarized.cm-s-light .CodeMirror-gutters{background-color:#eee8d5}.cm-s-solarized.cm-s-light .CodeMirror-linenumber{color:#839496}.cm-s-solarized .CodeMirror-linenumber{padding:0 5px}.cm-s-solarized .CodeMirror-guttermarker-subtle{color:#586e75}.cm-s-solarized.cm-s-dark .CodeMirror-guttermarker{color:#ddd}.cm-s-solarized.cm-s-light .CodeMirror-guttermarker{color:#cb4b16}.cm-s-solarized .CodeMirror-gutter .CodeMirror-gutter-text{color:#586e75}.cm-s-solarized .CodeMirror-cursor{border-left:1px solid #819090}.cm-s-solarized.cm-s-light.cm-fat-cursor .CodeMirror-cursor{background:#7e7}.cm-s-solarized.cm-s-light .cm-animate-fat-cursor{background-color:#7e7}.cm-s-solarized.cm-s-dark.cm-fat-cursor .CodeMirror-cursor{background:#586e75}.cm-s-solarized.cm-s-dark .cm-animate-fat-cursor{background-color:#586e75}.cm-s-solarized.cm-s-dark .CodeMirror-activeline-background{background:hsla(0,0%,100%,.06)}.cm-s-solarized.cm-s-light .CodeMirror-activeline-background{background:rgba(0,0,0,.06)}ol,ul{margin-left:1em}.gatsby-highlight{background:#fdfaf6;border-bottom:1px solid #eee;border-top:1px solid #eee;margin-bottom:1.75rem;overflow-x:auto;padding:1ex 1em}.gatsby-highlight pre{margin-bottom:0}</style><title data-gatsby-head="true">Nix for Python developers | Asko Soukka</title><link rel="canonical" href="https://datakurre.pandala.org/2015/10/nix-for-python-developers.html/" data-gatsby-head="true"/><link rel="alternate" type="application/rss+xml" title="datakurre" href="/rss.xml"/><link rel="alternate" type="application/rss+xml" title="datakurre on &quot;plone&quot;" href="/feeds/posts/default/-/plone"/><style>.gatsby-image-wrapper{position:relative;overflow:hidden}.gatsby-image-wrapper picture.object-fit-polyfill{position:static!important}.gatsby-image-wrapper img{bottom:0;height:100%;left:0;margin:0;max-width:none;padding:0;position:absolute;right:0;top:0;width:100%;object-fit:cover}.gatsby-image-wrapper [data-main-image]{opacity:0;transform:translateZ(0);transition:opacity .25s linear;will-change:opacity}.gatsby-image-wrapper-constrained{display:inline-block;vertical-align:top}</style><noscript><style>.gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}</style></noscript><script type="module">const e="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;e&&document.body.addEventListener("load",(function(e){const t=e.target;if(void 0===t.dataset.mainImage)return;if(void 0===t.dataset.gatsbyImageSsr)return;let a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector("[data-placeholder-image]"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition="opacity 500ms linear")}))}),!0);</script><link rel="icon" href="/favicon-32x32.png?v=b12376b9b88c2b74e77175e369294c9a" type="image/png"/><link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=b12376b9b88c2b74e77175e369294c9a"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=b12376b9b88c2b74e77175e369294c9a"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=b12376b9b88c2b74e77175e369294c9a"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=b12376b9b88c2b74e77175e369294c9a"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=b12376b9b88c2b74e77175e369294c9a"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=b12376b9b88c2b74e77175e369294c9a"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=b12376b9b88c2b74e77175e369294c9a"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=b12376b9b88c2b74e77175e369294c9a"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div style="margin-left:auto;margin-right:auto;max-width:42rem;padding:2.625rem 1.3125rem"><header><h3 style="font-family:Montserrat, sans-serif;margin-top:0"><a style="box-shadow:none;text-decoration:none;color:inherit" href="/">Asko Soukka</a></h3></header><main class="h-entry"><h1 style="margin-top:1.75rem;margin-bottom:0">Nix for Python developers</h1><span class="p-name" style="display:none">Nix for Python developers</span><img class="u-photo" src="https://datakurre.pandala.org/cover-2015-10-nix-for-python-developers.html.png" alt="" style="display:none"/><a class="p-author h-card" href="https://pandala.org/#datakurre" style="display:none"><img class="u-photo" src="https://datakurre.pandala.org/icon.jpg" alt=""/>Asko Soukka</a><div class="p-summary" style="display:none"><div>About a week ago, I had the pleasure of giving a presentation about my
+Nix
+experiences
+at PyCon Finland 2015. This is an executive
+afterthought summary of that…</div></div><a class="p-category" href="https://datakurre.pandala.org/2015/10/nix-for-python-developers.html/" style="display:none">Python</a><a class="p-category" href="https://datakurre.pandala.org/2015/10/nix-for-python-developers.html/" style="display:none">Docker</a><a class="p-category" href="https://datakurre.pandala.org/2015/10/nix-for-python-developers.html/" style="display:none">Nix</a><a class="u-syndication" href="https://fed.brid.gy/" style="display:none">https://fed.brid.gy/</a><a class="u-syndication" href="https://fediverse.pandala.org/" style="display:none">https://fediverse.pandala.org/</a><a class="u-url u-uid" style="font-size:0.83255rem;line-height:1.75rem;display:block;color:black;box-shadow:none;margin-bottom:1.75rem" href="https://datakurre.pandala.org/2015/10/nix-for-python-developers.html/"><time class="dt-published" datetime="2015-10-28 06:00:00">October 28, 2015</time></a><div class="e-content"><div><p>About a week ago, I had the pleasure of giving a <a href="http://www.slideshare.net/datakurre/nix-for-python-developers">presentation about my
+Nix
+experiences</a>
+at <a href="http://fi.pycon.org/2015/">PyCon Finland 2015</a>. This is an executive
+afterthought summary of that presentation, focusing only on <strong>how to use
+Nix to build development environments</strong>. With a few cool additional
+examples.</p>
+<h2>Installing Nix</h2>
+<p>The easiest way to install Nix for development usage is the default
+single user installation:</p>
+<div class="gatsby-highlight" data-language="shell">
+      <pre class=" cm-s-solarized"><code><span class="cm-def">$ sudo</span><span> </span><span class="cm-builtin">mkdir</span><span> /nix</span><span>
+</span><span class="cm-def">$ bash</span><span> &lt;(curl https://nixos.org/nix/install)</span></code></pre>
+    </div>
+<p>The default installation of Nix would install and build everything under
+that <code>/nix</code>, which makes it easy to uninstall Nix at any point by simply
+deleting that directory. It also comes configured for the latest nixpkgs
+release. (<a href="https://nixos.org/nix/">Nix</a> is just the generic build system
+and package manager, <a href="https://nixos.org/nixpkgs/">nixpkgs</a> is the
+recommended community managed package collection for it.)</p>
+<p>After a successful installation, available packages can searched with:</p>
+<div class="gatsby-highlight" data-language="shell">
+      <pre class=" cm-s-solarized"><code><span>nix-env </span><span class="cm-attribute">-qaP</span><span>|grep </span><span class="cm-attribute">-i</span><span> needle</span></code></pre>
+    </div>
+<p>Alternative installation methods would be to follow that installer
+script manually, build Nix from source or request your Linux
+distribution to package it for you. Read more about all the options and
+basic Nix usage at <a href="http://nixos.org/nix/manual/">Nix Package Manager
+Guide</a>. Building Nix from source would
+allow to choose where stores the build (other place than <code>/nix</code>), but
+that would also prevent it using the community binary caches (by default
+Nix tries to download builds from the community binary cache at first
+and only then build them locally).</p>
+<p>Next you want to create a Nix configuration file <code>/etc/nix/nix.conf</code>
+with the following content of a couple of special configuration flags:</p>
+<div class="gatsby-highlight" data-language="properties">
+      <pre class=" cm-s-solarized"><code><span class="cm-def">gc-keep-outputs </span><span>=</span><span class="cm-quote"> true</span><span>
+</span><span class="cm-def">build-use-chroot </span><span>=</span><span class="cm-quote"> true</span></code></pre>
+    </div>
+<p>Option <code>gc-keep-outputs = true</code> will configure Nix garbage collector to
+be more developer friendly by not collecting build-time-only
+dependencies so easily. Option <code>build-use-chroot</code> will trigger isolated
+builds to ensure that nothing from your existing system can affect Nix
+builds.</p>
+<p>At any point of Nix use, you could clean up <code>/nix</code> and possibly free
+some disk space by simply running its garbage collector:</p>
+<div class="gatsby-highlight" data-language="shell">
+      <pre class=" cm-s-solarized"><code><span class="cm-def">$ nix</span><span class="cm-attribute">-collect-garbage</span><span> </span><span class="cm-attribute">-d</span></code></pre>
+    </div>
+<p>Never ever manually remove files from <code>/nix</code> unless you are completely
+uninstalling it.</p>
+<p>Nix offically supports Linux and OS X. Yet, if you are using OS X, you
+should read <a href="https://nixos.org/wiki/Nix_on_OS_X">special instructions from the wiki for OS
+X</a>. The OS X support has been in
+heavy development lately and not all available packages build yet on OS
+X. In addition to reading thw wiki page, you want to add the following
+lines into <code>/etc/nix/nix.conf</code> to ensure that Nix uses all available
+binary builds also on OS X:</p>
+<div class="gatsby-highlight" data-language="properties">
+      <pre class=" cm-s-solarized"><code><span class="cm-def">binary-caches </span><span>=</span><span class="cm-quote"> https</span><span>:</span><span class="cm-quote">//cache.nixos.org https</span><span>:</span><span class="cm-quote">//hydra.nixos.org</span><span>
+</span><span class="cm-def">use-binary-caches </span><span>=</span><span class="cm-quote"> true</span></code></pre>
+    </div>
+<p>For all OS X related Nix issues, you can get help from ##nix-darwin
+channel at Freenode IRC network.</p>
+<p>The community members told me having used Nix also on Cygwin, FreeBSD,
+OpenBSD, NetBSD, OpenSolaris and SmartOS. Yet, on other systems, you
+would need to learn more about <a href="https://nixos.org/nixpkgs/manual/">how nixpkgs
+work</a> to get on of its standard build
+environments to work on your system.</p>
+<h2>Using Nix</h2>
+<p>Finally, let the fun begin:</p>
+<h3>Run anything with a one-liner</h3>
+<p><code>nix-shell</code> can be used to run anything available in nixpkgs simply
+with:</p>
+<div class="gatsby-highlight" data-language="null">
+      <pre class=" cm-s-solarized"><code><span>$ nix-shell -p package --run "command"</span></code></pre>
+    </div>
+<p>For example:</p>
+<div class="gatsby-highlight" data-language="null">
+      <pre class=" cm-s-solarized"><code><span>$ nix-shell -p python35 --run "python3"</span></code></pre>
+    </div>
+<p>Or:</p>
+<div class="gatsby-highlight" data-language="null">
+      <pre class=" cm-s-solarized"><code><span>$ nix-shell -p redis --run "redis-server"
+$ nix-shell -p nodejs --run "node"
+$ nix-shell -p graphviz --run "dot -V"
+$ nix-shell -p texLive --run "pdflatex --help"</span></code></pre>
+    </div>
+<p>Or with any number of packages:</p>
+<div class="gatsby-highlight" data-language="null">
+      <pre class=" cm-s-solarized"><code><span>$ nix-shell -p redis -p python35Packages.redis --run "python3"</span></code></pre>
+    </div>
+<p>Nix would simply either downloard or build all the defined packages,
+build a combined environment with all of them and then execute the given
+command in that environment. Everything would be installed under <code>/nix</code>
+and cleaned by garbage collector with <code>nix-collect-garbage -d</code>.</p>
+<h3>Get into shell with anything with a one-liner</h3>
+<p>Calling <code>nix-shell</code> without <code>--run</code> would drop you into an interactive
+shell with the required dependencies:</p>
+<div class="gatsby-highlight" data-language="shell">
+      <pre class=" cm-s-solarized"><code><span class="cm-def">$ nix</span><span class="cm-attribute">-shell</span><span> </span><span class="cm-attribute">-p</span><span> texLive </span><span class="cm-attribute">-p</span><span> gnumake </span><span class="cm-attribute">-p</span><span> redis </span><span class="cm-attribute">-p</span><span> python35</span></code></pre>
+    </div>
+<p>Entering <code>exit</code> would exit the shell as usual.</p>
+<p>Additionally, adding <code>--pure</code> into <code>nix-shell</code> arguments, would limit
+PATH and other environment variables to only include the listed packges
+while inside the shell.</p>
+<h3>Define script dependencies in a hashbang</h3>
+<p><code>nix-shell</code> can also be used in a shell script
+<a href="https://en.wikipedia.org/wiki/Shebang_(Unix)">hashbang</a> line to execute
+the script in an environment with any required dependencies:</p>
+<div class="gatsby-highlight" data-language="shell">
+      <pre class=" cm-s-solarized"><code><span class="cm-meta">#! /usr/bin/env nix-shell</span><span>
+</span><span class="cm-meta">#! nix-shell -i python3 -p python35Packages.tornado -p nodejs</span></code></pre>
+    </div>
+<p>The first line <code>#! /usr/bin/env nix-shell</code> is a standard hasbang-line,
+but with <code>nix-shell</code> it can follow any number of <code>#! nix-shell</code> lines
+defining the required dependencies using <code>nix-shell</code> command line
+arguments.</p>
+<p>The most common arguments for nix-shell in hashbang use are:</p>
+<ul>
+<li><code>-p</code> to define packages available in the execution environment</li>
+<li><code>-i</code> to define the interpreter command (from listed packages) used
+to actually run the script.</li>
+</ul>
+<p><a href="https://nixos.org/nix/manual/#sec-nix-shell">More examples are available in the Nix
+manual.</a></p>
+<h3>Build complex development environments with Nix expressions</h3>
+<p>When one-liners are not enough, it’s possible to define a more complete
+development environment using the functional <a href="http://nixos.org/nix/manual/#chap-writing-nix-expressions">Nix expression
+language</a>.
+Both <code>nix-shell</code> and <code>nix-build</code> can take a file with such expression as
+their first optional positional argument. Also both look for a file
+named <code>./default.nix</code> by default.</p>
+<p>You could use the following example as the base for your
+<code>./default.nix</code>:</p>
+<div class="gatsby-highlight" data-language="nix">
+      <pre class=" cm-s-solarized"><code><span>with import &lt;nixpkgs&gt; {};
+stdenv.mkDerivation rec {
+  name = "env";
+
+  # Mandatory boilerplate for buildable env
+  env = buildEnv { name = name; paths = buildInputs; };
+  builder = builtins.toFile "builder.sh" ''
+    source $stdenv/setup; ln -s $env $out
+  '';
+
+  # Customizable development requirements
+  buildInputs = [
+    # Add packages from nix-env -qaP | grep -i needle queries
+    redis
+
+    # With Python configuration requiring a special wrapper
+    (python35.buildEnv.override {
+      ignoreCollisions = true;
+      extraLibs = with python35Packages; [
+        # Add pythonPackages without the prefix
+        redis
+        tornado
+      ];
+    })
+  ];
+
+  # Customizable development shell setup with at last SSL certs set
+  shellHook = ''
+    export SSL_CERT_FILE=${cacert}/etc/ssl/certs/ca-bundle.crt
+  '';
+}</span></code></pre>
+    </div>
+<p>Running</p>
+<div class="gatsby-highlight" data-language="shell">
+      <pre class=" cm-s-solarized"><code><span class="cm-def">$ nix</span><span class="cm-attribute">-build</span></code></pre>
+    </div>
+<p>would now create symlinked directory <code>./result</code> with <code>./result/bin</code> with
+both <code>./result/bin/redis</code> and <code>./result/bin/python3</code> with <em>redis</em> and
+<em>tornado</em> as importable packages. That build is comparable to familiar
+Python <a href="https://pypi.python.org/pypi/virtualenv">virtualenv</a>, but for
+any dependencies, not just Python packages.</p>
+<p>The resulting Python interpreter <code>./result/bin/python3</code> could also be
+used with IDE, e.g. configured as a project interpreter for PyCharm.</p>
+<p>The resulting directory name can be changed from <em>result</em> into something
+else with argument <code>-o myname</code>. The directory also works as a so called
+garbage collection root, which prevents Nix garbage collection from
+clearing it until the directory (symlink) has been renamed, moved or
+deleted.</p>
+<p>Running</p>
+<div class="gatsby-highlight" data-language="shell">
+      <pre class=" cm-s-solarized"><code><span class="cm-def">$ nix</span><span class="cm-attribute">-shell</span></code></pre>
+    </div>
+<p>would enter into an interactive shell with all dependencies in path as
+expected.</p>
+<p>Running</p>
+<div class="gatsby-highlight" data-language="shell">
+      <pre class=" cm-s-solarized"><code><span class="cm-def">$ nix</span><span class="cm-attribute">-shell</span><span> </span><span class="cm-attribute">--run</span><span> </span><span class="cm-string">"python3"</span></code></pre>
+    </div>
+<p>would start that Python interpreter defined in <code>./default.nix</code> with
+<em>tornado</em> and <em>redis</em> packages (and also the redis server available in
+the process’ environment).</p>
+<p>Finally, to turn the environment into a distributable docker container,
+check my <a href="https://github.com/datakurre/nix-build-pack-docker">Nix to Docker build
+pack</a> example at
+GitHub.</p>
+<h3>Add custom dependencies into a Nix expression</h3>
+<p>Sometimes, yet unfortunatley often with Python packages, not all your
+dependencies are defined in nixpkgs already. The best solution, of
+course, would be to make pull requests to add them there, but it’s also
+possible to just define them per project in the very same project
+specific <code>./default.nix</code>.</p>
+<p>For example, let’s upgrade <em>tornado</em> into its latest beta, and add a
+comeletely new Python package, <em>redis_structures</em>, with the following
+dependencies pattern:</p>
+<div class="gatsby-highlight" data-language="nix">
+      <pre class=" cm-s-solarized"><code><span>with import &lt;nixpkgs&gt; {};
+let dependencies = rec {
+
+  # Customized existing packages using expression override
+  _tornado = with python35Packages; tornado.override rec {
+    name = "tornado-4.3b1";
+    src = fetchurl {
+      url = "https://pypi.python.org/packages/source/t/tornado/${name}.tar.gz";
+      sha256 = "c7ddda61d9469c5745f3ac00e480ede0703dd1a4ef540a3d9bd5e03e9796e430";
+    };
+  };
+
+  # Custom new packages using buildPythonPackage expression
+  _redis_structures= with python35Packages; buildPythonPackage rec {
+    name = "redis_structures-0.1.3";
+    src = fetchurl {
+      url = "https://pypi.python.org/packages/source/r/redis_structures/${name}.tar.gz";
+      sha256 = "4076cff3ea91b7852052d963bfd2533c74e8a0054826584e058e685a911f56c5";
+    };
+    # Fix broken packaging (package is missing README.rst)
+    prePatch = "touch README.rst";
+    # Define package requirements (without pythonPackages prefix)
+    propagatedBuildInputs = [ redis ];
+  };
+};
+in with dependencies;
+stdenv.mkDerivation rec {
+  name = "env";
+
+  # Mandatory boilerplate for buildable env
+  env = buildEnv { name = name; paths = buildInputs; };
+  builder = builtins.toFile "builder.sh" ''
+    source $stdenv/setup; ln -s $env $out
+  '';
+
+  # Customizable development requirements
+  buildInputs = [
+    # Add packages from nix-env -qaP | grep -i needle queries
+    redis
+
+    # With Python configuration requiring a special wrapper
+    (python35.buildEnv.override {
+      ignoreCollisions = true;
+      extraLibs = with python35Packages; [
+        # Add pythonPackages without the prefix
+        _tornado
+        _redis_collections
+      ];
+    })
+  ];
+
+  # Customizable development shell setup with at last SSL certs set
+  shellHook = ''
+    export SSL_CERT_FILE=${cacert}/etc/ssl/certs/ca-bundle.crt
+  '';
+}</span></code></pre>
+    </div>
+<p>See the full explanation of <a href="https://nixos.org/nixpkgs/manual/#ssec-build-python-package">buildPythonPackage-expression in nixpkgs
+manual</a>.</p>
+<h2>Generating Nix expressions</h2>
+<p>The only real issue in using Nix with Python is that only a portion of
+packages released at <a href="https://pypi.python.org/">PyPI</a> are available in
+nixpkgs. And those, which are available, have usually only the latest
+version there.</p>
+<p>If it would be trivial to generate Nix-expressions for all public Python
+packages, that would have already been done. Unfortunately, it’s not
+and it’s not been done. And it’s not because of Nix, but because of
+the various imperfect ways how Python packages can define their
+dependencies.</p>
+<p>I was told that things would get better once
+<a href="https://www.python.org/dev/peps/pep-0426/">PEP426</a> is implemented and
+used in practice.</p>
+<p>Nevertheless, there are many tools to try for generating and maintaining
+Nix expressions for Python packages and projects. Each of them may
+emphase different things and may or may not always produce directly
+usable expression:</p>
+<ul>
+<li><a href="https://github.com/garbas/pypi2nix">https://github.com/garbas/pypi2nix</a></li>
+<li><a href="https://github.com/offlinehacker/pypi2nix">https://github.com/offlinehacker/pypi2nix</a></li>
+<li><a href="https://github.com/proger/python2nix">https://github.com/proger/python2nix</a></li>
+<li><a href="https://github.com/ktosiek/pip2nix">https://github.com/ktosiek/pip2nix</a></li>
+<li><a href="https://github.com/datakurre/collective.recipe.nix">https://github.com/datakurre/collective.recipe.nix</a></li>
+</ul>
+<p>Personally I’m using and developing only
+<a href="https://pypi.python.org/pypi/collective.recipe.nix">collective.recipe.nix</a>,
+which is currently only usable out of the box for Python 2.7 projects,
+I’m working on support for Python 3.x projects and easier usage.</p>
+<h2>Full example project</h2>
+<p>Finally, let’s try developing a <a href="https://gist.github.com/datakurre/2076247049dabe16627f">demo Python 3.5 async / await
+HTTP-AMQP-bridge</a>:
+a http-service, which distributes all the request to workers through
+AMQP broker. Just for fun:</p>
+<div class="gatsby-highlight" data-language="shell">
+      <pre class=" cm-s-solarized"><code><span class="cm-def">$ git</span><span> clone https://gist.github.com/datakurre/2076247049dabe16627f</span><span>
+</span><span class="cm-def">$ cd</span><span> 2076247049dabe16627f</span><span>
+</span><span class="cm-def">$ ls</span><span> </span><span class="cm-attribute">-1</span><span>
+</span><span>connection.py</span><span>
+</span><span>default.nix</span><span>
+</span><span>server.py</span><span>
+</span><span>setup.py</span><span>
+</span><span>supervisord.nix</span><span>
+</span><span>worker.py</span></code></pre>
+    </div>
+<p>This project only has a few files:</p>
+<p><code>./setup.py</code></p>
+<p>:   to define the python package</p>
+<p><code>./connection.py</code></p>
+<p>:   to manage the AMQP connection and give a new channel when requested
+(AMQP channels are kind of virtual AMQP connections running on top
+of the one real connection)</p>
+<p><code>./server.py</code></p>
+<p>:   to run a tornado server to handle the incoming requests by passing
+them to AMQP broker and returning the result</p>
+<p><code>./worker.py</code></p>
+<p>:   to handle requests from AMQP broken and return the results back to
+the serer.</p>
+<p><code>./default.nix</code></p>
+<p>:   the nix expression to setup up a development environment with
+RabbitMQ and Python with required packages</p>
+<p><code>./supervisord.nix</code></p>
+<p>:   an alternative nix expression for setting an environment with
+pre-configured supervisord.</p>
+<p>Let see the <code>./default.nix</code> in detail:</p>
+<div class="gatsby-highlight" data-language="nix">
+      <pre class=" cm-s-solarized"><code><span>with import &lt;nixpkgs&gt; {};
+let dependencies = rec {
+  _erlang = erlang.override { wxSupport = false; };
+  _rabbitmq_server = rabbitmq_server.override { erlang = _erlang; };
+  _enabled_plugins = builtins.toFile "enabled_plugins" "[rabbitmq_management].";
+  _tornado = with python35Packages; tornado.override {
+    name = "tornado-4.3b1";
+    src = fetchurl {
+      url = "https://pypi.python.org/packages/source/t/tornado/tornado-4.3b1.tar.gz";
+      sha256 = "c7ddda61d9469c5745f3ac00e480ede0703dd1a4ef540a3d9bd5e03e9796e430";
+    };
+  };
+  _aioamqp = with python35Packages; buildPythonPackage {
+    name = "aioamqp-0.4.0";
+    src = fetchurl {
+      url = "https://pypi.python.org/packages/source/a/aioamqp/aioamqp-0.4.0.tar.gz";
+      sha256 = "4882ca561f1aa88beba3398c8021e7918605c371f4c0019b66c12321edda10bf";
+    };
+  };
+};
+in with dependencies;
+stdenv.mkDerivation rec {
+  name = "env";
+  env = buildEnv { name = name; paths = buildInputs; };
+  builder = builtins.toFile "builder.pl" ''
+    source $stdenv/setup; ln -s $env $out
+  '';
+  buildInputs = [
+    _rabbitmq_server
+    (python35.buildEnv.override {
+      ignoreCollisions = true;
+      extraLibs = [
+        _tornado
+        _aioamqp
+      ];
+    })
+  ];
+  shellHook = ''
+    mkdir -p $PWD/var
+    export RABBITMQ_LOG_BASE=$PWD/var
+    export RABBITMQ_MNESIA_BASE=$PWD/var
+    export RABBITMQ_ENABLED_PLUGINS_FILE=${_enabled_plugins}
+    export SSL_CERT_FILE=${cacert}/etc/ssl/certs/ca-bundle.crt
+    export PYTHONPATH=`pwd`
+  '';
+}</span></code></pre>
+    </div>
+<p>The most interesting part is the <code>shellHook</code> (for the <code>nix-shell</code>
+command) at the end, which configures RabbitMQ server to be run so that
+its state is stored under the current project directory (<code>./var</code>). Also
+note, how <code>builtins.toFile</code> nix command is used to create a project
+specific configuration file for RabbitMQ, to be stored in Nix-store (to
+not bloat the project directory and to be purged with Nix garbage
+collector). Any app supporting configuration using environment variables
+could have a development environment specific configuration in the same
+way.</p>
+<p>To test this out, simply start a few terminals to start RabbitMQ, server
+and workers (as many as you’d like to):</p>
+<div class="gatsby-highlight" data-language="shell">
+      <pre class=" cm-s-solarized"><code><span class="cm-def">$ nix</span><span class="cm-attribute">-shell</span><span> </span><span class="cm-attribute">--run</span><span> </span><span class="cm-string">"rabbitmq-server"</span><span>
+</span><span class="cm-def">$ nix</span><span class="cm-attribute">-shell</span><span> </span><span class="cm-attribute">--run</span><span> </span><span class="cm-string">"python3 server.py"</span><span>
+</span><span class="cm-def">$ nix</span><span class="cm-attribute">-shell</span><span> </span><span class="cm-attribute">--run</span><span> </span><span class="cm-string">"python3 worker.py"</span><span>
+</span><span class="cm-def">$ nix</span><span class="cm-attribute">-shell</span><span> </span><span class="cm-attribute">--run</span><span> </span><span class="cm-string">"python3 worker.py"</span><span>
+</span><span class="cm-def">$ nix</span><span class="cm-attribute">-shell</span><span> </span><span class="cm-attribute">--run</span><span> </span><span class="cm-string">"python3 worker.py"</span></code></pre>
+    </div>
+<p>Then then watch requests getting nicely balanced between all the
+workers:</p>
+<div class="gatsby-highlight" data-language="shell">
+      <pre class=" cm-s-solarized"><code><span class="cm-def">$ ab</span><span> </span><span class="cm-attribute">-n</span><span> </span><span class="cm-number">1000</span><span> </span><span class="cm-attribute">-c</span><span> </span><span class="cm-number">100</span><span> http://localhost:8080/</span></code></pre>
+    </div>
+<p>You can also follow requests through RabbitMQ’s management view at
+<code>http://localhost:15672</code> (user: guest, password: guest).</p>
+<p>If you’d like to develop the project with IDE, just persist the
+environment with:</p>
+<div class="gatsby-highlight" data-language="shell">
+      <pre class=" cm-s-solarized"><code><span class="cm-def">$ nix</span><span class="cm-attribute">-build</span></code></pre>
+    </div>
+<p>And point your IDE (e.g. PyCharm) to use the Python interpreter created
+into <code>./result/bin/python3</code>.</p>
+<p>As an extra, there’s an alternative environment with pre-configured
+supervisord:</p>
+<div class="gatsby-highlight" data-language="shell">
+      <pre class=" cm-s-solarized"><code><span class="cm-def">$ nix</span><span class="cm-attribute">-shell</span><span> supervisord.nix</span><span>
+</span><span>[nix-shell]</span><span class="cm-def">$ supervisord</span><span>
+</span><span>[nix-shell]</span><span class="cm-def">$ supervisorctl</span><span> status</span><span>
+</span><span>rabbitmq                         RUNNING   pid </span><span class="cm-number">17683</span><span>, uptime </span><span class="cm-number">0</span><span>:00:01</span><span>
+</span><span>server                           RUNNING   pid </span><span class="cm-number">17684</span><span>, uptime </span><span class="cm-number">0</span><span>:00:01</span><span>
+</span><span>worker:worker-0                  RUNNING   pid </span><span class="cm-number">17682</span><span>, uptime </span><span class="cm-number">0</span><span>:00:01</span><span>
+</span><span>worker:worker-1                  RUNNING   pid </span><span class="cm-number">17681</span><span>, uptime </span><span class="cm-number">0</span><span>:00:01</span><span>
+</span><span>[nix-shell]</span><span class="cm-def">$ supervisorctl</span><span> shutdown</span><span>
+</span><span>Shut down</span><span>
+</span><span>[nix-shell]</span><span class="cm-def">$ exit</span></code></pre>
+    </div>
+<h2>More information</h2>
+<p>Nix manual, <a href="https://nixos.org/nix/">https://nixos.org/nix/</a></p>
+<p>:   The official generic Nix manual for installing Nix, learning its
+built-in commands and the Nix language</p>
+<p>Nixpkgs manual, <a href="https://nixos.org/nixpkgs/">https://nixos.org/nixpkgs/</a></p>
+<p>:   The Nixpkgs manual for learning conventions and utilities provided
+in the Nix package collection (Nixpkgs)</p>
+<p>Nix planet, <a href="http://planet.nixos.org/">http://planet.nixos.org/</a></p>
+<p>:   Planet for Nix community bloggers</p>
+<p>Nixpills, <a href="http://lethalman.blogspot.fi/search/label/nixpills">http://lethalman.blogspot.fi/search/label/nixpills</a></p>
+<p>:   Famous blog series for learning how Nix really works in depth</p>
+<p>Nix Conf, <a href="http://conf.nixos.org/">http://conf.nixos.org/</a></p>
+<p>:   The first Nix conference site, hopefully hosting slides and links to
+recordings after the conference…</p>
+<p><code>#nixos</code></p>
+<p>:   The Nix, Nixpkgs and NixOS community IRC channel at Freenode</p>
+<p><code>##nix-darwin</code></p>
+<p>:   The Nix Darwin (OS X) user community IRC channel at Freenode</p></div></div><hr style="margin-bottom:1.75rem"/><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li><a rel="prev" href="/2015/09/generating-plone-theming-mockups-with.html/">← <!-- -->Generating Plone theming mockups with Chameleon</a></li><li><a rel="next" href="/2015/11/creating-jupyter-docker-containers-with.html/">Creating Jupyter Docker-containers with Nix<!-- --> →</a></li></ul></main></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/2015/10/nix-for-python-developers.html/";/*]]>*/</script><!-- slice-start id="_gatsby-scripts-1" -->
+          <script
+            id="gatsby-chunk-mapping"
+          >
+            window.___chunkMapping="{\"app\":[\"/app-8e352158238d7a981d99.js\"],\"component---src-pages-404-js\":[\"/component---src-pages-404-js-97805cac34ee32fd2ff3.js\"],\"component---src-pages-index-js\":[\"/component---src-pages-index-js-d702b3556e2e37664238.js\"],\"component---src-templates-blog-post-js\":[\"/component---src-templates-blog-post-js-db3b846139cc4b35992f.js\"],\"component---src-templates-follow-js\":[\"/component---src-templates-follow-js-48b9dd3d02ab9724ef8f.js\"],\"component---src-templates-like-js\":[\"/component---src-templates-like-js-8481525f17b37bf9ff44.js\"]}";
+          </script>
+        <script>window.___webpackCompilationHash="1117cca6506347fc7992";</script><script src="/webpack-runtime-e10ad14bfe4fe997f9f6.js" async></script><script src="/framework-a3d1aa3677a1ff482f17.js" async></script><script src="/app-8e352158238d7a981d99.js" async></script><!-- slice-end id="_gatsby-scripts-1" --></body></html>

@@ -1,0 +1,706 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.75 'Merriweather','Georgia',serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.9);font-family:'Merriweather','Georgia',serif;font-weight:400;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:Montserrat,sans-serif;font-weight:900;text-rendering:optimizeLegibility;font-size:2.5rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.73286rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.4427rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;letter-spacing:0.140625em;text-transform:uppercase;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.83255rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.75966rem;line-height:1.1;font-style:italic;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}ul{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;list-style:disc;}ol{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:0.85rem;line-height:1.75rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1rem;line-height:1.75rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}blockquote{margin-left:-1.75rem;margin-right:1.75rem;margin-top:0;padding-bottom:0;padding-left:1.42188rem;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1.20112rem;line-height:1.75rem;color:hsla(0,0%,0%,0.59);font-style:italic;border-left:0.32813rem solid hsla(0,0%,0%,0.9);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.75rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.75rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}li > ul{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.75rem / 2);}code{font-size:0.85rem;line-height:1.75rem;}kbd{font-size:0.85rem;line-height:1.75rem;}samp{font-size:0.85rem;line-height:1.75rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.16667rem;padding-right:1.16667rem;padding-top:0.875rem;padding-bottom:calc(0.875rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}blockquote > :last-child{margin-bottom:0;}blockquote cite{font-size:1rem;line-height:1.75rem;color:hsla(0,0%,0%,0.9);font-weight:400;}blockquote cite:before{content:"— ";}ul,ol{margin-left:0;}@media only screen and (max-width:480px){ul,ol{margin-left:1.75rem;}blockquote{margin-left:-1.3125rem;margin-right:0;padding-left:0.98438rem;}}h1,h2,h3,h4,h5,h6{margin-top:3.5rem;}a{box-shadow:0 1px 0 0 currentColor;color:#007acc;text-decoration:none;}a:hover,a:active{box-shadow:none;}mark,ins{background:#007acc;color:white;padding:0.10938rem 0.21875rem;text-decoration:none;}a.gatsby-resp-image-link{box-shadow:none;}div.mermaid svg{height:auto !important;}</style><meta name="generator" content="Gatsby 5.2.0"/><meta name="author" content="Asko Soukka" data-gatsby-head="true"/><meta name="description" property="og:description" content="No more custom skins folder with infamous ploneCustom in Plone
+5, they said. Well, they can take away the skins folder, but they cannot take away
+our…" data-gatsby-head="true"/><meta name="title" property="og:title" content="ploneCustom for Plone 5" data-gatsby-head="true"/><meta name="type" property="og:type" content="website" data-gatsby-head="true"/><meta name="twitter:card" content="summary" data-gatsby-head="true"/><meta name="twitter:creator" content="Asko Soukka" data-gatsby-head="true"/><meta name="twitter:title" content="ploneCustom for Plone 5" data-gatsby-head="true"/><meta name="twitter:description" content="No more custom skins folder with infamous ploneCustom in Plone
+5, they said. Well, they can take away the skins folder, but they cannot take away
+our…" data-gatsby-head="true"/><meta name="image" property="og:image" content="https://datakurre.pandala.org/cover-2015-05-plonecustom-for-plone-5.html.png" data-gatsby-head="true"/><meta name="twitter:image" content="https://datakurre.pandala.org/cover-2015-05-plonecustom-for-plone-5.html.png" data-gatsby-head="true"/><meta name="theme-color" content="#663399"/><style data-href="/styles.5caeda19fca28245274c.css" data-identity="gatsby-global-css">@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/static/montserrat-latin-100-8d7d79679b70dbe27172b6460e7a7910.woff2) format("woff2"),url(/static/montserrat-latin-100-ec38980a9e0119a379e2a9b3dbb1901a.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/static/montserrat-latin-100italic-e279051046ba1286706adc886cf1c96b.woff2) format("woff2"),url(/static/montserrat-latin-100italic-3b325a3173c8207435cd1b76e19bf501.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/static/montserrat-latin-200-9d266fbbfa6cab7009bd56003b1eeb67.woff2) format("woff2"),url(/static/montserrat-latin-200-2d8ba08717110d27122e54c34b8a5798.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/static/montserrat-latin-200italic-6e5b3756583bb2263eb062eae992735e.woff2) format("woff2"),url(/static/montserrat-latin-200italic-a0d6f343e4b536c582926255367a57da.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/static/montserrat-latin-300-00b3e893aab5a8fd632d6342eb72551a.woff2) format("woff2"),url(/static/montserrat-latin-300-ea303695ceab35f17e7d062f30e0173b.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/static/montserrat-latin-300italic-56f34ea368f6aedf89583d444bbcb227.woff2) format("woff2"),url(/static/montserrat-latin-300italic-54b0bf2c8c4c12ffafd803be2466a790.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/static/montserrat-latin-400-b71748ae4f80ec8c014def4c5fa8688b.woff2) format("woff2"),url(/static/montserrat-latin-400-0659a9f4e90db5cf51b50d005bff1e41.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/static/montserrat-latin-400italic-6eed6b4cbb809c6efc7aa7ddad6dbe3e.woff2) format("woff2"),url(/static/montserrat-latin-400italic-7583622cfde30ae49086d18447ab28e7.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/static/montserrat-latin-500-091b209546e16313fd4f4fc36090c757.woff2) format("woff2"),url(/static/montserrat-latin-500-edd311588712a96bbf435fad264fff62.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/static/montserrat-latin-500italic-c90ced68b46050061d1a41842d6dfb43.woff2) format("woff2"),url(/static/montserrat-latin-500italic-5146cbfe02b1deea5dffea27a5f2f998.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/static/montserrat-latin-600-0480d2f8a71f38db8633b84d8722e0c2.woff2) format("woff2"),url(/static/montserrat-latin-600-b77863a375260a05dd13f86a1cee598f.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/static/montserrat-latin-600italic-cf46ffb11f3a60d7df0567f8851a1d00.woff2) format("woff2"),url(/static/montserrat-latin-600italic-c4fcfeeb057724724097167e57bd7801.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/static/montserrat-latin-700-7dbcc8a5ea2289d83f657c25b4be6193.woff2) format("woff2"),url(/static/montserrat-latin-700-99271a835e1cae8c76ef8bba99a8cc4e.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/static/montserrat-latin-700italic-c41ad6bdb4bd504a843d546d0a47958d.woff2) format("woff2"),url(/static/montserrat-latin-700italic-6779372f04095051c62ed36bc1dcc142.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/static/montserrat-latin-800-db9a3e0ba7eaea32e5f55328ace6cf23.woff2) format("woff2"),url(/static/montserrat-latin-800-4e3c615967a2360f5db87d2f0fd2456f.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/static/montserrat-latin-800italic-bf45bfa14805969eda318973947bc42b.woff2) format("woff2"),url(/static/montserrat-latin-800italic-fe82abb0bcede51bf724254878e0c374.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/static/montserrat-latin-900-e66c7edc609e24bacbb705175669d814.woff2) format("woff2"),url(/static/montserrat-latin-900-8211f418baeb8ec880b80ba3c682f957.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/static/montserrat-latin-900italic-4454c775e48152c1a72510ceed3603e2.woff2) format("woff2"),url(/static/montserrat-latin-900italic-efcaa0f6a82ee0640b83a0916e6e8d68.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:normal;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/static/merriweather-latin-300-fc117160c69a8ea0851b26dd14748ee4.woff2) format("woff2"),url(/static/merriweather-latin-300-58b18067ebbd21fda77b67e73c241d3b.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:italic;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/static/merriweather-latin-300italic-fe29961474f8dbf77c0aa7b9a629e4bc.woff2) format("woff2"),url(/static/merriweather-latin-300italic-23c3f1f88683618a4fb8d265d33d383a.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:normal;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/static/merriweather-latin-400-d9479e8023bef9cbd9bf8d6eabd6bf36.woff2) format("woff2"),url(/static/merriweather-latin-400-040426f99ff6e00b86506452e0d1f10b.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:italic;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/static/merriweather-latin-400italic-2de7bfeaf08fb03d4315d49947f062f7.woff2) format("woff2"),url(/static/merriweather-latin-400italic-79db67aca65f5285964ab332bd65f451.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:normal;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/static/merriweather-latin-700-4b08e01d805fa35d7bf777f1b24314ae.woff2) format("woff2"),url(/static/merriweather-latin-700-22fb8afba4ab1f093b6ef9e28a9b6e92.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:italic;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/static/merriweather-latin-700italic-cd92541b177652fffb6e3b952f1c33f1.woff2) format("woff2"),url(/static/merriweather-latin-700italic-f87f3d87cea0dd0979bfc8ac9ea90243.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:normal;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/static/merriweather-latin-900-f813fc6a4bee46eda5224ac7ebf1b7be.woff2) format("woff2"),url(/static/merriweather-latin-900-5d4e42cb44410674acd99153d57df032.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:italic;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/static/merriweather-latin-900italic-b7901d85486871c1779c0e93ddd85656.woff2) format("woff2"),url(/static/merriweather-latin-900italic-9647f9fdab98756989a8a5550eb205c3.woff) format("woff")}.solarized.base03{color:#002b36}.solarized.base02{color:#073642}.solarized.base01{color:#586e75}.solarized.base00{color:#657b83}.solarized.base0{color:#839496}.solarized.base1{color:#93a1a1}.solarized.base2{color:#eee8d5}.solarized.base3{color:#fdf6e3}.solarized.solar-yellow{color:#b58900}.solarized.solar-orange{color:#cb4b16}.solarized.solar-red{color:#dc322f}.solarized.solar-magenta{color:#d33682}.solarized.solar-violet{color:#6c71c4}.solarized.solar-blue{color:#268bd2}.solarized.solar-cyan{color:#2aa198}.solarized.solar-green{color:#859900}.cm-s-solarized{color-profile:sRGB;rendering-intent:auto;line-height:1.45em}.cm-s-solarized.cm-s-dark{background-color:#002b36;color:#839496;text-shadow:#002b36 0 1px}.cm-s-solarized.cm-s-light{background-color:#fdf6e3;color:#657b83;text-shadow:#eee8d5 0 1px}.cm-s-solarized .CodeMirror-widget{text-shadow:none}.cm-s-solarized .cm-header{color:#586e75}.cm-s-solarized .cm-quote{color:#93a1a1}.cm-s-solarized .cm-keyword{color:#cb4b16}.cm-s-solarized .cm-atom,.cm-s-solarized .cm-number{color:#d33682}.cm-s-solarized .cm-def{color:#2aa198}.cm-s-solarized .cm-variable{color:#839496}.cm-s-solarized .cm-variable-2{color:#b58900}.cm-s-solarized .cm-type,.cm-s-solarized .cm-variable-3{color:#6c71c4}.cm-s-solarized .cm-property{color:#2aa198}.cm-s-solarized .cm-operator{color:#6c71c4}.cm-s-solarized .cm-comment{color:#586e75;font-style:italic}.cm-s-solarized .cm-string{color:#859900}.cm-s-solarized .cm-string-2{color:#b58900}.cm-s-solarized .cm-meta{color:#859900}.cm-s-solarized .cm-qualifier{color:#b58900}.cm-s-solarized .cm-builtin{color:#d33682}.cm-s-solarized .cm-bracket{color:#cb4b16}.cm-s-solarized .CodeMirror-matchingbracket{color:#859900}.cm-s-solarized .CodeMirror-nonmatchingbracket{color:#dc322f}.cm-s-solarized .cm-tag{color:#93a1a1}.cm-s-solarized .cm-attribute{color:#2aa198}.cm-s-solarized .cm-hr{border-top:1px solid #586e75;color:transparent;display:block}.cm-s-solarized .cm-link{color:#93a1a1;cursor:pointer}.cm-s-solarized .cm-special{color:#6c71c4}.cm-s-solarized .cm-em{color:#999;text-decoration:underline;text-decoration-style:dotted}.cm-s-solarized .cm-error,.cm-s-solarized .cm-invalidchar{border-bottom:1px dotted #dc322f;color:#586e75}.cm-s-solarized.cm-s-dark div.CodeMirror-selected{background:#073642}.cm-s-solarized.cm-s-dark.CodeMirror ::selection{background:rgba(7,54,66,.99)}.cm-s-dark .CodeMirror-line>span::-moz-selection,.cm-s-dark .CodeMirror-line>span>span::-moz-selection,.cm-s-solarized.cm-s-dark .CodeMirror-line::-moz-selection{background:rgba(7,54,66,.99)}.cm-s-solarized.cm-s-light div.CodeMirror-selected{background:#eee8d5}.cm-s-light .CodeMirror-line>span::selection,.cm-s-light .CodeMirror-line>span>span::selection,.cm-s-solarized.cm-s-light .CodeMirror-line::selection{background:#eee8d5}.cm-s-ligh .CodeMirror-line>span::-moz-selection,.cm-s-ligh .CodeMirror-line>span>span::-moz-selection,.cm-s-solarized.cm-s-light .CodeMirror-line::-moz-selection{background:#eee8d5}.cm-s-solarized.CodeMirror{box-shadow:inset 7px 0 12px -6px #000}.cm-s-solarized .CodeMirror-gutters{border-right:0}.cm-s-solarized.cm-s-dark .CodeMirror-gutters{background-color:#073642}.cm-s-solarized.cm-s-dark .CodeMirror-linenumber{color:#586e75;text-shadow:#021014 0 -1px}.cm-s-solarized.cm-s-light .CodeMirror-gutters{background-color:#eee8d5}.cm-s-solarized.cm-s-light .CodeMirror-linenumber{color:#839496}.cm-s-solarized .CodeMirror-linenumber{padding:0 5px}.cm-s-solarized .CodeMirror-guttermarker-subtle{color:#586e75}.cm-s-solarized.cm-s-dark .CodeMirror-guttermarker{color:#ddd}.cm-s-solarized.cm-s-light .CodeMirror-guttermarker{color:#cb4b16}.cm-s-solarized .CodeMirror-gutter .CodeMirror-gutter-text{color:#586e75}.cm-s-solarized .CodeMirror-cursor{border-left:1px solid #819090}.cm-s-solarized.cm-s-light.cm-fat-cursor .CodeMirror-cursor{background:#7e7}.cm-s-solarized.cm-s-light .cm-animate-fat-cursor{background-color:#7e7}.cm-s-solarized.cm-s-dark.cm-fat-cursor .CodeMirror-cursor{background:#586e75}.cm-s-solarized.cm-s-dark .cm-animate-fat-cursor{background-color:#586e75}.cm-s-solarized.cm-s-dark .CodeMirror-activeline-background{background:hsla(0,0%,100%,.06)}.cm-s-solarized.cm-s-light .CodeMirror-activeline-background{background:rgba(0,0,0,.06)}ol,ul{margin-left:1em}.gatsby-highlight{background:#fdfaf6;border-bottom:1px solid #eee;border-top:1px solid #eee;margin-bottom:1.75rem;overflow-x:auto;padding:1ex 1em}.gatsby-highlight pre{margin-bottom:0}</style><title data-gatsby-head="true">ploneCustom for Plone 5 | Asko Soukka</title><link rel="canonical" href="https://datakurre.pandala.org/2015/05/plonecustom-for-plone-5.html/" data-gatsby-head="true"/><link rel="alternate" type="application/rss+xml" title="datakurre" href="/rss.xml"/><link rel="alternate" type="application/rss+xml" title="datakurre on &quot;plone&quot;" href="/feeds/posts/default/-/plone"/><style>.gatsby-image-wrapper{position:relative;overflow:hidden}.gatsby-image-wrapper picture.object-fit-polyfill{position:static!important}.gatsby-image-wrapper img{bottom:0;height:100%;left:0;margin:0;max-width:none;padding:0;position:absolute;right:0;top:0;width:100%;object-fit:cover}.gatsby-image-wrapper [data-main-image]{opacity:0;transform:translateZ(0);transition:opacity .25s linear;will-change:opacity}.gatsby-image-wrapper-constrained{display:inline-block;vertical-align:top}</style><noscript><style>.gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}</style></noscript><script type="module">const e="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;e&&document.body.addEventListener("load",(function(e){const t=e.target;if(void 0===t.dataset.mainImage)return;if(void 0===t.dataset.gatsbyImageSsr)return;let a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector("[data-placeholder-image]"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition="opacity 500ms linear")}))}),!0);</script><link rel="icon" href="/favicon-32x32.png?v=b12376b9b88c2b74e77175e369294c9a" type="image/png"/><link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=b12376b9b88c2b74e77175e369294c9a"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=b12376b9b88c2b74e77175e369294c9a"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=b12376b9b88c2b74e77175e369294c9a"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=b12376b9b88c2b74e77175e369294c9a"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=b12376b9b88c2b74e77175e369294c9a"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=b12376b9b88c2b74e77175e369294c9a"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=b12376b9b88c2b74e77175e369294c9a"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=b12376b9b88c2b74e77175e369294c9a"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div style="margin-left:auto;margin-right:auto;max-width:42rem;padding:2.625rem 1.3125rem"><header><h3 style="font-family:Montserrat, sans-serif;margin-top:0"><a style="box-shadow:none;text-decoration:none;color:inherit" href="/">Asko Soukka</a></h3></header><main class="h-entry"><h1 style="margin-top:1.75rem;margin-bottom:0">ploneCustom for Plone 5</h1><span class="p-name" style="display:none">ploneCustom for Plone 5</span><img class="u-photo" src="https://datakurre.pandala.org/cover-2015-05-plonecustom-for-plone-5.html.png" alt="" style="display:none"/><a class="p-author h-card" href="https://pandala.org/#datakurre" style="display:none"><img class="u-photo" src="https://datakurre.pandala.org/icon.jpg" alt=""/>Asko Soukka</a><div class="p-summary" style="display:none"><div>No more custom skins folder with infamous ploneCustom in Plone
+5, they said. Well, they can take away the skins folder, but they cannot take away
+our…</div></div><a class="p-category" href="https://datakurre.pandala.org/2015/05/plonecustom-for-plone-5.html/" style="display:none">Plone</a><a class="p-category" href="https://datakurre.pandala.org/2015/05/plonecustom-for-plone-5.html/" style="display:none">RequireJS</a><a class="p-category" href="https://datakurre.pandala.org/2015/05/plonecustom-for-plone-5.html/" style="display:none">TTW</a><a class="u-syndication" href="https://fed.brid.gy/" style="display:none">https://fed.brid.gy/</a><a class="u-syndication" href="https://fediverse.pandala.org/" style="display:none">https://fediverse.pandala.org/</a><a class="u-url u-uid" style="font-size:0.83255rem;line-height:1.75rem;display:block;color:black;box-shadow:none;margin-bottom:1.75rem" href="https://datakurre.pandala.org/2015/05/plonecustom-for-plone-5.html/"><time class="dt-published" datetime="2015-05-12 06:00:00">May 12, 2015</time></a><div class="e-content"><div><p><strong>No more custom</strong> skins folder with infamous <strong>ploneCustom</strong> in Plone
+5, they said.</p>
+<p>Well, they can take away the skins folder, but <strong>they cannot take away
+our ploneCustom</strong>. I know, that the recommended way of customizing Plone
+5 is via a custom theme through the Theming control panel from Site
+Setup. Still, sometimes you only need to add a few custom rules on top
+of an existing theme and creating a completely new theme would feel like
+an overkill.</p>
+<h2>Meet the new resource registry</h2>
+<p>One of the many big changes in Plone 5 is the completely new way how CSS
+and JavaScript resources are managed. Plone 5 introduces a completely
+new <strong>Resource Registries</strong> control panel and two new concepts to manage
+CSS ja JavaScipt there: <strong>resources</strong> and <strong>resource bundles</strong>.</p>
+<p><strong>Resource</strong> is a single CSS / LESS file, a single JavaScript file, or
+one of both, to provide some named feature for Plone 5. For example, a
+new embedded JavaScript based applet could be defined as a resource
+containing both its JavaScript code and required CSS /LESS stylesheet.
+In addition to those single files, JavaScript-files can depend on named
+requirejs modules provided by the other resources. Also LESS files can
+include any amount of available other LESS files. <em>(LESS is superset of
+CSS with some optional superpowers like hierarchical directives,
+variables or optimized includes.)</em></p>
+<p><strong>Resource Bundle</strong> is a composition of named <strong>resources</strong>, which is
+eventually built into a single JavaScript and/or CSS file to be linked
+with each rendered page. When the page is rendered, bundles are linked
+(using either script-tags or stylesheet link-tags) in an order depending
+on their mutual dependencies. Bundles can be disabled and they can have
+conditions, so bundles are somewhat comparable to the legacy resource
+registry registrations in Plone 4 and earlier.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/e784d9b059cc4b5b5343fbb9f75c46dd/748b0/08_bundle_ploneCustom.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 72.97297297297297%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAIAAABr+ngCAAAACXBIWXMAAAsSAAALEgHS3X78AAACNUlEQVQoz01Sy27UMBTNL7Gv+BaWfAFrVtBfQCzoDrEEJCRmMwV1OlIp0zKdIioNtGnek8SJ7cSxYyfhJGlgTq5uLNvnPo6v5RAmleScKaXKsmCMVVUFn+c5Flpr7Kdp2u/QnOf80v82u/2YZRlOrSROCMlv72z8Xde3bYcXIknTMAzLsjTGgIxARVFwzgtW/Npdn7rHlFEppZVENzS759TJyR3N7JJ5tYy0FnWtcSyEABkh9ISmadqmxU5d11bq37RV0hraNqz3hjY6U7IMwyiOY0IIciIKaPUEhW+A5W6u6XLRdl1v7WBdh8BJgnZI27ao2XEceL2HPoRS1v3XOc2yDkzUMwHHkCQIAtxACNu2Pc+DBBAJjYy+J0dnS7oLQej2gMBIPkbZ7XbI7LouaoHs6AUehfRlf1+uNp8+M2n4ZKwystZJEkNwhMDt8ep+2RACya2nL94/efb24PDHwcsL2OPDi0fPz2dXSadFllNwQI6iXjw0oiag8r7s+fz8w7vZ6y/e0SJ8cxIcLYJXx/42LAqWe56PS6UQbMCYrRrw0HP48yo9W0Ct/Z5HPUeP+lNCkBbKpROw7odku1p5pyem7Uzz30BUSiKDlCrOK/Ca4S3MHnrBkj/bbHNptPpnGGecQeH1el3gfUQ/6mLAOG3jwPVkSn6rmmgZ13I3WKwqPC9FViFKlJBmFK8F5X3fh+zlgIeeOY21KhpTTSaN5koWWg/htfFjGoYBpZQMnY+vjQV6/gtFs0ipwfBsVgAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="image"
+        title="image"
+        src="/static/e784d9b059cc4b5b5343fbb9f75c46dd/fcda8/08_bundle_ploneCustom.png"
+        srcset="/static/e784d9b059cc4b5b5343fbb9f75c46dd/12f09/08_bundle_ploneCustom.png 148w,
+/static/e784d9b059cc4b5b5343fbb9f75c46dd/e4a3f/08_bundle_ploneCustom.png 295w,
+/static/e784d9b059cc4b5b5343fbb9f75c46dd/fcda8/08_bundle_ploneCustom.png 590w,
+/static/e784d9b059cc4b5b5343fbb9f75c46dd/748b0/08_bundle_ploneCustom.png 868w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span>
+width=“780px”}</p>
+<p>Now that you should be familiar with the concepts, you can bring our
+precious <strong>ploneCustom</strong> back to life.</p>
+<h2>Defining the next generation ploneCustom</h2>
+<p>These steps will define a new <strong>ploneCustom</strong> bundle, which provides
+both a custom CSS (with LESS) and a custom JavaScript file to allow
+arbitrary site customizations without introducing a new theme.</p>
+<h3>Creating and editing</h3>
+<p>At first, you need to add the actual LESS and JavaScript files. Instead
+of the deprecated skins custom folder you can add them into your Plone 5
+site by using the old friend, ZMI (Zope Management Interface).</p>
+<p>If you are running evelopment site, please, open the following url:
+<em><a href="http://localhost:8080/Plone/portal%5C_resources/manage%5C_main">http://localhost:8080/Plone/portal\_resources/manage\_main</a></em></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 562px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/da6711db6a7a90f8cb7ecda1e8519a5f/6e88f/01_portal_resources.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 35.13513513513513%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAIAAACHqfpvAAAACXBIWXMAAAsSAAALEgHS3X78AAABGklEQVQY05WQS2vCQBSF5yf7C/xLsWaS0oJiV6GLhhYlkFAVgk7mkc4jM5mYh6aj3Qjtpt/icBf3nnO4YDqdTiaTl9VqsVj6EPrQD8MgCGEYwvl8BgP/+ekxCODsYeaAbmHutqDneVEUgTh+jeM3XWkpJedfnEtGK0ZlUQhMboqVlKaua2OMtba+8TMDxvLt9jNLsyRJ9vtdnuPNpswy9vFO05Sv12Uck6JQXXuytnEHTdOcmqZt277vwfiLYegpxWWJCUGUYc7Lyx3j5bzcjTliSgrgOlRV5VRrrZRyfQQXjJUIFYRQjJ0FHYbhfIe0FxffdR0wWiOE8A0hhDt2FrW9Ompjrqr1NfAvgPsAQsfD4XBEx7brx//wDaIIfd1mwEXrAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="image"
+        title="image"
+        src="/static/da6711db6a7a90f8cb7ecda1e8519a5f/6e88f/01_portal_resources.png"
+        srcset="/static/da6711db6a7a90f8cb7ecda1e8519a5f/12f09/01_portal_resources.png 148w,
+/static/da6711db6a7a90f8cb7ecda1e8519a5f/e4a3f/01_portal_resources.png 295w,
+/static/da6711db6a7a90f8cb7ecda1e8519a5f/6e88f/01_portal_resources.png 562w"
+        sizes="(max-width: 562px) 100vw, 562px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<p>This <strong>portal_resources</strong> is the new database (ZODB) based storage for
+any kind of custom resources (introduced with the new Theming control
+panel in Plone 4.3). Its functionality is based on
+<a href="https://pypi.python.org/pypi/plone.resource">plone.resource</a>, but right
+now you only need to know how to use it with Plone 5 resource
+registries.</p>
+<ol>
+<li>
+<p>So, in <strong>portal_resources</strong>, <strong>add</strong> a new <strong>BTreeFolder2</strong> with
+name <em>plone</em>:</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 544px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/d73f98adb85698fe906418bfceb40ec5/b3e51/02_portal_resources.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 45.94594594594595%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAIAAAC9o5sfAAAACXBIWXMAAAsSAAALEgHS3X78AAABLklEQVQoz3VP247CIBTk/79t1a7RpYWW2hboRYumy0ZLbztiTHzQCUyGwzkDQ76DTRAEu91uvd6sVl/b7bY1xlrbdb9vYe19eWGJkjLPc60VuK7rpqm01qfT6Xg8VuUdxhhUHqJpagilddu2GCfoqKsS15fLZZ7ncZzc4KZpGqGePAzD6DF5xhHFaZ5JkiSMsTCkjEVpmgqR8DhGEQwkkHHCGec8FqnY7/chDaWU5nx2biCYoZSij4Y0iiIwiyKRoDOFwBWsY84Ph4MQImLsh1IIPGbtH5FFUcgCafM8U0oX8l5AjCzPlVJZlrWtwffx1b7vXd8jgMOjziEjKauy67qzMcuyzE/4RMg/gn19eQuCmFVd32633sO9AMeHC8ZfLby/H8a+Xq+INH/y/4x/U5v3YX2YEP0AAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="image"
+        title="image"
+        src="/static/d73f98adb85698fe906418bfceb40ec5/b3e51/02_portal_resources.png"
+        srcset="/static/d73f98adb85698fe906418bfceb40ec5/12f09/02_portal_resources.png 148w,
+/static/d73f98adb85698fe906418bfceb40ec5/e4a3f/02_portal_resources.png 295w,
+/static/d73f98adb85698fe906418bfceb40ec5/b3e51/02_portal_resources.png 544w"
+        sizes="(max-width: 544px) 100vw, 544px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+</li>
+<li>
+<p>Then navigate into that folder (select <em>plone</em> and press <em>Edit</em>
+button) and <strong>add</strong> an another <strong>BTreeFolder2</strong> with name <em>custom</em>
+and navigate into that folder until you are at
+<em>portal_resources/plone/custom</em>:</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 556px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/5694624af9aef7e611da15936aa3c4f7/96638/03_portal_resources.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 34.45945945945946%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAIAAACHqfpvAAAACXBIWXMAAAsSAAALEgHS3X78AAABKklEQVQY032Py26DMBBF+c/0Z5rvaQIGmu7TTZRVFVU8mgdSSgEb22CbV+JgMu02Uq9GI+vYnrnXms2e5vPn9Xrt+/5q9YYQcpHtush1Hcde+q8ecmzfd5f2AqDvocXixXEQ3LmeZ20274fDXkrJGKtBQuW5pFQQDEQSIjGBgyJYcK7KsmFc9f3Q9X3X9db5HJ2SJIriMAyT5JSmZLcjhz0OgvJ45FFE45gFQR6GOI6L7TaLv+j10l2Gbhgu1vQgra+EFCUtMM7z4odSorUGbowZjZmm8RNPH+eWkcxSSgkpfruowXzTNIxxSlmeZaQslWrAnr6BRih9Gycz0saUSsNyS9QQhkNYxllVVVIK6G3bAoFB07+y6oqfIHSSfKcpzH94YB7/gHfzh+/Ygnu7sIg5wQAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="image"
+        title="image"
+        src="/static/5694624af9aef7e611da15936aa3c4f7/96638/03_portal_resources.png"
+        srcset="/static/5694624af9aef7e611da15936aa3c4f7/12f09/03_portal_resources.png 148w,
+/static/5694624af9aef7e611da15936aa3c4f7/e4a3f/03_portal_resources.png 295w,
+/static/5694624af9aef7e611da15936aa3c4f7/96638/03_portal_resources.png 556w"
+        sizes="(max-width: 556px) 100vw, 556px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+</li>
+<li>
+<p>Now <strong>Add</strong> a new <strong>File</strong> named <em>ploneCustom.js</em> and another named
+<em>ploneCustom.less</em>:</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 545px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/9a4ff060d224a3e412bda3b1ca88b362/3ddad/04_portal_resources.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 32.43243243243243%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAIAAABM9SnKAAAACXBIWXMAAAsSAAALEgHS3X78AAAAq0lEQVQY04WOwQ6DIBiDef/Hc57EkzJ/QGSBSIaD6aok7uT2nfqnpZTdqqqua940c5h3whzCocKX8yriPNkw3Ec9AvuwQghJNGptzKSVUlrDlVLCJSIJjwgZOL3oY4zMGIMOpSQavPcppddB2lXKOb8vWNeVtS2XUnnnrLXPZyxGqViWBYntGtZyPlmLbzGDaMCwvuuc8/DQsv2EIYHZnHMszCnlfW76+6zwAeEOWFsRJIx7AAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="image"
+        title="image"
+        src="/static/9a4ff060d224a3e412bda3b1ca88b362/3ddad/04_portal_resources.png"
+        srcset="/static/9a4ff060d224a3e412bda3b1ca88b362/12f09/04_portal_resources.png 148w,
+/static/9a4ff060d224a3e412bda3b1ca88b362/e4a3f/04_portal_resources.png 295w,
+/static/9a4ff060d224a3e412bda3b1ca88b362/3ddad/04_portal_resources.png 545w"
+        sizes="(max-width: 545px) 100vw, 545px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+</li>
+<li>
+<p>And, finally, you can navigate into those files (select and press
+<em>Edit</em> button) to edit and save them with your CSS and JavaScript:</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 543px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/9b2925a943d3bda83e9c565664cbb907/29579/06_portal_resources.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 115.54054054054055%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAXCAIAAACEf/j0AAAACXBIWXMAAAsSAAALEgHS3X78AAACKklEQVQ4y+2U6XKbMBDH9XSZ5j0z/dr6CHZDJ69QgzEWw40AHQZsiI2vGLJA7alzTNrv/Q1opOW/2hXsgr7c3t7c3PT6vcdHedD/Jsuj+/tef/D94UEaDvs/HkbS6F6SBiNpMBj2ZFkaj4eS1P8pj+/uvqIoDEkY5nkhxJbGOedrxop23FCaM7pmvFnGcQ5XEDx53pKQJ8GLw36LGGOWbVPGMBYYwwjL1DA4ngvT5PM5tyzeLA2u67GicHXCVBWMdP20QoQQxqjjOL5vx1HguQ4J/SiCbDzbMaPQ9wOXEI+EXhQFYIxpAErXtSllaKqqiqJgA+u6riiqNpspygRjA1BVbTqdapr2azKZ6TpMJhPFwKAEOeZCINFSFHm2zBYtWbZM0wQmYAdjkiSQGgjAkiSLvCjquq5akG1bSZrC+nQ61S37lsOZU8tzSyeoqsYZbuS6DgYMbNt290xw4fkepTEJAs4F+BzP1NcgyzLheDNNi2N66AIeD6DrgsO4O7Pdbo/XIIhgWqZpWRB+Pp+7rsc4W282l1RPHwBbozxfNYm1qcHkcs76M0CMQHptrOq/o3F++xr+O/+jc1u2vyeff6rqDdcbVe8KmgpryvFMVx6r5TKMQmjXkJCyLP+s7Q4wlOXRdDL0KhSwLcvVCnaAxkwvnfSKU1Xt9s8oCHwobSEWl0PmeZ4kKXQCdPRC8CiKd/v9u1ugroG619Y5Z1kK/xMI3hyk7e2PSv0FspkYgeqckeoAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="image"
+        title="image"
+        src="/static/9b2925a943d3bda83e9c565664cbb907/29579/06_portal_resources.png"
+        srcset="/static/9b2925a943d3bda83e9c565664cbb907/12f09/06_portal_resources.png 148w,
+/static/9b2925a943d3bda83e9c565664cbb907/e4a3f/06_portal_resources.png 295w,
+/static/9b2925a943d3bda83e9c565664cbb907/29579/06_portal_resources.png 543w"
+        sizes="(max-width: 543px) 100vw, 543px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<p>The example JavaScript above would only annoy to to tell that it
+works:</p>
+<div class="gatsby-highlight" data-language="js">
+      <pre class=" cm-s-solarized"><code><span>jQuery(function($) {
+    alert("Hello World!");
+});</span></code></pre>
+    </div>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 544px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/8d47972537a276137bdcb76d32913771/b3e51/05_portal_resources.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 117.56756756756756%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAYCAIAAAB1KUohAAAACXBIWXMAAAsSAAALEgHS3X78AAACqUlEQVQ4y61U6XKbQAzed8pb5EVb3860fYQmP9L6wOYwh8HmsGEXljUYg81RAU3iZnqk034jCyTtJ7TSrtHNzc3t7e3HTx/G40Gn8+7ubjjod+FlfDfo9brDUX8w7Pf63dGw3+m+H4364zGYndGoNxwOkKpppmlGUUzw0fMYITFojCN4cd2Q4Bjj2rnfh43EpkV3u8N+HwU0Rroqi5Jkbp3pdM9x1mxmiYLLcTtuvuOXzmRiLZcWN3fmnDObmff31sOD+fhof743DcNHAQ0ODFLuCNnTgGDPDUOfEM8nHvZ2lPrE93wfQ6gWSiAaUMwY+DGSV5KqqrIs11pRJChDFHTd0DRNEER5VUMEp7RSFBU0+BcLnuMWxmaL+GUNVVN5nl8sFrBKEISVBARxyfOiCJYwnU70NeQSOG6uKirGUEXAGEOu62ZZVlVVWZZ5nhdF0ajvKBs8+1uzegKSVpLtOBh7AaVtChaGlNIQwFgQBPC8NDifzw2lfAZaayrscwGNtuw2QgNoGAapH55HfP9H8gvQl6U2FbSZsBY0S9l4xo768YWlZZiUNCnCU61JdGklOBat0GPhRQXSYcKTr5quyyt5MplCnxRVjeO4vAZUdCVF89ljViLHJdutYdu2T/DGMGCjSZKkaVr9Gm3HknOJhJUGw9QNY62tN5vNVS/fQA5YAu09HhMo9ZSc2p69lQy/Z/uNuCJn5fXo/pL8T1/+3+Trof6WfEjLoqzORXV5krzZey1VBXfhchVqBRYDhcY5YqeSnSo4hmEChy4/pJVuk6Vi8oo5F9eYpeCB0CuBEyquY5Rl6TlLi7x4qecYR4dDHEdwQSCUX84/nUJ9q+BIKopCQwZ20SzCGFu2HR/hD9D1PNe2nNMpfdWJNhl6lQw03GFIF0XRH9v+DQZYRgiWMgeOAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="image"
+        title="image"
+        src="/static/8d47972537a276137bdcb76d32913771/b3e51/05_portal_resources.png"
+        srcset="/static/8d47972537a276137bdcb76d32913771/12f09/05_portal_resources.png 148w,
+/static/8d47972537a276137bdcb76d32913771/e4a3f/05_portal_resources.png 295w,
+/static/8d47972537a276137bdcb76d32913771/b3e51/05_portal_resources.png 544w"
+        sizes="(max-width: 544px) 100vw, 544px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<p>The example CSS above would replace the portal logo with a custom
+text:</p>
+<div class="gatsby-highlight" data-language="css">
+      <pre class=" cm-s-solarized"><code><span class="cm-builtin">#portal-logo</span><span>:</span><span class="cm-variable-3">before</span><span> {</span><span>
+</span><span>  </span><span class="cm-property">display</span><span>: </span><span class="cm-atom">inline-block</span><span>;</span><span>
+</span><span>  </span><span class="cm-property">content</span><span>: </span><span class="cm-string">"My Plone Site"</span><span>;</span><span>
+</span><span>  </span><span class="cm-property">font-size</span><span>: </span><span class="cm-number">300%</span><span>;</span><span>
+</span><span>}</span><span>
+</span><span class="cm-builtin">#portal-logo</span><span> </span><span class="cm-tag">img</span><span> {</span><span>
+</span><span>  </span><span class="cm-property">display</span><span>: </span><span class="cm-atom">none</span><span>;</span><span>
+</span><span>}</span></code></pre>
+    </div>
+<p>In addition to that, you could add a little bit extra to learn more.
+These following lines would re-use button classes from Bootstrap 3
+resources shipped with with Plone 5 (beta). This is an example of
+how to use LESS to cherry pick just a few special CSS rules from
+Bootstrap 3 framework and apply them next to the currently active
+theme:</p>
+<div class="gatsby-highlight" data-language="css">
+      <pre class=" cm-s-solarized"><code><span class="cm-def">@import</span><span> (</span><span class="cm-error">reference</span><span>) </span><span class="cm-string">"../++plone++static/components/bootstrap/less/bootstrap.less"</span><span>;</span><span>
+</span><span class="cm-builtin">#searchGadget_form</span><span> </span><span class="cm-qualifier">.searchButton</span><span> {</span><span>
+</span><span>  &amp;:</span><span class="cm-variable callee">extend</span><span>(</span><span class="cm-error">.btn</span><span>);</span><span>
+</span><span>  &amp;:</span><span class="cm-variable callee">extend</span><span>(</span><span class="cm-error">.btn-success</span><span>);</span><span>
+</span><span>}</span></code></pre>
+    </div>
+</li>
+</ol>
+<h3>Registering and enabling</h3>
+<p>To register the resource and add it into a bundle (or create a new one),
+go to <strong>Resource Registries</strong> control panel (e.g. at
+<em><a href="http://localhost:8080/@%5C@resourceregistry-controlpanel">http://localhost:8080/@\@resourceregistry-controlpanel</a></em>). Click <strong>Add
+resource</strong> to show the add resource form and fill it like in the
+screenshot below:</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/eaac919d4f45ef18091741cc5ebea5da/f0551/07_resource_ploneCustom.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 75.67567567567568%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAIAAABr+ngCAAAACXBIWXMAAAsSAAALEgHS3X78AAAB/ElEQVQoz21S2W7bMBDU/39EX/sddY3UaILA6YW2dhHHkmxaoi6S4iVS7FCs07TIgKCWBGdnd1bZqWV0EOM4dl2ntW6bpu97IURd123bWmunaRqGAUfGhoa2ef309vubPfkx8jFjA6urmpzJMS+qih6P2GspVbNkAdM5J6VEOqVU1ODtA7mjrNbKZLw/9O1OqZPkuRielCiMLJ2pjTHgcM5BcwtSFUDwwU3xmNHm1D1+C5yGYMKsZiwvZ68YY0VRohfUjBia9gpjdNyMzbpRHtdrsfsZQvB+nucwh7ggi8q993gNPsjuX0Tl9tO2/LixoM5/AQ46RMF4gSxwDiXAAvsCkM7a8+mwuemKItIX6WcygADk8/lcliUhBClwCVl0HpWHUR7er+iXz/+RMbZlPAwByoYszDMvEMk9Y4f1qvr6Chk6IECELwAfN2geTNiB+6xjbL961+93qeuwIPmEPRnzjFRtMgJFZVxKcn8rHn+B592E98uKPSdZ6CDWV6SCEYCfjSznPLe2sepidWVVNVmKIwjILRcktwFKKUaA1H8ME4zwvvLT6J1My2lmx0ZrBXvhM1IkJnqGcynAHkcFI5UUbrKzd7Ob0DC72wy3Hyz+tWVUcAjK8goo4wZ7JONzuVQ4pz8Mu3jY8u29ntyFEPSGFGlOSRMF+wUo+zddN1jbl0ShlAAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="image"
+        title="image"
+        src="/static/eaac919d4f45ef18091741cc5ebea5da/fcda8/07_resource_ploneCustom.png"
+        srcset="/static/eaac919d4f45ef18091741cc5ebea5da/12f09/07_resource_ploneCustom.png 148w,
+/static/eaac919d4f45ef18091741cc5ebea5da/e4a3f/07_resource_ploneCustom.png 295w,
+/static/eaac919d4f45ef18091741cc5ebea5da/fcda8/07_resource_ploneCustom.png 590w,
+/static/eaac919d4f45ef18091741cc5ebea5da/f0551/07_resource_ploneCustom.png 862w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<p>Note that the strings <em>++plone++custom/ploneCustom.js</em> and
+<em>++plone++custom/ploneCustom.less</em> are actually relative (public) URLs
+for the resources you just added into <strong>portal_resources</strong>.</p>
+<p>After saving the resoure by clicking <strong>Save</strong>, click <strong>Add bundle</strong> to
+create a new bundle for your <em>ploneCustom</em>-resource. Fill-in the opened
+form as follows:</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/e784d9b059cc4b5b5343fbb9f75c46dd/748b0/08_bundle_ploneCustom.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 72.97297297297297%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAIAAABr+ngCAAAACXBIWXMAAAsSAAALEgHS3X78AAACNUlEQVQoz01Sy27UMBTNL7Gv+BaWfAFrVtBfQCzoDrEEJCRmMwV1OlIp0zKdIioNtGnek8SJ7cSxYyfhJGlgTq5uLNvnPo6v5RAmleScKaXKsmCMVVUFn+c5Flpr7Kdp2u/QnOf80v82u/2YZRlOrSROCMlv72z8Xde3bYcXIknTMAzLsjTGgIxARVFwzgtW/Npdn7rHlFEppZVENzS759TJyR3N7JJ5tYy0FnWtcSyEABkh9ISmadqmxU5d11bq37RV0hraNqz3hjY6U7IMwyiOY0IIciIKaPUEhW+A5W6u6XLRdl1v7WBdh8BJgnZI27ao2XEceL2HPoRS1v3XOc2yDkzUMwHHkCQIAtxACNu2Pc+DBBAJjYy+J0dnS7oLQej2gMBIPkbZ7XbI7LouaoHs6AUehfRlf1+uNp8+M2n4ZKwystZJEkNwhMDt8ep+2RACya2nL94/efb24PDHwcsL2OPDi0fPz2dXSadFllNwQI6iXjw0oiag8r7s+fz8w7vZ6y/e0SJ8cxIcLYJXx/42LAqWe56PS6UQbMCYrRrw0HP48yo9W0Ct/Z5HPUeP+lNCkBbKpROw7odku1p5pyem7Uzz30BUSiKDlCrOK/Ca4S3MHnrBkj/bbHNptPpnGGecQeH1el3gfUQ/6mLAOG3jwPVkSn6rmmgZ13I3WKwqPC9FViFKlJBmFK8F5X3fh+zlgIeeOY21KhpTTSaN5koWWg/htfFjGoYBpZQMnY+vjQV6/gtFs0ipwfBsVgAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="image"
+        title="image"
+        src="/static/e784d9b059cc4b5b5343fbb9f75c46dd/fcda8/08_bundle_ploneCustom.png"
+        srcset="/static/e784d9b059cc4b5b5343fbb9f75c46dd/12f09/08_bundle_ploneCustom.png 148w,
+/static/e784d9b059cc4b5b5343fbb9f75c46dd/e4a3f/08_bundle_ploneCustom.png 295w,
+/static/e784d9b059cc4b5b5343fbb9f75c46dd/fcda8/08_bundle_ploneCustom.png 590w,
+/static/e784d9b059cc4b5b5343fbb9f75c46dd/748b0/08_bundle_ploneCustom.png 868w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<p>Note that the bundle depends on <em>Plone</em> bundle. That makes it getting
+loaded only after <em>Plone</em> bundle, which includes jQuery, which our
+custom JavaScript code depends on. <em>(Later you may wonder, why jQuery
+was not required with requirejs. That would also work and is recommended
+for other libraries, but currently you can rely on jQuery being globally
+available after Plone bundle has been loaded.)</em></p>
+<p>When you have saved the new <em>ploneCustom</em> resource bundle, it will
+appear into the <strong>Bundles</strong> list on the left. The final step is to click
+the <strong>Build</strong> button below the <em>ploneCustom</em> bundle label in that list.
+That will open a popup model to overview the build progress.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 518px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/bbc9727cbc2e75b967dabd409ff26b1b/6b9fd/09_build_ploneCustom.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 72.2972972972973%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAIAAACgpqunAAAACXBIWXMAAAsSAAALEgHS3X78AAABrklEQVQoz4WT7W6bMBSGuf8r2AXsFiZtyo/sR0KjTlppio0J1UgXvgMBjM1HicJeTKomq9o+emUZc855j23QVquV67o2Y5vNxnGcJ8Xfd9i+EATBbDbTKCF5nu/3+yzLMHlWtG3bXNBeU9f16XSCq2ZZFp6TJImiCPmYoJCUEhHTKISorinLEgaLxUJjjCGIUnpvGLZtm6ZJCPEVYRiiPVREgLiAc973va7rZ+fdbveo8DwvjmOMUz72mabpf+aT83K5HJO7rkN5PxjBC7zGPrGIohgxl9cg4Hg8jm0r547zCg5IDhUw9BQwx2JRFG/bPjvjOJGlGk7iKEY0jh3l+CvVe20zISTu+O7unlJGiLVem0VZSdlUlbwUwiahVt8fx+TptG1GHta/LfoAPTrM/eNgrHguRfkqqSRKzvO+b3UdzsxqahnvzHB7W2ZOV4etDFrpQ5i/1XMTdtIfTocbfaFROl6V2pV40bnJixUxBQhR4zbSQ1k32LOu4cMehgGf2/AZeVEc0mRuHb7M/a+/ih8/bzTDMNI0w/VEI/EHwu/ytHVvyfbbypkb3vfZ/B/NPwBXq4hnMgAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="image"
+        title="image"
+        src="/static/bbc9727cbc2e75b967dabd409ff26b1b/6b9fd/09_build_ploneCustom.png"
+        srcset="/static/bbc9727cbc2e75b967dabd409ff26b1b/12f09/09_build_ploneCustom.png 148w,
+/static/bbc9727cbc2e75b967dabd409ff26b1b/e4a3f/09_build_ploneCustom.png 295w,
+/static/bbc9727cbc2e75b967dabd409ff26b1b/6b9fd/09_build_ploneCustom.png 518w"
+        sizes="(max-width: 518px) 100vw, 518px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<p>Once the build is done, you can click <strong>Close</strong> and reload the page to
+see your new <em>ploneCustom</em> bundle being applied for your site:</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/5dcece6b7157161b85f2887901d8f46f/cc8d6/10_ploneCustom.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 25.675675675675674%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAIAAADKYVtkAAAACXBIWXMAAAsSAAALEgHS3X78AAABAklEQVQY04XIT0vDMAAF8H4n/1zUi57Ez+BEPaqb32QTNxC97iAVJ1t7E611DhHGnIymCo5Bh7PapE1Il6bWNkZxePTx4/F4CmXcdrGD6KNLRjiUA7ziIIw4j6MJFnFCQylOkiwVTcdQ7SqkSIk/08tnz3IxcEnb8QcobA+DEWFCiExMkqUMw7H/xgkUH4mN7lrDM5ZQJd+wOn1Pf3jZ1UFeAwXd3tHAdgNs1Hrrp3/WTro5tbt63Mmp91v1fkFzNmuWsli5rt8+Vc57SwfN+bK5ctRaKJvLhzdz++Z00Zgp/Zrdk66+lYyp4oUkT2WMfei9Y+hBCImPwgDJh/40I//4AhDk72BGtMKfAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="image"
+        title="image"
+        src="/static/5dcece6b7157161b85f2887901d8f46f/fcda8/10_ploneCustom.png"
+        srcset="/static/5dcece6b7157161b85f2887901d8f46f/12f09/10_ploneCustom.png 148w,
+/static/5dcece6b7157161b85f2887901d8f46f/e4a3f/10_ploneCustom.png 295w,
+/static/5dcece6b7157161b85f2887901d8f46f/fcda8/10_ploneCustom.png 590w,
+/static/5dcece6b7157161b85f2887901d8f46f/cc8d6/10_ploneCustom.png 791w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<p>Note how the Plone logo has been replaced with a custom text and the
+Search button has been style after Bootstrap 3 button styles. (Also, you
+should now have seen an annoying alert popup from your ploneCustom
+JavasScript.)</p>
+<p>To modify your ploneCustom bundle, just go to edit the file and and
+return to <em>Resource Registries</em> control panel to click the Build button
+again.</p>
+<p><strong>Now you have your ploneCustom back in Plone 5. Congratulations!</strong></p>
+<p>P.S. Don’t forget that you can also tweak (at least the default) Plone
+theme a lot from the <strong>Resource Registries</strong> control panel without
+<em>ploneCustom</em> bundle simply by changing theme’s LESS variables and
+building <em>Plone</em> bundle.</p>
+<h2>EXTRA: TTW ReactJS App in Plone</h2>
+<p>The new <strong>Resource Registries</strong> may feel complex to begin with, but once
+you get used to them, they are blessing. Just define dependencies
+properly, and never again you need to order Plone CSS and JavaScript
+resources manually, and never again (well, once add-ons get update into
+this new configuration) should add-ons break your site by re-registering
+resources into broken order.</p>
+<p>As an example, let’s implement a ReactJS Hello World for Plone TTW
+using the new resource registry:</p>
+<p>At first, you need to register ReactJS library as a resource. You could
+upload the library into <em>portal_resources</em>, but for a quick experiment
+you can also refer to a cloud hosted version
+(<em><a href="https://fb.me/react-0.13.3.js">https://fb.me/react-0.13.3.js</a></em>). So, go to <strong>Resource Registries</strong>
+control panel and <strong>Add resource</strong> with the following details:</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/9c06cfe2bc89aeb8774b3a70257fc3d7/9cab2/11_resource_reactjs.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 79.72972972972973%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAIAAACZeshMAAAACXBIWXMAAAsSAAALEgHS3X78AAACDUlEQVQoz2VS2W7bMBDU//9JH/sBBYrUvWIDbprmpW7q2JZk66AoLkkdlEh1RDoK0owJYU1ydnZ2GZ2YyEm1bSOI+r6v65qImkZXVVXXwnhghzEmpeSMpyx+/+fd32ynZROREKysLll+PMZFyQ6HU5YVWrdFUXDOA1lr7TM2kmQpitXpQ8rjrukiWR95uVMyUXQi/qRl3Ol06Bk4XdeBgGAcx2EYEAwek5vCTsSKIyW/p7ZyTk9WuXlJNyopKUkSIQS8KKWQyFzRd/gZbPdRpdt49UnvdtM0OeucQ14sB034RHpcQs2L/gJPvr9LNmszU19grYUUOoRLyMI9UEUo/lrATD4eTt+/iTz3ynYhtx4I0K00TWEhyzLEizL4Ud20+5uP5cP9f2QoY1pwixSQhYVQ/CtlTvS0uskffr0lY1oYO0TgFjv4BlrwgiOQxf7LSuwfvWs7+X4hwDGKRNQ/w7zGrCx0E3/9TI+7t8ooFQUjBeoPPSvLEn9xeu12IxOtYmNK0+XX1WamLbquZawCH7bRZxQpngHzYf6REqng53FQ46CXZXoOMkYFnyCjz4gRhHcaMJNJ1HiIzg6oxY4Gjml7S9t1P1rIwhvMn89nkINm6F9oXoSdOE6I5Py2LLgTbdZic2ucyy4X0KC2aCJYXrhXJkJVuIQDtBlk+fMH3W0HvHUP3LYeoZFBNpD/AYOeknrKGP/PAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="image"
+        title="image"
+        src="/static/9c06cfe2bc89aeb8774b3a70257fc3d7/fcda8/11_resource_reactjs.png"
+        srcset="/static/9c06cfe2bc89aeb8774b3a70257fc3d7/12f09/11_resource_reactjs.png 148w,
+/static/9c06cfe2bc89aeb8774b3a70257fc3d7/e4a3f/11_resource_reactjs.png 295w,
+/static/9c06cfe2bc89aeb8774b3a70257fc3d7/fcda8/11_resource_reactjs.png 590w,
+/static/9c06cfe2bc89aeb8774b3a70257fc3d7/9cab2/11_resource_reactjs.png 864w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<p>Note how the library is defined to be wrapped for requirejs with name
+<em>react013</em>. <em>(Plone 5 actually ships with ReactJS library, but because
+the version in the first beta is just 0.10, we need to add newer version
+with a version specific name.)</em></p>
+<p>Next, go to <em>portal_resources/plone/custom/manage_main</em> as before and
+add a new file called <em>reactApp.js</em> with the following ReactJS Hello
+World as its contents:</p>
+<div class="gatsby-highlight" data-language="js">
+      <pre class=" cm-s-solarized"><code><span>define([
+  'react013',
+], function(React) {
+
+'use strict';
+
+var ExampleApplication = React.createClass({
+  render: function() {
+    var elapsed = Math.round(this.props.elapsed  / 100);
+    var seconds = elapsed / 10 + (elapsed % 10 ? '' : '.0' );
+    var message = 'React has been successfully running for ' + seconds + ' seconds.';
+    return React.createElement("p", null, message);
+  }
+});
+
+var start = new Date().getTime();
+
+setInterval(function() {
+  React.render(
+    React.createElement(ExampleApplication, {elapsed: new Date().getTime() - start}),
+    document.getElementById('portal-logo')
+  );
+}, 50);
+
+return ExampleApplication;
+
+});
+
+jQuery(function($) {
+  require(['reactApp']);
+});</span></code></pre>
+    </div>
+<p>Note how ReactJS is required as <em>react013</em>, and how the example
+application is required as <em>reactApp</em> at the bottom (using jQuery onLoad
+convention).</p>
+<p>Of course, also <em>reactApp</em> must be defined as a new resource at
+<strong>Resource Registries</strong> control panel. It should depend on previously
+added resource <em>react013</em> being wrapped for requirejs and export itself
+for requirejs as <em>reactApp</em>:</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/ffcdb676a26b756160e6b3f00a565394/9cab2/13_resource_reactApp.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 79.05405405405406%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAIAAACZeshMAAAACXBIWXMAAAsSAAALEgHS3X78AAACC0lEQVQoz2VTWY/TMBjM//8hvPKOurtcEtUiBAKWlUA0XdI0R504PnP4yE7sTbdiR5bluJ5v5hu7SVrThispRNd1wzA0TcMYk1KcTidK6TRNxhj8VNc19klNDnX2+s+r38W9YCJhXdeQ9ngsDnle1aeHh4yQVuunKmCC3/e9Ugqz1j2VdJu/r1gxDmPC211Hd1oVimei+6dFPqijGVtwYERrjYW1NlYxAbOfsYPPpCp2svw7T2z2anbSO+EthmId2+/3MIxDUspxHKcV47SssZMQLrKrTX84zPPsnfeYMbyHz7ZtoYBD8H/WP2NRrj9vi7sfdg6MFc45dAhBHIJzJAcLnPNLfrB9/yu73XLaBmV3SUbPOA3yMaAsy2jhmUw4Tzdv2D59SYaaDiCExJu77DyQmya9uWrS3Usy7hZ8G4CdmHBELJ2cCEnfXavyGLp2a14uamIFtWHFGBCjxmdCGc+uNyqk7RaBRd5aj9rra5PwjOQhBf/4PLtIND/0KjcTmYZ6HdU0NigcWxVCVFUFplghA5Z75l3OaemMtE9DOD9Yw4ZwVbCNOeaMqxLhLxARyJx6b2ZnPIadYJ7dfhR33wZjG0LgDZ2DjBJ4NphjeMBiu21pUZTocOnZIa25+/CWf/0yOlcWBQyDANmo+f89I4nlBeS5VipEDeVP4uf3CS80qOHQxdvzdgVCeQR8tZHw2ZtyVAAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="image"
+        title="image"
+        src="/static/ffcdb676a26b756160e6b3f00a565394/fcda8/13_resource_reactApp.png"
+        srcset="/static/ffcdb676a26b756160e6b3f00a565394/12f09/13_resource_reactApp.png 148w,
+/static/ffcdb676a26b756160e6b3f00a565394/e4a3f/13_resource_reactApp.png 295w,
+/static/ffcdb676a26b756160e6b3f00a565394/fcda8/13_resource_reactApp.png 590w,
+/static/ffcdb676a26b756160e6b3f00a565394/9cab2/13_resource_reactApp.png 864w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<p>Finally, you can <strong>Add bundle</strong> for this example <em>reactApp</em>:</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/42e2dccc5780d1b901ccf051ca10b2b5/e35ec/12_bundle_reactApp.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 73.64864864864865%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAIAAABr+ngCAAAACXBIWXMAAAsSAAALEgHS3X78AAACLElEQVQoz01Ty27UMBT1dyFW8A/s+ZFuEOqLih9ArJAQYgVCqAMFUVaVKlqmBYEEM53MxHnZSRwndt4TTmIynRPLubHuuec+HLII4jBVaSqFEEVRhGEoRJJlKWMsiqKyLOu6TpLE930pJQsY48G5e3bDZypVRMQiDCNKXZs6fsCWyxVjodb5EEVUA/I8V0ph11orrf6EvwPpVUVFkmguornOHCXtVCx1Rgvt1GUIDmThDaMesDHW7bppGnwS3/mr2KKrxbpN+9VgybbJZCJXq1Ucx3BCOdUWSjxDaMISaX/8UDi06zqEXGPvOryRJAsC7HByHAf1G/HbECD752fOzx9NT7pF27agBUEAZciCTCmFoQfkI4h3PbUvL1Ipuy26KclEybLMtm2UYPQxBfQSBlpIfJHMJsdyuYR207QNmtH3o1eGGjwgZQwolyNgY3IkCrlzelL6XjdId515r83MIQuy67qwOeem+QZwIE/fXD0+eH3w6mrv2N57t9h/bz16u3h2SpXOfc8DBzrpCDVgUznZefntaP/Fg92vdw+v7x1e3n/y/c7uxcPnv3RRmvrBMZ1DoO29Txvlzz6f8Ju5yXaTNgSRM3QwIXjDxjn614zAOeGcWV8+ac/drhkAbTqdWpaF6UIkTTOTKjiG3N+wME4Wk4mi9P+oxktiugrXDMUzjh8DbUP+Jh1z1YlKqI6tOmdVwccFOyqHm9zUVVbUlu1hKLEQyJ8PwJyRzj94YkbDxmdLzAAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="image"
+        title="image"
+        src="/static/42e2dccc5780d1b901ccf051ca10b2b5/fcda8/12_bundle_reactApp.png"
+        srcset="/static/42e2dccc5780d1b901ccf051ca10b2b5/12f09/12_bundle_reactApp.png 148w,
+/static/42e2dccc5780d1b901ccf051ca10b2b5/e4a3f/12_bundle_reactApp.png 295w,
+/static/42e2dccc5780d1b901ccf051ca10b2b5/fcda8/12_bundle_reactApp.png 590w,
+/static/42e2dccc5780d1b901ccf051ca10b2b5/e35ec/12_bundle_reactApp.png 861w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<p>And after <strong>Save</strong>, <strong>Build</strong> the bundle from the button below the new
+bundle name in <em>Bundles list</em>:</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 514px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/fd265a896bfec6a1399b6c4f1c5d2ecd/dea13/14_build_reactApp.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 72.97297297297297%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAIAAABr+ngCAAAACXBIWXMAAAsSAAALEgHS3X78AAABxklEQVQoz42SXW+bMBSG+f/3+wO73XqRm15MGkSpqmptorSQBQqUsISED4MTTIwJbGEvbtd8SdseHZDB5z2vj23FnE4Nw5hIpv/iNQ35tm33ej0ly7IIhB1lWVYX7C4QQuz3+8FgoEBQ/IFzvpXwI4pTGGN5ntd1raqqgmnXdcfjMVZlmqau64vFYr1ep2maSSDYngJ90zSapnXO8/n82bIcyYtkNpth7Engc2z77tyJ0RU+FkEAwyRJ0A/KvfaGDMzyC1AFzt2ykY1ib9sWRYQQ7ByRxHGM/2dbcC7Oc0Zp1yQhKaUU/lDiHUUxGmfsvGuYvS0bZX3fx245jouBZVnL5RIHxHkJS8gglvoDh57Roet6k4n5+GRMvpvjRz0IwjhOM7phBWcMepwlCh2CsW3T/OrE6MF/mZj6wHOGq+A5XNnh0vY9IyP+TqSiJNVpCE54Ee9/Fv2+dN7QcEO8TfajKlPETmQ7QTFA3ml0s41AJG1b9DVVqesGl1KIRoia8+o98PM4OMehbHEJnVX+NKNeUqlaX2nbFhe1/Q+SJCZp+mlEP6jRx3v2Rb1RcDEfHobD7hmO/sq95OvNt2vtTr0dfb66+g1T1TN0Y+N/aAAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="image"
+        title="image"
+        src="/static/fd265a896bfec6a1399b6c4f1c5d2ecd/dea13/14_build_reactApp.png"
+        srcset="/static/fd265a896bfec6a1399b6c4f1c5d2ecd/12f09/14_build_reactApp.png 148w,
+/static/fd265a896bfec6a1399b6c4f1c5d2ecd/e4a3f/14_build_reactApp.png 295w,
+/static/fd265a896bfec6a1399b6c4f1c5d2ecd/dea13/14_build_reactApp.png 514w"
+        sizes="(max-width: 514px) 100vw, 514px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<p>Note that, because the cloud hosted ReactJS library was used, the new
+bundle contains only the code from <em>reactApp.js</em> and requirejs will
+require ReactJS from the cloud on-demand. If you would have added the
+library into <em>portal_resources</em>, it would have been included in the
+resulting bundle.</p>
+<p>After page reload, your ReactJS Hello World should be alive:</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/14e4a00b1c3704a4c50baa47419ce86a/f3c12/15_reactApp.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 22.2972972972973%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAECAIAAAABPYjBAAAACXBIWXMAAAsSAAALEgHS3X78AAAA40lEQVQI12N4+/n7w7efn7z7AkRAxqN3Xx6B2F8fvvsClPr969fPn79+/Pz5+fOXjx8//fr9+9+/fx8+frxz9+7HT58Y/v79DZT+++fXv7+/QejP7/9gxv9/v////wNF/35/+fD209tXn9+++v7l059f3z+/ffn313eG2u3Xz9151bf/TuTKi+ErLsSvuRy6/Hzc6kvBy877LzkXAEO+C0/7LDjlveCUz4LTgUvPBy+/BCQZ0pec2Hv6dsXaM45TDzhM3u8x85Dd5P3uMw/ZTNpnPmGfBQxZTgSi/WAE5O4Fo30AN9+4NaCGRfkAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="image"
+        title="image"
+        src="/static/14e4a00b1c3704a4c50baa47419ce86a/fcda8/15_reactApp.png"
+        srcset="/static/14e4a00b1c3704a4c50baa47419ce86a/12f09/15_reactApp.png 148w,
+/static/14e4a00b1c3704a4c50baa47419ce86a/e4a3f/15_reactApp.png 295w,
+/static/14e4a00b1c3704a4c50baa47419ce86a/fcda8/15_reactApp.png 590w,
+/static/14e4a00b1c3704a4c50baa47419ce86a/f3c12/15_reactApp.png 764w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p></div></div><hr style="margin-bottom:1.75rem"/><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li><a rel="prev" href="/2014/11/transmogrifier-python-migration.html/">← <!-- -->Transmogrifier, the Python migration pipeline, also for Python 3</a></li><li><a rel="next" href="/2015/05/customize-plone-5-default-theme-on-fly.html/">Customize Plone 5 default theme on the fly<!-- --> →</a></li></ul></main></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/2015/05/plonecustom-for-plone-5.html/";/*]]>*/</script><!-- slice-start id="_gatsby-scripts-1" -->
+          <script
+            id="gatsby-chunk-mapping"
+          >
+            window.___chunkMapping="{\"app\":[\"/app-8e352158238d7a981d99.js\"],\"component---src-pages-404-js\":[\"/component---src-pages-404-js-97805cac34ee32fd2ff3.js\"],\"component---src-pages-index-js\":[\"/component---src-pages-index-js-d702b3556e2e37664238.js\"],\"component---src-templates-blog-post-js\":[\"/component---src-templates-blog-post-js-db3b846139cc4b35992f.js\"],\"component---src-templates-follow-js\":[\"/component---src-templates-follow-js-48b9dd3d02ab9724ef8f.js\"],\"component---src-templates-like-js\":[\"/component---src-templates-like-js-8481525f17b37bf9ff44.js\"]}";
+          </script>
+        <script>window.___webpackCompilationHash="1117cca6506347fc7992";</script><script src="/webpack-runtime-e10ad14bfe4fe997f9f6.js" async></script><script src="/framework-a3d1aa3677a1ff482f17.js" async></script><script src="/app-8e352158238d7a981d99.js" async></script><!-- slice-end id="_gatsby-scripts-1" --></body></html>

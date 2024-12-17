@@ -1,0 +1,353 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.75 'Merriweather','Georgia',serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.9);font-family:'Merriweather','Georgia',serif;font-weight:400;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:Montserrat,sans-serif;font-weight:900;text-rendering:optimizeLegibility;font-size:2.5rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.73286rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.4427rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;letter-spacing:0.140625em;text-transform:uppercase;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.83255rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.75966rem;line-height:1.1;font-style:italic;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}ul{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;list-style:disc;}ol{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:0.85rem;line-height:1.75rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1rem;line-height:1.75rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}blockquote{margin-left:-1.75rem;margin-right:1.75rem;margin-top:0;padding-bottom:0;padding-left:1.42188rem;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1.20112rem;line-height:1.75rem;color:hsla(0,0%,0%,0.59);font-style:italic;border-left:0.32813rem solid hsla(0,0%,0%,0.9);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.75rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.75rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}li > ul{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.75rem / 2);}code{font-size:0.85rem;line-height:1.75rem;}kbd{font-size:0.85rem;line-height:1.75rem;}samp{font-size:0.85rem;line-height:1.75rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.16667rem;padding-right:1.16667rem;padding-top:0.875rem;padding-bottom:calc(0.875rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}blockquote > :last-child{margin-bottom:0;}blockquote cite{font-size:1rem;line-height:1.75rem;color:hsla(0,0%,0%,0.9);font-weight:400;}blockquote cite:before{content:"— ";}ul,ol{margin-left:0;}@media only screen and (max-width:480px){ul,ol{margin-left:1.75rem;}blockquote{margin-left:-1.3125rem;margin-right:0;padding-left:0.98438rem;}}h1,h2,h3,h4,h5,h6{margin-top:3.5rem;}a{box-shadow:0 1px 0 0 currentColor;color:#007acc;text-decoration:none;}a:hover,a:active{box-shadow:none;}mark,ins{background:#007acc;color:white;padding:0.10938rem 0.21875rem;text-decoration:none;}a.gatsby-resp-image-link{box-shadow:none;}div.mermaid svg{height:auto !important;}</style><meta name="generator" content="Gatsby 5.2.0"/><meta name="author" content="Asko Soukka" data-gatsby-head="true"/><meta name="description" property="og:description" content="Robocorp’s RPA suite is now open for everyone. Why does it matter? Because their “Robotic Process Automation” solution is based on Robot Framework. This does…" data-gatsby-head="true"/><meta name="title" property="og:title" content="Connecting the dots – Automated business process with Robocloud and Camunda BPM" data-gatsby-head="true"/><meta name="type" property="og:type" content="website" data-gatsby-head="true"/><meta name="twitter:card" content="summary" data-gatsby-head="true"/><meta name="twitter:creator" content="Asko Soukka" data-gatsby-head="true"/><meta name="twitter:title" content="Connecting the dots – Automated business process with Robocloud and Camunda BPM" data-gatsby-head="true"/><meta name="twitter:description" content="Robocorp’s RPA suite is now open for everyone. Why does it matter? Because their “Robotic Process Automation” solution is based on Robot Framework. This does…" data-gatsby-head="true"/><meta name="image" property="og:image" content="https://datakurre.pandala.org/cover-2020-07-camunda-robocloud.png" data-gatsby-head="true"/><meta name="twitter:image" content="https://datakurre.pandala.org/cover-2020-07-camunda-robocloud.png" data-gatsby-head="true"/><meta name="theme-color" content="#663399"/><style data-href="/styles.5caeda19fca28245274c.css" data-identity="gatsby-global-css">@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/static/montserrat-latin-100-8d7d79679b70dbe27172b6460e7a7910.woff2) format("woff2"),url(/static/montserrat-latin-100-ec38980a9e0119a379e2a9b3dbb1901a.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/static/montserrat-latin-100italic-e279051046ba1286706adc886cf1c96b.woff2) format("woff2"),url(/static/montserrat-latin-100italic-3b325a3173c8207435cd1b76e19bf501.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/static/montserrat-latin-200-9d266fbbfa6cab7009bd56003b1eeb67.woff2) format("woff2"),url(/static/montserrat-latin-200-2d8ba08717110d27122e54c34b8a5798.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/static/montserrat-latin-200italic-6e5b3756583bb2263eb062eae992735e.woff2) format("woff2"),url(/static/montserrat-latin-200italic-a0d6f343e4b536c582926255367a57da.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/static/montserrat-latin-300-00b3e893aab5a8fd632d6342eb72551a.woff2) format("woff2"),url(/static/montserrat-latin-300-ea303695ceab35f17e7d062f30e0173b.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/static/montserrat-latin-300italic-56f34ea368f6aedf89583d444bbcb227.woff2) format("woff2"),url(/static/montserrat-latin-300italic-54b0bf2c8c4c12ffafd803be2466a790.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/static/montserrat-latin-400-b71748ae4f80ec8c014def4c5fa8688b.woff2) format("woff2"),url(/static/montserrat-latin-400-0659a9f4e90db5cf51b50d005bff1e41.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/static/montserrat-latin-400italic-6eed6b4cbb809c6efc7aa7ddad6dbe3e.woff2) format("woff2"),url(/static/montserrat-latin-400italic-7583622cfde30ae49086d18447ab28e7.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/static/montserrat-latin-500-091b209546e16313fd4f4fc36090c757.woff2) format("woff2"),url(/static/montserrat-latin-500-edd311588712a96bbf435fad264fff62.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/static/montserrat-latin-500italic-c90ced68b46050061d1a41842d6dfb43.woff2) format("woff2"),url(/static/montserrat-latin-500italic-5146cbfe02b1deea5dffea27a5f2f998.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/static/montserrat-latin-600-0480d2f8a71f38db8633b84d8722e0c2.woff2) format("woff2"),url(/static/montserrat-latin-600-b77863a375260a05dd13f86a1cee598f.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/static/montserrat-latin-600italic-cf46ffb11f3a60d7df0567f8851a1d00.woff2) format("woff2"),url(/static/montserrat-latin-600italic-c4fcfeeb057724724097167e57bd7801.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/static/montserrat-latin-700-7dbcc8a5ea2289d83f657c25b4be6193.woff2) format("woff2"),url(/static/montserrat-latin-700-99271a835e1cae8c76ef8bba99a8cc4e.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/static/montserrat-latin-700italic-c41ad6bdb4bd504a843d546d0a47958d.woff2) format("woff2"),url(/static/montserrat-latin-700italic-6779372f04095051c62ed36bc1dcc142.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/static/montserrat-latin-800-db9a3e0ba7eaea32e5f55328ace6cf23.woff2) format("woff2"),url(/static/montserrat-latin-800-4e3c615967a2360f5db87d2f0fd2456f.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/static/montserrat-latin-800italic-bf45bfa14805969eda318973947bc42b.woff2) format("woff2"),url(/static/montserrat-latin-800italic-fe82abb0bcede51bf724254878e0c374.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/static/montserrat-latin-900-e66c7edc609e24bacbb705175669d814.woff2) format("woff2"),url(/static/montserrat-latin-900-8211f418baeb8ec880b80ba3c682f957.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/static/montserrat-latin-900italic-4454c775e48152c1a72510ceed3603e2.woff2) format("woff2"),url(/static/montserrat-latin-900italic-efcaa0f6a82ee0640b83a0916e6e8d68.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:normal;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/static/merriweather-latin-300-fc117160c69a8ea0851b26dd14748ee4.woff2) format("woff2"),url(/static/merriweather-latin-300-58b18067ebbd21fda77b67e73c241d3b.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:italic;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/static/merriweather-latin-300italic-fe29961474f8dbf77c0aa7b9a629e4bc.woff2) format("woff2"),url(/static/merriweather-latin-300italic-23c3f1f88683618a4fb8d265d33d383a.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:normal;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/static/merriweather-latin-400-d9479e8023bef9cbd9bf8d6eabd6bf36.woff2) format("woff2"),url(/static/merriweather-latin-400-040426f99ff6e00b86506452e0d1f10b.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:italic;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/static/merriweather-latin-400italic-2de7bfeaf08fb03d4315d49947f062f7.woff2) format("woff2"),url(/static/merriweather-latin-400italic-79db67aca65f5285964ab332bd65f451.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:normal;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/static/merriweather-latin-700-4b08e01d805fa35d7bf777f1b24314ae.woff2) format("woff2"),url(/static/merriweather-latin-700-22fb8afba4ab1f093b6ef9e28a9b6e92.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:italic;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/static/merriweather-latin-700italic-cd92541b177652fffb6e3b952f1c33f1.woff2) format("woff2"),url(/static/merriweather-latin-700italic-f87f3d87cea0dd0979bfc8ac9ea90243.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:normal;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/static/merriweather-latin-900-f813fc6a4bee46eda5224ac7ebf1b7be.woff2) format("woff2"),url(/static/merriweather-latin-900-5d4e42cb44410674acd99153d57df032.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:italic;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/static/merriweather-latin-900italic-b7901d85486871c1779c0e93ddd85656.woff2) format("woff2"),url(/static/merriweather-latin-900italic-9647f9fdab98756989a8a5550eb205c3.woff) format("woff")}.solarized.base03{color:#002b36}.solarized.base02{color:#073642}.solarized.base01{color:#586e75}.solarized.base00{color:#657b83}.solarized.base0{color:#839496}.solarized.base1{color:#93a1a1}.solarized.base2{color:#eee8d5}.solarized.base3{color:#fdf6e3}.solarized.solar-yellow{color:#b58900}.solarized.solar-orange{color:#cb4b16}.solarized.solar-red{color:#dc322f}.solarized.solar-magenta{color:#d33682}.solarized.solar-violet{color:#6c71c4}.solarized.solar-blue{color:#268bd2}.solarized.solar-cyan{color:#2aa198}.solarized.solar-green{color:#859900}.cm-s-solarized{color-profile:sRGB;rendering-intent:auto;line-height:1.45em}.cm-s-solarized.cm-s-dark{background-color:#002b36;color:#839496;text-shadow:#002b36 0 1px}.cm-s-solarized.cm-s-light{background-color:#fdf6e3;color:#657b83;text-shadow:#eee8d5 0 1px}.cm-s-solarized .CodeMirror-widget{text-shadow:none}.cm-s-solarized .cm-header{color:#586e75}.cm-s-solarized .cm-quote{color:#93a1a1}.cm-s-solarized .cm-keyword{color:#cb4b16}.cm-s-solarized .cm-atom,.cm-s-solarized .cm-number{color:#d33682}.cm-s-solarized .cm-def{color:#2aa198}.cm-s-solarized .cm-variable{color:#839496}.cm-s-solarized .cm-variable-2{color:#b58900}.cm-s-solarized .cm-type,.cm-s-solarized .cm-variable-3{color:#6c71c4}.cm-s-solarized .cm-property{color:#2aa198}.cm-s-solarized .cm-operator{color:#6c71c4}.cm-s-solarized .cm-comment{color:#586e75;font-style:italic}.cm-s-solarized .cm-string{color:#859900}.cm-s-solarized .cm-string-2{color:#b58900}.cm-s-solarized .cm-meta{color:#859900}.cm-s-solarized .cm-qualifier{color:#b58900}.cm-s-solarized .cm-builtin{color:#d33682}.cm-s-solarized .cm-bracket{color:#cb4b16}.cm-s-solarized .CodeMirror-matchingbracket{color:#859900}.cm-s-solarized .CodeMirror-nonmatchingbracket{color:#dc322f}.cm-s-solarized .cm-tag{color:#93a1a1}.cm-s-solarized .cm-attribute{color:#2aa198}.cm-s-solarized .cm-hr{border-top:1px solid #586e75;color:transparent;display:block}.cm-s-solarized .cm-link{color:#93a1a1;cursor:pointer}.cm-s-solarized .cm-special{color:#6c71c4}.cm-s-solarized .cm-em{color:#999;text-decoration:underline;text-decoration-style:dotted}.cm-s-solarized .cm-error,.cm-s-solarized .cm-invalidchar{border-bottom:1px dotted #dc322f;color:#586e75}.cm-s-solarized.cm-s-dark div.CodeMirror-selected{background:#073642}.cm-s-solarized.cm-s-dark.CodeMirror ::selection{background:rgba(7,54,66,.99)}.cm-s-dark .CodeMirror-line>span::-moz-selection,.cm-s-dark .CodeMirror-line>span>span::-moz-selection,.cm-s-solarized.cm-s-dark .CodeMirror-line::-moz-selection{background:rgba(7,54,66,.99)}.cm-s-solarized.cm-s-light div.CodeMirror-selected{background:#eee8d5}.cm-s-light .CodeMirror-line>span::selection,.cm-s-light .CodeMirror-line>span>span::selection,.cm-s-solarized.cm-s-light .CodeMirror-line::selection{background:#eee8d5}.cm-s-ligh .CodeMirror-line>span::-moz-selection,.cm-s-ligh .CodeMirror-line>span>span::-moz-selection,.cm-s-solarized.cm-s-light .CodeMirror-line::-moz-selection{background:#eee8d5}.cm-s-solarized.CodeMirror{box-shadow:inset 7px 0 12px -6px #000}.cm-s-solarized .CodeMirror-gutters{border-right:0}.cm-s-solarized.cm-s-dark .CodeMirror-gutters{background-color:#073642}.cm-s-solarized.cm-s-dark .CodeMirror-linenumber{color:#586e75;text-shadow:#021014 0 -1px}.cm-s-solarized.cm-s-light .CodeMirror-gutters{background-color:#eee8d5}.cm-s-solarized.cm-s-light .CodeMirror-linenumber{color:#839496}.cm-s-solarized .CodeMirror-linenumber{padding:0 5px}.cm-s-solarized .CodeMirror-guttermarker-subtle{color:#586e75}.cm-s-solarized.cm-s-dark .CodeMirror-guttermarker{color:#ddd}.cm-s-solarized.cm-s-light .CodeMirror-guttermarker{color:#cb4b16}.cm-s-solarized .CodeMirror-gutter .CodeMirror-gutter-text{color:#586e75}.cm-s-solarized .CodeMirror-cursor{border-left:1px solid #819090}.cm-s-solarized.cm-s-light.cm-fat-cursor .CodeMirror-cursor{background:#7e7}.cm-s-solarized.cm-s-light .cm-animate-fat-cursor{background-color:#7e7}.cm-s-solarized.cm-s-dark.cm-fat-cursor .CodeMirror-cursor{background:#586e75}.cm-s-solarized.cm-s-dark .cm-animate-fat-cursor{background-color:#586e75}.cm-s-solarized.cm-s-dark .CodeMirror-activeline-background{background:hsla(0,0%,100%,.06)}.cm-s-solarized.cm-s-light .CodeMirror-activeline-background{background:rgba(0,0,0,.06)}ol,ul{margin-left:1em}.gatsby-highlight{background:#fdfaf6;border-bottom:1px solid #eee;border-top:1px solid #eee;margin-bottom:1.75rem;overflow-x:auto;padding:1ex 1em}.gatsby-highlight pre{margin-bottom:0}</style><title data-gatsby-head="true">Connecting the dots – Automated business process with Robocloud and Camunda BPM | Asko Soukka</title><link rel="canonical" href="https://datakurre.pandala.org/2020/07/camunda-robocloud/" data-gatsby-head="true"/><link rel="alternate" type="application/rss+xml" title="datakurre" href="/rss.xml"/><link rel="alternate" type="application/rss+xml" title="datakurre on &quot;plone&quot;" href="/feeds/posts/default/-/plone"/><style>.gatsby-image-wrapper{position:relative;overflow:hidden}.gatsby-image-wrapper picture.object-fit-polyfill{position:static!important}.gatsby-image-wrapper img{bottom:0;height:100%;left:0;margin:0;max-width:none;padding:0;position:absolute;right:0;top:0;width:100%;object-fit:cover}.gatsby-image-wrapper [data-main-image]{opacity:0;transform:translateZ(0);transition:opacity .25s linear;will-change:opacity}.gatsby-image-wrapper-constrained{display:inline-block;vertical-align:top}</style><noscript><style>.gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}</style></noscript><script type="module">const e="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;e&&document.body.addEventListener("load",(function(e){const t=e.target;if(void 0===t.dataset.mainImage)return;if(void 0===t.dataset.gatsbyImageSsr)return;let a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector("[data-placeholder-image]"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition="opacity 500ms linear")}))}),!0);</script><link rel="icon" href="/favicon-32x32.png?v=b12376b9b88c2b74e77175e369294c9a" type="image/png"/><link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=b12376b9b88c2b74e77175e369294c9a"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=b12376b9b88c2b74e77175e369294c9a"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=b12376b9b88c2b74e77175e369294c9a"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=b12376b9b88c2b74e77175e369294c9a"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=b12376b9b88c2b74e77175e369294c9a"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=b12376b9b88c2b74e77175e369294c9a"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=b12376b9b88c2b74e77175e369294c9a"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=b12376b9b88c2b74e77175e369294c9a"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div style="margin-left:auto;margin-right:auto;max-width:42rem;padding:2.625rem 1.3125rem"><header><h3 style="font-family:Montserrat, sans-serif;margin-top:0"><a style="box-shadow:none;text-decoration:none;color:inherit" href="/">Asko Soukka</a></h3></header><main class="h-entry"><h1 style="margin-top:1.75rem;margin-bottom:0">Connecting the dots – Automated business process with Robocloud and Camunda BPM</h1><span class="p-name" style="display:none">Connecting the dots – Automated business process with Robocloud and Camunda BPM</span><img class="u-photo" src="https://datakurre.pandala.org/cover-2020-07-camunda-robocloud.png" alt="" style="display:none"/><a class="p-author h-card" href="https://pandala.org/#datakurre" style="display:none"><img class="u-photo" src="https://datakurre.pandala.org/icon.jpg" alt=""/>Asko Soukka</a><div class="p-summary" style="display:none"><div>Robocorp’s RPA suite is now open for everyone. Why does it matter? Because their “Robotic Process Automation” solution is based on Robot Framework. This does…</div></div><a class="p-category" href="https://datakurre.pandala.org/2020/07/camunda-robocloud/" style="display:none">Open Source</a><a class="p-category" href="https://datakurre.pandala.org/2020/07/camunda-robocloud/" style="display:none">RPA</a><a class="p-category" href="https://datakurre.pandala.org/2020/07/camunda-robocloud/" style="display:none">Robocloud</a><a class="p-category" href="https://datakurre.pandala.org/2020/07/camunda-robocloud/" style="display:none">Camunda</a><a class="u-syndication" href="https://fed.brid.gy/" style="display:none">https://fed.brid.gy/</a><a class="u-syndication" href="https://fediverse.pandala.org/" style="display:none">https://fediverse.pandala.org/</a><a class="u-url u-uid" style="font-size:0.83255rem;line-height:1.75rem;display:block;color:black;box-shadow:none;margin-bottom:1.75rem" href="https://datakurre.pandala.org/2020/07/camunda-robocloud/"><time class="dt-published" datetime="2020-07-10 12:00:00">July 10, 2020</time></a><div class="e-content"><div><!-- ![](tweet-approval-process.png) -->
+<p><a href="https://robocorp.com/news/start-building-software-robots">Robocorp’s RPA suite is now open for everyone</a>. Why does it matter? Because their “Robotic Process Automation” solution is based on <a href="https://robotframework.org">Robot Framework</a>. This does not only make Robocorp’s solution great from the start, but it should also benefit the whole open source Robot Framework ecosystem with better <a href="https://github.com/robocorp/robotframework-lsp/">tools</a>, <a href="https://hub.robocorp.com/">resources</a> and <a href="https://rpaframework.org/">automation libraries</a>.</p>
+<p>To try out and learn these new tools, I played with a simple fictional business process…</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/2d3143292199ab7cc4858b57016ca4c1/fd84e/tweet-approval-process.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 54.72972972972974%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAABM5AAATOQGPwlYBAAABMElEQVQoz12RWQuDQAyE9///N18EEXwQ8caz3lft9nODpe1AQ5pMJtlRzfM8TROx7/txHJdlIR7Hse+71AUUh2H4/JWWquv6YZAkSVmWMKqqknbTNNTbtkU3z/M0TUWFFpGW0lqf58lCktcNyYnbtkmLhIEgCFDJsoxNKCp+aHddJ5Jsnm58X9sZMMmlnEbClJKr2PM0oAGJAYpEGe5vuK7LMLfAp654JwxtQIOTSFgFA9vWdSXKEwBdKvCpEFUURRjDQpQsy7Jtm4PjOMYeIqtI4LEDRcjkjuNwHbRruCiKMAyZR5jHYGNmwItqAyq+77NDoud5Yo2Sz/NnNd6ijQUcuRswz0NQFBfhXGdTRUP/AglxezEgQY4ohqEF5zIMD7lEvvs35l+IFoegJV8UzhuP23EwEkDJRAAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="tweet approval process"
+        title="tweet approval process"
+        src="/static/2d3143292199ab7cc4858b57016ca4c1/fcda8/tweet-approval-process.png"
+        srcset="/static/2d3143292199ab7cc4858b57016ca4c1/12f09/tweet-approval-process.png 148w,
+/static/2d3143292199ab7cc4858b57016ca4c1/e4a3f/tweet-approval-process.png 295w,
+/static/2d3143292199ab7cc4858b57016ca4c1/fcda8/tweet-approval-process.png 590w,
+/static/2d3143292199ab7cc4858b57016ca4c1/efc66/tweet-approval-process.png 885w,
+/static/2d3143292199ab7cc4858b57016ca4c1/fd84e/tweet-approval-process.png 1056w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<h1>Automating social media posts</h1>
+<p>The simplified story short: “As a community manager, I want to automate tweets for blog posts, so that I have more time to do something more important.”</p>
+<p>More technically: A robot should regularly fetch new posts from selected blogs and prepare tweets for them. Then a human should be able to select and approve the tweets to be published. Finally, a robot should publish the approved tweets.</p>
+<p>Because the process involves a human, Robocorp’s tools as such are not enough. But that is not a bad thing. It allowed me to choose the best open source workflow platform I knew for managing processes with both humans and robots: <a href="https://camunda.com/">Camunda BPM</a>.</p>
+<p>Here’s the eventual process as designed with <a href="https://camunda.com/download/modeler/">Camunda Modeler</a>:</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/e9abf8843d670b934d85774f38873267/4352a/camunda-modeler.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 56.08108108108109%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAABM5AAATOQGPwlYBAAABX0lEQVQoz42S7W60IBCFuf/L6h3040+7TZONrouC+AWKoG4fIU36Ju+PnhgymTlzzgwoVFdLfWv7xjm7rqv3Pp/Lsmz/w77vx3HsO8EmrLMgbpHs4xdgPP4FGZSVVmVVWOemyQo72a7r8MHNOecTMCeTz3meCUIImWN0s9gx+Nm0raDTGENhmqZhGHIPVHrQ4lRK9T9g1Pdb/3yb3+6+uGvRJtA5jiPCNsGdU51axHVdX69XKaXWrZ0macZqiHKMsm4EZUj4sxWGWmvclgSCGCMEzAmQHk6qjt4ecem7VuTFEKa/KMqPj8vl8lmWZbLS+LNU0zRFUTDaFre7rLkqPqW0wJAHoMyoCDm39P1pgC2eNCNBPwtDCDGwBTbnzRkjjgRq+Q0z4OXJIVGqqoqxkYODInkWRELk98y89QdQQ0JM2LbzPxjn7qV5whk5v577i0x6/AFh91/9K87YoIjfN0TQd0QWKdZUAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="camunda modeler"
+        title="camunda modeler"
+        src="/static/e9abf8843d670b934d85774f38873267/fcda8/camunda-modeler.png"
+        srcset="/static/e9abf8843d670b934d85774f38873267/12f09/camunda-modeler.png 148w,
+/static/e9abf8843d670b934d85774f38873267/e4a3f/camunda-modeler.png 295w,
+/static/e9abf8843d670b934d85774f38873267/fcda8/camunda-modeler.png 590w,
+/static/e9abf8843d670b934d85774f38873267/efc66/camunda-modeler.png 885w,
+/static/e9abf8843d670b934d85774f38873267/c83ae/camunda-modeler.png 1180w,
+/static/e9abf8843d670b934d85774f38873267/4352a/camunda-modeler.png 1364w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<ol>
+<li>
+<p>At first, a scheduled Robotcloud robot fetches blog posts, prepares tweets and messages Camunda to start a new tweet approval process for each of them</p>
+</li>
+<li>
+<p>then Camunda waits for a human to approve the prepared tweets in their own approval process instances</p>
+</li>
+<li>
+<p>next, Camunda either timeouts a process, ends process without tweet, or calls Robocloud API to trigger a robot to do the actual tweeting</p>
+</li>
+<li>
+<p>finally, for each approved tweet with triggered publishing robot, Camunda waits for Robotcloud robot to acknowledge successful tweet before concluding the process.</p>
+</li>
+</ol>
+<h1>Composing Robocloud processes</h1>
+<p>At Robocloud, work for robots must be organized into “Processes”. A single process is a sequence of configured “Activities”. Activities are reusable job configurations, which are managed as shareable “Packages”.</p>
+<p>When implementing activities, it is good to know, that in Robocloud, activities placed in the same process, can share data with <a href="https://hub.robocorp.com/resources/libraries/rpaframework-RPA-Robocloud-Items/">Robocloud work items</a>.</p>
+<p>For my example process, I created three activity packages, with one activity in each of them. The first activity is for preparing tweets from blog posts. The second one is for sending messages to Camunda. The last one remains for actually publishing the tweets.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/7077b93370db4c8883711efe35123ab6/4352a/robocloud-activities.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 56.08108108108109%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAABM5AAATOQGPwlYBAAAAo0lEQVQoz+XOOw/CIBQFYEYf0QLtFVrKpTyaFKWNLq5O/iT/v8RuulRXky839wwnOUTSg4NrQztJhSxEuS3FXihmZFHDDnLkG/6GrZlkZdCOIJgxpJM9YoW60gZMfrCaL+b4ATuw9/Mjqhuxwk5hSi5FE33tF4r6YsC/yv00+tS3vZNuMdNyRXSpBxyCCgg4T10i729oQ9iKzfiaf4v80Pnr8hOn+zbO50Hw6QAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="robocloud activities"
+        title="robocloud activities"
+        src="/static/7077b93370db4c8883711efe35123ab6/fcda8/robocloud-activities.png"
+        srcset="/static/7077b93370db4c8883711efe35123ab6/12f09/robocloud-activities.png 148w,
+/static/7077b93370db4c8883711efe35123ab6/e4a3f/robocloud-activities.png 295w,
+/static/7077b93370db4c8883711efe35123ab6/fcda8/robocloud-activities.png 590w,
+/static/7077b93370db4c8883711efe35123ab6/efc66/robocloud-activities.png 885w,
+/static/7077b93370db4c8883711efe35123ab6/c83ae/robocloud-activities.png 1180w,
+/static/7077b93370db4c8883711efe35123ab6/4352a/robocloud-activities.png 1364w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<p>I created and deployed my activity packages by using Robocorp’s own downloadable IDE, <a href="https://hub.robocorp.com/knowledge-base/articles/running-robots-in-robocode-lab/">Robocode Lab</a>. A fun fact about Robocode Lab: Its main user interface is based on open source <a href="https://jupyter.org/">JupyterLab</a>, and its Robot Framework integration is <a href="https://github.com/robocorp/robocode-kernel">a maintained fork</a> of my hobby <a href="https://github.com/robots-from-jupyter/robotkernel">Robotkernel</a>.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/e888176ebc09fb29c3a92b5e3f364c6d/4352a/robocode-lab.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 56.08108108108109%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAABM5AAATOQGPwlYBAAAB7ElEQVQoz23R+0/TUBQH8IpBtq7P+759P9ZurGNM2BZj/EE2JTwWQEkmkkUXERfJhpH4g1kk8pN/t7cUjCYmn5ycnuZ72ttKw93TV4fj49fv9/dOdnZG2y+PB/2j/tbBYOvwj/7zA0HMRf+if7S3OxrunwwHQykLVqs8DInvQdfWGKsQrlJaQbBkghVDwDJ0gSUE2MMy0JdVVDZFA0pA6mbdRpCFLCIqwTyK01roOlgjQIYFKBbJkOqsl/W6jc5mffNxuiFqYiVSt9ntrfUiEVYwQZ5vBzZmSEVYzTO3ECwDrJDEX0v8loMC27Qd4BCNSu1au5N1Yl61Tc/BYeymHrZczIlBRQaWYVFRBekrhmDcM0umlIXNVtKKeeLCkJp2UH3S8Gp1P0NGgBSEFIxUCiu3r5BvAeAvUjNqrqfr4skOCMR1SqwYYI4cBF2MIqQxoQiDf5N5OHVq4th1f5XrrofcdtTIvFpixamdpE4qvoX4Cx72qUr/E86i5tONZyLMdI5VSnROdc4Mi+lC3heIxsRdrJL8IPekmEVVHov1ZslQlmTlQfnOkqw9rKj5JFf0ohrL2p1HmjT+MPtytbj6upiff59MFuez648XuU+zn7Nvv6bzm7PPP4rJ2cX19PJmPLkcvZ2O383fnE5/A5OiW7hmOKv9AAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="robocode lab"
+        title="robocode lab"
+        src="/static/e888176ebc09fb29c3a92b5e3f364c6d/fcda8/robocode-lab.png"
+        srcset="/static/e888176ebc09fb29c3a92b5e3f364c6d/12f09/robocode-lab.png 148w,
+/static/e888176ebc09fb29c3a92b5e3f364c6d/e4a3f/robocode-lab.png 295w,
+/static/e888176ebc09fb29c3a92b5e3f364c6d/fcda8/robocode-lab.png 590w,
+/static/e888176ebc09fb29c3a92b5e3f364c6d/efc66/robocode-lab.png 885w,
+/static/e888176ebc09fb29c3a92b5e3f364c6d/c83ae/robocode-lab.png 1180w,
+/static/e888176ebc09fb29c3a92b5e3f364c6d/4352a/robocode-lab.png 1364w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<p>The few <a href="https://robots-from-jupyter.github.io/">RobotLab</a> users should feel pretty familiar in Robocode Lab…</p>
+<h1>Executing with Camunda Tasklist</h1>
+<p>So, my final process implementation included two Robocloud processes. The first one of them is scheduled at Robocloud. The other one is orchestrated by Camunda, as configured in the process model (BPMN). The first one is composed of two activities:</p>
+<ol>
+<li>
+<p>The first activity turns blog posts into tweetable messages and passes them along as a Robocloud work item variable.</p>
+</li>
+<li>
+<p>The second activity iterates through the messages in Robocloud work item variable, and with each of them, calls Camunda REST API to dispatch a Camunda message event, which results in creating a new process instance with the tweetable message.</p>
+</li>
+</ol>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/a8159a5be6cc165eee7dae5ba951b85e/4352a/robocloud-scheduled.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 56.08108108108109%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAABM5AAATOQGPwlYBAAABfUlEQVQoz22SaXICIRCF+ZVoNCowq8BszKLjuJQa476UOUfuf4y8CRVjlqqvurqBpl83EJ+62n71u4HzbAPapHYbjuN0HFje4uyJ/YTTZsdqd6+HNxJ7cR5kqdC5ylOZFkGRqcxqWfSR0gZlDcaa3/Am7zy0SnldRu+r6apOnuWz2I1B5EQATmiHgRWAm2N8oLjI+9NSbvYve4K4UAVI+2kuc+3rxEtgDYNwYBZBJrJhOIRN/EgybzvfEsUVTldJBUbxyCQbtKexgnuhBSHSxnqMEOuKBbvlrk5GzcTXsDiE0IiMnDB0olwVg6AwgrGLfNOd3/WPqyNJRbYoFyhorjcK4ZRRCcGQPR/OM5EaLbcziqnz+kwkl7GLHqSg4h4UF0xAJNqBqM9BJreJYPeyuRDa6PUee3iVX5hFTGhWTPF+KYr7ibKUGTu6O61P5P4Z/8AhG0OqdDXJJrUENPXV2mV7IfgP+FL/gh+GdiRXsKhZK/fiEIN0Q7fjHlaHD7iQSoqeelxiAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="robocloud scheduled"
+        title="robocloud scheduled"
+        src="/static/a8159a5be6cc165eee7dae5ba951b85e/fcda8/robocloud-scheduled.png"
+        srcset="/static/a8159a5be6cc165eee7dae5ba951b85e/12f09/robocloud-scheduled.png 148w,
+/static/a8159a5be6cc165eee7dae5ba951b85e/e4a3f/robocloud-scheduled.png 295w,
+/static/a8159a5be6cc165eee7dae5ba951b85e/fcda8/robocloud-scheduled.png 590w,
+/static/a8159a5be6cc165eee7dae5ba951b85e/efc66/robocloud-scheduled.png 885w,
+/static/a8159a5be6cc165eee7dae5ba951b85e/c83ae/robocloud-scheduled.png 1180w,
+/static/a8159a5be6cc165eee7dae5ba951b85e/4352a/robocloud-scheduled.png 1364w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<p>Each process instance in Camunda stops at user task “<code>Review tweet: ${message}</code>” to wait for the user approval for the message to be tweeted. Camunda comes with application called Tasklisk, which can display pending user tasks in a TODO application like user interface. It can also render a simple task form defined in the BPMN model.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/16861c78a79fd889064300ba711cced0/4352a/camunda-tasklist.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 56.08108108108109%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAABM5AAATOQGPwlYBAAABaUlEQVQoz3VS23LbIBTU/39OHvsHfcljM7HlZqxIXMRFXCQkwKBubDdpO/UOcwadZdkV0HTtib2/835QjE2jsFJZKVGdUsHa1XmMYIyTyitthDRYI6QgVDHehHmOKe37LqSi0Furp8k4K7XiI+fjOAqBgRmhxFjrvEfVxqScm1pKrRXiEIL3PueMz23bGKXHw+Hw+oraHo8noD1xxqWUWuvZe0ia/TeMmRhjICY9YaNRqJ4wxjkTyrj5ZpBzielSSokZtX6Ib8Q0TX3fo1qkwhbGLiGlfNlSXmOGAGtSrltC0n1dc4z5yzmsOCC7rmtMEbGlkFrIGGO5AHfxP/hyVlKez+dhGLquY4xqO1/Qv1J/4doR35/p07c/nENwzsEURjg5pNj/i6s4Gbdx2Xy2WNf9fHsbCIEzIQQXdiP2x2jufN27tv3x8kIGQilFeKX15x89FIP+uOlSFovULl0fzLIsmD/S3CW1/gIn7XfxwSlANwAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="camunda tasklist"
+        title="camunda tasklist"
+        src="/static/16861c78a79fd889064300ba711cced0/fcda8/camunda-tasklist.png"
+        srcset="/static/16861c78a79fd889064300ba711cced0/12f09/camunda-tasklist.png 148w,
+/static/16861c78a79fd889064300ba711cced0/e4a3f/camunda-tasklist.png 295w,
+/static/16861c78a79fd889064300ba711cced0/fcda8/camunda-tasklist.png 590w,
+/static/16861c78a79fd889064300ba711cced0/efc66/camunda-tasklist.png 885w,
+/static/16861c78a79fd889064300ba711cced0/c83ae/camunda-tasklist.png 1180w,
+/static/16861c78a79fd889064300ba711cced0/4352a/camunda-tasklist.png 1364w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<p>Once a user has completed the task, Camunda continues execution of the process up to service task “<code>Schedule Robot to tweet</code>”, which uses Camunda HTTP connector to call <a href="https://hub.robocorp.com/knowledge-base/articles/robocloud-process-api/">Robocloud process API</a>, triggering the second Robocloud process in asynchronous fashion.</p>
+<p>The second Robocloud process is also a composition of two activities:</p>
+<ol>
+<li>
+<p>The first activity executes robot to publish the tweet passed as work item variable.</p>
+</li>
+<li>
+<p>The second activity calls Camunda REST API to dispatch a Camunda message, which acknowledges the Robocloud process been completed successfully.</p>
+</li>
+</ol>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/1c96dbf0e4ecd8f293131102f018bc00/4352a/robocloud-triggered.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 56.08108108108109%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAABM5AAATOQGPwlYBAAABd0lEQVQoz22S604CMRCF+8uAwJJt977tdullL1wNQVQUlehz+P6P4amNBIzJl83MbHvmTFuSh6mOH/JplUziZJLQIY3HcRIkjknCRoze0mtYOAyi8fTj+ElUqVvZWG4st6Y0VljDDSTCQQgQXMKGLLgZzfnHrv7ab/ZEZWrT3M3SWZ3U+HqqqAIylsDH51Swsik2c/70cv9CkLeibbi1pYWQR+caoN5VnY/PqSmMymtOs8P2QDjlWL1Qi5VZXe5HfyxdzBYIfNrLfqmWutAm14JWz7tnIphAWwg7yUxdmkSxEQ0U6x/D+Is1mA7k0/x1/+pn3qhUASdROiEUvcNO9tt+i4M82/FDCSreH99JFmRlWHLGgTuSRIpIuJTyIizaqoVV39Bv819YOz2diL8DfzGXuPqA9rKDL5h3zXMFXT8Rhn17fCN/bvIa1slupVdLvVzbtbOAY/+9i9PhRKJRhCf1L3hhMO9HQE/3ELIZ5pKpTIP0uD9+A3ieSmTEIfgHAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="robocloud triggered"
+        title="robocloud triggered"
+        src="/static/1c96dbf0e4ecd8f293131102f018bc00/fcda8/robocloud-triggered.png"
+        srcset="/static/1c96dbf0e4ecd8f293131102f018bc00/12f09/robocloud-triggered.png 148w,
+/static/1c96dbf0e4ecd8f293131102f018bc00/e4a3f/robocloud-triggered.png 295w,
+/static/1c96dbf0e4ecd8f293131102f018bc00/fcda8/robocloud-triggered.png 590w,
+/static/1c96dbf0e4ecd8f293131102f018bc00/efc66/robocloud-triggered.png 885w,
+/static/1c96dbf0e4ecd8f293131102f018bc00/c83ae/robocloud-triggered.png 1180w,
+/static/1c96dbf0e4ecd8f293131102f018bc00/4352a/robocloud-triggered.png 1364w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<p>After executions of the second Robocloud process, approved tweets are published:</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/206016f8d4e07c9fb8cbdbaa5bd919dd/14060/robot-twitter.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 80.4054054054054%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAIAAACZeshMAAAACXBIWXMAABM5AAATOQGPwlYBAAAB9klEQVQoz41STW/UMBDd/8sduCNxrjhy4ZdwBARFCEqRqMSKsurm03bs2Bl/ZOwwjncjVHroaDSynHnOe29ml3D+xT24EOcwr+G9a+p6AkDEchP+Cwne+bBbluVglhrShEuJGOOX6xtjJoI556h1eShSShmswTIhpRq326plEsLoUNt59BHTBsj1t4qXLZ7ArYKm65u6Mcasf04Yo/aoHBqP0gabBWGY0c8YEQ9qvuryMYOlno5Vvd/vOReF9qern0IMSg7DIEaVYxy1UueTHIID6sxgo7WUsuu6Io+4GbLLhRHc5ALJGQbJhSCcIHVS9VxMYM/gaWKcH6uKDkUzVaJas8FYX7f9n7vqcKyrpmt7Tki6MRuYuLRtC9ZuhlF1Yaa0PtDAQqBpkWrcGqgjFsOIQ9dzJkRcFjKWPsnR+BBIfIFR5vM682wnxrRGBgfQoDgGd5pzSp+vb5gYslopyUXSrLUWpFgpGkQ6Rwa//g5P3g4vPpqnH9zFN0vvrrRRGgs+MC66nq3J267vGL+ranL0pPnND/v8Pby8hGfvpldfgd7OhvnQcKmto/1pe9ExwYiKpsUDqt4H0r17cO/yn0k0RjgbRnaRYSvZZSV+Xs+0+rRlWcJ0r6bsRZEbV2onMFiH/44hpeURcQLfHpuyMeWqPPwY8F+dEZxVEm7oGwAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="robot twitter"
+        title="robot twitter"
+        src="/static/206016f8d4e07c9fb8cbdbaa5bd919dd/fcda8/robot-twitter.png"
+        srcset="/static/206016f8d4e07c9fb8cbdbaa5bd919dd/12f09/robot-twitter.png 148w,
+/static/206016f8d4e07c9fb8cbdbaa5bd919dd/e4a3f/robot-twitter.png 295w,
+/static/206016f8d4e07c9fb8cbdbaa5bd919dd/fcda8/robot-twitter.png 590w,
+/static/206016f8d4e07c9fb8cbdbaa5bd919dd/efc66/robot-twitter.png 885w,
+/static/206016f8d4e07c9fb8cbdbaa5bd919dd/14060/robot-twitter.png 949w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<p>Meanwhile, Camunda Cockpit, which is also part of open source Camunda BPM, gives an overview of all the on-going process instances. A single glance can tell, how many tasks are still pending a human approval, or are already approved and waiting for the acknowledge of success from Robocloud.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/743e5b3f5b811b9ed2ccb57fc0fcc817/4352a/camunda-cockpit.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 56.08108108108109%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAABM5AAATOQGPwlYBAAABRElEQVQoz21SiY6DIBTk/39x02O7Yjm0IkWUQ9gB2qZpOsGXkce8C8jx50gvXXf+vRwO3ek8XNksBz2Mi5q/LWWVMrfbJLiSksQ97SnHfXfe+xBCDOB7SrAhxo/lY1xctC4al+y6kZRSzhmqZVmMMVpr2G3b1m0DWddVV2DHuc1aWwKnjA87pEhzRrKmhBsC50odLRws57zve0rpOI75CeQjjeH0PM8RhYXwCgE0Ag1jDKnNYkqTH2KcmKYJREqJJOZ+v1Ugs/dOKSWEaO2gxi9iaJgQpz86DHIYRpyWQqCcS886Jq6c066rPb+J28DaYEAwT7jhsLViNIzaKcSM7zG+Mrczj8wYD8Sw3j2wPgGutFbzDIKALRlawC+xd7MaE+olN1mLEN9QLz69OOArCN4T3gruBFHLtZQ6S7UtylfUV1C8/1tBex4lxGH5AAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="camunda cockpit"
+        title="camunda cockpit"
+        src="/static/743e5b3f5b811b9ed2ccb57fc0fcc817/fcda8/camunda-cockpit.png"
+        srcset="/static/743e5b3f5b811b9ed2ccb57fc0fcc817/12f09/camunda-cockpit.png 148w,
+/static/743e5b3f5b811b9ed2ccb57fc0fcc817/e4a3f/camunda-cockpit.png 295w,
+/static/743e5b3f5b811b9ed2ccb57fc0fcc817/fcda8/camunda-cockpit.png 590w,
+/static/743e5b3f5b811b9ed2ccb57fc0fcc817/efc66/camunda-cockpit.png 885w,
+/static/743e5b3f5b811b9ed2ccb57fc0fcc817/c83ae/camunda-cockpit.png 1180w,
+/static/743e5b3f5b811b9ed2ccb57fc0fcc817/4352a/camunda-cockpit.png 1364w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<p>That’s Robocloud RPA orchestration platform orchestrated with Camunda BPM workflow automation platform. Looks pretty powerful combination.</p></div></div><hr style="margin-bottom:1.75rem"/><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li><a rel="prev" href="/2020/06/plone-rpa-feature-destructured/">← <!-- -->Automated subtitles – destructuring a successful Plone CMS integration</a></li><li><a rel="next" href="/2020/07/camunda-run-robocloud-setup/">Setting up Camunda Run and connecting with Robocloud<!-- --> →</a></li></ul></main></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/2020/07/camunda-robocloud/";/*]]>*/</script><!-- slice-start id="_gatsby-scripts-1" -->
+          <script
+            id="gatsby-chunk-mapping"
+          >
+            window.___chunkMapping="{\"app\":[\"/app-8e352158238d7a981d99.js\"],\"component---src-pages-404-js\":[\"/component---src-pages-404-js-97805cac34ee32fd2ff3.js\"],\"component---src-pages-index-js\":[\"/component---src-pages-index-js-d702b3556e2e37664238.js\"],\"component---src-templates-blog-post-js\":[\"/component---src-templates-blog-post-js-db3b846139cc4b35992f.js\"],\"component---src-templates-follow-js\":[\"/component---src-templates-follow-js-48b9dd3d02ab9724ef8f.js\"],\"component---src-templates-like-js\":[\"/component---src-templates-like-js-8481525f17b37bf9ff44.js\"]}";
+          </script>
+        <script>window.___webpackCompilationHash="1117cca6506347fc7992";</script><script src="/webpack-runtime-e10ad14bfe4fe997f9f6.js" async></script><script src="/framework-a3d1aa3677a1ff482f17.js" async></script><script src="/app-8e352158238d7a981d99.js" async></script><!-- slice-end id="_gatsby-scripts-1" --></body></html>
