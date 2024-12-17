@@ -2,7 +2,7 @@
 <bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:modeler="http://camunda.org/schema/modeler/1.0" id="Definitions_0ha9r4u" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="5.28.0" modeler:executionPlatform="Camunda Platform" modeler:executionPlatformVersion="7.22.0">
   <bpmn:collaboration id="Collaboration_0aml4c0">
     <bpmn:participant id="Participant_0kzkraz" name="BPM Engine" processRef="Process_136xrk3" />
-    <bpmn:participant id="Participant_1qvqih8" name="Robot Framework External Service Task Worker Micro Service" />
+    <bpmn:participant id="Participant_1qvqih8" name="Robot Framework Worker" />
     <bpmn:messageFlow id="Flow_1ffx41c" sourceRef="Participant_1qvqih8" targetRef="Activity_1oswse2" />
   </bpmn:collaboration>
   <bpmn:process id="Process_136xrk3" isExecutable="true">
